@@ -2,7 +2,7 @@
 title: Exibir mensagens no Centro de Notificações
 description: O Centro de Notificações é um feed sequencial de informações relacionadas à sua experiência do Power BI.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 featuredvideoid: bZMSv5KAlcE
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: fd6de43a05f6964a767758b6091c09043f9a0f34
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a947b872b56924f91e8cfadadcf474eae76ba018
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236436"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263622"
 ---
 # <a name="view-power-bi-notifications"></a>Exibir notificações do Power BI
 

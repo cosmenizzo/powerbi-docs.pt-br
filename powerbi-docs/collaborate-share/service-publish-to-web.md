@@ -1,5 +1,5 @@
 ---
-title: Publicar na Web por meio do Power BI
+title: Publicar na web do Power BI
 description: Com o recurso Publicar na Web do Power BI, você pode inserir conteúdo interativo do Power BI com facilidade em postagens no blog, sites, emails ou mídia social.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,15 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 02/25/2020
+ms.date: 07/08/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5e7fe8a7c71927a1e89bd4e86209c580ae1f3b29
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 26c27c8cd33929c7bb83a8ef5b1faed0fb12e502
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225664"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216555"
 ---
-# <a name="publish-to-web-from-power-bi"></a>Publicar na Web por meio do Power BI
+# <a name="publish-to-web-from-power-bi"></a>Publicar na web do Power BI
 
 Com a recurso **Publicar na Web** do Power BI, você pode inserir conteúdo interativo do Power BI com facilidade em postagens no blog, sites, emails ou mídia social. Você também pode editar, atualizar ou interromper o compartilhamento dos seus visuais publicados com facilidade.
 
@@ -28,10 +29,6 @@ Com a recurso **Publicar na Web** do Power BI, você pode inserir conteúdo inte
 ## <a name="create-embed-codes-with-publish-to-web"></a>Criar códigos de inserção com o recurso Publicar na Web
 
 **Publicar na Web** está disponível para relatórios que podem ser editados em seus workspaces pessoais e de grupo.  Ele não está disponível para relatórios compartilhados com você ou para aqueles que dependem da Segurança em Nível de Linha para proteger os dados. Confira a seção [**Limitações**](#limitations) abaixo para ver uma lista completa de casos em que o recurso **Publicar na Web** não é compatível. Leia o **Aviso** indicado anteriormente neste artigo antes de usar o recurso **Publicar na Web**.
-
-O breve vídeo a seguir mostra como esse recurso funciona. Em seguida, experimente você mesmo nas etapas abaixo.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UF9QtqE7s4Y" frameborder="0" allowfullscreen></iframe>
 
 As etapas a seguir descrevem como usar o recurso **Publicar na Web**.
 
@@ -86,14 +83,14 @@ Um código de inserção da configuração **Publicar na Web** será parecido co
 
 Para obter um ajuste mais perfeito, tente adicionar 56 pixels à altura do iFrame para acomodar o tamanho atual da barra inferior. Se sua página de relatório usar o tamanho dinâmico, a tabela abaixo fornecerá alguns tamanhos que podem ser usados para obter um ajuste sem a aplicação do formato letterbox.
 
-| Taxa | Tamanho | Dimensões (largura x altura) |
+| Proporção | Tamanho | Dimensões (largura x altura) |
 | --- | --- | --- |
-| 16:9 |Pequeno |640 x 416 px |
+| 16:9 |Pequena |640 x 416 px |
 | 16:9 |Médio |800 x 506 px |
-| 16:9 |Grande |960 x 596 px |
-| 4:3 |Pequeno |640 x 536 px |
+| 16:9 |grande |960 x 596 px |
+| 4:3 |Pequena |640 x 536 px |
 | 4:3 |Médio |800 x 656 px |
-| 4:3 |Grande |960 x 776 px |
+| 4:3 |grande |960 x 776 px |
 
 ## <a name="manage-embed-codes"></a>Gerenciar códigos de inserção
 
@@ -119,7 +116,7 @@ Após criar um código de inserção no recurso **Publicar na Web**, será poss�
 
 Depois de criar seu código de inserção no recurso **Publicar na Web** e compartilhá-lo, o relatório será atualizado com todas as alterações feitas, e o link do código de inserção ficará ativo imediatamente. Qualquer pessoa que abrir o link poderá vê-lo. Após a criação inicial, pode demorar até duas horas para que as atualizações em relatórios ou visuais fiquem visíveis para os usuários. Os dados são armazenados em cache por uma hora a partir do momento em que são recuperados. Não recomendamos o uso de Publicar na Web para dados que precisam ser atualizados com frequência. Para saber mais, confira a seção [**Como isso funciona**](#howitworks) posteriormente neste artigo. 
 
-### <a name="data-refresh"></a>Atualização de dados
+### <a name="data-refresh"></a>Atualização dedados
 
 As atualizações de dados são refletidas automaticamente no relatório ou visual inserido. Pode levar até duas horas para que os dados atualizados fiquem visíveis nos códigos de inserção. Para desabilitar a atualização automática, selecione **não atualizar** no agendamento do conjunto de dados que o relatório usa.  
 
@@ -149,7 +146,7 @@ Para relatar um problema relacionado ao conteúdo de **Publicar na Web** inserid
 
 Você precisará enviar um email à Microsoft explicando o problema. A Microsoft avaliará o conteúdo com base nos [Termos de Serviço do Power BI](https://powerbi.microsoft.com/terms-of-service) e tomará as devidas providências.
 
-## <a name="licensing"></a>Licenças
+## <a name="licensing"></a>Licenciamento
 
 Você precisa ser um usuário do Microsoft Power BI para usar o recurso **Publicar na Web**. Os visualizadores do seu relatório não precisam ser usuários do Power BI.
 
