@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 69cc3e21befb2c3becca737f853947e869bd681c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b832e96b795b38133939296a15dcab6ece3996be
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224191"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214908"
 ---
 # <a name="connect-to-an-amazon-redshift-database-in-power-bi-desktop"></a>Conectar-se a um banco de dados do Amazon Redshift no Power BI Desktop
 No **Power BI Desktop**, é possível se conectar a um banco de dados do **Amazon Redshift** e usar os dados subjacentes, assim como qualquer outra fonte de dados no Power BI Desktop.
@@ -22,19 +22,19 @@ No **Power BI Desktop**, é possível se conectar a um banco de dados do **Amazo
 ## <a name="connect-to-an-amazon-redshift-database"></a>Conectar-se a um banco de dados do Amazon Redshift
 Para se conectar a um banco de dados do **Amazon Redshift**, selecione **Obter Dados** na faixa de opções **Página Inicial** no Power BI Desktop. Selecione **Banco de Dados** nas categorias à esquerda e você verá o **Amazon Redshift**.
 
-![](media/desktop-connect-redshift/connect_redshift_3.png)
+![Captura de tela da caixa de diálogo Obter Dados mostrando a seleção de banco de dados do Amazon Redshift.](media/desktop-connect-redshift/connect_redshift_3.png)
 
 Na janela **Amazon Redshift** que será mostrada, digite ou cole o nome do banco de dados e do servidor **Amazon Redshift** na caixa. Como parte do campo *Servidor*, os usuários podem especificar uma porta no seguinte formato: *URLdoServidor:Porta*
 
-![](media/desktop-connect-redshift/connect_redshift_4.png)
+![Captura de tela da caixa de diálogo Amazon Redshift mostrando os campos Servidor e Banco de Dados.](media/desktop-connect-redshift/connect_redshift_4.png)
 
 Quando solicitado, insira o nome de usuário e a senha. Você deve usar o nome do servidor que corresponde exatamente ao certificado SSL para evitar erros. 
 
-![](media/desktop-connect-redshift/connect_redshift_5.png)
+![Captura de tela da solicitação de credenciais do Amazon Redshift mostrando os campos Nome de Usuário e Senha.](media/desktop-connect-redshift/connect_redshift_5.png)
 
 Depois que você se conectar com êxito, uma janela **Navegador** será mostrada e exibirá os dados disponíveis no servidor, dentre os quais você pode selecionar um ou vários elementos para importar e usar no **Power BI Desktop**.
 
-![](media/desktop-connect-redshift/connect_redshift_6.png)
+![Captura de tela da caixa de diálogo Navegador mostrando os dados disponíveis no servidor.](media/desktop-connect-redshift/connect_redshift_6.png)
 
 Depois de fazer seleções na janela **Navegador**, você pode **Carregar** ou **Editar** os dados.
 

@@ -1,5 +1,5 @@
 ---
-title: Encontrar usuários do Power BI que entraram
+title: Localizar usuários do Power BI que se conectaram
 description: Se for um administrador de locatários e quiser ver quem entrou no Power BI, você poderá usar os relatórios de acesso e de uso do Azure Active Directory para ter essa visibilidade.
 author: kfollis
 ms.reviewer: ''
@@ -9,14 +9,14 @@ ms.topic: how-to
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 4f9b69e863b71fda0cece06df7065740bd55463e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 620e71ffa08a02dc0d0080b310fb0252388e1b10
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228884"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161182"
 ---
-# <a name="find-power-bi-users-that-have-signed-in"></a>Encontrar usuários do Power BI que entraram
+# <a name="find-power-bi-users-that-have-signed-in"></a>Localizar usuários do Power BI que se conectaram
 
 Se for um administrador de locatários e quiser ver quem entrou no Power BI, use os [relatórios de acesso e uso do Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins) para ter essa visibilidade.
 
@@ -51,7 +51,7 @@ Para exibir a atividade de entrada, siga estas etapas.
 
 É possível [baixar um relatório de conexão](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) em qualquer um dos dois formatos: um arquivo CSV ou um arquivo JSON.
 
-![Captura de tela do botão de download.](media/service-admin-access-usage/download-sign-in-data-csv.png)
+![Captura de tela da exportação de dados com a opção Download realçada.](media/service-admin-access-usage/download-sign-in-data-csv.png)
 
 Na parte superior do relatório **Entradas**, selecione **Baixar** e, em seguida, selecione uma das seguintes opções:
 

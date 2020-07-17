@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/13/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 544a4e476d730a6bccc02f476903005ca19a5cca
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b13ad1c50e62351c693adee1026a0d78aafd2daa
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219334"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264698"
 ---
 # <a name="create-a-qr-code-for-a-report-in-power-bi-to-use-in-the-mobile-apps"></a>Criar um código QR para um relatório no Power BI a ser usado nos aplicativos móveis
 Os códigos QR no Power BI podem conectar qualquer coisa do mundo real diretamente às informações do BI relacionadas &#151; não é necessária navegação ou pesquisa.
@@ -27,10 +27,10 @@ Os colegas com quem você compartilhou o relatório podem digitalizar o código 
 1. Abra um relatório no serviço do Power BI.
 2. Selecione **Mais opções** (...) no canto superior direito e selecione **Gerar código QR**. 
    
-    ![](media/service-create-qr-code-for-report/power-bi-create-qr-code-report.png)
+    ![Captura de tela de um relatório mostrando um ponteiro das reticências até a opção Gerar código QR.](media/service-create-qr-code-for-report/power-bi-create-qr-code-report.png)
 3. Será exibida uma caixa de diálogo com o código QR. 
    
-    ![](media/service-create-qr-code-for-report/powerbi_report_qrcode.png)
+    ![Captura de tela de uma caixa de diálogo mostrando que o código QR está pronto para ser baixado ou salvo.](media/service-create-qr-code-for-report/powerbi_report_qrcode.png)
 4. Aqui, você pode escanear o código QR ou baixe e salvá-lo para: 
    
    * Adicioná-lo a um email ou a outro documento ou 
@@ -50,4 +50,4 @@ Power BI gera o código QR como um arquivo JPG, pronto para imprimir.
 * [Conectar-se a dados do Power BI do mundo real](../consumer/mobile/mobile-apps-data-in-real-world-context.md) com os aplicativos móveis
 * [Digitalizar um código QR do Power BI em seu dispositivo móvel](../consumer/mobile/mobile-apps-qr-code.md)
 * [Criar um código QR para um bloco](service-create-qr-code-for-tile.md)
-* Perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+* Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

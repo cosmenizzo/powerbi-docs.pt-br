@@ -6,17 +6,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/01/2020
+ms.date: 07/14/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: b8fddd6b88effac3375840dd6034ca93cec52f12
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5cd0dd3b91109e63e5481e2f5e5516fd9ecd245c
+ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238315"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86385965"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Baixar um relatório do serviço do Power BI para o Power BI Desktop (versão prévia)
+      
 No Power BI Desktop, você pode publicar um relatório (um arquivo *.pbix*) do seu computador local no serviço do Power BI. Os relatórios do Power BI também podem ir para a outra direção: Você pode baixar um relatório do serviço do Power BI para o Power BI Desktop. A extensão de um relatório do Power BI, em ambos os casos, é. pbix.
 
 Há algumas limitações a serem consideradas, que são abordadas na seção na seção [Considerações e solução de problemas ](#considerations-and-troubleshooting) deste artigo.
@@ -46,6 +47,7 @@ Para baixar o arquivo .pbix, siga estas etapas:
     ![Editor de relatórios do Power BI Desktop](media/service-export-to-pbix/power-bi-desktop.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
+
 Há algumas considerações e limitações importantes associadas ao download de um arquivo .pbix no serviço do Power BI.
 
 * Para baixar o arquivo, você deve ter acesso de edição ao relatório.
@@ -55,9 +57,12 @@ Há algumas considerações e limitações importantes associadas ao download de
 * Use sempre a última versão do Power BI Desktop ao abrir os arquivos baixados. Talvez não seja possível abrir os arquivos .pbix baixados em versões não atuais do Power BI Desktop.
 * Se o administrador tiver desativado a capacidade de baixar dados, esse recurso não estará visível no serviço do Power BI.
 * Conjuntos de dados com a atualização incremental não podem ser baixados para um arquivo .pbix.
-* Se você criar um relatório do Power BI com base em um conjunto de dados em um espaço de trabalho e publicar em um espaço de trabalho diferente, você e seus usuários não poderão fazer o download. No momento, o recurso de download não tem suporte neste cenário.
+* Os conjuntos de dados habilitados para [modelos grandes](../admin/service-premium-large-models.md) não podem ser baixados em um arquivo .pbix.
+* Os conjuntos de dados modificados por meio do [ponto de extremidade XMLA](../admin/service-premium-connect-tools.md) não podem ser baixados em um arquivo .pbix.
+* Se você criar um relatório do Power BI com base em um conjunto de dados em um workspace e publicá-lo em outro workspace, você e os usuários não poderão baixá-lo. No momento, o recurso de download não tem suporte neste cenário.
 
 ## <a name="next-steps"></a>Próximas etapas
+
 Assista ao vídeo de um minuto **Guy in a Cube** sobre esse recurso:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ymWqU5jiUl0" frameborder="0" allowfullscreen></iframe>

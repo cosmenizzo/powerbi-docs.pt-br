@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 9245dd6c25917b2c8c861ea5b83710cd8b52bb22
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3c76fed8f5533ad339904c4f8251a7404270a0ae
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279010"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216605"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Monitorar o desempenho de relatórios no Power BI
 
@@ -35,7 +35,7 @@ Use o [Diagnóstico de Consulta](/power-query/QueryDiagnostics) no Power BI Desk
 > [!NOTE]
 > Atualmente, o Diagnóstico de Consulta é uma versão prévia do recurso, e você deve habilitá-lo em _Opções e Configurações_. Uma vez habilitado, seus comandos estão disponíveis na janela do Editor do Power Query, na guia da faixa de opções **Ferramentas**.
 
-![A imagem mostra a guia da faixa de opções Ferramentas do Editor do Power Query. A faixa de opções exibe os comandos Etapa de Diagnóstico, Iniciar Diagnóstico e Parar Diagnóstico.](media/monitor-report-performance/power-query-diagnotics.png)
+![Captura de tela da guia de faixa de opções das Ferramentas do Editor do Power Query mostrando os comandos Diagnosticar Etapa, Iniciar Diagnóstico e Parar Diagnóstico.](media/monitor-report-performance/power-query-diagnotics.png)
 
 ## <a name="use-performance-analyzer"></a>Usar o Performance Analyzer
 
@@ -87,5 +87,5 @@ Para obter mais informações sobre este artigo, confira os seguintes recursos:
 - [Performance Analyzer](../create-reports/desktop-performance-analyzer.md)
 - [Solucionar problemas de desempenho de relatório no Power BI](report-performance-troubleshoot.md)
 - [Aplicativo de Métricas do Power BI Premium](../admin/service-premium-metrics-app.md)
-- Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+- Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
 - Sugestões? [Contribuir com ideias para aprimorar o Power BI](https://ideas.powerbi.com/)

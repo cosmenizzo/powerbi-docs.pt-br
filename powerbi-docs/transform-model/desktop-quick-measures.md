@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 11/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2bb48ad44c1f1d440fb5741fc55cc4a83f315dc8
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 129b4a22e17b5eab03018efae113ff47133e9dda
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237149"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214164"
 ---
 # <a name="use-quick-measures-for-common-calculations"></a>Usar medidas rápidas para cálculos comuns
 Você pode usar *medidas rápidas* para executar cálculos comuns e avançados com rapidez e praticidade. Uma medida rápida executa um conjunto de comandos DAX (Data Analysis Expressions) nos bastidores e apresenta os resultados para você usar no relatório. Você não precisa escrever o DAX. Isso é feito para você com base na entrada que você fornece em uma caixa de diálogo. Há muitas categorias de cálculos disponíveis, bem como maneiras de modificar cada cálculo para atender às suas necessidades. Talvez o melhor de tudo seja poder ver o DAX executado pela medida rápida e estimular ou expandir seu próprio conhecimento do DAX.
@@ -53,14 +53,14 @@ Os cinco tipos de cálculo de medida rápida, com seus cálculos, são:
   * Total acumulado no mês
   * Alteração de ano a ano
   * Alteração de trimestre a trimestre
-  * Alteração em relação ao mês anterior
+  * Alteração de mês a mês
   * Média móvel
 * **Totais**
   * Total acumulado
   * Total da categoria (filtros aplicados)
   * Total da categoria (filtros não aplicados)
 * **Operações matemáticas**
-  * Adição
+  * Addition
   * Subtração
   * Multiplicação
   * Divisão
@@ -90,7 +90,7 @@ Na janela **Medidas rápidas**, em **Cálculo**, selecione **Média por categori
 
 Arraste **Preço Unitário Médio** no painel **Campos** no campo **Valor de base**. Deixe **Categoria** no campo **Categoria** e selecione **OK**. 
 
-![](media/desktop-quick-measures/quick-measures_06.png)
+![Captura de tela do Power BI Desktop mostrando a opção Filtros no painel Campos.](media/desktop-quick-measures/quick-measures_06.png)
 
 Quando você seleciona **OK**, várias coisas interessantes acontecem.
 

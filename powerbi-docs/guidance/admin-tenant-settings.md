@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b024ff52585a4b9b46b60e3230a059b3d07d7b24
-ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
+ms.openlocfilehash: 7dd6c812116d9ba196b157bd12d6362c19ac64ec
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84273889"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216710"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Diretrizes de configuração do administrador de locatários
 
@@ -41,7 +41,7 @@ Essas URLs ficarão disponíveis como links no menu de ajuda do Power BI.
 > [!NOTE]
 > Fornecer a URL de **Solicitações de licenciamento** impedirá que usuários individuais se inscrevam para a avaliação gratuita de 60 dias do Power BI Pro. Em vez disso, eles serão direcionados para seu site interno com informações sobre como adquirir uma licença Gratuita ou Pro.
 
-![A configuração "Publicar as informações ‘Obter ajuda’" é mostrada.](media/admin-tenant-settings/publish-get-help-information.png)
+![Captura de tela do Power BI Desktop mostrando as configurações de Ajuda e Suporte.](media/admin-tenant-settings/publish-get-help-information.png)
 
 ## <a name="manage-risk"></a>gerenciar riscos
 As configurações para gerenciar riscos podem ajudar você a estabelecer políticas de governança no seu locatário do Power BI. No entanto, tenha em mente que as configurações de governança não são uma medida de segurança. Por exemplo, desabilitar a configuração **Exportar dados** remove o recurso da interface do usuário do Power BI e ajuda, dessa forma, os usuários do Power BI a trabalharem em conformidade com as políticas de governança da sua organização, mas não impede que determinados usuários exportem dados usando outras opções. Do ponto de vista de segurança, um usuário do Power BI com acesso de leitura a um conjunto de dados tem a permissão para consultar esse conjunto de dados e pode persistir os resultados, independentemente dos recursos disponíveis na interface do usuário do Power BI.
@@ -51,7 +51,7 @@ Você poderá receber notificações por email se seu locatário for afetado por
 
 Recomendamos habilitar a configuração **Receber notificações por email sobre incidentes ou interrupções de serviço**. Ela é encontrada no grupo **Configurações de ajuda e suporte**. Atribua um ou mais grupos de segurança _habilitados para email_.
 
-![A configuração “Receber notificações por email para interrupções ou incidentes de serviço” é mostrada.](media/admin-tenant-settings/receive-email-notifications-for-service-outages-or-incidents.png)
+![Captura de tela do Power BI Desktop mostrando a configuração "Receber notificações por email para incidentes ou interrupções de serviço".](media/admin-tenant-settings/receive-email-notifications-for-service-outages-or-incidents.png)
 
 ### <a name="information-protection"></a>Proteção das informações
 
@@ -74,7 +74,7 @@ Recomendamos atribuir um ou mais grupos de segurança. A esses grupos pode ser c
 
 Não deixe de incluir instruções na documentação informando aos usuários (que não têm direitos para criação de workspaces) como eles podem solicitar um novo workspace.
 
-![A configuração "Criar workspaces" é mostrada.](media/admin-tenant-settings/create-workspaces.png)
+![Captura de tela do Power BI Desktop mostrando a configuração "Criar workspaces".](media/admin-tenant-settings/create-workspaces.png)
 
 ### <a name="share-content-with-external-users"></a>Compartilhar conteúdo com usuários externos
 
@@ -84,7 +84,7 @@ A configuração **Compartilhar conteúdo com usuários externos** fica habilita
 
 Recomendamos atribuir um ou mais grupos de segurança. A esses grupos pode ser concedida _ou negada_ a permissão para compartilhar conteúdo com usuários externos.
 
-![A configuração "Compartilhar conteúdo com usuários externos" é mostrada.](media/admin-tenant-settings/share-content-with-external-users.png)
+![Captura de tela do Power BI Desktop mostrando a configuração "Compartilhar conteúdo com usuários externos".](media/admin-tenant-settings/share-content-with-external-users.png)
 
 ### <a name="publish-to-web"></a>Publicar na Web
 
@@ -96,7 +96,7 @@ Se habilitada, recomendamos atribuir um ou mais grupos de segurança. A esses gr
 
 Além disso, há uma opção para escolher como os códigos de inserção funcionam. Por padrão, ela fica configurada para **Permitir somente códigos existentes**. Isso significa que, para criar um código de inserção, os usuários precisarão entrar em contato com um administrador do Power BI.
 
-![A configuração "Publicar na Web" é mostrada.](media/admin-tenant-settings/publish-to-web.png)
+![Captura de tela do Power BI Desktop mostrando a configuração "Publicar na Web".](media/admin-tenant-settings/publish-to-web.png)
 
 Também recomendamos que você analise os [códigos de inserção para publicação na Web](https://app.powerbi.com/admin-portal/embedCodes) regularmente. Remova códigos que causem a publicação de informações particulares ou confidenciais.
 
@@ -111,7 +111,7 @@ Recomendamos atribuir um ou mais grupos de segurança. A esses grupos pode ser c
 > [!IMPORTANT]
 > Desabilitar essa configuração também restringe o uso dos recursos [Analisar no Excel](../collaborate-share/service-analyze-in-excel.md) e [conexão dinâmica](../connect-data/desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) do serviço do Power BI.
 
-![A configuração "Exportar dados" é mostrada.](media/admin-tenant-settings/export-data.png)
+![Captura de tela do Power BI Desktop mostrando a configuração "Exportar dados".](media/admin-tenant-settings/export-data.png)
 
 > [!NOTE]
 > Se os usuários permitirem que os usuários exportem dados, você poderá adicionar uma camada de proteção impondo a [proteção de dados](../admin/service-security-data-protection-overview.md). Quando ela é configurada, usuários não autorizados são impedidos de exportar conteúdo com rótulos de confidencialidade.
@@ -124,7 +124,7 @@ A configuração **Permitir que os usuários convidados externos editem e gerenc
 
 Se você precisa autorizar usuários externos a editar e gerenciar conteúdo, recomendamos que atribua um ou mais grupos de segurança. A esses grupos pode ser concedida _ou negada_ a permissão para publicar relatórios.
 
-![A configuração "Permitir que usuários convidados externos editem e gerenciem conteúdo da organização" é mostrada.](media/admin-tenant-settings/allow-external-guest-users.png)
+![Captura de tela do Power BI Desktop mostrando a configuração "Permitir que usuários convidados externos editem e gerenciem o conteúdo na organização".](media/admin-tenant-settings/allow-external-guest-users.png)
 
 ### <a name="developer-settings"></a>Configurações de desenvolvedor
 
@@ -135,14 +135,13 @@ Há duas configurações de locatário relacionadas a [inserir conteúdo do Powe
 
 Se você não tem intenção de usar as APIs de desenvolvedor para inserir conteúdo, recomendamos desabilitá-las. Ou, pelo menos, configure grupos de segurança específicos que fariam esse trabalho.
 
-![As configurações de desenvolvedor são mostradas.](media/admin-tenant-settings/developer-settings.png)
+![Captura de tela do Power BI Desktop mostrando as configurações do desenvolvedor.](media/admin-tenant-settings/developer-settings.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Para obter mais informações relacionadas a este artigo, confira os seguintes recursos:
 
 - [O que é administração do Power BI?](../admin/service-admin-administering-power-bi-in-your-organization.md)
-- [Como administrar o Power BI no portal de administração](../admin/service-admin-portal.md)
-- Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+- [Administrando o Power BI no portal de administração](../admin/service-admin-portal.md)
+- Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
 - Sugestões? [Contribuir com ideias para aprimorar o Power BI](https://ideas.powerbi.com)
-

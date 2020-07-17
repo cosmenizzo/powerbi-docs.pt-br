@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 2c92fb47f576b750aa4815b56fabece2b5bc1de5
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 396c760a97911a35d7fdc0c608fc35de1cf6586d
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565961"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216807"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Técnicas de redução de dados para Modelagem de importação
 
@@ -84,7 +84,7 @@ No entanto, em alguns casos, as colunas calculadas do modelo podem ser a melhor 
 
 Consultas do Power Query destinadas a dar suporte à integração de dados com outras consultas não devem ser carregadas no modelo. Para evitar o carregamento da consulta no modelo, não deixe de desabilitar o carregamento de consultas nesses casos.
 
-![Desabilitando a carga de uma consulta do Power Query](media/import-modeling-data-reduction/power-query-disable-query-load.png)
+![Captura de tela do Power Query mostrando a opção "Habilitar carregamento".](media/import-modeling-data-reduction/power-query-disable-query-load.png)
 
 ## <a name="disable-auto-datetime"></a>Desabilitar data/hora automática
 
@@ -104,4 +104,4 @@ Para obter mais informações sobre o design de modelo de Importação do Power 
 
 - [Usar modelos compostos no Power BI Desktop](../transform-model/desktop-composite-models.md)
 - [Modo de armazenamento no Power BI Desktop](../transform-model/desktop-storage-mode.md)
-- Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+- Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

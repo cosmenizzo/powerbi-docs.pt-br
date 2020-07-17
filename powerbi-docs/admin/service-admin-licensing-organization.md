@@ -10,11 +10,12 @@ ms.date: 06/24/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: e050fd4ec3e533c07ecfd0f0604092bec7fc00b5
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 276770b677d85e0e125e7dd87bb0a800248d71c2
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85484922"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161463"
 ---
 # <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>Como licenciar o serviço do Power BI para usuários na sua organização
 
@@ -56,7 +57,7 @@ Desativar a inscrição de autoatendimento impede que os usuários explorem o Po
 1. Insira o número de licenças necessárias para abranger todos os usuários.
 1. Selecione **Atribuir automaticamente a todos os usuários sem licenças** e faça check-out.
 
-  ![Assinatura gratuita do Power BI atribuída automaticamente](media/service-admin-licensing-organization/m365-auto-assign.png) 
+  ![Captura de tela da assinatura autoatribuída gratuita do Power BI mostrando a inscrição para autoatendimento.](media/service-admin-licensing-organization/m365-auto-assign.png)
 
 Se você quiser saber como ver quais usuários em sua organização podem já ter uma licença, confira [Exibir e gerenciar licenças de usuário](service-admin-manage-licenses.md).
 
@@ -114,5 +115,5 @@ O Power BI Pro tem o mesmo ciclo de vida de assinatura que o Microsoft 365. Para
 
 - [Comprar e atribuir licenças do Power BI Pro](service-admin-purchasing-power-bi-pro.md)
 - [Documentação de assinaturas e de cobrança empresariais](/microsoft-365/commerce/?view=o365-worldwide)
-- [Encontrar usuários do Power BI que entraram](service-admin-access-usage.md)
+- [Localizar usuários do Power BI que se conectaram](service-admin-access-usage.md)
 - Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)

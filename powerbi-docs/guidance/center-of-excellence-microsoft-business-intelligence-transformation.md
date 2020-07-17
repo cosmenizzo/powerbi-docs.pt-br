@@ -8,18 +8,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 18dc88404b84e786bfee0a15ac169a6e0c1496e4
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: 8e1e590f871e1840209e72eb611bde7b21610c6e
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939860"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86162357"
 ---
 # <a name="microsofts-bi-transformation"></a>Transformação de BI da Microsoft
 
 Este artigo destina-se a profissionais e gerentes de TI. Você aprenderá sobre nossa visão e estratégia de BI, que nos permite aproveitar continuamente nossos dados como um ativo. Você também aprenderá a conduzir com êxito uma cultura de dados de tomada de decisões de negócios com o Power BI.
 
-Primeiro, um pouco de contexto: Hoje, a explosão de dados está afetando os consumidores e as empresas a velocidades assustadoras. O sucesso neste ambiente de uso intensivo de dados requer analistas e executivos que consigam extrair enormes quantidades de dados para insights sucintos. A evolução das ferramentas de BI da Microsoft revolucionou a maneira como a própria Microsoft explora seus dados e obtém as informações corretas necessárias para impulsionar o impacto na empresa.
+Primeiro, um pouco de contexto: Hoje, a explosão de dados está afetando os consumidores e as empresas a velocidades assustadoras. O sucesso neste ambiente de uso intensivo de dados requer analistas e executivos que consigam extrair enormes quantidades de dados para insights sucintos. A evolução das ferramentas de BI da Microsoft revolucionou a maneira como a própria Microsoft explora os próprios dados e obtém os insights certos necessários para impulsionar o impacto na empresa.
 
 Como a sua organização também pode revolucionar a maneira como ela trabalha com os dados? Vamos ajudar você a entender isso contando a história do nosso percurso de transformação de BI.
 
@@ -66,7 +66,7 @@ Aqui está um resumo dos principais benefícios:
 
 O **KPI Lake** é uma ótima história de sucesso. Geralmente, é apresentado aos clientes para demonstrar um exemplo de como usar efetivamente nossas tecnologias mais recentes. Não é surpresa que ressoe fortemente em muitos deles.
 
-#### <a name="how-it-works"></a>Como funciona
+#### <a name="how-it-works"></a>Como ele funciona
 
 A plataforma Starlight gerencia o fluxo de dados da aquisição até o processamento e a publicação:
 
@@ -91,5 +91,5 @@ No [próximo artigo desta série](center-of-excellence-establish.md), saiba como
 Para obter mais informações sobre este artigo, confira os seguintes recursos:
 
 - [Estabelecer um centro de excelência](center-of-excellence-establish.md)
-- Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+- Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
 - Sugestões? [Contribuir com ideias para aprimorar o Power BI](https://ideas.powerbi.com/)

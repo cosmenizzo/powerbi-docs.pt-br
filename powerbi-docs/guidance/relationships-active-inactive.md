@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 3e3e44647ca7c85c09a3e7f4b3c309947559f5d3
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e8ba3203728a72b26d188e96eb1fa66f62f89a55
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273214"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215125"
 ---
 # <a name="active-vs-inactive-relationship-guidance"></a>Diretrizes de relações ativas vs inativas
 
@@ -29,7 +29,7 @@ Considere um exemplo de modelo de importação projetado para analisar o OTP (de
 
 Confira abaixo um diagrama de modelo parcial das duas tabelas.
 
-![Um diagrama de modelo contém duas tabelas: Flight e Airport. O design da relação é descrito no parágrafo a seguir.](media/relationships-active-inactive/flight-model-1.png)
+![Diagrama mostrando um modelo que contém duas tabelas: Flight e Airport. O design da relação é descrito no parágrafo a seguir.](media/relationships-active-inactive/flight-model-1.png)
 
 Existem duas relações de modelo entre as tabelas de **Flight** e **Airport**. Na tabela **Flight**, as colunas **DepartureAirport** (aeroporto de partida) e **ArrivalAirport** (aeroporto de chegada) estão relacionadas à coluna **Airport** da tabela **Airport**. No design do esquema em estrela, a tabela **Airport** é descrita como uma [dimensão com função múltipla](star-schema.md#role-playing-dimensions). Nesse modelo, as duas funções são _aeroporto de partida_ e _aeroporto de chegada_.
 
@@ -39,13 +39,13 @@ Esse design de modelo impõe severas limitações sobre como os dados podem ser 
 
 Veja a seguir o modelo de design aprimorado.
 
-![O diagrama de modelo agora contém quatro tabelas: Date, Flight, Departure Airport e Arrival Airport. O design da relação é descrito no parágrafo a seguir.](media/relationships-active-inactive/flight-model-2.png)
+![Diagrama mostrando um modelo que contém quatro tabelas: Date, Flight, Departure Airport e Arrival Airport.](media/relationships-active-inactive/flight-model-2.png)
 
 O modelo agora tem duas tabelas de aeroporto: **Departure Airport** e **Arrival Airport**. As relações de modelo entre essas tabelas e a tabela **Flight** estão ativas. Observe também que os nomes das colunas nas tabelas **Departure Airport** e **Arrival Airport** estão prefixados com as palavras _Departure_ (partida) ou _Arrival_ (chegada).
 
 O design aprimorado do modelo dá suporte à produção do design de relatório a seguir.
 
-![Uma página de relatório possui duas segmentações e um visual de tabela. As segmentações correspondem a Month (Mês) e Departure Airport (Aeroporto de Partida). O visual de tabela lista os aeroportos de chegada e várias estatísticas.](media/relationships-active-inactive/flight-report-design.png)
+![Diagrama mostrando uma página de relatório que tem duas segmentações e um visual de tabela. As segmentações correspondem a Month (Mês) e Departure Airport (Aeroporto de Partida).](media/relationships-active-inactive/flight-report-design.png)
 
 A página do relatório filtra por Melbourne como o aeroporto de partida, e o visual de tabela agrupa os aeroportos de chegada.
 
@@ -86,7 +86,7 @@ Agora, vamos considerar diferentes requisitos de modelo e de relatório:
 
 Confira abaixo um diagrama de modelo parcial das duas tabelas.
 
-![Um diagrama de modelo contém duas tabelas: Sales e Date. A tabela Sales inclui seis medidas. O design da relação é descrito no parágrafo a seguir.](media/relationships-active-inactive/sales-model.png)
+![Diagrama mostrando um modelo que contém duas tabelas: Sales e Date. A tabela Sales inclui seis medidas.](media/relationships-active-inactive/sales-model.png)
 
 Existem duas relações de modelo entre as tabelas **Sales** e **Date**. Na tabela de **Sales**, as colunas **OrderDate** e **ShipDate** estão relacionadas à coluna **Date** da tabela **Date**. Nesse modelo, as duas funções da tabela **Date** são _data do pedido_ e _data de envio_. É a relação com a coluna **OrderDate** que está ativa.
 
@@ -110,7 +110,7 @@ CALCULATE(
 
 Esse design de modelo é compatível com a produção do design de relatório a seguir.
 
-![Uma página de relatório tem uma segmentação e um visual de tabela. Quarter (trimestre) é a segmentação, e o visual de tabela lista estatísticas de vendas mensais.](media/relationships-active-inactive/sales-report-design.png)
+![Diagrama mostrando uma página de relatório com uma segmentação e um visual de tabela. Quarter (trimestre) é a segmentação, e o visual de tabela lista estatísticas de vendas mensais.](media/relationships-active-inactive/sales-report-design.png)
 
 A página do relatório é filtrada pelo 4º trimestre de 2019. O visual da tabela é agrupado por mês e exibe várias estatísticas de vendas. As medidas **Orders** e **Orders Shipped** produzem resultados diferentes. Cada uma delas usa a mesma lógica de resumo (contagem de linhas da tabela **Sales**), mas diferentes propagações de filtro da tabela **Date**.
 
@@ -132,5 +132,5 @@ Para obter mais informações relacionadas a este artigo, confira os seguintes r
 - [Modelar relações no Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - [Entender o esquema em estrela e a importância para o Power BI](star-schema.md)
 - [Diretrizes da solução de problemas de relação](relationships-troubleshoot.md)
-- Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+- Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
 - Sugestões? [Contribuir com ideias para aprimorar o Power BI](https://ideas.powerbi.com/)

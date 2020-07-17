@@ -6,13 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/24/2020
+ms.date: 07/08/2020
 ms.author: painbar
-ms.openlocfilehash: 9655783decee99bc90071cdfbd66a8b58d8272f4
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 2a8186f24e7a82604ab941e25c2a5aa471efe614
+ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782590"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86385988"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Novidades em aplicativos móveis para o Power BI
 Para informações sobre “Novidades” relacionadas, consulte:
@@ -23,6 +24,13 @@ Para informações sobre “Novidades” relacionadas, consulte:
 
 >[!NOTE]
 >O suporte de aplicativo móvel Power BI para **telefones que usam o Windows 10 Mobile** será descontinuado em 16 de março de 2021. [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="july-2020"></a>Julho de 2020
+### <a name="the-power-bi-mobile-app-for-windows-now-supports-organizational-branding"></a>O aplicativo móvel do Power BI para Windows agora dá suporte à identidade visual organizacional
+Agora, qualquer alteração feita pelo administrador na aparência do Power BI para que ela corresponda ao tema de identidade visual da sua organização também será exibida no aplicativo móvel do Power BI. Essas alterações podem incluir um novo esquema de cores para a barra de navegação superior, o logotipo da sua organização e uma imagem da barra de notificação.  
+
+### <a name="disable-single-sign-on-via-remote-configuration-ios-and-android"></a>Desabilitar o logon único por meio da configuração remota (iOS e Android)
+Os administradores de TI agora podem desabilitar remotamente o logon único no aplicativo móvel do Power BI, aprimorando a conformidade de segurança e permissões em dispositivos de vários usuários. [Saiba mais!](mobile-app-configuration.md#disable-single-sign-on-ios-and-android)
 
 ## <a name="june-2020"></a>Junho de 2020
 ### <a name="show-your-bookmarks-in-slideshows-windows"></a>Mostrar seus indicadores em apresentações de slides (Windows)
@@ -360,7 +368,7 @@ Barras de ação superiores e inferiores agora desaparecerão logo após o relat
 
 Aumentamos o tamanho da tela do relatório do telefone para ter espaço para mais elementos visuais.
 
-### <a name="may-2018"></a>Mai 2018
+### <a name="may-2018"></a>Maio de 2018
 
 #### <a name="mobile-drill-through-all-mobile-apps"></a>Detalhamento móvel: todos os aplicativos móveis
 
@@ -674,7 +682,7 @@ Leia o [resumo de recursos dos aplicativos móveis do Power BI publicado em outu
 
 Leia mais sobre [Microsoft Intune em aplicativos móveis do Power BI](../../admin/service-admin-mobile-intune.md).
 
-#### <a name="windows-10-devices"></a>Dispositivos Windows 10
+#### <a name="windows-10-devices"></a>Dispositivos com Windows 10
 **Modos de tela inteira e apresentação** Exiba relatórios no modo de apresentação no Surface Hub, além de dashboards, relatórios e blocos no modo de tela inteira em dispositivos com Windows 10.
 
 ### <a name="july-2016"></a>Julho de 2016
@@ -705,7 +713,7 @@ O serviço do Power BI, agora você pode [criar uma exibição de um dashboard, 
 
 **Melhorias gerais** Melhoramos mensagens de erro de blocos no aplicativo móvel.
 
-#### <a name="windows-10-devices"></a>Dispositivos Windows 10
+#### <a name="windows-10-devices"></a>Dispositivos com Windows 10
 **Gerenciamento de segurança aprimorado** Selecione uma classificação de risco para os dados de negócios apresentados em um painel específico.
 
 **Aviso e faixas melhorados** Melhoramos os avisos e faixas para o aplicativo móvel.
@@ -859,15 +867,15 @@ Leia a [postagem no blog móvel do Power BI publicada em meados de outubro](http
 * Os gráficos de linha com um eixo y baseado em percentual agora calculam o intervalo do visual de acordo com os dados reais. O gráfico agora é iniciado do ponto de dados mais baixo no gráfico, em vez de um valor padrão.
 * Os gráficos de linha, coluna e barras agora podem ter rótulos de dados. 
   
-    ![](media/mobile-whats-new-in-the-mobile-apps/pbi_mobilelinechart.png)
+    ![Captura de tela de um gráfico de linhas mostrando o percentual de VTB por mês com os rótulos de dados. ](media/mobile-whats-new-in-the-mobile-apps/pbi_mobilelinechart.png)
 
 #### <a name="iphone"></a>iPhone
 * Mantenha-se atualizado com os mais recentes painéis de seus grupos - receba notificações em seu iPhone sempre que um membro da equipe adicionar um painel a um de seus grupos.
   
-    ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
+    ![Captura de tela de um dashboard mostrando uma notificação em um iPhone.](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
 * Agora você pode exibir painéis horizontalmente, apenas girando seu telefone. Leia mais sobre o [modo paisagem no aplicativo iPhone](https://powerbi.microsoft.com/blog/enjoy-the-landscape-with-the-power-bi-iphone-app/).
   
-    ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
+    ![Captura de tela de um dashboard mostrando o modo paisagem no iPhone.](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
 
 ### <a name="september-2015"></a>Setembro de 2015
 Aprimoramentos nos aplicativos móveis do Power BI, Android, iOS (iPhone e iPad) e Windows. Leia a [postagem no blog móvel do Power BI publicada em meados de setembro](https://powerbi.microsoft.com/blog/power-bi-mobile-mid-september-updates-are-here/).

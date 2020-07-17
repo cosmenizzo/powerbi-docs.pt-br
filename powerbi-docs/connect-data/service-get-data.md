@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 021b5f0856ef4ff3730102efda88fd089a36dfcf
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: bd3ab4a1c6f702ad866211339a3d3a386c4981fa
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83320068"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264404"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Fontes de dados do serviço do Power BI
 Dados são o coração do Power BI. Digamos que você está explorando dados. Você pode fazer isso criando gráficos e dashboards ou fazendo perguntas com **P e R**. As visualizações e respostas resultantes estarão obtendo dados subjacentes de um conjunto de dados. Mas de onde vem esse conjunto de dados? Bem, ele vem de uma fonte de dados.
@@ -23,14 +23,14 @@ Neste artigo, vamos abordar os tipos de fontes de dados aos quais você pode se 
 
 Você pode obter dados de qualquer uma das fontes de dados no Power BI, selecionando **Obter Dados** no canto inferior esquerdo da página.
 
-![](media/service-get-data/pbi-getdata-navigation-link.png) 
+![Captura de tela de Obter Dados mostrando o botão no canto inferior esquerdo da tela do serviço do Power BI.](media/service-get-data/pbi-getdata-navigation-link.png) 
 
 Depois de selecionar **Obter Dados**, você poderá escolher os dados que deseja acessar
 
-![](media/service-get-data/pbi-getdata-startscreen.png)
+![Captura de tela das opções de Obter Dados mostrando as opções para escolha dos dados que você deseja acessar.](media/service-get-data/pbi-getdata-startscreen.png)
 
 ## <a name="discover-content"></a>Descobrir conteúdo
-![](media/service-get-data/pbi-getdata-discovercontent.png)
+![Captura de tela da seção Descobrir conteúdo mostrando os logotipos de parceiros.](media/service-get-data/pbi-getdata-discovercontent.png)
 
 A seção **Descobrir conteúdo** contém todos os dados e relatórios que você precisa já preparados para você. No Power BI há dois tipos de pacotes de conteúdo: Organizacional e Serviços. 
 
@@ -43,7 +43,7 @@ A seção **Descobrir conteúdo** contém todos os dados e relatórios que você
 A seção **Criar novo conteúdo** contém opções para criar e importar conteúdo por conta própria. No Power BI, há duas maneiras de criar ou importar seu próprio conteúdo: Arquivos e Bancos de Dados. 
 
 ### <a name="files"></a>Arquivos
-![](media/service-get-data/pbi_getdata_files.png)
+![Ícones do Excel, do Power BI Desktop e do CSV](media/service-get-data/pbi_getdata_files.png)
 
 **Excel** ( *.xlsx* e *.xlsm*) – No Excel, uma pasta de trabalho pode incluir diferentes tipos de dados. Por exemplo, ela pode incluir dados que você mesmo inseriu em planilhas. Também pode incluir dados consultados e carregado de fontes de dados externas usando o Power Query. O Power Query está disponível por meio do **Obter e Transformar** no Excel 2016 ou do Power Pivot. Você pode importar dados de tabelas em planilhas ou importar dados de um modelo de dados. Para obter mais informações, confira [Obter dados de arquivos para o Power BI](service-get-data-from-files.md).
 
@@ -56,7 +56,7 @@ Para outros tipos de arquivo, como tabela XML ( *.xml*) ou arquivos de texto ( *
 O local em que você armazena seus arquivos também faz uma diferença significativa. O OneDrive for Business fornece maior nível de flexibilidade e integração com o Power BI. Está bem manter os arquivos em sua unidade local. No entanto, se você precisa atualizar os dados, há algumas etapas adicionais. Para obter mais informações, confira os links de artigos abaixo.
 
 ### <a name="databases"></a>Bancos de dados
-![](media/service-get-data/pbi_getdata_databases.png)
+![Captura de tela dos bancos de dados mostrando os bancos de dados nos logotipos de nuvem.](media/service-get-data/pbi_getdata_databases.png)
 
 **Bancos de dados na nuvem** – no serviço do Power BI, você pode se conectar de forma dinâmica ao:
 
@@ -94,7 +94,7 @@ Uma **fonte de dados** é o local do qual os dados de um conjunto de dados são 
 * Um banco de dados na nuvem como o Banco de Dados SQL do Azure
 * Um banco de dados ou um arquivo de um computador local ou servidor da sua organização
 
-## <a name="data-refresh"></a>Atualização de dados
+## <a name="data-refresh"></a>Atualização dedados
 Talvez você salve os arquivos em uma unidade local ou uma unidade em outro lugar da sua organização. Você pode precisar de um gateway do Power BI para atualizar o conjunto de dados no Power BI. O computador que armazena o arquivo precisará estar ligado quando ocorrer uma atualização. Você pode importar novamente o arquivo ou usar a opção Publicar do Excel ou do Power BI Desktop, mas esses não são processos automatizados.
 
 Se você salvar os arquivos no OneDrive for Business ou no SharePoint – Sites de Equipe, poderá conectar-se a eles ou importá-los para o Power BI. Assim, o conjunto de dados, os relatórios e o dashboard estarão sempre atualizados. Como o OneDrive e o Power BI estão na nuvem, o Power BI pode se conectar diretamente ao seu arquivo salvo. Ele se conecta uma vez a cada hora e verifica se há atualizações. O conjunto de dados e as visualizações serão atualizados automaticamente se houver atualizações.

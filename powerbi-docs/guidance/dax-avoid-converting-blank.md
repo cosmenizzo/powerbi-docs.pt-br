@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: aea24e96acadbf9fee9e6dbf3aa395e09ef8e541
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 6b130016bf4514b817edbf8c91cfb24d2063e6f1
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279631"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215449"
 ---
 # <a name="dax-avoid-converting-blanks-to-values"></a>DAX: Evite converter BLANKs em valores
 
@@ -47,7 +47,7 @@ Além disso, ter muitos agrupamentos muitas vezes sobrecarrega os usuários do r
 
 Vejamos o que acontece quando a medida de **Margem** de lucro é adicionada a um visual de tabela, agrupando por cliente.
 
-![Um visual de tabela tem três colunas: Cliente, Vendas e Margem de lucro. A tabela exibe cerca de 10 linhas de dados, mas a barra de rolagem vertical indica que há muitas linhas que podem ser exibidas. A coluna Vendas não exibe nenhum valor. A coluna Margem de lucro exibe apenas zero.](media/dax-avoid-converting-blank/table-visual-poor.png)
+![Captura de tela do Power BI Desktop mostrando o visual de tabela de dados com uma linha por cliente. Os valores de vendas são EM BRANCO e os valores da Margem de Lucro são zero por cento. ](media/dax-avoid-converting-blank/table-visual-poor.png)
 
 O visual da tabela exibe um número enorme de linhas. (Na verdade, há 18.484 clientes no modelo e, portanto, a tabela tenta exibir todos eles.) Observe que os clientes do modo de exibição não tiveram nenhuma venda. Ainda assim, como a medida **Margem de lucro** sempre retorna um valor, eles são exibidos.
 
@@ -63,7 +63,7 @@ DIVIDE([Profit], [Sales])
 
 O visual de tabela agora exibe somente os clientes que fizeram vendas no contexto de filtro atual. A medida aprimorada resulta em uma experiência mais eficiente e prática para os usuários de seu relatório.
 
-![O mesmo visual de tabela agora exibe quatro linhas de dados. Cada linha é referente a um cliente que tem um valor de vendas, e os valores de Margem de lucro são diferentes de zero.](media/dax-avoid-converting-blank/table-visual-good.png)
+![Captura de tela do Power BI Desktop mostrando o visual de tabela de dados que tem o conteúdo filtrado.](media/dax-avoid-converting-blank/table-visual-good.png)
 
 > [!TIP]
 > Quando necessário, você pode configurar um visual para exibir todos os agrupamentos (que retornam valores ou BLANK) dentro do contexto de filtro habilitando a opção [Mostrar Itens Sem Dados](../create-reports/desktop-show-items-no-data.md).
@@ -78,6 +78,5 @@ Essa abordagem de design é eficiente, permitindo que o Power BI renderize relat
 
 Para obter mais informações sobre este artigo, confira os seguintes recursos:
 
-- [Referência do DAX (Data Analysis Expressions)](/dax/)
-- Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
-
+- [Referência de DAX (Data Analysis Expressions)](/dax/)
+- Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

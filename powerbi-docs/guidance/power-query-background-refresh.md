@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 59cb62a9186da03a265fc3a8711d7275c3772af3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 39eef27e746e636ddb331d28a930c1cd0dca0a5d
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75623051"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214919"
 ---
 # <a name="disable-power-query-background-refresh"></a>Desabilitar atualização em segundo plano do Power Query
 
@@ -28,19 +28,19 @@ No entanto, quando o arquivo do Power BI Desktop contém muitas consultas, a rec
 
 Você obterá uma atualização mais rápida definindo o arquivo do Power BI Desktop para atualizar o cache de visualização _em segundo plano_. No Power BI Desktop, você habilita essa opção selecionando _Arquivo > Opções e Configurações > Opções_ e, em seguida, selecionando a página _Carregamento de Dados_. Em seguida, você pode ativar a opção **Permitir que a visualização de dados seja baixada em segundo plano**. Observe que essa opção só pode ser definida para o arquivo atual.
 
-![Opções de dados em segundo plano do Power BI Desktop](media/power-query-background-refresh/power-query-options-background-data.png)
+![Captura de tela do Power BI Desktop mostrando opções de dados em segundo plano.](media/power-query-background-refresh/power-query-options-background-data.png)
 
 Habilitar a atualização em segundo plano pode fazer com que os dados de visualização fiquem desatualizados. Se isso ocorrer, o Editor do Power Query o notificará com o seguinte aviso:
 
-![Aviso do Editor do Power Query sobre dados de visualização antigos](media/power-query-background-refresh/power-query-preview-data-old.png)
+![Captura de tela do Power BI Desktop mostrando o aviso do Editor do Power Query sobre dados antigos de visualização.](media/power-query-background-refresh/power-query-preview-data-old.png)
 
 Sempre é possível atualizar o cache de visualização. Você pode atualizá-lo para uma única consulta ou para todas as consultas, usando o comando **Atualizar Visualização**. Você o encontrará na faixa de opções **Página Inicial** da janela do Editor do Power Query.
 
-![Comandos do Editor do Power Query para atualizar dados de visualização](media/power-query-background-refresh/power-query-refresh-preview-data.png)
+![Captura de tela do Power BI Desktop mostrando os comandos do Editor do Power Query usados para atualizar os dados de visualização.](media/power-query-background-refresh/power-query-refresh-preview-data.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Para obter mais informações relacionadas a este artigo, confira os seguintes recursos:
 
 - [Documentação do Power Query](/power-query/)
-- Perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+- Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

@@ -9,15 +9,15 @@ ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5b649b3694eab5a573f814efd707155154d54b18
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c34244669b538a5c3138536adbfd022eb00e646d
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236686"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263022"
 ---
 # <a name="get-data-from-power-bi-desktop-files"></a>Obter dados de arquivos do Power BI Desktop
-![](media/service-desktop-files/pbid_file_icon.png)
+![Ícone de arquivo do Power BI Desktop](media/service-desktop-files/pbid_file_icon.png)
 
 O **Power BI Desktop** facilita o business intelligence e a emissão de relatórios. Seja se conectando a diferentes fontes de dados, consultando e transformando dados, modelando seus dados e criando relatórios avançados e dinâmicos, o **Power BI Desktop** torna as tarefas de business intelligence rápidas e intuitivas. Se ainda não estiver familiarizado com o **Power BI Desktop**, confira a [Introdução ao Power BI Desktop](../fundamentals/desktop-getting-started.md).
 
@@ -38,13 +38,13 @@ Depois de inserir dados no **Power BI Desktop** e criar alguns relatórios, é h
 
 1. No Power BI, no painel do navegador, clique em **Obter Dados**.
    
-   ![](media/service-desktop-files/pbid_get_data_button.png)
+   ![Captura de tela de Obter Dados mostrando o botão no painel de navegação.](media/service-desktop-files/pbid_get_data_button.png)
 2. Em **Arquivos**, clique em **Obter**.
    
-   ![](media/service-desktop-files/pbid_files_get.png)
+   ![Captura de tela da caixa de diálogo Arquivos mostrando o botão Obter.](media/service-desktop-files/pbid_files_get.png)
 3. Encontre o arquivo. Os arquivos do Power BI Desktop têm a extensão .PBIX.
    
-   ![](media/service-desktop-files/pbid_find_your_file.png)
+   ![Captura de tela de quatro blocos para localizar o arquivo mostrando os blocos Arquivo Local, OneDrive for Business, OneDrive Pessoal e SharePoint.](media/service-desktop-files/pbid_find_your_file.png)
 
 ## <a name="publish-a-file-from-power-bi-desktop-to-your-power-bi-site"></a>Publicar um arquivo em seu site do Power BI por meio do Power BI Desktop
 O uso de Publicar do Power BI Desktop é semelhante ao uso de Obter Dados no Power BI: seus dados de arquivo são inicialmente importados de uma unidade local ou por meio da conexão com eles no OneDrive. No entanto, há diferenças: se você carregar de uma unidade local, será conveniente atualizar esses dados com frequência para garantir que as cópias online e locais dos dados sejam atuais entre si. 
@@ -53,12 +53,12 @@ Apresentamos aqui o passo a passo rápido, mas é possível ver [Publicar por me
 
 1. No Power BI Desktop, clique em **Arquivo** > **Publicar** > **Publicar no Power BI** ou clique em **Publicar** na faixa de opções.
    
-   ![](media/service-desktop-files/pbid_publish.png)
+   ![Captura de tela de Publicar na faixa de opções mostrando como usar o botão Publicar por meio do Power BI Desktop.](media/service-desktop-files/pbid_publish.png)
 2. Entre no Power BI. Você só precisará fazer isso na primeira vez.
    
    Ao concluir, você receberá um link para abrir o relatório no seu site do Power BI.
    
-   ![](media/service-desktop-files/pbid_publishing.png)
+   ![Captura de tela da caixa de diálogo Confirmação de entrada mostrando que você entrou com êxito com um link para abrir o relatório.](media/service-desktop-files/pbid_publishing.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 **Explore os dados** – Depois de obter dados e relatórios de seu arquivo no Power BI, é hora de explorá-los. Se o arquivo já contiver relatórios, eles aparecerão no painel do navegador em **Relatórios**. Se o arquivo tinha apenas dados, é possível criar novos relatórios; basta clicar com o botão direito do mouse no novo conjunto de dados e clicar em **Explorar**.

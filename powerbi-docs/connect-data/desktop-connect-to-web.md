@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7a3444aca5f74dd54ba292548ac5fa1d848f5172
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 618e2acb415d72870fd599142775720955e8ba88
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223982"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214702"
 ---
 # <a name="connect-to-webpages-from-power-bi-desktop"></a>Conectar-se a páginas da Web no Power BI Desktop
 
@@ -23,21 +23,21 @@ Você pode se conectar a uma página da Web e importar os dados para o Power BI 
 
 No Power BI Desktop, selecione **Obter Dados > Web** na faixa de opções **Página Inicial**.
 
-![](media/desktop-connect-to-web/connect-to-web_1.png)
+![Captura de tela do Power BI Desktop mostrando a seleção de Web.](media/desktop-connect-to-web/connect-to-web_1.png)
 
 Uma caixa de diálogo é exibida, solicitando a URL da página da Web da qual você quer importar os dados.
 
-![](media/desktop-connect-to-web/connect-to-web_2.png)
+![Captura de tela da caixa de diálogo Web mostrando o campo URL.](media/desktop-connect-to-web/connect-to-web_2.png)
 
 Depois de digitar (ou colar) a URL, selecione **OK**. O Power BI Desktop se conecta à página e apresenta os dados disponíveis da página na janela **Navegador**. Quando você seleciona um dos elementos de dados disponíveis, por exemplo, uma tabela da página inteira, a janela **Navegador** exibe uma visualização desses dados no lado direito da janela.
 
-![](media/desktop-connect-to-web/connect-to-web_3.png)
+![Captura de tela da caixa de diálogo Navegador mostrando uma visualização dos dados da tabela selecionada.](media/desktop-connect-to-web/connect-to-web_3.png)
 
 É possível escolher o botão **Editar**, que inicia o **Editor de Consultas**, no qual você pode formatar e transformar os dados da página da Web antes de importá-los para o Power BI Desktop. Se preferir, selecione o botão **Carregar** e importe todos os elementos de dados selecionados no painel esquerdo.
 
 Quando selecionamos **Carregar**, o Power BI Desktop importa os itens selecionados e os disponibiliza no painel **Campos**, localizado no lado direito da exibição Relatórios no Power BI Desktop.
 
-![](media/desktop-connect-to-web/connect-to-web_4.png)
+![Captura de tela do painel Campos mostrando a lista de tabelas selecionadas.](media/desktop-connect-to-web/connect-to-web_4.png)
 
 É isso é tudo o que você precisa para se conectar a uma página da Web e inserir seus dados no Power BI Desktop.
 

@@ -9,11 +9,12 @@ ms.topic: how-to
 ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: f70876b3b8c1815576ed019f88b67296f7aec052
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f9fa3ee1c1e0f757eb3b464785c8cb3fe3ab6e78
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238616"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264732"
 ---
 # <a name="use-visual-table-and-data-point-table-in-power-bi-desktop"></a>Usar tabela visual e tabela de ponto de dados no Power BI Desktop
 No **Power BI Desktop**, é possível analisar em detalhes qualquer visualização e ver as representações textuais dos dados subjacentes ou os registros de dados individuais para o visual selecionado. Esses recursos às vezes são chamados de *clickthrough*, *drill-through* ou *drill-through em detalhes*.
@@ -29,7 +30,7 @@ Você pode usar a **Tabela visual** para exibir os dados em um visual como uma t
 >  - Gráfico de rosca
 >  - Mapa coroplético
 >  - Funil
->  - Mapear
+>  - Mapeamento
 >  - Gráfico de pizza
 >  - Mapa de árvore
 
@@ -73,7 +74,7 @@ Você pode também clicar com o botão direito do mouse em um elemento de dados 
 
 Quando você seleciona **Tabela de ponto de dados** para um elemento de dados, a tela do Power BI Desktop exibe todos os dados associados ao elemento selecionado. 
 
-![](media/desktop-see-data-see-records/visual-table-09.png)
+![Captura de tela de uma tela mostrando todos os dados associados ao elemento selecionado quando você escolhe a tabela Ponto de dados.](media/desktop-see-data-see-records/visual-table-09.png)
 
 Para retornar ao relatório, selecione **< Voltar ao Relatório** no canto superior esquerdo da tela.
 

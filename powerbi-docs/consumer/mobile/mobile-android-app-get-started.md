@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 06/06/2020
 ms.author: painbar
-ms.openlocfilehash: a12f4d81e2cae913ddddd26ca3bd9c820ad716ca
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 725890e3650ff05e0b90e7678bb83e0bc5d01050
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85233028"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263017"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Introdução ao aplicativo móvel do Power BI em dispositivos Android
 O aplicativo Android para Microsoft Power BI oferece a experiência móvel do BI para Power BI, Servidor de Relatório do Power BI e Reporting Services. Exiba e interaja com os dashboards de sua empresa localmente e na nuvem em qualquer lugar, com acesso móvel dinâmico e habilitado para toque. Explore os dados em dashboards e compartilhe com seus colegas em mensagens de email ou de texto. 
@@ -80,7 +80,7 @@ Vários exemplos do Power BI são seguidos por vários exemplos de Servidor de r
 Toque na lupa no cabeçalho para começar a pesquisar seu conteúdo do Power BI.
 
 ## <a name="view-your-favorite-dashboards-and-reports"></a>Exibir seus dashboards e relatórios favoritos
-Toque em **Favoritos** (![](./media/mobile-android-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) na barra de navegação para exibir a página Favoritos. 
+Toque em **Favoritos** (![ícone de Favoritos](./media/mobile-android-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) na barra de navegação para ver a página Favoritos. 
 
 Leia mais sobre [favoritos nos aplicativos móveis do Power BI](mobile-apps-favorites.md).
 
@@ -115,7 +115,7 @@ Aqui estão algumas outras coisas que podem ser feitas no aplicativo do Power BI
 * Crie [KPIs no portal da Web](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services).
 * Criar [relatórios no Power BI Desktop e publicá-los no portal da Web do Servidor de Relatório do Power BI](../../report-server/quickstart-create-powerbi-report.md)
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Confira também
 * [Baixe o aplicativo Android](https://go.microsoft.com/fwlink/?LinkID=544867) na loja de aplicativos Android.
 * [O que é o Power BI?](../../fundamentals/power-bi-overview.md)
-* Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+* Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

@@ -9,18 +9,18 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6a0170d40413cd2833f7e31bb3bc7c5704a1f5cc
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 106b2e4f9b829190cff8269342c3239429b41f24
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224044"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214734"
 ---
 # <a name="connect-to-data-by-using-power-bi-desktop-generic-interfaces"></a>Conectar-se a dados usando as interfaces genéricas do Power BI Desktop 
 
 Conecte-se a uma variedade de fontes de dados diferentes no **Power BI Desktop**, usando conectores de dados internos que vão desde **bancos de dados do Access** até recursos do **Zendesk**, como mostra a janela **Obter Dados**. Conecte-se também a todos os *outros* tipos de fontes de dados para expandir ainda mais as opções de conectividade, com o uso das interfaces genéricas (como **ODBC** ou **APIs REST**) internas do **Power BI Desktop**.
 
-![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_1.png)
+![Captura de tela da caixa de diálogo Obter Dados mostrando a seleção do ODBC.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_1.png)
 
 ## <a name="power-bi-desktop-data-interfaces"></a>Interfaces de dados do Power BI Desktop
 O **Power BI Desktop** inclui uma coleção cada vez maior de conectores de dados desenvolvidos para se conectarem a uma fonte de dados específica. Por exemplo, o conector de dados para a **Lista do SharePoint** fornece campos específicos e informações de suporte durante a sequência de conexão projetados para as **Listas do SharePoint**, que é o caso com outras fontes de dados encontradas na janela exibida ao selecionar **Obter Dados > Mais...** (mostrado na imagem anterior).
@@ -42,27 +42,27 @@ Não conseguiu encontrar a fonte de dados que você deseja usar com o **Power BI
 ## <a name="data-sources-accessible-through-odbc"></a>Fontes de dados acessíveis por meio do ODBC
 O conector para **ODBC** do **Power BI Desktop** permite que você importe dados de qualquer driver ODBC de terceiros apenas especificando um **DSN (Nome da Fonte de Dados)** ou uma *cadeia de conexão*. Como opção, especifique também uma instrução SQL para ser executada no driver ODBC.
 
-![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_2.png)
+![Captura de tela da caixa de diálogo do conector ODBC mostrando as opções DSN e Avançado.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_2.png)
 
 A lista a seguir fornece detalhes sobre alguns exemplos de fontes de dados às quais o **Power BI Desktop** pode se conectar usando a interface genérica do **ODBC**.
 
 | Conector genérico do Power BI Desktop | Fonte de dados externa | Link para mais informações |
 | --- | --- | --- |
-| ODBC |Cassandra |[Driver ODBC do Cassandra](https://www.simba.com/drivers/cassandra-odbc-jdbc/) |
-| ODBC |Couchbase DB |[Couchbase e Power BI](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
-| ODBC |DynamoDB |[Driver ODBC do DynamoDB](https://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
-| ODBC |Google BigQuery |[Driver ODBC do BigQuery](https://www.simba.com/drivers/bigquery-odbc-jdbc/) |
-| ODBC |HBase |[Driver ODBC do HBase](https://www.simba.com/drivers/hbase-odbc-jdbc/) |
-| ODBC |Hive |[Driver ODBC do Hive](https://www.simba.com/drivers/hive-odbc-jdbc/) |
-| ODBC |IBM Netezza |[Informações sobre o IBM Netezza](https://www.ibm.com/support/knowledgecenter/SSULQD_7.2.1/com.ibm.nz.datacon.doc/c_datacon_plg_overview.html) |
-| ODBC |Presto |[Driver ODBC do Presto](https://www.simba.com/drivers/presto-odbc-jdbc/) |
-| ODBC |Project Online |[Artigo de projeto online](desktop-project-online-connect-to-data.md) |
-| ODBC |Progress OpenEdge |[Postagem do blog de driver ODBC do Progress OpenEdge](https://www.progress.com/blogs/connect-microsoft-power-bi-to-openedge-via-odbc-driver) |
+| ODBCODBC |Cassandra |[Driver ODBC do Cassandra](https://www.simba.com/drivers/cassandra-odbc-jdbc/) |
+| ODBCODBC |Couchbase DB |[Couchbase e Power BI](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
+| ODBCODBC |DynamoDB |[Driver ODBC do DynamoDB](https://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
+| ODBCODBC |BigQuery do Google |[Driver ODBC do BigQuery](https://www.simba.com/drivers/bigquery-odbc-jdbc/) |
+| ODBCODBC |HBase |[Driver ODBC do HBase](https://www.simba.com/drivers/hbase-odbc-jdbc/) |
+| ODBCODBC |Hive |[Driver ODBC do Hive](https://www.simba.com/drivers/hive-odbc-jdbc/) |
+| ODBCODBC |IBM Netezza |[Informações sobre o IBM Netezza](https://www.ibm.com/support/knowledgecenter/SSULQD_7.2.1/com.ibm.nz.datacon.doc/c_datacon_plg_overview.html) |
+| ODBCODBC |Presto |[Driver ODBC do Presto](https://www.simba.com/drivers/presto-odbc-jdbc/) |
+| ODBCODBC |Projeto Online |[Artigo de projeto online](desktop-project-online-connect-to-data.md) |
+| ODBCODBC |Progress OpenEdge |[Postagem do blog de driver ODBC do Progress OpenEdge](https://www.progress.com/blogs/connect-microsoft-power-bi-to-openedge-via-odbc-driver) |
 
 ## <a name="data-sources-accessible-through-ole-db"></a>Fontes de dados acessíveis por meio do OLE DB
 O conector para **OLE DB** do **Power BI Desktop** permite que você importe dados de qualquer driver OLE DB de terceiros apenas especificando uma *cadeia de conexão*. Como opção, especifique também uma instrução SQL para ser executada no driver OLE DB.
 
-![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_3.png)
+![Captura de tela da caixa de diálogo do conector OLEDB mostrando as opções Cadeia de conexão e Avançado.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_3.png)
 
 A lista a seguir fornece detalhes sobre alguns exemplos de fontes de dados às quais o **Power BI Desktop** pode se conectar usando a interface genérica do **OLE DB**.
 
@@ -74,7 +74,7 @@ A lista a seguir fornece detalhes sobre alguns exemplos de fontes de dados às q
 ## <a name="data-sources-accessible-through-odata"></a>Fontes de dados acessíveis por meio do OData
 O conector para **OData** no **Power BI Desktop** permite que você importe dados de qualquer URL do **OData** apenas digitando ou colando a URL do **OData**. Adicione várias partes da URL digitando ou colando esses links nas caixas de texto fornecidas na janela **Feed OData**.
 
-![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_4.png)
+![Captura de tela da caixa de diálogo Feed OData mostrando as partes de URL e os campos de visualização.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_4.png)
 
 A lista a seguir fornece detalhes sobre alguns exemplos de fontes de dados às quais o **Power BI Desktop** pode se conectar usando a interface genérica do **OData**.
 
@@ -85,7 +85,7 @@ A lista a seguir fornece detalhes sobre alguns exemplos de fontes de dados às q
 ## <a name="data-sources-accessible-through-rest-apis"></a>Fontes de dados acessíveis por meio das APIs REST
 Conecte-se a fontes de dados usando as **APIs REST** e, portanto, use dados de todos os tipos de fontes de dados que dão suporte ao **REST**.
 
-![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_5.png)
+![Captura de tela da caixa de diálogo Consulta mostrando as fontes de dados.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_5.png)
 
 A lista a seguir fornece detalhes sobre alguns exemplos de fontes de dados às quais o **Power BI Desktop** pode se conectar usando a interface genérica das **APIs REST**.
 
@@ -96,7 +96,7 @@ A lista a seguir fornece detalhes sobre alguns exemplos de fontes de dados às q
 ## <a name="data-sources-accessible-through-r-script"></a>Fontes de dados acessíveis por meio do Script do R
 Use **scripts do R** para acessar fontes de dados e use esses dados no **Power BI Desktop**.
 
-![](media/desktop-connect-using-generic-interfaces/r-scripts-2.png)
+![Captura de tela da caixa de diálogo Script R mostrando o script de execução.](media/desktop-connect-using-generic-interfaces/r-scripts-2.png)
 
 A lista a seguir fornece detalhes sobre alguns exemplos de fontes de dados às quais o **Power BI Desktop** pode se conectar usando a interface genérica dos **scripts do R**.
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: fdbb571a30f530ddeba37a7eaf490718b6c8116d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0016c5af8d8e9e154abf3c9e94dc6330a73d358d
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230362"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216246"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Conecte-se a arquivos armazenados no OneDrive para seu workspace do Power BI
 Após você [criar um workspace no Power BI](../collaborate-share/service-create-distribute-apps.md), é possível armazenar os arquivos do Excel, de CSV e do Power BI Desktop no OneDrive for Business para o seu workspace do Power BI. Você pode continuar atualizando os arquivos armazenados no OneDrive, e essas atualizações serão refletidas automaticamente nos relatórios e painéis do Power BI com base nos arquivos. 
@@ -33,16 +33,16 @@ A adição de arquivos ao seu workspace consiste em um processo de duas etapas:
 ## <a name="1-upload-files-to-the-onedrive-for-business-for-your-workspace"></a>1 Carregar arquivos no OneDrive for Business para o seu workspace
 1. No serviço do Power BI, selecione a seta ao lado de Workspaces &gt; selecione as reticências ( **...** ) ao lado do nome do workspace. 
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
+   ![Captura de tela do workspace do Power BI mostrando o nome do workspace selecionado.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
 2. Selecione **Arquivos** para abrir o OneDrive for Business do workspace no Microsoft 365.
    
    > [!NOTE]
-   > Se você não vir **Arquivos** no menu do workspace, selecione **Membros** para abrir o OneDrive for Business para o seu workspace. Nele, selecione **Arquivos**. O Microsoft 365 configura um local de armazenamento do OneDrive para seus arquivos do workspace de grupo do aplicativo. Esse processo pode levar algum tempo.
+   > Se você não vir **Arquivos** no menu do workspace, selecione **Membros** para abrir o OneDrive for Business para o seu workspace. Nele, selecione **Arquivos**. O Microsoft 365 configura um local de armazenamento do OneDrive para seus arquivos do workspace de grupo do aplicativo. Esse processo pode demorar algum tempo.
    > 
    > 
 3. Aqui você pode carregar seus arquivos no OneDrive for Business para o seu workspace. Selecione **Carregar**e navegue até os arquivos.
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grpfilesonedrive.png)
+   ![Captura de tela do OneDrive for Business mostrando a navegação para carregar um arquivo.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grpfilesonedrive.png)
 
 ## <a name="2-import-excel-files-as-datasets-or-as-excel-online-workbooks"></a>2 Importar arquivos do Excel como conjuntos de dados ou como pastas de trabalho do Excel Online
 Agora que os arquivos estão no OneDrive for Business para o seu workspace, você tem uma opção. Você pode: 
@@ -54,30 +54,30 @@ Agora que os arquivos estão no OneDrive for Business para o seu workspace, voc�
 1. No Power BI, mude para o workspace, para que o nome do workspace esteja no canto superior esquerdo. 
 2. Selecione **Obter Dados** na parte inferior do painel de navegação. 
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-get-data-button.png)
+   ![Captura de tela do botão Obter Dados mostrando-o no painel de navegação.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-get-data-button.png)
 3. Na caixa **Arquivos** , selecione **Obter**.
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_getfiles.png)
+   ![Captura de tela da caixa de diálogo Arquivos mostrando o botão Obter.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_getfiles.png)
 4. Selecione **OneDrive** - *Nome do Seu Workspace*.
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
+    ![Captura de tela de três blocos para selecionar seu workspace mostrando o Arquivo Local, o OneDrive e o SharePoint.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
 5. Selecione o arquivo desejado > **Conectar**.
    
     Nessa ocasião, você decide se deseja [importar os dados da pasta de trabalho do Excel](service-get-data-from-files.md) ou [conectar-se a pastas de trabalho inteiras do Excel](service-excel-workbook-files.md).
 6. Selecione **Importar** ou **Conectar**.
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_importexceldataorwholecrop.png)
+    ![Captura de tela da caixa de diálogo do OneDrive for Business mostrando Importar do Excel ou Conectar-se ao Excel.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_importexceldataorwholecrop.png)
 7. Se você selecionar **Importar** a pasta de trabalho aparecerá na guia **Conjuntos de dados**. 
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-import.png)
+    ![Captura de tela dos Workspaces no Power BI mostrando a guia Conjuntos de dados.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-import.png)
    
     Se você selecionar **Conectar**, a pasta de trabalho estará na guia **Pastas de trabalho**.
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-connect.png)
+    ![Captura de tela dos Workspaces no Power BI mostrando a guia Pastas de trabalho.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-connect.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 * [Criar aplicativos e workspaces no Power BI](../collaborate-share/service-create-distribute-apps.md)
 * [Importar dados das pastas de trabalho do Excel](service-get-data-from-files.md)
 * [Conectar-se a todas as pastas de trabalho do Excel](service-excel-workbook-files.md)
-* Mais perguntas? [Experimente a Comunidade do Power BI](https://community.powerbi.com/)
+* Mais perguntas? [Experimentar a comunidade do Power BI](https://community.powerbi.com/)
 * Comentários? Visite [Power BI Ideias](https://ideas.powerbi.com/forums/265200-power-bi) (Ideias do Power BI)

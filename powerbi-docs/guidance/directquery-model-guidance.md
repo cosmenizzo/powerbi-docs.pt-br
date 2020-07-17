@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ace93dfe358c85e54863dece0303c889c6a766b2
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 264d3f4a0c611ca01de627b7656584ceb60e7b18
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279585"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214531"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Diretrizes sobre modelos de DirectQuery no Power BI Desktop
 
@@ -54,9 +54,9 @@ Um modelo de DirectQuery pode ser otimizado de várias maneiras, conforme descri
 
 - **Evite consultas de Power Query complexas:** um design de modelo eficiente pode ser obtido removendo a necessidade das consultas de Power Query aplicarem transformações. Isso significa que cada consulta é mapeada para uma única tabela ou exibição de fonte de banco de dados relacional. Você pode visualizar uma representação da instrução de consulta SQL real para uma etapa de Power Query aplicada selecionando a opção **Exibir Consulta Nativa**.
 
-    ![As etapas aplicadas no Editor de Consultas exibem cinco etapas. Um clique com o botão direito do mouse na última etapa, denominada "Colunas Renomeadas", abriu o menu de contexto. A opção "Exibir Consulta Nativa" está habilitada e realçada.](media/directquery-model-guidance/directquery-model-guidance-query-editor-view-native-query.png)
+    ![Captura de tela do Power BI Desktop mostrando a opção "Exibir Consulta Nativa" em Etapas Aplicadas.](media/directquery-model-guidance/directquery-model-guidance-query-editor-view-native-query.png)
     
-    ![A janela Consulta Nativa exibe uma consulta T-SQL que une as tabelas de origem.](media/directquery-model-guidance/directquery-model-guidance-native-query-window.png)
+    ![Captura de tela do Power BI Desktop mostrando a janela Consulta Nativa. Uma instrução de consulta une duas tabelas de origem.](media/directquery-model-guidance/directquery-model-guidance-native-query-window.png)
 
 - **Examine o uso de colunas calculadas e alterações de tipo de dados:** os modelos de DirectQuery dão suporte à adição de cálculos e etapas de Power Query para converter tipos de dados. No entanto, um melhor desempenho costuma ser obtido materializando os resultados da transformação na fonte do banco de dados relacional, quando possível.
 - **Não use a filtragem de data relativa do Power Query:** é possível definir a filtragem de data relativa em uma consulta de Power Query. Por exemplo, para recuperar as ordens de venda que foram criadas no último ano (em relação à data de hoje). Esse tipo de filtro é convertido em uma consulta nativa ineficiente, da seguinte forma:
@@ -81,7 +81,7 @@ Um modelo de DirectQuery pode ser otimizado de várias maneiras, conforme descri
 - **Evite o uso da filtragem de relação bidirecional:** o uso da filtragem de relação bidirecional pode levar a instruções de consulta que não têm um bom desempenho. Somente use esse recurso de relação quando necessário, e esse geralmente é o caso ao implementar uma relação de muitos para muitos em uma tabela de ponte. Para obter mais informações, confira [Relações com uma cardinalidade muitos para muitos no Power BI Desktop](../transform-model/desktop-many-to-many-relationships.md).
 - **Limite consultas paralelas:** você pode definir o número máximo de conexões que o DirectQuery abre para cada fonte de dados subjacente. Isso controla o número de consultas enviadas simultaneamente à fonte de dados.
 
-    ![A janela do Power BI Desktop está aberta e a página Arquivo Atual do DirectQuery está selecionada. A propriedade Máximo de conexões por fonte de dados está realçada.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-directquery.png)
+    ![Captura de tela do Power BI Desktop mostrando a janela Opções de Consulta Direta.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-directquery.png)
     
     A configuração só é habilitada quando há, pelo menos, uma fonte do DirectQuery no modelo. O valor se aplica a todas as fontes do DirectQuery e às novas fontes do DirectQuery adicionadas ao modelo.
 
@@ -95,7 +95,7 @@ Relatórios baseados em um conjunto de dados de DirectQuery podem ser otimizados
 
 - **Habilitar técnicas de redução de consulta:** as _Opções e configurações_ do Power BI Desktop incluem uma página de Redução de Consulta. Essa página tem três opções úteis. É possível desabilitar o realce cruzado e a filtragem cruzada por padrão, embora isso possa ser substituído por meio da edição de interações. Também é possível mostrar um botão Aplicar em segmentações e filtros. As opções de segmentação ou filtro não serão aplicadas até que o usuário do relatório clique no botão. Se você habilitar essas opções, recomendamos que faça isso ao criar o relatório pela primeira vez.
 
-    ![A janela do Power BI Desktop está aberta e a página Arquivo Atual da Redução de Consulta está selecionada. Três opções ficam disponíveis para reduzir o número de consultas enviadas e mostrar um botão Aplicar para segmentações e filtros.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-query-reduction.png)
+    ![Captura de tela do Power BI Desktop mostrando o filtro Redução de Consulta na janela Opções.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-query-reduction.png)
     
 - **Aplique filtros primeiro:** ao criar relatórios pela primeira vez, recomendamos que você aplique todos os filtros aplicáveis – no nível do relatório, da página ou do visual – antes de mapear os campos para os campos visuais. Por exemplo, em vez de arrastar as medidas **País** e **Vendas** e, em seguida, filtrar por um ano específico, aplique o filtro no campo **Ano** primeiro. Isso ocorre porque cada etapa da criação de um visual enviará uma consulta e, embora seja possível fazer outra alteração antes que a primeira consulta seja concluída, isso ainda impõe uma carga desnecessária à fonte de dados subjacente. Ao aplicar os filtros no início, as consultas intermediárias geralmente são menos dispendiosas e mais rápidas. Além disso, deixar de aplicar os filtros antecipadamente pode fazer com que o limite de um milhão de linhas seja ultrapassado, conforme descrito acima.
 - **Limite o número de visuais em uma página:** quando uma página de relatório é aberta (e quando filtros de página são aplicados), todos os visuais da página são atualizados. No entanto, há um limite para o número de consultas que podem ser enviadas em paralelo, imposto pelo ambiente do Power BI e pela configuração do modelo **Máximo de Conexões por Fonte de Dados**, conforme descrito acima. Sendo assim, à medida que o número de visuais da página aumenta, maior é a chance de que eles sejam atualizados de maneira serial. Isso aumenta o tempo necessário para atualizar a página inteira e também aumenta a chance de os visuais exibirem resultados inconsistentes (para fontes de dados voláteis). Por esses motivos, recomendamos limitar o número de visuais em qualquer página e, em vez disso, ter mais páginas mais simples. Substituir vários visuais de cartão por um único visual de cartão com várias linhas pode levar a um layout de página semelhante.
@@ -105,7 +105,7 @@ Além da lista de técnicas de otimização acima, observe que cada uma das segu
 
 - **Filtros de medida:** os visuais que contêm medidas (ou agregações de colunas) podem ter filtros aplicados a essas medidas. Por exemplo, o visual abaixo mostra as **Vendas** por **Categoria**, mas somente para categorias com mais de USD 15 milhões em vendas.
 
-    ![Um visual de tabela tem duas colunas: Categoria e Vendas. O painel Filtros revela um filtro na medida de Vendas para valores superiores a USD 15 milhões. A tabela tem três linhas e cada linha tem um valor de Vendas superior a USD 15 milhões.](media/directquery-model-guidance/directquery-model-guidance-example-measure-filter.png)
+    ![Captura de tela do Power BI Desktop mostrando dados de tabela com os filtros aplicados.](media/directquery-model-guidance/directquery-model-guidance-example-measure-filter.png)
     
     
     Isso poderá fazer com que duas consultas sejam enviadas à fonte subjacente:
@@ -140,4 +140,4 @@ Para obter mais informações sobre o DirectQuery, confira os seguintes recursos
 - [Modelos de DirectQuery no Power BI Desktop](../connect-data/desktop-directquery-about.md)
 - [Usar o DirectQuery no Power BI Desktop](../connect-data/desktop-use-directquery.md)
 - [Solução de problemas do modelo de DirectQuery no Power BI Desktop](../connect-data/desktop-directquery-troubleshoot.md)
-- Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+- Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

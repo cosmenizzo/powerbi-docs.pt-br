@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 11/26/2019
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 471522e0f66fe4bf03a8c1616d1a24221149f2e0
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 422782c3036f94c1ea764f46135200116092d70c
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229891"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216232"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Conectar-se ao Office365Mon com o Power BI
 Analisar seus dados de desempenho de integridade e interrupções do Office 365 é fácil com o Power BI e o aplicativo de modelo Office365Mon. O Power BI recupera seus dados, incluindo investigações de integridade e interrupções e, em seguida, compila um painel e relatórios prontos para uso com base em tais dados.
@@ -24,26 +24,26 @@ Conectar-se ao [aplicativo de modelo Office365Mon](https://msit.powerbi.com/grou
 >[!NOTE]
 >Uma conta do administrador do Office365Mon é necessária para conectar e carregar o aplicativo de modelo Power BI.
 
-## <a name="how-to-connect"></a>Como se conectar
+## <a name="how-to-connect"></a>Como conectar-se
 1. Selecione **Obter Dados** na parte inferior do painel de navegação.
    
-   ![](media/service-connect-to-office365mon/pbi_getdata.png)
+   ![Captura de tela do botão Obter Dados mostrando-o no painel de navegação.](media/service-connect-to-office365mon/pbi_getdata.png)
 2. Na caixa **Serviços** , selecione **Obter**.
    
-   ![](media/service-connect-to-office365mon/pbi_getservices.png) 
+   ![Captura de tela da caixa de diálogo Serviços mostrando o botão Obter.](media/service-connect-to-office365mon/pbi_getservices.png) 
 3. Selecione **Office365Mon** \> **Obter**.
    
-   ![](media/service-connect-to-office365mon/o365mon.png)
+   ![Captura de tela da caixa de diálogo do Office365Mon mostrando o link Obter.](media/service-connect-to-office365mon/o365mon.png)
 4. Para o Método de Autenticação, selecione **oAuth2** \> **Entrar**.
    
    Quando solicitado, insira suas credenciais de administrador do Office365Mon e siga o processo de autenticação.
    
-   ![](media/service-connect-to-office365mon/creds.png)
+   ![Captura de tela da caixa de diálogo Conectar ao Office365Mon mostrando OAuth2 no campo Método de Autenticação.](media/service-connect-to-office365mon/creds.png)
    
-   ![](media/service-connect-to-office365mon/creds2.png)
+   ![Captura de tela da entrada do Office365Mon solicitando as credenciais.](media/service-connect-to-office365mon/creds2.png)
 5. Após o Power BI importar os dados, você verá um novo dashboard, relatório e conjunto de dados no painel de navegação. Novos itens são marcados com um asterisco amarelo \*; selecione a entrada do Office365Mon.
    
-   ![](media/service-connect-to-office365mon/dashboard4.png)
+   ![Captura de tela do painel de navegação no Power BI mostrando o dashboard, o relatório e o conjunto de dados.](media/service-connect-to-office365mon/dashboard4.png)
 
 **E agora?**
 

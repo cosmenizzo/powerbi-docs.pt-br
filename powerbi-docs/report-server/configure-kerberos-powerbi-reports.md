@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 11/01/2017
 ms.author: maggies
-ms.openlocfilehash: aee58d27eb75bbe14629235591065e236502588a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a9dd66d726a2417c936204898eb2cdfb749fcc94
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236118"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216503"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Configurar o Kerberos para usar relatórios do Power BI
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -31,14 +31,14 @@ Se seu servidor de relatório não estiver configurado corretamente, você receb
 
     Something went wrong.
 
-    We couldn’t run the report because we couldn’t connect to its data source. The report or data source might not be configured correctly. 
+    We couldn't run the report because we couldn't connect to its data source. The report or data source might not be configured correctly. 
 
 Nos detalhes técnicos, você verá a seguinte mensagem.
 
-    We couldn’t connect to the Analysis Services server. The server forcibly closed the connection. To connect as the user viewing the report, your organization must have configured Kerberos constrained delegation.
+    We couldn't connect to the Analysis Services server. The server forcibly closed the connection. To connect as the user viewing the report, your organization must have configured Kerberos constrained delegation.
 
-![](media/configure-kerberos-powerbi-reports/powerbi-report-config-error.png)
-
+![Captura de tela dos relatórios do Power BI mostrando a mensagem de erro relacionada a problemas de conexão com o servidor do Analysis Services.](media/configure-kerberos-powerbi-reports/powerbi-report-config-error.png)
+ 
 ## <a name="configuring-kerberos-constrained-delegation"></a>Configurando a delegação restrita de Kerberos
 Há vários itens que precisam ser configurados para que a delegação restrita de Kerberos funcione. Isso inclui o SPN (Nomes de Entidade de Serviço) e configurações de delegação em contas de serviço.
 
@@ -202,14 +202,14 @@ Configure a delegação restrita com o trânsito de protocolos. Com a delegaçã
 14. Selecione o SPN criado. Ele começará com `MSOLAPDisco.3`. Se você adicionou o FQDN e o SPN NetBIOS, ele selecionará ambos. Você pode ver apenas um.
 15. Selecione **OK**. A caixa de diálogo deverá ter aparência semelhante à seguinte, se você tiver marcado **Expandido**.
     
-    ![](media/configure-kerberos-powerbi-reports/powerbi-report-config-delegation.png)
+    ![Captura de tela de Relatórios do Power BI mostrando a guia Delegação da janela Propriedades.](media/configure-kerberos-powerbi-reports/powerbi-report-config-delegation.png)
 16. Selecione **OK**.
 17. Reinicializar o Servidor de Relatório do Power BI.
 
 ## <a name="running-a-power-bi-report"></a>Executando um Relatório do Power BI
 Depois que todas as configurações acima estiverem em vigor, o relatório deverá ser exibido corretamente. 
 
-![](media/configure-kerberos-powerbi-reports/powerbi-report.png)
+![Captura de tela de relatórios do Power BI mostrando a exibição de Dashboard de exemplo.](media/configure-kerberos-powerbi-reports/powerbi-report.png)
 
 Embora essa configuração deva funcionar na maioria dos casos, com Kerberos, pode haver configurações diferentes dependendo do seu ambiente. Se o relatório ainda não for carregado, contate o suporte ou o seu administrador de domínio para investigar mais.
 

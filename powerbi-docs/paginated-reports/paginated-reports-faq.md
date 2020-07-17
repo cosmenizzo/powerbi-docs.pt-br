@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/29/2020
-ms.openlocfilehash: f18f8b56db8635d407417949bc35adb61fb4a2c5
-ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
+ms.date: 07/08/2020
+ms.openlocfilehash: acde398c1d8954b815c86cce77a6be0cfcf1553f
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84427553"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216665"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Relatórios paginados no Power BI: Perguntas frequentes 
 
@@ -110,10 +110,10 @@ Sim. E adicionamos suporte para abrir e publicar relatórios diretamente no serv
 
 No momento, os relatórios paginados não são compatíveis com os seguintes itens:
 
-- Fontes de dados compartilhados
+- Fontes de dados compartilhadas
 - Conjuntos de dados compartilhados
 - Detalhamento e ações de clique para outros relatórios
-- Relatórios vinculados
+- relatórios vinculados
 - Fontes personalizadas
 
 Você recebe uma mensagem de erro se tentar carregar um arquivo que tenha um recurso não suportado no serviço do Power BI, que não seja alternar/classificar.
@@ -162,7 +162,7 @@ Sim, isso pode ser feito usando parâmetros de URL com seus relatórios paginado
 
 Sim, os relatórios paginados podem ser implantados com os aplicativos de workspace v1 e v2. 
 
-### <a name="will-other-report-specific-features-in-power-bi-like-pinning-to-report-tiles-to-dashboards-work-with-paginated-reports"></a>Outros recursos específicos de relatório no Power BI, como a fixação de relatórios de blocos a painéis, funcionam com relatórios paginados?
+### <a name="will-other-report-specific-features-in-power-bi-like-pinning-report-tiles-to-dashboards-work-with-paginated-reports"></a>Outros recursos específicos de relatório no Power BI, como a fixação de relatórios de blocos a dashboards, funcionarão com relatórios paginados?
 
 A intenção é que os relatórios suportem os mesmos cenários principais no serviço, tanto quanto possível.  De maneira ideal, embora a ferramenta para criá-los seja diferente, na perspectiva do consumidor eles são apenas mais um relatório em uma lista no portal. Eles não se importam com o modo como os relatórios foram criados, pois conseguem fazer o que precisam.  Um bom exemplo dessa paridade de recursos é o suporte ao comentário planejado. Embora o recurso possa funcionar de maneira um pouco diferente para cada tipo de relatório, você poderá usar os comentários para ambos.
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: 88b5c6c377588003a02f571c29ef8baef5540ae3
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9265cc94aceb53b1b088f2393ca607c83f94b978
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220205"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264810"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Digitalizar um código de barras com seu dispositivo no aplicativo móvel do Power BI
 A digitalização de códigos de barras no mundo real o leva para as informações de BI filtradas no aplicativo móvel do Power BI.
@@ -27,14 +27,14 @@ Aplica-se a:
 
 Digamos que um colega tenha [marcado um campo de código de barras em um relatório do Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md) e compartilhou esse relatório com você. 
 
-![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
+![Captura de tela de uma digitalização de código de barras do produto mostrando o scanner sobre o código de barras de uma bebida colorida.](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
 
 Quando você digitaliza o código de barras de um produto com o scanner no aplicativo do Power BI no seu dispositivo, você vê o relatório (ou a lista de relatórios) com esse código de barras. Você pode abrir o relatório filtrado nesse código de barras.
 
 ## <a name="scan-a-barcode-with-the-power-bi-scanner"></a>Digitalizar um código de barras com o scanner do Power BI
 1. Na barra de navegação, toque em **Mais opções** (…) e, em seguida, toque em **Scanner**.
 
-    ![](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
+    ![Captura de tela de Mais opções no painel de navegação mostrando a seleção do scanner.](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
 
 2. Se a câmera não estiver habilitada, você precisa aprovar o aplicativo do Power BI para usar a câmera. Essa é uma única aprovação. 
 4. Aponte o scanner para um código de barras em um produto. Você verá uma lista dos relatórios associados a esse código de barras.
@@ -43,8 +43,8 @@ Quando você digitaliza o código de barras de um produto com o scanner no aplic
 ## <a name="filter-by-other-barcodes-while-in-a-report"></a>Filtrar por outros códigos de barras enquanto estiver em um relatório
 Ao observar um relatório filtrado por um código de barras no dispositivo, é recomendável filtrar o mesmo relatório por um código de barras diferente.
 
-* Se o ícone de código de barras tiver um filtro ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), o filtro estará ativo e o relatório já será filtrado por um código de barras. 
-* Se o ícone não contiver um filtro ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), o filtro não estará ativo e o relatório não será filtrado por um código de barras. 
+* Se o ícone de código de barras tiver um filtro ![Ícone de Filtrado](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), o filtro estará ativo e o relatório já estará filtrado por um código de barras. 
+* Se o ícone não contiver um filtro ![Ícone de Não filtrado](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), o filtro não estará ativo e o relatório não estará filtrado por um código de barras. 
 
 De qualquer forma, toque no ícone para abrir um pequeno menu com um scanner flutuante.
 
@@ -72,4 +72,4 @@ O relatório que você escolher filtrar baseia-se em um modelo de dados que não
 ## <a name="next-steps"></a>Próximas etapas
 * [Marcar um campo de código de barras no Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md)
 * [Blocos de Dashboard no Power BI](../end-user-tiles.md)
-* [Dashboards no Power BI](../end-user-dashboards.md)
+* [Painéis no Power BI](../end-user-dashboards.md)

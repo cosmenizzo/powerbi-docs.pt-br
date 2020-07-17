@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 87a30acce38966d0e044f4ed0b6691ccbc7acd3f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 0be1f3aeb48e4596566c36c1ee8cfadeb3c33d10
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349208"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214021"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Comparando o Power BI Desktop e o serviço do Power BI
 
 Em um diagrama de Venn que compara o Power BI Desktop e o serviço do Power BI, a área no meio mostra como os dois se sobrepõem. Algumas tarefas você pode fazer no Power BI Desktop ou no serviço. Os dois lados do diagrama de Venn mostram os recursos exclusivos do aplicativo e do serviço.  
 
-![Diagrama de Venn do Power BI Desktop e do serviço](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
+![Diagrama de Venn mostrando a relação entre o Power BI Desktop e o serviço do Power BI.](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
 O **Power BI Desktop** é uma ferramenta completa para criação de relatório e análise de dados que você instala para aplicativos gratuitos em seu computador local. Ele inclui o Editor de Consultas, em que você pode se conectar a várias fontes de dados diferentes e combiná-las em um modelo de dados (o que geralmente é chamado de modelagem). Em seguida, você designa um relatório com base no modelo de dados. O [guia de Introdução ao Power BI Desktop](desktop-getting-started.md) percorre esse processo.
 
@@ -33,7 +33,7 @@ A maioria dos designers de relatório que trabalham em projetos de business inte
 
 No aplicativo e no serviço, você cria e edita *relatórios*. Um relatório pode ter uma ou várias páginas, com visuais e coleções de visuais. Adicione indicadores, botões, filtros e detalhamento para melhorar a navegação nos relatórios.
 
-![Editando um relatório no Power BI Desktop ou no serviço](media/service-service-vs-desktop/power-bi-editing-desktop-service.png)
+![Capturas de tela do Power BI Desktop e do serviço do Power BI, com as seções numeradas.](media/service-service-vs-desktop/power-bi-editing-desktop-service.png)
 
 Os editores de relatório no Power BI Desktop e no serviço são semelhantes. Eles são formados por três seções:  
 

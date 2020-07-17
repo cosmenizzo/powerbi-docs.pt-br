@@ -8,11 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b195e0bc11068b819a2f3133ed9ae135e3c30ffb
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: e1a24d8d15881bf8a1948d91758c7592f75ea7ac
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485934"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214212"
 ---
 # <a name="on-premises-data-gateway-sizing"></a>Dimensionamento de gateway de dados local
 
@@ -32,7 +33,7 @@ A carga de trabalho de _dados armazenados em cache_ recupera e transforma os dad
 1. **Recuperação de dados e transformação**: os dados são recuperados e, quando necessário, são transformados. Sempre que possível, o mecanismo de mashup do Power Query envia as etapas de transformação para a fonte de dados – isso é conhecido como _[dobragem de consultas](power-query-folding.md)_ . Quando isso não é possível, as transformações devem ser feitas pelo gateway. Nesse caso, o gateway consumirá mais recursos de CPU e memória.
 1. **Transferência**: os dados são transferidos para o serviço do Power BI – uma conexão de Internet confiável e rápida é importante, especialmente para grandes volumes de dados
 
-![O diagrama exibe o gateway de dados local conectando-se a fontes locais: banco de dados relacional, pasta de trabalho do Excel e arquivos CSV. O gateway recupera e transforma os dados.](media/gateway-onprem-sizing/gateway-onprem-workload-cached-data.png)
+![Diagrama de Dados do Cache mostrando o gateway de dados local conectando-se a fontes locais.](media/gateway-onprem-sizing/gateway-onprem-workload-cached-data.png)
 
 ### <a name="live-connection-and-directquery-workloads"></a>Cargas de trabalho de Conexão Dinâmica e DirectQuery
 
@@ -45,7 +46,7 @@ Essa carga de trabalho requer recursos de CPU para roteamento e resultados de co
 
 Uma conectividade confiável, rápida e consistente é importante para garantir que os usuários de relatórios tenham experiências dinâmicas.
 
-![O diagrama exibe o gateway de dados local conectando-se a fontes locais: Banco de dados tabular e relacional do Analysis Services. O gateway funciona principalmente no modo de passagem.](media/gateway-onprem-sizing/gateway-onprem-workload-liveconnection-directquery.png)
+![Diagrama da Conexão Dinâmica e do DirectQuery mostrando o gateway de dados local se conectando a fontes locais.](media/gateway-onprem-sizing/gateway-onprem-workload-liveconnection-directquery.png)
 
 ## <a name="sizing-considerations"></a>Considerações de dimensionamento
 
@@ -125,10 +126,10 @@ Para conjunto de dados de Conexão Dinâmica:
 Para obter mais informações relacionadas a este artigo, confira os seguintes recursos:
 
 - [Diretrizes para implantar um gateway de dados para o Power BI](../connect-data/service-gateway-deployment-guidance.md)
-- [Definir as configurações de proxy do gateway de dados local](/data-integration/gateway/service-gateway-proxy)
+- [Definir configurações de proxy para o gateway de dados local](/data-integration/gateway/service-gateway-proxy)
 - [Monitorar e otimizar o desempenho do gateway de dados local](/data-integration/gateway/service-gateway-performance)
 - [Solucionar problemas de gateways – Power BI](../connect-data/service-gateway-onprem-tshoot.md)
 - [Solucionar problemas do gateway de dados local](/data-integration/gateway/service-gateway-tshoot)
 - [A importância da dobragem de consultas](power-query-folding.md)
-- Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+- Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
 - Sugestões? [Contribuir com ideias para aprimorar o Power BI](https://ideas.powerbi.com)

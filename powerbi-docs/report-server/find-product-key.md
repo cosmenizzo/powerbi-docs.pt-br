@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 10/24/2018
 ms.author: maggies
-ms.openlocfilehash: f69d55e6c4f0916ac2c0c5083e062b248c4c36de
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b877ec917953bb6ec456a0042035e498c591e1ed
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239415"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214002"
 ---
 # <a name="how-to-find-your-report-server-product-key"></a>Como encontrar a chave do produto (Product Key) do servidor de relatório
 Saiba como você pode encontrar a chave do produto (Product Key) do Servidor de Relatório do Power BI para instalar o servidor em um ambiente de produção.
@@ -41,13 +41,13 @@ Se você tiver um contrato do SQL Server Enterprise SA, você poderá obter a ch
 > 
 > 
 
-![](media/find-product-key/vlsc-download.png "Volume Licensing Service Center")
-
+![Captura de tela do SQL Server Enterprise mostrando a guia Downloads e Chaves com informações de integração de Relatório do Power BI.](media/find-product-key/vlsc-download.png "Centro de Serviços de Licenciamento por Volume")
+ 
 ## <a name="next-steps"></a>Próximas etapas
 [Instalar o Servidor de Relatório do Power BI](install-report-server.md)  
-[Instalar o Power BI Desktop otimizado para o Servidor de Relatório do Power BI](install-powerbi-desktop.md)  
-[Baixar o Construtor de Relatórios](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Baixar o SSDT (SQL Server Data Tools)](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Instalar o Power BI Desktop otimizado para o servidor de relatórios do Power BI](install-powerbi-desktop.md)  
+[Baixe o Construtor de Relatórios](https://www.microsoft.com/download/details.aspx?id=53613)  
+[Baixar o SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
-Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+Mais perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
 

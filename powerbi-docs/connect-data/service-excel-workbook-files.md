@@ -9,15 +9,15 @@ ms.topic: how-to
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e86aeaf8f7254e2b28b266135ccc4a0005e927b6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 870e3dbdc4b18422b0565834764b996d3f096ebf
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236670"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264425"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Obter dados de arquivos de pasta de trabalho do Excel
-![](media/service-excel-workbook-files/excel_icon.png)
+![Ícone do Excel](media/service-excel-workbook-files/excel_icon.png)
 
 O Microsoft Excel é um dos aplicativos de negócios mais amplamente usados no mundo. Ele também fornece uma das maneiras mais comuns de inserir dados no Power BI.
 
@@ -61,7 +61,7 @@ Assista a este vídeo bastante útil para saber mais sobre como garantir que sua
 ## <a name="one-excel-workbook--two-ways-to-use-it"></a>Uma pasta de trabalho do Excel – duas maneiras de usá-la
 Caso você salve os arquivos de pasta de trabalho no **OneDrive**, haverá duas maneiras de explorar os dados no Power BI
 
-![](media/service-excel-workbook-files/excel_import_connect.png)
+![Captura de tela do OneDrive for Business mostrando a opção de Importar ou Conectar-se aos dados do Excel.](media/service-excel-workbook-files/excel_import_connect.png)
 
 ### <a name="import-excel-data-into-power-bi"></a>Importar dados do Excel para o Power BI
 Ao escolher **Importar**, todos os dados com suporte em tabelas e/ou em um modelo de dados são importados para um novo conjunto de dados no Power BI. Caso você tenha planilhas do Power View, elas serão recriadas no Power BI como relatórios.
@@ -84,31 +84,31 @@ No Excel 2016, também é possível usar Publicar > Carregar. É quase a mesma c
 ## <a name="import-or-connect-to-an-excel-workbook-from-power-bi"></a>Importar ou conectar-se a uma pasta de trabalho do Excel por meio do Power BI
 1. No Power BI, no painel de navegação, clique em **Obter Dados**.
    
-   ![](media/service-excel-workbook-files/excel_get_data_button.png)
+   ![Captura de tela de Obter Dados mostrando o botão no painel de navegação.](media/service-excel-workbook-files/excel_get_data_button.png)
 2. Em Arquivos, clique em **Obter**.
    
-   ![](media/service-excel-workbook-files/excel_files_get.png)
+   ![Captura de tela da caixa de diálogo Arquivos mostrando o botão Obter.](media/service-excel-workbook-files/excel_files_get.png)
 3. Encontre o arquivo.
    
-   ![](media/service-excel-workbook-files/excel_find_your_file.png)
+   ![Captura de tela de quatro blocos para localizar o arquivo mostrando os blocos Arquivo Local, OneDrive for Business, OneDrive Pessoal e SharePoint.](media/service-excel-workbook-files/excel_find_your_file.png)
 4. Se o arquivo de pasta de trabalho estiver no OneDrive ou SharePoint – Sites de Equipe, escolha **Importar** ou **Conectar**.
 
 ## <a name="local-excel-workbooks"></a>Pastas de trabalho locais do Excel
 Você também pode usar um arquivo local do Excel e carregá-lo no Power BI. Basta selecionar **Arquivo Local** no menu anterior e navegar até o local em que você salvou as pastas de trabalho do Excel.
 
-![](media/service-excel-workbook-files/excel_import_6.png)
+![Captura de tela do bloco Arquivo Local mostrando a navegação para selecionar as pastas de trabalho do Excel.](media/service-excel-workbook-files/excel_import_6.png)
 
 Depois de selecioná-las, escolha Carregar seu arquivo no Power BI.
 
-![](media/service-excel-workbook-files/excel_import_7.png)
+![Captura de tela da caixa de diálogo Arquivo Local mostrando a seleção de Carregar seu arquivo do Excel no Power BI.](media/service-excel-workbook-files/excel_import_7.png)
 
 Após o upload da pasta de trabalho, você obtém uma notificação indicando que a pasta de trabalho está pronta.
 
-![](media/service-excel-workbook-files/excel_import_8.png)
+![Captura de tela da notificação mostrando que a pasta de trabalho está pronta.](media/service-excel-workbook-files/excel_import_8.png)
 
 Quando a pasta de trabalho estiver pronta, você poderá encontrá-la na seção **Relatórios** do Power BI.
 
-![](media/service-excel-workbook-files/excel_import_9.png)
+![Captura de tela da seção Relatórios mostrando o relatório selecionado com os dados do Excel.](media/service-excel-workbook-files/excel_import_9.png)
 
 ## <a name="publish-from-excel-2016-to-your-power-bi-site"></a>Publicar em seu site do Power BI por meio do Excel 2016
 O uso do recurso **Publicar no Power BI no Excel 2016** é praticamente o mesmo que usar o recurso **Obter Dados** no Power BI para importar ou conectar-se ao arquivo. Não entraremos em detalhes aqui, mas é possível ver [Publicar no Power BI por meio do Excel 2016](service-publish-from-excel.md) para saber mais.
@@ -123,6 +123,6 @@ Atualmente, ao escolher a opção Importar, o Power BI importa somente os dados 
 
 **Agendar atualização** – Se o arquivo de pasta de trabalho do Excel se conectar a fontes de dados externas ou se ele foi importado de uma unidade local, será possível configurar a atualização agendada para garantir que o conjunto de dados ou relatório está sempre atualizado. Na maioria dos casos, é muito fácil configurar a atualização agendada; no entanto, não entraremos em detalhes sobre essa configuração neste artigo, pois isso está fora do escopo. Veja [Atualização de dados no Power BI](refresh-data.md) para saber mais.
 
-[Publicar no Power BI por meio do Excel 2016](service-publish-from-excel.md)
+[Publicar no Power BI do Excel 2016](service-publish-from-excel.md)
 
-[Atualizar dados no Power BI](refresh-data.md)
+[Atualização de dados no Power BI](refresh-data.md)

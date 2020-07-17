@@ -1,18 +1,18 @@
 ---
 title: Criar um relatório paginado com um conjunto de dados compartilhado do Power BI – Power BI Report Builder
 description: Crie um relatório paginado no Power BI Report Builder baseado em um conjunto de dados compartilhado do Power BI.
-ms.date: 02/12/2020
+ms.date: 07/08/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: a13f346feeddc8196cb35e06acf027baeaa7a151
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d3955b8dde22863e7b0224d335b162846e0741d2
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239781"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216787"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Criar um relatório paginado baseado em um conjunto de dados compartilhado do Power BI
 
@@ -104,6 +104,9 @@ Estas são as etapas para obter a consulta.
     ![Designer de consultas do Construtor de Relatórios](media/report-builder-shared-datasets/power-bi-report-builder-query-designer.png)
 
 1. Na caixa superior, Cole a consulta que você copiou do Power BI Desktop.
+
+    > [!NOTE]
+    > Se a consulta incluir a função TOPN, exclua-a da consulta.
 
 1. Selecione **Executar Consulta** (o ponto de exclamação vermelho, !) para ter certeza de que a consulta funciona. 
 
@@ -197,7 +200,7 @@ Você tem várias opções de formatação para fazer com que sua tabela caiba e
 
 ### <a name="getting-rid-of-blank-pages"></a>Como livrar-se de páginas em branco
 
-Mesmo que você tenha tornado as margens e as colunas da tabela mais estreitas, ainda poderá ficar com todas as outras páginas em branco. Por que? Por causa da matemática. 
+Mesmo que você tenha tornado as margens e as colunas da tabela mais estreitas, ainda poderá ficar com todas as outras páginas em branco. Por quê? Por causa da matemática. 
 
 Quando você soma as margens de página que define à largura do *corpo* do relatório, o resultado deve ser menor que a largura do formato do relatório.
 

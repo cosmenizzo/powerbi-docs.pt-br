@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/14/2018
 ms.author: willthom
 LocalizationGroup: Learn more
-ms.openlocfilehash: 538464477a65600efd7b8486ff2fee281d1d4500
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: af67eca7b1a4d1cb82f3b58ea4abdbb8b2ad4671
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83130193"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86160837"
 ---
 # <a name="power-bi-desktop-privacy"></a>Privacidade do Power BI Desktop
 
@@ -24,12 +24,12 @@ As informações que coletamos de usuários do **Power BI Desktop** podem inclui
  
 Se você deseja recusar a coleta de dados, acesse **Arquivo > Opções e Configurações > Opções** e, na guia **Dados de Uso**, desmarque a caixa de seleção **Enviar Dados de Uso**, conforme mostrado na imagem a seguir.
 
-![Configurações de opções para Enviar Dados de Uso](media/desktop-privacy/privacy_01.png)
+![Captura de tela das configurações de Opções para Enviar Dados de Uso.](media/desktop-privacy/privacy_01.png)
 
 ## <a name="sending-additional-information"></a>Enviar informações adicionais
 
 Se você encontrar falhas ou outros problemas, poderá enviar relatórios de erros e informações adicionais que nos ajudarão a corrigir o problema em uma versão futura. Também podemos coletar informações sobre o estado do arquivo do **Power BI Desktop** em você estava trabalhando, tais como localidade do documento, os recursos de visualização que estão habilitados e o modo de armazenamento. Isso pode incluir capturas de tela, mensagens de erro e fórmulas do seu modelo. Esses itens podem incluir o conteúdo dos arquivos que você estava usando quando um erro ocorreu, portanto, você deve examiná-los antes de enviar. Antes de enviar, lembramos você de que você pode escolher quais informações são enviadas à Microsoft.  
  
-Se você não quiser enviar essas informações, poderá clicar em **Fechar** quando ocorrer um erro ou parar de enviar dados de uso, conforme explicado acima. 
+Se você não quiser enviar essas informações, poderá clicar em **Fechar** quando ocorrer um erro ou parar de enviar dados de uso, conforme explicado acima.
 
-![Caixa de diálogo de falha](media/desktop-privacy/privacy_02.png)
+![Captura de tela da caixa de diálogo Falha mostrando a opção de relatar o problema ou fechar a caixa.](media/desktop-privacy/privacy_02.png)

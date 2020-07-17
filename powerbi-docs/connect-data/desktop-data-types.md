@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 06033a65acd090f0297a53bfbf0f0a004b68649a
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 40f85c40abd543e4f90a1f571ce648bfc4af7d9e
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83561560"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216471"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Tipos de dados no Power BI Desktop
 Este artigo descreve os tipos de dados com suporte no Power BI Desktop e DAX (Data Analysis Expressions). 
@@ -28,11 +28,11 @@ Na área de trabalho do Power BI, você pode determinar e especificar o tipo de 
 
 **Tipos de dados no Editor de consultas**
 
-![](media/desktop-data-types/pbiddatatypesinqueryeditort.png)
+![Captura de tela da faixa de opções Tipos de dados mostrando-a no Editor de Consultas.](media/desktop-data-types/pbiddatatypesinqueryeditort.png)
 
 **Tipos de dados na Exibição de dados ou de relatório**
 
-![](media/desktop-data-types/pbiddatatypesindatareportview.png)
+![Captura de tela da faixa de opções Tipos de dados mostrando-a na Exibição de Dados.](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
 A lista suspensa Tipo de Dados no Editor de Consultas tem dois tipos de dados que não estão presentes atualmente nos Modos de Exibição de Dados ou de Relatório: **Data/Hora/Fuso horário** e **Duração**. Quando uma coluna com esses tipos de dados for carregada no modelo e exibida no modo de exibição Dados ou Relatório, uma coluna com o tipo de dados Data/Hora/Fuso Horário será convertida em Data/Hora e uma coluna com o tipo de dados Duração será convertida em um Número Decimal.
 
@@ -99,21 +99,21 @@ Se os dados na coluna que você especifica como um argumento são incompatíveis
 * Se você tentar concatenar dois números, o Excel vai apresentá-los como cadeias de caracteres e, em seguida, concatenar. A expressão a seguir retorna "1234": = 12 & 34.
 
 ### <a name="table-of-implicit-data-conversions"></a>Tabela de conversões implícitas de dados
-O tipo de conversão executada é determinado pelo operador, que transmite os valores que ele requer antes de executar a operação solicitada. Essas tabelas listam os operadores e indicam a conversão que é realizada em cada tipo de dados na coluna quando ele é emparelhado com o tipo de dados na linha que intersecciona essa coluna.
+O tipo de conversão executada é determinado pelo operador, que converte os valores exigidos antes de executar a operação solicitada. Estas tabelas listam os operadores e indicam a conversão que é executada em cada tipo de dados na coluna quando ele é emparelhado com o tipo de dados na linha de interseção.
 
 > [!NOTE]
->  Tipos de dados de texto não são incluídos nessas tabelas. Quando um número é representado em um formato de texto, em alguns casos o Power BI tentará determinar o tipo de número e representá-lo como um número.
+>  Tipos de dados de texto não são incluídos nestas tabelas. Quando um número é representado em um formato de texto, em alguns casos o Power BI tentará determinar o tipo de número e representá-lo como um número.
 > 
 > 
 
 **Adição (+)**
 
-| Operador(+) | INTEGER | CURRENCY | REAL | Date/time |
+| Operador(+) | INTEGER | CURRENCY | real | Data/hora |
 | --- | --- | --- | --- | --- |
-| INTEGER |INTEGER |CURRENCY |REAL |Date/time |
-| CURRENCY |CURRENCY |CURRENCY |REAL |Date/time |
-| REAL |REAL |REAL |REAL |Date/time |
-| Date/time |Date/time |Date/time |Date/time |Date/time |
+| INTEGER |INTEGER |CURRENCY |real |Data/hora |
+| CURRENCY |CURRENCY |CURRENCY |real |Data/hora |
+| real |real |real |real |Data/hora |
+| Date/time |Date/time |Date/time |Date/time |Data/hora |
 
 Por exemplo, se um número real é usado em uma operação de adição em combinação com dados de moedas, os dois valores são convertidos em REAL e o resultado é retornado como REAL.
 
@@ -121,14 +121,14 @@ Por exemplo, se um número real é usado em uma operação de adição em combin
 
 Na tabela a seguir, o cabeçalho da linha é o minuendo (lado esquerdo) e o cabeçalho da coluna é o subtraendo (lado direito).
 
-| Operador(-) | INTEGER | CURRENCY | REAL | Date/time |
+| Operador(-) | INTEGER | CURRENCY | real | Data/hora |
 | --- | --- | --- | --- | --- |
-| INTEGER |INTEGER |CURRENCY |REAL |REAL |
-| CURRENCY |CURRENCY |CURRENCY |REAL |REAL |
-| REAL |REAL |REAL |REAL |REAL |
-| Date/time |Date/time |Date/time |Date/time |Date/time |
+| INTEGER |INTEGER |CURRENCY |real |real |
+| CURRENCY |CURRENCY |CURRENCY |real |real |
+| real |real |real |real |real |
+| Data/hora |Date/time |Date/time |Date/time |Data/hora |
 
-Por exemplo, se uma data é usada em uma operação de subtração com qualquer outro tipo de dados, ambos os valores são convertidos em datas e o valor retornado também é uma data.
+Por exemplo, se uma data for usada em uma operação de subtração com qualquer outro tipo de dados, os dois valores serão convertidos em datas, e o valor de retorno também será uma data.
 
 > [!NOTE]
 >    Modelos de dados também são compatíveis com o operador unário, - (negativo), mas esse operador não altera o tipo de dados do operando.
@@ -137,11 +137,11 @@ Por exemplo, se uma data é usada em uma operação de subtração com qualquer 
 
 **Multiplicação (*)**
 
-| Operador(*) | INTEGER | CURRENCY | REAL | Date/time |
+| Operador(*) | INTEGER | CURRENCY | real | Data/hora |
 | --- | --- | --- | --- | --- |
-| INTEGER |INTEGER |CURRENCY |REAL |INTEGER |
-| CURRENCY |CURRENCY |REAL |CURRENCY |CURRENCY |
-| REAL |REAL |CURRENCY |REAL |REAL |
+| INTEGER |INTEGER |CURRENCY |real |INTEGER |
+| CURRENCY |CURRENCY |real |CURRENCY |CURRENCY |
+| real |real |CURRENCY |real |real |
 
 Por exemplo, se um inteiro for combinado com um número real em uma operação de multiplicação, os dois números são convertidos em números reais, e o valor retornado também é REAL.
 
@@ -149,12 +149,12 @@ Por exemplo, se um inteiro for combinado com um número real em uma operação d
 
 Na tabela a seguir, o cabeçalho da linha é o numerador e o cabeçalho da coluna é o denominador.
 
-| Operador(/) (Linha/Coluna) | INTEGER | CURRENCY | REAL | Date/time |
+| Operador(/) (Linha/Coluna) | INTEGER | CURRENCY | real | Data/hora |
 | --- | --- | --- | --- | --- |
-| INTEGER |REAL |CURRENCY |REAL |REAL |
-| CURRENCY |CURRENCY |REAL |CURRENCY |REAL |
-| REAL |REAL |REAL |REAL |REAL |
-| Date/time |REAL |REAL |REAL |REAL |
+| INTEGER |REAL |CURRENCY |real |real |
+| CURRENCY |CURRENCY |real |CURRENCY |real |
+| real |real |real |real |real |
+| Data/hora |real |real |real |real |
 
 Por exemplo, se um inteiro for combinado com um valor de moeda em uma operação de divisão, os dois valores são convertidos em números reais e o resultado também é um número real.
 
@@ -171,15 +171,15 @@ As seguintes expressões DAX ilustram esse comportamento:
 
 As conversões são executadas implicitamente para tipos numéricos ou de data/hora, conforme descrito na tabela a seguir:
 
-| Operador de Comparação | INTEGER | CURRENCY | REAL | Date/time |
+| Operador de Comparação | INTEGER | CURRENCY | real | Data/hora |
 | --- | --- | --- | --- | --- |
-| INTEGER |INTEGER |CURRENCY |REAL |REAL |
-| CURRENCY |CURRENCY |CURRENCY |REAL |REAL |
-| REAL |REAL |REAL |REAL |REAL |
-| Date/time |REAL |REAL |REAL |Date/time |
+| INTEGER |INTEGER |CURRENCY |real |real |
+| CURRENCY |CURRENCY |CURRENCY |real |real |
+| real |real |real |real |real |
+| Data/hora |real |real |real |Date/time |
 
 ### <a name="handling-blanks-empty-strings-and-zero-values"></a>Tratamento de elementos em branco, cadeias de caracteres vazias e valores zero
-No DAX, um valor nulo ou em branco, uma célula vazia ou um valor ausente são representados pelo mesmo tipo novo de valor, um BLANK. Você também pode gerar elementos em branco usando a função BLANK, ou testar elementos em branco usando a função ISBLANK.
+No DAX, um valor nulo ou em branco, uma célula vazia ou um valor ausente são representados pelo mesmo tipo novo de valor, um BLANK. Você também pode gerar espaços em branco com o uso da função BLANK, ou testar se há espaços em branco com o uso da função ISBLANK.
 
 O modo como os elementos em branco são tratados em operações como adição ou concatenação depende da função individual. A tabela a seguir resume as diferenças entre as fórmulas DAX e do Microsoft Excel, da maneira que os elementos em branco são tratados.
 
@@ -191,9 +191,9 @@ O modo como os elementos em branco são tratados em operações como adição ou
 | 5/BLANK |Infinity |Erro |
 | 0/BLANK |NaN |Error |
 | BLANK/BLANK |BLANK |Erro |
-| FALSE OR BLANK |FALSO |FALSO |
-| FALSE AND BLANK |FALSO |FALSE |
-| TRUE OR BLANK |VERDADEIRO |TRUE |
-| TRUE AND BLANK |FALSO |VERDADEIRO |
+| FALSE OR BLANK |FALSE |FALSE |
+| FALSE AND BLANK |FALSE |FALSE |
+| TRUE OR BLANK |TRUE |TRUE |
+| TRUE AND BLANK |FALSE |TRUE |
 | BLANK OR BLANK |BLANK |Erro |
 | BLANK AND BLANK |BLANK |Erro |

@@ -8,11 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 971c2351fe5032ba91fa6c0f964bd844ef479b05
-ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
+ms.openlocfilehash: 7c9b5c753b262900d61a1a71b4c9a8167c943121
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84532409"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216690"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Diretrizes de relação muitos para muitos
 
@@ -34,20 +35,20 @@ A modelagem dessas entidades é bastante direta. Uma tabela de tipo de dimensão
 
 Aqui está um diagrama de modelo simplista das três tabelas.
 
-![Um diagrama de modelo contém três tabelas. O design é descrito no parágrafo a seguir.](media/relationships-many-to-many/bank-account-customer-model-example.png)
+![Diagrama mostrando um modelo que contém três tabelas. O design é descrito no parágrafo a seguir.](media/relationships-many-to-many/bank-account-customer-model-example.png)
 
 A primeira tabela é denominada **Conta** e contém duas colunas: **AccountID** e **Conta**. A primeira tabela é denominada **AccountCustomer** e contém duas colunas: **AccountID** e **CustomerID**. A terceira tabela é denominada **Cliente** e contém duas colunas: **CustomerID** e **Cliente**. Não há relações entre nenhuma das tabelas.
 
 Duas relações de um-para-muitos são adicionadas para relacionar as tabelas. Aqui está um diagrama de modelo atualizado das tabelas relacionadas. Uma tabela de tipo de fato chamada **Transação** foi adicionada. Ela registra transações de conta. A tabela de ponte e todas as colunas de ID foram ocultas.
 
-![O diagrama de modelo agora contém quatro tabelas. Relações um-para-muitos foram adicionadas para relacionar todas as tabelas.](media/relationships-many-to-many/bank-account-customer-model-related-tables-1.png)
+![Diagrama mostrando que o modelo agora contém quatro tabelas. Relações um-para-muitos foram adicionadas para relacionar todas as tabelas.](media/relationships-many-to-many/bank-account-customer-model-related-tables-1.png)
 
 Para ajudar a descrever como funciona a propagação do filtro de relações, o diagrama de modelo foi modificado para revelar as linhas de tabela.
 
 > [!NOTE]
 > Não é possível exibir linhas de tabela no diagrama de modelo do Power BI Desktop. Isso é feito neste artigo a fim de contribuir com a discussão, fornecendo exemplos claros.
 
-![O diagrama de modelo agora revela as linhas de tabela. Os detalhes de linha são descritos no parágrafo a seguir.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
+![Diagrama mostrando que o modelo agora revela as linhas da tabela. Os detalhes de linha são descritos no parágrafo a seguir.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
 
 Os detalhes de linha para as quatro tabelas são descritos na seguinte lista com marcadores:
 
@@ -70,7 +71,7 @@ Vejamos o que acontece quando o modelo é consultado.
 
 Abaixo estão dois elementos visuais que resumem a coluna **Valor** da tabela **Transação**. O primeiro visual é agrupado por conta e, portanto, a soma das colunas de **Valor** representa o _saldo da conta_. O segundo visual é agrupado por cliente e, portanto, a soma das colunas de **Valor** representa o _saldo do cliente_.
 
-![Dois visuais de relatório ficam lado a lado. Os visuais são descritos no parágrafo a seguir.](media/relationships-many-to-many/bank-account-customer-model-queried-1.png)
+![Diagrama mostrando dois visuais de relatório lado a lado. Os visuais são descritos no parágrafo a seguir.](media/relationships-many-to-many/bank-account-customer-model-queried-1.png)
 
 O primeiro visual é intitulado **Saldo da Conta** e tem duas colunas: **Conta** e **Valor**. Ele exibe o seguinte resultado:
 
@@ -90,9 +91,9 @@ No entanto, há algo que não parece estar correto com o visual **Saldo do Clien
 
 Siga as instruções de filtro de relação da tabela **Cliente** para a tabela **Transação**. Deve ficar evidente que a relação entre a **Conta** e a tabela **AccountCustomer** está se propagando na direção errada. A direção do filtro para essa relação deve ser definida para **Ambas**.
 
-![O diagrama de modelo foi atualizado. Uma única alteração foi feita na relação entre as tabelas Conta e AccountCustomer. Agora, essa relação filtra em ambas as direções.](media/relationships-many-to-many/bank-account-customer-model-related-tables-3.png)
+![Diagrama mostrando que o modelo foi atualizado. Agora, essa relação filtra em ambas as direções.](media/relationships-many-to-many/bank-account-customer-model-related-tables-3.png)
 
-![Os mesmos dois visuais de relatório ficam lado a lado. O primeiro visual não foi alterado. O segundo visual revela um resultado diferente e é descrito nos parágrafos a seguir.](media/relationships-many-to-many/bank-account-customer-model-queried-2.png)
+![Diagrama mostrando os mesmos dois visuais de relatório lado a lado. O primeiro visual não foi alterado, ao contrário do segundo.](media/relationships-many-to-many/bank-account-customer-model-queried-2.png)
 
 Como esperado, não houve alteração no visual **Saldo da Conta**.
 
@@ -130,13 +131,13 @@ O segundo tipo de cenário de muitos-para-muitos envolve relacionar duas tabelas
 
 Vamos considerar um exemplo que envolve duas tabelas de tipo de fato: **Ordem** e **Cumprimento**. A tabela **Ordem** contém uma linha por linha de ordem, enquanto a tabela **Cumprimento** pode conter zero ou mais linhas por linha de ordem. As linhas na tabela **Ordem** representam ordens de venda. As linhas na tabela **Cumprimento** representam os itens de ordem que foram enviados. Uma relação muitos-para-muitos relaciona as duas colunas de **OrderID**, com a propagação de filtro somente da tabela **Ordem** (a **Ordem** filtra o **Cumprimento**).
 
-![Um diagrama de modelo contém duas tabelas: Ordem e Cumprimento. Uma relação muitos-para-muitos relaciona as duas colunas OrderID, filtrando de Ordem para Cumprimento.](media/relationships-many-to-many/order-fulfillment-model-example.png)
+![Diagrama mostrando um modelo que contém duas tabelas: Ordem e Cumprimento.](media/relationships-many-to-many/order-fulfillment-model-example.png)
 
 A cardinalidade da relação é definida como muitos-para-muitos para dar suporte ao armazenamento de valores de **OrderID** duplicados nas duas tabelas. Na tabela **Ordem**, os valores de **OrderID** duplicados podem existir porque uma ordem pode ter várias linhas. Na tabela **Cumprimento**, os valores **OrderID** duplicados podem existir porque as ordens podem ter várias linhas, e as linhas de ordem podem ser cumpridas por muitas remessas.
 
 Agora, vamos dar uma olhada nas linhas da tabela. Na tabela **Cumprimento**, observe que as linhas de ordem podem ser cumpridas por várias remessas. (A ausência de uma linha de ordem significa que a ordem ainda deve ser cumprida.)
 
-![O diagrama de modelo agora revela as linhas de tabela. Os detalhes de linha são descritos no parágrafo a seguir.](media/relationships-many-to-many/order-fulfillment-model-related-tables.png)
+![Diagrama mostrando que o modelo agora revela as linhas da tabela. Os detalhes de linha são descritos no parágrafo a seguir.](media/relationships-many-to-many/order-fulfillment-model-related-tables.png)
 
 Os detalhes de linha para as duas tabelas são descritos na seguinte lista com marcadores:
 
@@ -154,7 +155,7 @@ Os detalhes de linha para as duas tabelas são descritos na seguinte lista com m
 
 Vejamos o que acontece quando o modelo é consultado. Aqui está um visual de tabela que compara as quantidades de ordem e de cumprimento pela coluna **OrderID** da tabela **Ordem**.
 
-![Um visual de tabela tem três colunas: OrderID, OrderQuantity e FulfillmentQuantity. Há três linhas, uma para cada ordem. OrderID 2 e 3 não foram completamente cumpridas.](media/relationships-many-to-many/order-fulfillment-model-queried.png)
+![Diagrama mostrando um visual de tabela com três colunas: OrderID, OrderQuantity e FulfillmentQuantity.](media/relationships-many-to-many/order-fulfillment-model-queried.png)
 
 O visual fornece um resultado preciso. No entanto, a utilidade do modelo é limitada. Você só pode filtrar ou agrupar pela coluna **OrderID** da tabela **Order**.
 
@@ -166,7 +167,7 @@ Em vez de relacionar as tabelas de tipo de fato diretamente, recomendamos que vo
 
 Vamos considerar uma solução melhor.
 
-![Um diagrama de modelo inclui seis tabelas: OrderLine, OrderDate, Ordem, Cumprimento, Produto e FulfillmentDate. Todas as tabelas estão relacionadas. O design é descrito no parágrafo a seguir.](media/relationships-many-to-many/order-fulfillment-model-improved.png)
+![Diagrama mostrando um modelo que inclui seis tabelas: OrderLine, OrderDate, Ordem, Cumprimento, Produto e FulfillmentDate.](media/relationships-many-to-many/order-fulfillment-model-improved.png)
 
 Observe as seguintes alterações de design:
 
@@ -191,11 +192,11 @@ Esse cenário muitos-para-muitos é muito diferente dos outros dois já descrito
 
 Vamos considerar um exemplo envolvendo quatro tabelas: **Data**, **Vendas**, **Produto** e **Destino**. **Data** e **Produto** são tabelas de tipo de dimensão, e relações um-para-muitos relacionam cada uma delas à tabela de tipo de fato **Vendas**. Até agora, isso representa um bom design de esquema em estrela. No entanto, a tabela **Destino** ainda precisa ser relacionada às outras tabelas.
 
-![Um diagrama de modelo inclui quatro tabelas: Data, Vendas, Produto e Destino. A tabela Destino não está relacionada a nenhuma outra tabela. O design é descrito no parágrafo a seguir.](media/relationships-many-to-many/sales-targets-model-example.png)
+![Diagrama mostrando um modelo que inclui quatro tabelas: Data, Vendas, Produto e Destino.](media/relationships-many-to-many/sales-targets-model-example.png)
 
 A tabela **Destino** contém três colunas: **Category**, **TargetQuantity** e **TargetYear**. As linhas da tabela revelam uma granularidade de ano e categoria do produto. Em outras palavras, os destinos, que são usados para medir o desempenho das vendas, são definidos a cada ano para cada categoria de produto.
 
-![A tabela Destino tem três colunas: TargetYear, Category e TargetQuantity. Seis linhas registram destinos para 2019 e 2020, cada um para três categorias.](media/relationships-many-to-many/sales-targets-model-target-rows.png)
+![Diagrama mostrando que a tabela Target tem três colunas: TargetYear, Category e TargetQuantity.](media/relationships-many-to-many/sales-targets-model-target-rows.png)
 
 Já que a tabela **Destino** armazena dados em um nível mais alto do que as tabelas de tipo de dimensão, uma relação um-para-muitos não pode ser criada. Bem, isso é verdade para apenas uma das relações. Vamos explorar como a tabela **Destino** pode estar relacionada às tabelas de tipo de dimensão.
 
@@ -210,7 +211,7 @@ Uma relação entre as tabelas **Data** e **Destino** devem ser uma relação um
 
 O visual de matriz a seguir mostra o que acontece quando o usuário do relatório faz um detalhamento de um ano para os respectivos meses. O visual está resumindo a coluna **TargetQuantity**. (A opção [Mostrar itens sem dados](../create-reports/desktop-show-items-no-data.md) foi habilitada para as linhas de matriz.)
 
-![Um visual de matriz revela a quantidade de destino do ano de 2020 como 270. Quando expandido para revelar os meses de 2020, janeiro equivale a 270 e todas as outras quantidades de destino no nível do mês equivalem a BLANK.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-bad.png)
+![Diagrama mostrando um visual de matriz que revela a quantidade de destino do ano 2020 como 270.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-bad.png)
 
 Para evitar esse comportamento, recomendamos que você controle o resumo de seus dados de fatos usando medidas. Uma maneira de controlar o modo como o resumo é realizado é retornar BLANK quando períodos de nível inferior são consultados. Outra maneira, definida com um DAX sofisticado, é distribuir valores entre períodos de nível inferior.
 
@@ -227,7 +228,7 @@ IF(
 
 O visual de matriz a seguir agora usa a medida **Quantidade de Destino**. Ele mostra que todas as quantidades de destino mensais equivalem a BLANK.
 
-![Um visual de matriz revela a quantidade de destino do ano de 2020 como 270. Quando expandido para revelar os meses de 2020, todas as quantidades de destino no nível do mês equivalem a BLANK.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-good.png)
+![Diagrama mostrando um visual de matriz que revela a quantidade de destino do ano 2020 como 270.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-good.png)
 
 ### <a name="relate-higher-grain-non-date"></a>Relacionar granulação mais alta (não data)
 
@@ -235,21 +236,21 @@ Uma abordagem de design diferente é necessária ao relacionar uma coluna não d
 
 As colunas **Categoria** (referentes a ambas as tabelas **Produtos** e **Destino**) contêm valores duplicados. Portanto, não há "um" para uma relação um-para-muitos. Nesse caso, você precisará criar uma relação muitos-para-muitos. A relação deve propagar filtros em uma única direção, da tabela de tipo de dimensão para a tabela de tipo de fato.
 
-![Um fragmento do diagrama de modelo mostra as tabelas Destino e Produto. Uma relação muitos-para-muitos relaciona as duas tabelas. A direção do filtro é de Produto para Destino.](media/relationships-many-to-many/sales-targets-model-relate-non-date.png)
+![Diagrama mostrando um modelo das tabelas Target e Product. Uma relação muitos-para-muitos relaciona as duas tabelas.](media/relationships-many-to-many/sales-targets-model-relate-non-date.png)
 
 Agora, vamos dar uma olhada nas linhas da tabela.
 
-![Um diagrama de modelo contém duas tabelas: Destino e Produto. Uma relação muitos-para-muitos relaciona as duas colunas Category. Os detalhes de linha são descritos no parágrafo a seguir.](media/relationships-many-to-many/sales-targets-model-relate-non-date-tables.png)
+![Diagrama mostrando um modelo que contém duas tabelas: Destino e Produto. Uma relação muitos-para-muitos relaciona as duas colunas Category.](media/relationships-many-to-many/sales-targets-model-relate-non-date-tables.png)
 
 Na tabela **Destino**, há quatro linhas: duas linhas para cada ano de destino (2019 e 2020) e duas categorias (Roupas e Acessórios). Na tabela **Produtos**, há três produtos. Dois pertencem à categoria de roupas e um pertence à categoria de acessórios. Uma das cores de roupas é verde e as duas restantes são azuis.
 
 Um agrupamento visual de tabela pela coluna **Category** da tabela **Produto** produz o resultado a seguir.
 
-![Um visual de tabela tem duas colunas: Category e TargetQuantity. Os acessórios custam 60, roupas custam 40 e o total é 100.](media/relationships-many-to-many/sales-targets-model-visual-category-targets.png)
+![Diagrama mostrando um visual de tabela com duas colunas: Category e TargetQuantity. Os acessórios custam 60, roupas custam 40 e o total é 100.](media/relationships-many-to-many/sales-targets-model-visual-category-targets.png)
 
 Esse visual produz o resultado correto. Agora, vamos considerar o que acontece quando a coluna **Cor** da tabela **Produto** é usada para agrupar a quantidade de destino.
 
-![Um visual de tabela tem duas colunas: Cor e TargetQuantity. Azul é 100, Verde é 40 e o total é 100.](media/relationships-many-to-many/sales-targets-model-visual-color-targets-bad.png)
+![Diagrama mostrando um visual de tabela com duas colunas: Cor e TargetQuantity. Azul é 100, Verde é 40 e o total é 100.](media/relationships-many-to-many/sales-targets-model-visual-color-targets-bad.png)
 
 O visual produz uma representação incorreta dos dados. O que está acontecendo?
 
@@ -271,11 +272,11 @@ IF(
 
 O visual de tabela a seguir agora usa a medida **Quantidade de Destino**. Ele mostra que todas as quantidades de destino de cor equivalem a BLANK.
 
-![Um visual de tabela tem duas colunas: Cor e TargetQuantity. Azul equivale a BLANK, verde equivale a BLANK e o total é 100.](media/relationships-many-to-many/sales-targets-model-visual-color-targets-good.png)
+![Diagrama mostrando um visual de tabela com duas colunas: Cor e TargetQuantity. Azul equivale a BLANK, verde equivale a BLANK e o total é 100.](media/relationships-many-to-many/sales-targets-model-visual-color-targets-good.png)
 
 O design final do modelo é semelhante ao mostrado a seguir.
 
-![O diagrama de modelo mostra que as tabelas Data e Destino estão relacionadas com uma relação um-para-muitos. As tabelas Produto e Destino estão relacionadas com uma relação muitos-para-muitos, filtrando de Produto para Destino.](media/relationships-many-to-many/sales-targets-model-example-final.png)
+![Diagrama mostrando um modelo com as tabelas Date e Target relacionadas com uma relação um-para-muitos.](media/relationships-many-to-many/sales-targets-model-example-final.png)
 
 ### <a name="relate-higher-grain-facts-guidance"></a>Diretrizes para relacionar fatos com granulação mais alta
 
@@ -297,5 +298,5 @@ Para obter mais informações relacionadas a este artigo, confira os seguintes r
 - [Modelar relações no Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - [Entender o esquema em estrela e a importância para o Power BI](star-schema.md)
 - [Diretrizes da solução de problemas de relação](relationships-troubleshoot.md)
-- Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+- Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
 - Sugestões? [Contribuir com ideias para aprimorar o Power BI](https://ideas.powerbi.com/)

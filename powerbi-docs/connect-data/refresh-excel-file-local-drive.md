@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 806fb9fffccaffee62d8cafb00dc94b5ad7b0def
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ef9c39f6c00738718d88dd485430b150ad95ec50
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220875"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216340"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-a-local-drive"></a>Atualizar um conjunto de dados criado com base em uma pasta do Excel em uma unidade local
 ## <a name="whats-supported"></a>O que tem suporte?
@@ -47,13 +47,13 @@ Quando você usa o Power Query (Obter e transformar dados no Excel 2016) para se
 > 
 
 Em **Navegador**, clique em **Carregar para...**  
-    ![](media/refresh-excel-file-local-drive/refresh_loadtodm_1.png)
+    ![Captura de tela de Carregar em no Navegador mostrando a seleção de Carregar em.](media/refresh-excel-file-local-drive/refresh_loadtodm_1.png)
 
-Ou então, se você clicar em **Editar** no Navegador, você abrirá o Editor de Consultas. Lá, você pode clicar em **Fechar e Carregar para...** .  
-    ![](media/refresh-excel-file-local-drive/refresh_loadtodm_2.png)
+Ou então, se você clicar em **Editar** no Navegador, você abrirá o Editor de Consultas. Lá, é possível clicar em **Fechar e Carregar para...**  
+    ![Captura de tela da guia Página Inicial no Navegador mostrando a seleção de Fechar e Carregar em.](media/refresh-excel-file-local-drive/refresh_loadtodm_2.png)
 
 Em seguida, em **Carregar para**, certifique-se de que você selecionou **Adicionar esses dados ao Modelo de Dados**.  
-    ![](media/refresh-excel-file-local-drive/refresh_loadtodm_3.png)
+    ![Captura de tela da caixa de diálogo Carregar em mostrando a caixa Adicionar estes dados ao Modelo de Dados marcada.](media/refresh-excel-file-local-drive/refresh_loadtodm_3.png)
 
 ### <a name="what-if-i-use-get-external-data-in-power-pivot"></a>E se eu usar o recurso Obter Dados Externos no Power Pivot?
 Sem problemas. Sempre que você usar o Power Pivot para se conectar e consultar dados de uma fonte de dados local ou online, os dados serão carregados automaticamente no modelo de dados.

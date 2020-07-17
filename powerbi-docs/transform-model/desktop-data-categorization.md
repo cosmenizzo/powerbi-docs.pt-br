@@ -9,22 +9,22 @@ ms.topic: how-to
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 723869023824f7841eaaa895ab551b719a69c0e2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 414f58338a53ce9ff24f193acd3cee0da2c30658
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236294"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215326"
 ---
 # <a name="specify-data-categories-in-power-bi-desktop"></a>Especificar categorias de dados no Power BI Desktop
 No Power BI Desktop, você pode especificar a *categoria de dados* para uma coluna de modo que o Power BI Desktop saiba como deve tratar seus valores em uma visualização.
 
 Quando Power BI Desktop importa dados, ele obtém outras informações além dos dados em si, como os nomes de tabela e coluna, e se os dados são uma chave primária. Com essas informações, o Power BI Desktop faz algumas suposições sobre como oferecer a você uma boa uma experiência padrão ao criar uma visualização.
-Por exemplo, quando uma coluna tem valores numéricos, você provavelmente desejará agregar isso de alguma forma, portanto, o Power BI Desktop a coloca na área **Valores** do painel **Visualizações**. Ou, para uma coluna com valores de data e hora em um gráfico de linhas, o Power BI Desktop pressupõe que você provavelmente a usará como um eixo de hierarquia de tempo.
+Por exemplo, quando uma coluna tem valores numéricos, provavelmente, o ideal é agregar isso de alguma forma e, portanto, o Power BI Desktop a coloca na área **Valores** do painel **Visualizações**. Ou então, para uma coluna com valores de data e hora em um gráfico de linhas, o Power BI Desktop pressupõe que você provavelmente a usará como um eixo de hierarquia de tempo.
 
 No entanto, existem alguns casos que são um pouco mais difíceis, como geografia. Considere esta tabela de uma planilha do Excel:
 
-![](media/desktop-data-categorization/datacategorizationtable.png)
+![Captura de tela do Excel mostrando dados de tabela a serem importados para o Power BI Desktop.](media/desktop-data-categorization/datacategorizationtable.png)
 
 O Power BI Desktop deve tratar os códigos na coluna **GeoCode** como uma abreviação para um País ou um Estado dos EUA?  Isso não está claro, porque um código como esse pode significar qualquer uma dessas opções. Por exemplo, AL pode significar Alabama ou Albânia, AR pode significar Arkansas ou Argentina, CA pode significar Califórnia ou no Canadá. Isso faz diferença quando vamos traçar um gráfico de nosso campo GeoCode em um mapa. 
 
@@ -33,10 +33,9 @@ O Power BI Desktop deve mostrar uma imagem do mundo com os países realçados? O
 **Para especificar uma categoria de dados**
 
 1. Na Exibição de **Relatório** ou de **Dados**, na lista **Campos**, selecione o campo que você deseja classificar por uma categorização diferente.
-2. Na faixa de opções, na área **Propriedades** da guia **Modelagem**, selecione a seta suspensa ao lado de **Categoria de Dados**.  Essa lista mostra as categorias de dados possíveis que você pode escolher para a coluna. Algumas seleções podem ser desabilitadas se não funcionarem com o tipo de dados atual da coluna.  Por exemplo, se uma coluna for um tipo de dados de data ou hora, o Power BI Desktop não permitirá que você escolha categorias de dados geográficos. 
+2. Na faixa de opções, na área **Propriedades** da guia **Modelagem**, selecione a seta suspensa ao lado de **Categoria de Dados**.  Essa lista mostra as categorias de dados possíveis que você pode escolher para a coluna. Algumas seleções poderão ser desabilitadas se não funcionarem com o tipo de dados atual da coluna.  Por exemplo, se uma coluna for um tipo de dados de data ou hora, o Power BI Desktop não permitirá que você escolha categorias de dados geográficos. 
 3. Selecione a categoria desejada.
 
-   ![](media/desktop-data-categorization/desktop-data-categorization.png)
+   ![Captura de tela do Power BI Desktop mostrando o filtro Categoria de Dados.](media/desktop-data-categorization/desktop-data-categorization.png)
 
 Talvez você também esteja interessado em saber mais sobre a [filtragem geográfica para aplicativos móveis do Power BI](desktop-mobile-geofiltering.md).
-

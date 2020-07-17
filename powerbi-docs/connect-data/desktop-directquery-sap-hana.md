@@ -9,23 +9,23 @@ ms.topic: how-to
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f121d4fb4e60fc29ef887d27c148aa3063dcee82
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4d2c48f39fff9cd55243848b2ee62d05f9d5db00
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223683"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216384"
 ---
 # <a name="connect-to-sap-hana-data-sources-by-using-directquery-in-power-bi"></a>Conectar-se a fontes de dados do SAP HANA usando o DirectQuery no Power BI
 Você pode se conectar a fontes de dados do **SAP HANA** diretamente usando o **DirectQuery**. Há duas opções ao se conectar ao SAP HANA:
 
-* **Tratar o SAP HANA como uma origem multidimensional (padrão):** nesse caso, o comportamento será semelhante a quando o Power BI conecta-se a outras fontes multidimensionais, como SAP Business Warehouse ou Analysis Services. Ao se conectar ao SAP HANA usando essa configuração, uma única exibição de cálculo ou análise é selecionada, e todas as medidas, hierarquias e atributos dessa exibição estarão disponíveis na lista de campos. Conforme os visuais são criados, os dados de agregação serão sempre recuperados do SAP HANA. Essa é a abordagem recomendada e é o padrão para novos relatórios DirectQuery no SAP HANA.
+* **Tratar o SAP HANA como uma fonte de dados multidimensional (padrão):**  Nesse caso, o comportamento será semelhante a quando o Power BI conecta-se a outras fontes multidimensionais, como SAP Business Warehouse ou Analysis Services. Ao se conectar ao SAP HANA usando essa configuração, uma única exibição de cálculo ou análise é selecionada, e todas as medidas, hierarquias e atributos dessa exibição estarão disponíveis na lista de campos. Conforme os visuais são criados, os dados de agregação serão sempre recuperados do SAP HANA. Essa é a abordagem recomendada e é o padrão para novos relatórios DirectQuery no SAP HANA.
 
-* **Tratar o SAP HANA como uma origem de dados relacional:** nesse caso, o Power BI trata o SAP HANA como uma origem de dados relacional. Isso proporciona maior flexibilidade. É importante ter cuidado com esta abordagem para garantir que as medidas sejam agregadas conforme o esperado e para evitar problemas de desempenho.
+* **Tratar o SAP HANA como uma fonte de dados relacional:** nesse caso, o Power BI trata o SAP HANA como uma fonte de dados relacional. Isso proporciona maior flexibilidade. É importante ter cuidado com esta abordagem para garantir que as medidas sejam agregadas conforme o esperado e para evitar problemas de desempenho.
 
 A abordagem de conexão é determinada por uma opção de ferramenta global, que é configurada selecionando **Arquivo > Opções e configurações**, e **Opções > DirectQuery**, em seguida, selecionando a opção **Tratar SAP HANA como uma origem relacional**, conforme mostrado na imagem a seguir. 
 
-![](media/desktop-directquery-sap-hana/directquery-sap-hana_01a.png)
+![Captura de tela da caixa de diálogo Opções mostrando as opções do DirectQuery.](media/desktop-directquery-sap-hana/directquery-sap-hana_01a.png)
 
 A opção de tratar o SAP HANA como uma origem de dados relacional controla a abordagem usada para todos os *novos* relatórios usando DirectQuery no SAP HANA. Isso não tem efeito sobre as conexões existentes do SAP HANA no relatório atual, nem nas conexões em outros relatórios que estejam abertos. Portanto, se a opção estiver atualmente desmarcada, após a adição de uma nova conexão com o SAP HANA usando **Obter Dados**, essa conexão será feita considerando o SAP HANA como uma origem de dados multidimensional. No entanto, ao abrir outro relatório que também se conecta ao SAP HANA, esse relatório continuará se comportando de acordo com a opção que foi definida *na ocasião em que foi criado*. Isso significa que todos os relatórios que se conectem ao SAP O HANA, criados antes de fevereiro de 2018, continuarão tratando o SAP HANA como uma fonte relacional. 
 
@@ -65,9 +65,9 @@ As principais restrições de modelagem adicionais ao se conectar ao SAP HANA us
 
 * **Não há suporte para colunas calculadas:** a capacidade de criar colunas calculadas fica desabilitada. Isso também significa que o Agrupamento e o Clustering, que criam colunas calculadas, não estão disponíveis.
 * **Limitações adicionais para medidas:** há limitações adicionais impostas sobre as expressões DAX que podem ser usadas em medidas para refletir o nível de suporte oferecido pelo SAP HANA.
-* **Sem suporte para definição de relações:** apenas uma única exibição pode ser consultada dentro de um relatório e, dessa forma, não há suporte para definição de relações.
-* **Não há Exibição de Dados:** a **Exibição de Dados** normalmente exibe dados com nível de detalhe nas tabelas. Dada a natureza das fontes de OLAP como o SAP HANA, essa exibição não está disponível com o SAP HANA.
-* **Os detalhes das colunas e das medidas são fixos:** a lista de colunas e medidas vistas na lista de campos são fixas segundo a fonte subjacente e não podem ser modificadas. Por exemplo, não é possível excluir uma coluna ou alterar seu tipo de dados (no entanto, é possível renomeá-la).
+* **Não há suporte para definição de relações:** apenas uma única exibição pode ser consultada dentro de um relatório e, dessa forma, não há suporte para definição de relações.
+* **Não há Modo de Exibição de Dados:** o **Modo de Exibição de Dados** normalmente exibe dados detalhados nas tabelas. Dada a natureza das fontes de OLAP como o SAP HANA, essa exibição não está disponível com o SAP HANA.
+* **Detalhes de coluna e medidas são fixos:** a lista de colunas e medidas vista na lista de campos é fixa segundo a fonte subjacente e não pode ser modificada. Por exemplo, não é possível excluir uma coluna ou alterar seu tipo de dados (no entanto, é possível renomeá-la).
 * **Limitações adicionais no DAX:** há limitações adicionais no DAX que podem ser usadas em definições de medida para refletir as limitações na fonte. Por exemplo, não é possível usar uma função de agregação em uma tabela.
 
 ### <a name="additional-visualization-restrictions"></a>Outras restrições de visualização
@@ -75,7 +75,7 @@ As principais restrições de modelagem adicionais ao se conectar ao SAP HANA us
 Há restrições nos elementos visuais ao se conectar ao SAP HANA usando o DirectQuery (trate como fonte de dados multidimensional): 
 * **Não há agregação de colunas:** não é possível alterar a agregação para uma coluna em um visual; ela sempre é *Não Resumir*.
 
-## <a name="treat-sap-hana-as-a-relational-source"></a>Tratar o SAP HANA como uma origem de dados relacional 
+## <a name="treat-sap-hana-as-a-relational-source"></a>Tratar o SAP HANA como uma origem relacional 
 
 Ao decidir se conectar ao SAP HANA como uma origem de dados relacional, outras flexibilidades adicionais ficam disponíveis. Por exemplo, você pode criar colunas calculadas, incluir dados de vários modos de exibição do SAP HANA e criar relações entre as tabelas resultantes. No entanto, ao usar o SAP HANA dessa maneira, é importante entender determinados aspectos de como as conexões são tratadas, para garantir o seguinte: 
 
@@ -84,7 +84,7 @@ Ao decidir se conectar ao SAP HANA como uma origem de dados relacional, outras f
 
 É útil começar esclarecendo o comportamento de uma fonte relacional, como um SQL Server, quando a consulta definida em **Obter Dados** ou no **Editor de Consultas** executar uma agregação. No exemplo a seguir, uma consulta definida no **Editor de Consultas** retorna o preço médio segundo o *ProductID*.  
 
-![](media/desktop-directquery-sap-hana/directquery-sap-hana_01.png)
+![Diagrama mostrando uma consulta definida no Editor de Consultas que retorna o preço médio por ID do produto.](media/desktop-directquery-sap-hana/directquery-sap-hana_01.png)
 
 Se os dados estiverem sendo importados para o Power BI (em vez de usar o DirectQuery), aconteceria o seguinte:
 
@@ -110,9 +110,9 @@ Todas essas considerações e comportamentos exigem as seguintes considerações
 
 * Em **Obter Dados** ou no **Editor de Consultas**, somente as colunas obrigatórias devem ser incluídas para recuperar os dados necessários, refletindo o fato de que o resultado será uma consulta, que deverá ser uma consulta razoável que possa ser enviada ao SAP HANA. Por exemplo, se dezenas de colunas tiverem sido selecionadas, com a ideia de que elas poderão ser necessárias em visuais posteriores, então até mesmo para o DirectQuery um visual simples significará que a consulta de agregação usada na subseleção incluirá essas dezenas de colunas, o que geralmente levará a um desempenho ruim.
   
-Vejamos um exemplo. No exemplo a seguir, selecionar cinco colunas (**CalendarQuarter**, **Color**, **LastName**, **ProductLine**, **SalesOrderNumber**) na caixa de diálogo **Obter Dados**, junto com a medida *OrderQuantity*, significa que, mais tarde, a criação de um visual simples contendo Min OrderQuantity resultará na seguinte consulta SQL ao SAP HANA. O sombreado é a subseleção, contendo a consulta de **Obter Dados** / **Editor de Consultas**. Se essa subseleção levar a um resultado com cardinalidade alta, é provável que o desempenho resultante do SAP HANA seja ruim.  
+Vamos examinar um exemplo. No exemplo a seguir, selecionar cinco colunas (**CalendarQuarter**, **Color**, **LastName**, **ProductLine**, **SalesOrderNumber**) na caixa de diálogo **Obter Dados**, junto com a medida *OrderQuantity*, significa que, mais tarde, a criação de um visual simples contendo Min OrderQuantity resultará na seguinte consulta SQL ao SAP HANA. O sombreado é a subseleção, contendo a consulta de **Obter Dados** / **Editor de Consultas**. Se essa subseleção levar a um resultado com cardinalidade alta, é provável que o desempenho resultante do SAP HANA seja ruim.  
 
-![](media/desktop-directquery-sap-hana/directquery-sap-hana_03.png)
+![Captura de tela de um exemplo de consulta mostrando a consulta SQL no SAP HANA.](media/desktop-directquery-sap-hana/directquery-sap-hana_03.png)
 
    
 Por causa deste comportamento, recomendamos que os itens selecionados em **Obter Dados** ou no **Editor de Consultas** sejam limitados aos itens que são necessários, ainda assim resultando em uma consulta razoável ao SAP HANA.  
@@ -148,4 +148,4 @@ Para obter mais informações sobre o DirectQuery, confira os seguintes recursos
 * [DirectQuery no Power BI](desktop-directquery-about.md)
 * [Fontes de dados com suporte do DirectQuery](power-bi-data-sources.md)
 * [DirectQuery e SAP BW](desktop-directquery-sap-bw.md)
-* [Gateway de dados local](service-gateway-onprem.md)
+* [On-premises data gateway (Gateway de dados local)](service-gateway-onprem.md)

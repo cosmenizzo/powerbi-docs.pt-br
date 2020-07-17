@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d74c6583197441d63cb6c7c40ba44a5b21885b28
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 76c76cf5ae41c369e3810f3a52ee43816184d8e1
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219173"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263056"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Fixar um bloco em um dashboard de P e R
 ## <a name="how-to-pin-a-tile-from-qa"></a>Como fixar um bloco de P e R
@@ -32,7 +32,7 @@ Para acompanhar, abra o [painel de exemplo da Análise de Varejo](sample-retail-
    ![digitar uma pergunta](media/service-dashboard-pin-tile-from-q-and-a/power-bi-type-q-and-a.png)
 
    a caixa de perguntas oferece sugestões.
-4. Para adicionar o gráfico ao dashboard como um bloco, selecione o pino ![](media/service-dashboard-pin-tile-from-q-and-a/pbi_pintile.png) no lado superior direito da tela. Se o dashboard tiver sido compartilhado com você, você não poderá fixar nenhuma visualização.
+4. Para adicionar o gráfico ao dashboard como um bloco, selecione o marcador ![Ícone de fixação](media/service-dashboard-pin-tile-from-q-and-a/pbi_pintile.png) no lado superior direito da tela. Se o dashboard tiver sido compartilhado com você, você não poderá fixar nenhuma visualização.
 
 5. Fixe o bloco em um painel existente ou em um novo painel.
 

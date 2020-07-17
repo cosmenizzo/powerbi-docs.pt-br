@@ -9,17 +9,17 @@ ms.topic: how-to
 ms.date: 01/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9632bfaecc524aac95ec524cccb59ba08a7bc21f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 68f2dc14b713345796ba0472fc3d55f6baedf819
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229073"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263183"
 ---
 # <a name="add-a-column-from-examples-in-power-bi-desktop"></a>Adicionar uma coluna com base em exemplos no Power BI Desktop
 Com o recurso *Adicionar coluna com base em exemplos* no Editor do Power Query, você pode adicionar novas colunas ao modelo de dados simplesmente fornecendo um ou mais valores de exemplo para as novas colunas. Crie os exemplos de coluna com base em uma seleção ou forneça a entrada com base em todas as colunas existentes na tabela.
 
-![](media/desktop-add-column-from-example/add-column-from-example_01.png)
+![Captura de tela do Editor do Power Query mostrando como adicionar uma coluna com base em exemplos no Power BI Desktop.](media/desktop-add-column-from-example/add-column-from-example_01.png)
 
 O uso de *Adicionar coluna com base em exemplos* ajuda você a criar colunas de maneira rápida e fácil e é excelente para as seguintes situações:
 
@@ -84,16 +84,16 @@ Muitas mas nem todas as transformações estão disponíveis ao usar **Adicionar
 **Transformações de texto**
 
 - Combinar (dá suporte à combinação de cadeias de caracteres literais e a todos os valores da coluna)
-- Substituir
-- Tamanho
-- Extrair   
+- Substitua
+- Comprimento
+- Extract   
   - Primeiros caracteres
   - Últimos caracteres
   - Intervalo
   - Texto antes do delimitador
   - Texto depois do delimitador
   - Texto entre delimitadores
-  - Tamanho
+  - Comprimento
   - Remover Caracteres
   - Manter Caracteres
 
@@ -106,8 +106,8 @@ Muitas mas nem todas as transformações estão disponíveis ao usar **Adicionar
 - Dia da semana
 - Nome do dia da semana
 - Dia do ano
-- Mês
-- Nome do mês
+- Month
+- Month Name
 - Trimestre do ano
 - Semana do mês
 - Semana do ano
@@ -130,7 +130,7 @@ Muitas mas nem todas as transformações estão disponíveis ao usar **Adicionar
 
 - Hora
 - Minuto
-- Second  
+- Segundo  
 - Para a hora local
 
 > [!NOTE]
@@ -165,4 +165,3 @@ Muitas mas nem todas as transformações estão disponíveis ao usar **Adicionar
 - Somar
 - Tangente
 - Particionamento/intervalos
-

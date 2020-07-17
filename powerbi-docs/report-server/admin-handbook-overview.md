@@ -8,18 +8,18 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: maggies
-ms.openlocfilehash: a93b3def115aaadbc33f6d0985aeea424558f248
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8f292b8474c478c178b85f2c015781ead1fa503c
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73860220"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86213809"
 ---
 # <a name="admin-overview-power-bi-report-server"></a>Visão geral do administrador, Servidor de Relatórios do Power BI
 Este artigo é a visão geral da administração do Servidor de Relatórios do Power BI, um local para armazenar e gerenciar seus relatórios móveis, paginados e do Power BI. Este artigo apresenta conceitos de planejamento, de implantação e de gerenciamento do Servidor de Relatórios do Power BI, com links para obter mais informações.
 
-![](media/admin-handbook-overview/admin-handbook.png)
-
+![Captura de tela do Servidor de Relatórios do Power BI mostrando opções de entrada.](media/admin-handbook-overview/admin-handbook.png)
+ 
 ## <a name="installing-and-migration"></a>Instalação e migração
 Será necessário instalar o Servidor de Relatórios do Power BI para começar a usá-lo. Temos artigos que explicam como realizar essa tarefa.
 
@@ -46,9 +46,9 @@ Segurança e proteção são importantes para toda organização. É possível s
 ## <a name="next-steps"></a>Próximas etapas
 [Instalar o Servidor de Relatório do Power BI](install-report-server.md)  
 [Encontrar a chave do produto (Product Key) do servidor de relatórios](find-product-key.md)  
-[Instalar o Power BI Desktop otimizado para o Servidor de Relatório do Power BI](install-powerbi-desktop.md)  
-[Baixar o Construtor de Relatórios](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Baixar o SSDT (SQL Server Data Tools)](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Instalar o Power BI Desktop otimizado para o servidor de relatórios do Power BI](install-powerbi-desktop.md)  
+[Baixe o Construtor de Relatórios](https://www.microsoft.com/download/details.aspx?id=53613)  
+[Baixar o SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
 

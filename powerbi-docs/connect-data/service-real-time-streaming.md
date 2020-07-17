@@ -9,17 +9,17 @@ ms.topic: how-to
 ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 2679e9fa21b193fa4c19384c2bd7d22660cf657a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0472baffa765f1a1e7d39e365e40a1f596472a16
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235795"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264397"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming em tempo real no Power BI
 Com o streaming em tempo real do Power BI, você pode transmitir dados e atualizar painéis em tempo real. Qualquer visual ou painel que possa ser criado no Power BI também pode ser criado para exibir e atualizar dados e visuais em tempo real. Os dispositivos e fontes de fluxo de dados podem ser sensores de fábrica, fontes de mídia social, métricas de uso do serviço e tudo o mais de que dados sensíveis ao tempo possam ser coletados ou transmitidos.
 
-![Captura de tela mostrando os resultados dos sensores ambientais em tempo real.](media/service-real-time-streaming/real-time-streaming-10.png)
+![Captura de tela do dashboard Sensores ambientais mostrando os resultados dos dados em tempo real.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Este artigo mostra como configurar um conjunto de dados de streaming em tempo real no Power BI. Mas antes disso, é importante entender os tipos de conjuntos de dados em tempo real que são projetados para exibição em blocos (e dashboards), e como esses conjuntos de dados se diferem.
 
@@ -61,7 +61,7 @@ Os blocos com base em um **conjunto de dados de streaming do PubNub** são otimi
 ### <a name="streaming-dataset-matrix"></a>Matriz de conjunto de dados de streaming
 A seguinte tabela (ou matriz, se desejar) descreve os três tipos de conjuntos de dados de streaming em tempo real e lista os recursos e limitações de cada uma delas.
 
-![](media/service-real-time-streaming/real-time-streaming_11.png)
+![Captura de tela de uma tabela mostrando a matriz do conjunto de dados de streaming.](media/service-real-time-streaming/real-time-streaming_11.png)
 
 > [!NOTE]
 > Veja [este artigo](../developer/automation/api-rest-api-limitations.md) para obter informações sobre limites de **Push** em relação à quantidade de dados que pode ser enviada por push.
@@ -92,11 +92,11 @@ Todas as solicitações para as APIs REST são protegidas usando o **OAuth do Az
 ### <a name="using-the-streaming-dataset-ui-to-push-data"></a>Usando a interface do usuário do conjunto de dados de streaming para enviar dados por push
 No serviço do Power BI, é possível criar um conjunto de dados selecionando a abordagem de **API** conforme mostrado na imagem a seguir.
 
-![](media/service-real-time-streaming/real-time-streaming_0b.png)
+![Captura de tela das Novas opções de conjunto de dados de streaming mostrando a seleção de API.](media/service-real-time-streaming/real-time-streaming_0b.png)
 
 Ao criar o novo conjunto de dados de streaming, você pode optar por habilitar a **Análise de dados histórica** conforme mostrado abaixo, o que terá um impacto significativo.
 
-![](media/service-real-time-streaming/real-time-streaming_0c.png)
+![Captura de tela do Novo conjunto de dados de streaming mostrando a Análise de dados históricos habilitada.](media/service-real-time-streaming/real-time-streaming_0c.png)
 
 Quando a **Análise de dados histórica** é desabilitada (ela é desabilitada por padrão), você cria um **conjunto de dados de streaming** conforme descrito anteriormente neste artigo. Quando a **Análise de dados histórica** é *habilitada*, o conjunto de dados criado torna-se um **conjunto de dados de streaming** e um **conjunto de dados de push**. Isso é equivalente a usar as APIs REST do Power BI para criar um conjunto de dados com o *defaultMode* definido como *pushStreaming*, conforme descrito anteriormente neste artigo.
 
@@ -125,19 +125,19 @@ Para iniciar a transmissão em tempo real, você precisará escolher uma das dua
 
 Com qualquer opção, você precisará configurar **Fluxo de dados** no Power BI. Para fazer isso, no painel (um painel existente ou um novo) selecione **Adicionar um bloco** e, em seguida, selecione **Fluxo de dados personalizado**.
 
-![](media/service-real-time-streaming/real-time-streaming_1.png)
+![Captura de tela do dashboard mostrando a seleção de Dados de streaming personalizados na seção Adicionar bloco.](media/service-real-time-streaming/real-time-streaming_1.png)
 
 Se você não tiver o fluxo de dados configurado ainda, não se preocupe – você pode selecionar **Gerenciar dados** para começar.
 
-![](media/service-real-time-streaming/real-time-streaming_2.png)
+![Captura de tela do dashboard mostrando o link Gerenciar dados em Adicionar um bloco de dados de streaming personalizado.](media/service-real-time-streaming/real-time-streaming_2.png)
 
 Nessa página, você pode inserir o ponto de extremidade do seu conjunto de dados de streaming se já tiver um criado (na caixa de texto). Se você ainda não tiver um conjunto de dados de streaming, selecione o ícone de adição ( **+** ) no canto superior direito para ver as opções disponíveis para criar um conjunto de dados de streaming.
 
-![](media/service-real-time-streaming/real-time-streaming_3.png)
+![Captura de tela do dashboard mostrando como inserir o ponto de extremidade do seu conjunto de dados de streaming com um ponteiro para o ícone de adição.](media/service-real-time-streaming/real-time-streaming_3.png)
 
 Ao clicar no ícone **+** , você verá duas opções:
 
-![](media/service-real-time-streaming/real-time-streaming_4a.png)
+![Captura de tela das Novas opções de conjunto de dados de streaming mostrando as opções API e PubNub.](media/service-real-time-streaming/real-time-streaming_4a.png)
 
 A próxima seção descreve essas opções e fornece mais informações sobre como criar um **bloco** de streaming ou como criar um **conjunto de dados** a partir da fonte de fluxo de dados, que você pode usar mais tarde para criar relatórios.
 
@@ -152,7 +152,7 @@ As seções a seguir examinarão cada opção sucessivamente.
 ### <a name="using-the-power-bi-rest-api"></a>Usando a API REST do Power BI
 **API REST do Power BI** - Foram desenvolvidas melhorias recentes no API REST do Power BI para tornar o streaming em tempo real mais fácil para os desenvolvedores. Ao selecionar **API** na janela **Novo conjunto de dados de streaming**, você terá que fornecer entradas que habilitarão o Power BI a conectar e usar o seu ponto de extremidade:
 
-![](media/service-real-time-streaming/real-time-streaming_5.png)
+![Captura de tela da caixa de diálogo Novo conjunto de dados de streaming mostrando as entradas do Power BI e da API REST para conexão.](media/service-real-time-streaming/real-time-streaming_5.png)
 
 Se quiser que o Power BI armazene os dados enviados por meio desse fluxo de dados, habilite *Análise de dados históricos* e você poderá fazer a emissão de relatórios e análises dos fluxos de dados coletados. Você também pode [Saber mais sobre a API](https://docs.microsoft.com/rest/api/power-bi/).
 
@@ -163,7 +163,7 @@ Ao fazer solicitações *POST*, você deve garantir que o corpo da solicitação
 ### <a name="using-pubnub"></a>Usando o PubNub
 Com a integração do streaming **PubNub** com o Power BI, você poderá usar seus fluxos de dados de baixa latência **PubNub** (ou criar novos) e usá-los no Power BI. Ao selecionar **PubNub** e, em seguida, **Próximo**, você verá a seguinte janela:
 
-![](media/service-real-time-streaming/real-time-streaming_7.png)
+![Captura de tela da caixa de diálogo Novo conjunto de dados de streaming mostrando as entradas do PubNub para conexão.](media/service-real-time-streaming/real-time-streaming_7.png)
 
 > [!WARNING]
 > Canais de PubNub podem ser protegidos usando uma chave de autenticação do PAM (Gerenciador de acesso do PubNub). Essa chave será compartilhada com todos os usuários que têm acesso ao painel. Você pode [obter mais informações sobre o controle de acesso do PubNub](https://www.pubnub.com/docs/web-javascript/pam-security).
@@ -175,11 +175,11 @@ Os fluxos de dados **PubNub** costumam estar em grande volume e nem sempre são 
 ## <a name="example-of-using-real-time-streaming-in-power-bi"></a>Exemplo de uso de streaming em tempo real no Power BI
 Aqui está um exemplo rápido de como funciona o streaming em tempo real no Power BI. Você pode prosseguir com este exemplo para experimentar o valor do streaming em tempo real.
 
-Neste exemplo, usamos um fluxo disponível publicamente do **PubNub**. Aqui estão as etapas para fazer isso:
+Neste exemplo, usamos um fluxo disponível publicamente do **PubNub**. Siga estas etapas:
 
 1. No **serviço do Power BI**, selecione um painel (ou crie um novo) e selecione **Adicionar bloco** > **Fluxo de Dados Personalizado** e, em seguida, selecione o botão **Próximo**.
    
-   ![](media/service-real-time-streaming/real-time-streaming_1.png)
+   ![Captura de tela do dashboard mostrando a seleção de Adicionar bloco com os dados de streaming personalizados.](media/service-real-time-streaming/real-time-streaming_1.png)
 2. Se você ainda não tiver fontes de fluxos de dados, selecione o link **Gerenciar dados** (logo acima do botão **Próximo**), em seguida, selecione **+ Adicionar fluxo de dados** do link no canto superior direito da janela. Selecione **PubNub** e, em seguida, **Próximo**.
 3. Crie um nome para o conjunto de dados, em seguida, cole os seguintes valores na janela que aparecerá, depois selecione **Próximo**:
    
@@ -190,13 +190,13 @@ Neste exemplo, usamos um fluxo disponível publicamente do **PubNub**. Aqui est�
    
        pubnub-sensor-network
    
-   ![](media/service-real-time-streaming/real-time-streaming_8.png)
+   ![Captura de tela da caixa de diálogo Novo conjunto de dados de streaming mostrando como criar um nome de conjunto de dados e as entradas nos campos Sub-chave e Nome do canal.](media/service-real-time-streaming/real-time-streaming_8.png)
 4. Na janela seguinte, apenas selecione os padrões (que são preenchidos automaticamente) e depois selecione **Criar**.
    
-   ![](media/service-real-time-streaming/real-time-streaming_9.png)
+   ![Captura de tela da caixa de diálogo Novo conjunto de dados de streaming mostrando os padrões para os campos Nome do conjunto de dados e Valores do fluxo.](media/service-real-time-streaming/real-time-streaming_9.png)
 5. De volta ao seu workspace do Power BI, crie um novo painel e, em seguida, adicione um bloco (consulte acima para ver as etapas, se necessário). Dessa vez, quando você criar um bloco e selecionar **Fluxo de Dados Personalizado**, terá um conjunto de fluxos de dados para trabalhar. Vá em frente e brinque com ele. Ao adicionar os campos *número* para os gráficos de linhas e, em seguida, adicionar outros blocos, você poderá obter um painel em tempo real que é semelhante ao seguinte:
    
-   ![Captura de tela mostrando os resultados dos sensores ambientais em tempo real.](media/service-real-time-streaming/real-time-streaming-10.png)
+   ![Captura de tela do dashboard Sensores ambientais mostrando os resultados em tempo real.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Experimente e brinque com o exemplo de conjunto de dados. Depois crie seus próprios conjuntos de dados e transmita dados dinâmicos ao Power BI.
 
@@ -244,4 +244,4 @@ Saiba mais no artigo sobre [atualização de página automática](../create-repo
 Aqui estão alguns links que podem ser úteis ao trabalhar com o streaming em tempo real no Power BI:
 
 * [Visão geral da API REST do Power BI com os dados em tempo real](https://docs.microsoft.com/rest/api/power-bi/)
-* [Stream Analytics do Azure](https://azure.microsoft.com/services/stream-analytics/)
+* [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)

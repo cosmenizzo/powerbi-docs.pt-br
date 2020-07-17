@@ -10,12 +10,12 @@ ms.date: 09/17/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 670373afb5cb890c87a24a129cd43fde7bd5d892
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 49e0b85cb42b008f8d5e3e38296172e24b868fa8
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83128920"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161205"
 ---
 # <a name="capture-additional-diagnostic-information-for-power-bi"></a>Capturar informações adicionais de diagnóstico para o Power BI
 
@@ -25,11 +25,11 @@ Este artigo fornece instruções para coletar manualmente informações adiciona
 
 1. Pressione **F12** para abrir as Ferramentas de Desenvolvedor do Microsoft Edge.
 
-   ![Captura de tela da guia Elementos das Ferramentas de Desenvolvedor do Microsoft Edge.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
+   ![Captura de tela da guia Elementos das Ferramentas para Desenvolvedores do Microsoft Edge.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
 
 1. Selecione a guia **Rede**. Ele listará o tráfego que já foi capturado.
 
-   ![Captura de tela da guia Rede das Ferramentas de Desenvolvedor do Microsoft Edge.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
+   ![Captura de tela da guia Rede das Ferramentas para Desenvolvedores do Microsoft Edge.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
 
     Você pode:
 
@@ -39,11 +39,11 @@ Este artigo fornece instruções para coletar manualmente informações adiciona
 
 1. Para interromper sessão de criação de perfil, clique no quadrado vermelho na guia **Rede** da área de ferramentas do desenvolvedor.
 
-   ![Captura de tela da guia Rede das Ferramentas do Desenvolvedor do Microsoft Edge com um texto explicativo no botão Parar.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
+   ![Captura de tela da guia Rede das Ferramentas para Desenvolvedores do Microsoft Edge com um texto explicativo do ícone Parar.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
 
 1. Escolha o ícone de disquete para exportar os dados como um arquivo HTTP Archive (HAR).
 
-   ![Captura de tela da guia Rede das Ferramentas do Desenvolvedor do Microsoft Edge com um texto explicativo no ícone de disquete.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
+   ![Captura de tela da guia Rede das Ferramentas para Desenvolvedores do Microsoft Edge com um texto explicativo do ícone de disquete.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
 
 1. Forneça um nome de arquivo e salve o arquivo HAR.
 

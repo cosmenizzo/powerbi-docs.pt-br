@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d4d01c7c8b57dda6667ffcd744a7d914ff936b09
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: bc1c9987205e86ee9a123bf8ba9afd567c59ff52
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85231049"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264705"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Otimizar um painel para telefones celulares – Power BI 
 Ao exibir painéis no modo retrato em um celular, observe que os blocos do painel são dispostos um após o outro, todos com o mesmo tamanho. No serviço do Power BI, você pode criar uma exibição personalizada de painel, especificamente para o modo retrato em telefones. Ao virar o telefone para os lados, você verá o painel da forma como ele está disposto no serviço, mesmo que você tenha projetado uma exibição para telefone.
@@ -30,25 +30,25 @@ Procurando informações sobre como exibir painéis em um dispositivo móvel? Ex
 1. No serviço do Power BI, abra um dashboard.
 2. Selecione a seta ao lado de **Exibição da Web** no canto superior direito > selecione **Exibição de telefone**.
 
-    ![](media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-dashboard.png)
+    ![Captura de tela do menu suspenso Exibição da Web mostrando um ponteiro para a exibição de Telefone.](media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-dashboard.png)
 
     Se você não for o proprietário do dashboard, não verá essa opção.
 
-    ![](media/service-create-dashboard-mobile-phone-view/power-bi-mobile-edit-phone-view-canvas.png)
+    ![Captura de tela de um dashboard de telefone mostrando a opção de modo de exibição de edição para desafixar, redimensionar e reorganizar blocos para ajustá-los à exibição de telefone.](media/service-create-dashboard-mobile-phone-view/power-bi-mobile-edit-phone-view-canvas.png)
 
     A exibição de edição do dashboard no telefone será aberta. Aqui você pode desafixar, redimensionar e reorganizar os blocos para que se ajustem à exibição de telefone. A versão da Web do dashboard não é alterada.
 
 
 1. Selecione um bloco para arrastar, redimensionar ou desafixar. Observe que os outros blocos se movem para abrir caminho enquanto você arrasta um bloco.
    
-    ![](media/service-create-dashboard-mobile-phone-view/power-bi-unpin-tile-phone-dashboard.png)
+    ![Captura de tela de blocos de telefone mostrando uma seleção de bloco para arrastá-lo, redimensioná-lo ou desafixá-lo.](media/service-create-dashboard-mobile-phone-view/power-bi-unpin-tile-phone-dashboard.png)
    
     Os blocos desafixados vão para o painel Blocos desafixados, no qual permanecem, a menos que você os adicione novamente.
    
-    ![](media/service-create-dashboard-mobile-phone-view/power-bi-mobile-edit-phone-view-post-edit.png)
+    ![Captura de tela de um dashboard de telefone mostrando os blocos no painel de blocos desafixados.](media/service-create-dashboard-mobile-phone-view/power-bi-mobile-edit-phone-view-post-edit.png)
 2. Se você mudar de ideia, selecione **Redefinir blocos** para colocá-los novamente no tamanho e na ordem anteriores.
    
-    ![](media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-reset-tiles.png)
+    ![Captura de tela do painel Blocos desafixados mostrando um ponteiro para Redefinir blocos.](media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-reset-tiles.png)
    
     A simples abertura da exibição Edição de Telefone no serviço do Power BI altera ligeiramente o tamanho e a forma dos blocos em um telefone. Portanto, para retornar o dashboard para o estado exato antes da abertura da exibição Edição de Telefone, selecione **Redefinir blocos**.
 3. Quando estiver satisfeito com o layout do dashboard no telefone, selecione a seta ao lado de **Exibição de telefone** no canto superior direito > selecione **Exibição da Web**.

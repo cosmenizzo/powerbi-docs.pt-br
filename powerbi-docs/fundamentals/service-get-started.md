@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 07/02/2020
+ms.date: 07/08/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: ee3919be08cfb2af2ad0e82e9f0f35b5d13147c6
-ms.sourcegitcommit: 20cfd157af587b3910a2b6deec9518dca4105d71
+ms.openlocfilehash: 7b9f69607d2fef823ba67d5af035e1e2064a9a72
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85943319"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86162380"
 ---
 # <a name="tutorial-get-started-creating-in-the-power-bi-service"></a>Tutorial: Introdução à criação no serviço do Power BI
 Este tutorial é uma introdução a alguns dos recursos do *serviço do Power BI*. Nele, você se conecta a dados, cria um relatório e um dashboard e faz perguntas sobre seus dados. Você pode fazer muito mais com o serviço do Power BI, este tutorial é apenas uma prévia para despertar sua curiosidade. Para entender como o serviço do Power BI se adapta às outras ofertas do Power BI, recomendamos que leia [O que é Power BI](power-bi-overview.md).
@@ -23,7 +23,7 @@ Você é um *leitor* de relatório e não um criador? [Como explorar o serviço 
 
 :::image type="content" source="media/service-get-started/power-bi-service-rearranged-dashboard.png" alt-text="Captura de tela do dashboard Exemplo Financeiro.":::
 
-Neste tutorial, você concluirá as etapas a seguir:
+Neste tutorial, você completa as seguintes etapas:
 
 > [!div class="checklist"]
 > * Entrar em sua conta online do Power BI ou inscrever-se, caso ainda não tenha uma conta.
@@ -210,7 +210,7 @@ Podemos reorganizar os blocos para fazer melhor uso do espaço do dashboard.
     :::image type="content" source="media/service-get-started/power-bi-service-rearranged-dashboard.png" alt-text="Captura de tela do dashboard reorganizado.":::
 
 
-## <a name="clean-up-resources"></a>Limpar recursos
+## <a name="clean-up-resources"></a>Limpar os recursos
 Agora que você já concluiu o tutorial, é possível excluir o conjunto de dados, o relatório e o dashboard. 
 
 1. Selecione **Meu workspace** na barra de cabeçalho do **Power BI** em preto.
@@ -224,4 +224,7 @@ Agora que você já concluiu o tutorial, é possível excluir o conjunto de dado
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Melhore ainda mais a aparência dos dashboards adicionando mais blocos de visualização e [renomeando, redimensionando, vinculando e reposicionando os blocos existentes](../create-reports/service-dashboard-edit-tile.md).
+Explore estas coleções de conteúdo do Microsoft Learn para o Power BI:
+
+- [Aprenda sobre o Power BI](https://docs.microsoft.com/users/microsoftpowerplatform-5978/collections/r52to235xrjxk)
+- [Torne-se um analista de dados do Power BI](https://docs.microsoft.com/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)

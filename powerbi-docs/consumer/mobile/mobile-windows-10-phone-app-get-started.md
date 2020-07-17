@@ -8,14 +8,14 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: c40ba6827e788a51402b3aa22497b5ddde1bcdc2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9ebc5857248b2d8c764262e2f27559c1960e1884
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240422"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263318"
 ---
-# <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Introdução ao aplicativo móvel do Power BI para Windows 10
+# <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Introdução ao aplicativo móvel do Power BI em dispositivos Windows 10
 O aplicativo móvel Power BI para Windows 10 traz o Power BI para seu Tablet ou telefone. Você obtém acesso móvel atualizado e habilitado para toque às suas informações empresariais. Veja e interaja com seus dashboards da empresa de qualquer lugar – diretamente na [tela inicial do Windows](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
 ![Bloco dinâmico do Windows](./media/mobile-windows-10-phone-app-get-started/pbi_win10_livetile.gif)
@@ -67,12 +67,12 @@ Você pode exibir e interagir com os exemplos de dashboard do Power BI. Porém, 
 
 ### <a name="reporting-services-mobile-report-samples"></a>Exemplos de relatórios móveis do Reporting Services
 1. Toque no botão de navegação global ![botão de navegação global](././media/mobile-windows-10-phone-app-get-started/power-bi-windows-10-navigation-icon.png) no canto superior esquerdo.
-2. Toque no ícone **Configurações**![](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-settings-icon.png), clique com o botão direito do mouse ou toque e segure em **Conectar-se ao servidor** e, depois, toque em **Exibir amostras**.
+2. Toque no ícone **Configurações**![ícone Configurações](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-settings-icon.png), clique com o botão direito do mouse ou toque e segure em **Conectar-se ao servidor** e, depois, toque em **Exibir amostras**.
    
-   ![](media/mobile-windows-10-phone-app-get-started/power-bi-win10-connect-ssrs-samples.png)
+   ![Captura da tela Configurações mostrando um ponteiro do ícone de configurações até a conexão com um servidor.](media/mobile-windows-10-phone-app-get-started/power-bi-win10-connect-ssrs-samples.png)
 3. Abra a pasta Relatórios de Varejo ou Relatórios de Vendas para explorar seus KPIs e relatórios móveis.
    
-   ![](media/mobile-windows-10-phone-app-get-started/power-bi-win10-ssrs-sample-kpis.png)
+   ![Captura de tela de um relatório mostrando o KPI e os relatórios móveis.](media/mobile-windows-10-phone-app-get-started/power-bi-win10-ssrs-sample-kpis.png)
 
 ## <a name="search-for-dashboards-reports-and-apps"></a>Pesquisar dashboards, relatórios e aplicativos
 Encontre seus dashboards, relatórios e aplicativos rapidamente digitando na caixa de pesquisa, sempre na parte superior do aplicativo.
@@ -124,4 +124,4 @@ Aqui estão algumas outras coisas que você pode fazer no aplicativo do Power BI
 ## <a name="next-steps"></a>Próximas etapas
 * [Baixar o aplicativo Power BI](https://go.microsoft.com/fwlink/?LinkID=526478) na Windows Store  
 * [O que é o Power BI?](../../fundamentals/power-bi-overview.md)
-* Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+* Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

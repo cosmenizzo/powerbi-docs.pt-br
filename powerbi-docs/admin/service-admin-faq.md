@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 25b5665aa531c347d43a197b53938aec569b9d2d
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: aed09a9cd26452a03363e8606e45938715595558
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83812164"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161665"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrando o Power BI – perguntas frequentes
 
@@ -24,13 +24,13 @@ Este artigo aborda perguntas frequentes sobre a administração do Power BI. Par
 
 ### <a name="sign-up-for-power-bi-section"></a>Inscrever-se no serviço do Power BI
 
-* [Usar o PowerShell](#using-powershell)
+* [Como usar o PowerShell](#using-powershell)
 * [Como os usuários podem se inscrever no Power BI?](#how-do-users-sign-up-for-power-bi)
 * [Como usuários individuais em minha organização podem se inscrever?](#how-do-individual-users-in-my-organization-sign-up)
 * [Como impedir que usuários ingressem em minha organização existente?](#how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant)
 * [Como permitir que usuários ingressem em minha organização existente?](#how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant)
 * [Como verificar se tenho o bloqueio ativado no locatário?](#how-do-i-check-if-i-have-the-block-on-in-the-tenant)
-* [Como impedir que meus usuários existentes comecem a usar o Power BI?](#how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi)
+* [Como posso impedir meus usuários existentes de começarem a usar o Power BI?](#how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi)
 * [Como posso permitir que meus usuários existentes se inscrevam no Power BI?](#how-can-i-allow-my-existing-users-to-sign-up-for-power-bi)
 
 ### <a name="administration-of-power-bi-section"></a>Seção Administração do Power BI
@@ -42,7 +42,7 @@ Este artigo aborda perguntas frequentes sobre a administração do Power BI. Par
 * [Como remover o Power BI para usuários que já se inscreveram?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Como posso saber se novos usuários ingressaram em meu locatário?](#how-do-i-know-when-new-users-have-joined-my-tenant)
 * [Devo estar preparado para outras questões?](#are-there-any-additional-things-i-should-prepare-for)
-* [Onde está localizado meu locatário do Power BI?](#where-is-my-power-bi-tenant-located)
+* [Onde está localizado o meu locatário do Power BI?](#where-is-my-power-bi-tenant-located)
 * [O que é o SLA (Contrato de Nível de Serviço) do Power BI?](#what-is-the-power-bi-sla)
 * [Como o Power BI lida com alta disponibilidade e failover?](#how-does-power-bi-handle-high-availability-and-failover)
 
@@ -53,7 +53,7 @@ Este artigo aborda perguntas frequentes sobre a administração do Power BI. Par
 
 ## <a name="sign-up-for-power-bi"></a>Inscrever-se no Power BI
 
-### <a name="using-powershell"></a>Usar o PowerShell
+### <a name="using-powershell"></a>Usando o PowerShell
 
 Alguns dos procedimentos nesta seção exigem scripts do Windows PowerShell. Se você não estiver familiarizado com o PowerShell, recomendamos o [guia de Introdução ao PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=286814). Para executar os scripts, primeiro instale a versão mais recente de 64 bits do [Azure Active Directory PowerShell para Graph](/powershell/azure/active-directory/).
 
@@ -130,7 +130,7 @@ Use o script do PowerShell a seguir para desabilitar assinaturas ad hoc. ([Saiba
      connect-msolservice -credential $msolcred
     ```
 
-   ![Captura da tela de entrada do Azure Active Directory por meio do PowerShell](media/service-admin-licensing-organization/azure-ad-sign-in.png)
+   ![Captura da tela de entrada do Azure Active Directory por meio do PowerShell.](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
 1. Depois de entrar, execute o comando a seguir para ver para como seu locatário está configurado atualmente.
 
@@ -202,7 +202,7 @@ Se um usuário se inscrever no Power BI, mas você não quiser mais que ele tenh
 
 1. De acordo com a licença aplicada à conta, defina **Power BI (free)** ou **Power BI Pro** como **Desativado**.
 
-1. Selecione **Salvar**.
+1. Clique em **Salvar**.
 
 ### <a name="how-do-i-know-when-new-users-have-joined-my-tenant"></a>Como posso saber se novos usuários ingressaram em meu locatário?
 
@@ -228,7 +228,7 @@ Você pode perceber um aumento nas solicitações de redefinição de senha. Par
 
 Você pode remover um usuário do seu locatário pelo processo padrão no centro de administração do Microsoft 365. No entanto, se o usuário ainda tiver um endereço de email ativo de sua organização, ele poderá reingressar, a menos que você bloqueie o ingresso de todos os usuários.
 
-### <a name="where-is-my-power-bi-tenant-located"></a>Onde está localizado meu locatário do Power BI?
+### <a name="where-is-my-power-bi-tenant-located"></a>Onde está localizado o meu locatário do Power BI?
 
 Para saber em qual região de dados seu locatário do Power BI está, confira [Onde está localizado meu locatário do Power BI?](service-admin-where-is-my-tenant-located.md).
 

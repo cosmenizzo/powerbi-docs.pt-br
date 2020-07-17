@@ -8,17 +8,17 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 04/15/2019
 ms.author: davidi
-ms.openlocfilehash: 49b7d1129f73e146db1e34b1ec7d39a176cb37ed
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 44add6bf76e5bc4445df08a76859e05c8fa1638d
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228903"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86160860"
 ---
 # <a name="administrators-manage-the-power-bi-desktop-sign-in-form"></a>Administradores: Gerenciar o formulário de entrada do Power BI Desktop
 Na primeira vez em que o Power BI Desktop é iniciado, é exibido um formulário de entrada. As informações podem ser preenchidas ou entre no Power BI para continuar. Os administradores gerenciam este formulário usando uma chave do Registro. 
 
-![Formulário de entrada inicial para o Power BI Desktop](media/desktop-admin-sign-in-form/sign-in-form.png)
+![Captura de tela de um formulário de entrada inicial do Power BI Desktop.](media/desktop-admin-sign-in-form/sign-in-form.png)
 
 Os administradores usam a seguinte chave do Registro para desabilitar o formulário de entrada. Isso também pode ser enviado por push para toda a organização usando políticas globais.
 

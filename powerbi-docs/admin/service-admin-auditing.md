@@ -10,11 +10,12 @@ ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: ff61cdf25c83b1062fd7c4a471a49269d20c57a8
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 195d1284fedc9f9c51c6fed2ff03cc0883b16405
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782397"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161711"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Acompanhar atividades do usuário no Power BI
 
@@ -144,7 +145,7 @@ Restrinja os resultados apenas para as atividades do Power BI fazendo o seguinte
 
 2. Selecione **Atividades do Power BI**.
 
-   ![Captura de tela do recurso Pesquisa de log de auditoria, com as atividades do Power BI exibidas.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
+   ![Captura de tela da Pesquisa de logs de auditoria com as atividades do Power BI em destaque.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
 
 3. Selecione qualquer lugar fora da caixa de seleção para fechá-la.
 
@@ -156,13 +157,13 @@ Você pode pesquisar os logs por intervalo de datas usando os campos **Data de i
 
 Você receberá um erro, se o intervalo de datas selecionado for maior que 90 dias. Se você estiver usando o intervalo de datas máximo de 90 dias, selecione a hora atual para a **Data de início**. Caso contrário, você receberá uma mensagem de erro informando que a data de início é anterior à data de término. Se você ativou a auditoria nos últimos 90 dias, o intervalo de datas não poderá começar antes da data na qual a auditoria foi ativada.
 
-![Captura de tela do recurso Pesquisa de log de auditoria, com as opções de Data de Início e Data de Término exibidas.](media/service-admin-auditing/search-audit-log-by-date.png)
+![Captura de tela da Pesquisa de logs de auditoria com as opções Data de Início e Data de Término em destaque.](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ### <a name="search-the-audit-logs-by-users"></a>Pesquisar os logs de auditoria por usuários
 
 Você pode procurar por entradas de log de auditoria das atividades realizadas por usuários específicos. Para fazer isso, insira um ou mais nomes de usuário no campo **Usuários**. O nome de usuário tem a aparência de um endereço de email. Trata-se da conta que o usuário utiliza para entrar no Power BI. Deixe esta caixa em branco para retornar as entradas para todos os usuários (e contas de serviço) em sua organização.
 
-![Pesquisar por usuários](media/service-admin-auditing/search-audit-log-by-user.png)
+![Captura de tela da Pesquisa de logs de auditoria com Usuários em destaque.](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ### <a name="view-search-results"></a>Exibir resultados da pesquisa
 
@@ -179,7 +180,7 @@ A área **Resultados** inclui as seguintes informações sobre cada evento retor
 | Usuário |O usuário (ou a conta de serviço) que executou a ação que acionou o evento. |
 | Atividade |A atividade executada pelo usuário. Esse valor corresponde às atividades que você selecionou na lista suspensa **Atividades**. Para um evento do log de auditoria de administrador do Exchange, o valor desta coluna é um cmdlet do Exchange. |
 | Item |O objeto criado ou modificado devido à atividade correspondente. Por exemplo, o arquivo exibido ou modificado, ou a conta de usuário atualizada. Nem todas as atividades têm um valor nesta coluna. |
-| Detalhe |Detalhes adicionais sobre uma atividade. Novamente, nem todas as atividades têm um valor. |
+| Detalhes |Detalhes adicionais sobre uma atividade. Novamente, nem todas as atividades têm um valor. |
 
 #### <a name="view-the-details-for-an-event"></a>Exibir os detalhes de um evento
 
@@ -197,7 +198,7 @@ Para exportar o log de auditoria do Power BI para um arquivo CSV, siga estas eta
 
 1. Selecione **Salvar resultados carregados** ou **Baixar todos os resultados**.
 
-    ![Captura de tela da opção Exportar resultados.](media/service-admin-auditing/export-auditing-results.png)
+    ![Captura de tela da opção Exportar resultados com Baixar todos os resultados em destaque.](media/service-admin-auditing/export-auditing-results.png)
 
 ### <a name="use-powershell-to-search-audit-logs"></a>Usar o PowerShell para pesquisar logs de auditoria
 
@@ -240,9 +241,9 @@ As operações a seguir estão disponíveis nos logs de auditoria e de atividade
 |---------------------------------------------------|---------------------------------------------|------------------------------------------|
 | Tabelas em destaque do Power BI acessadas no Excel | AnalyzedByExternalApplication |    |
 | Fonte de dados adicionada ao gateway do Power BI             | AddDatasourceToGateway                      |                                          |
-| Acesso à pasta do Power BI adicionado                      | AddFolderAccess                             | Atualmente não usado                       |
+| Acesso à pasta do Power BI adicionado                      | AddFolderAccess                             | Não usado no momento                       |
 | Adicionados membros de grupo do Power BI                      | AddGroupMembers                             |                                          |
-| Administrador anexou conta de armazenamento de fluxo de dados ao locatário | AdminAttachedDataflowStorageAccountToTenant | Atualmente não usado                       |
+| Administrador anexou conta de armazenamento de fluxo de dados ao locatário | AdminAttachedDataflowStorageAccountToTenant | Não usado no momento                       |
 | Conjunto de dados do Power BI analisado                         | AnalyzedByExternalApplication               | Gerada quando os usuários interagem com o serviço                                         |
 | Relatório do Power BI analisado                          | AnalyzeInExcel                              |                                          |
 | Workspace atribuído a um pipeline de implantação                          | AssignWorkspaceToPipeline                              |                                          |
@@ -268,19 +269,19 @@ As operações a seguir estão disponíveis nos logs de auditoria e de atividade
 | Relatório do Power BI criado                           | CreateReport <sup>1</sup>                                |                                          |
 | O visual personalizado solicitou o token de acesso do Azure AD                           | GenerateCustomVisualAADAccessToken                                |                                          |
 | O visual personalizado solicitou o token de acesso dos Aplicativos Web do Office                           | GenerateCustomVisualWACAccessToken                                |                                          |
-| Fluxo de dados migrado para conta de armazenamento externa     | DataflowMigratedToExternalStorageAccount    | Atualmente não usado                       |
-| Permissões de fluxo de dados adicionadas                        | DataflowPermissionsAdded                    | Atualmente não usado                       |
-| Permissões de fluxo de dados removidas                      | DataflowPermissionsRemoved                  | Atualmente não usado                       |
+| Fluxo de dados migrado para conta de armazenamento externa     | DataflowMigratedToExternalStorageAccount    | Não usado no momento                       |
+| Permissões de fluxo de dados adicionadas                        | DataflowPermissionsAdded                    | Não usado no momento                       |
+| Permissões de fluxo de dados removidas                      | DataflowPermissionsRemoved                  | Não usado no momento                       |
 | Um visual personalizado organizacional foi excluído     | DeleteOrganizationalGalleryItem                                |                                          |
 | Pipeline de implantação excluído      | DeleteAlmPipeline                                |                                          |
 | Pacote de conteúdo organizacional do Power BI excluído      | DeleteOrgApp                                |                                          |
 | Comentário do Power BI excluído                          | DeleteComment                               |                                          |
-| Dashboard do Power BI excluído                        | DeleteDashboard                             | Atualmente não usado                       |
-| Fluxo de dados do Power BI excluído                         | DeleteDataflow                              | Atualmente não usado                       |
+| Dashboard do Power BI excluído                        | DeleteDashboard                             | Não usado no momento                       |
+| Fluxo de dados do Power BI excluído                         | DeleteDataflow                              | Não usado no momento                       |
 | Conjunto de dados do Power BI excluído                          | DeleteDataset                               |                                          |
 | Assinatura de email do Power BI excluída               | DeleteEmailSubscription                     |                                          |
 | Pasta do Power BI excluída                           | DeleteFolder                                |                                          |
-| Acesso à pasta do Power BI excluído                    | DeleteFolderAccess                          | Atualmente não usado                       |
+| Acesso à pasta do Power BI excluído                    | DeleteFolderAccess                          | Não usado no momento                       |
 | Gateway do Power BI excluído                          | DeleteGateway                               |                                          |
 | Grupo do Power BI excluído                            | DeleteGroup                                 |                                          |
 | Relatório do Power BI excluído                           | DeleteReport                                |                                          |
@@ -288,16 +289,16 @@ As operações a seguir estão disponíveis nos logs de auditoria e de atividade
 | Fontes de dados de conjunto de dados do Power BI descobertas          | GetDatasources                              |                                          |
 | Relatório do Power BI baixado                        | DownloadReport                              |                                          |
 | Propriedades de fluxo de dados editadas                        | EditDataflowProperties                      |                                          |
-| Permissão de certificação do Power BI editada          | EditCertificationPermission                 | Atualmente não usado                       |
-| Dashboard do Power BI editado                         | EditDashboard                               | Atualmente não usado                       |
+| Permissão de certificação do Power BI editada          | EditCertificationPermission                 | Não usado no momento                       |
+| Dashboard do Power BI editado                         | EditDashboard                               | Não usado no momento                       |
 | Conjunto de dados do Power BI editado                           | EditDataset                                 |                                          |
-| Propriedades do conjunto de dados do Power BI editadas                | EditDatasetProperties                       | Atualmente não usado                       |
+| Propriedades do conjunto de dados do Power BI editadas                | EditDatasetProperties                       | Não usado no momento                       |
 | Relatório do Power BI editado                            | EditReport                                  |                                          |
 | Fluxo de dados do Power BI exportado                        | ExportDataflow                              |                                          |
 | Dados visuais de relatório do Power BI exportados              | ExportReport                                |                                          |
 | Dados de bloco do Power BI exportados                       | ExportTile                                  |                                          |
-| Falha ao adicionar permissões de fluxo de dados                | FailedToAddDataflowPermissions              | Atualmente não usado                       |
-| Falha ao remover permissões de fluxo de dados             | FailedToRemoveDataflowPermissions           | Atualmente não usado                       |
+| Falha ao adicionar permissões de fluxo de dados                | FailedToAddDataflowPermissions              | Não usado no momento                       |
+| Falha ao remover permissões de fluxo de dados             | FailedToRemoveDataflowPermissions           | Não usado no momento                       |
 | Token SAS de fluxo de dados do Power BI gerado             | GenerateDataflowSasToken                    |                                          |
 | Token de inserção do Power BI gerado                    | GenerateEmbedToken                          |                                          |
 | Arquivo importado para o Power BI                         | Importar                                      |                                          |
@@ -314,7 +315,7 @@ As operações a seguir estão disponíveis nos logs de auditoria e de atividade
 | Membros de grupo do Power BI removidos                    | DeleteGroupMembers                          |                                          |
 | Workspace removido de uma capacidade                 | RemoveWorkspacesFromCapacity                |                                          |
 | Dashboard do Power BI renomeado                        | RenameDashboard                             |                                          |
-| Atualização de fluxo de dados do Power BI solicitada               | RequestDataflowRefresh                      | Atualmente não usado                       |
+| Atualização de fluxo de dados do Power BI solicitada               | RequestDataflowRefresh                      | Não usado no momento                       |
 | Atualização de conjunto de dados do Power BI solicitada                | RefreshDataset                              |                                          |
 | Workspaces do Power BI recuperados                     | GetWorkspaces                               |                                          |
 | Definir o local de armazenamento do fluxo de dados como um workspace     | SetDataflowStorageLocationForWorkspace      |                                          |
@@ -322,7 +323,7 @@ As operações a seguir estão disponíveis nos logs de auditoria e de atividade
 | Definir atualização agendada no conjunto de dados do Power BI         | SetScheduledRefresh                         |                                          |
 | Dashboard do Power BI compartilhado                         | ShareDashboard                              |                                          |
 | Relatório do Power BI compartilhado                            | ShareReport                                 |                                          |
-| Avaliação estendida do Power BI iniciada                   | OptInForExtendedProTrial                    | Atualmente não usado                       |
+| Avaliação estendida do Power BI iniciada                   | OptInForExtendedProTrial                    | Não usado no momento                       |
 | Avaliação do Power BI iniciada                            | OptInForProTrial                            |                                          |
 | Assumiu uma fonte de dados do Power BI                   | TakeOverDatasource                          |                                          |
 | Assumiu um conjunto de dados do Power BI                        | TakeOverDataset                             |                                          |

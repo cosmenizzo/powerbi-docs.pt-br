@@ -10,18 +10,18 @@ ms.topic: overview
 ms.date: 05/29/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 7628106c29be75c4eb01bc9d7d52a3c9ededb9e8
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: c3e56df49caac8b5250a4e382cab253a0a9c5210
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272530"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161320"
 ---
 # <a name="what-is-power-bi-administration"></a>O que é a administração do Power BI
 
 A administração do Power BI é o gerenciamento das configurações de toda a organização que controlam como o Power BI funciona. Os usuários atribuídos às funções de administrador configuram, monitoram e provisionam recursos organizacionais. Este artigo fornece uma visão geral de funções de administração, tarefas e ferramentas para ajudar você a começar.
 
-![Portal de administração do Power BI](media/service-admin-administering-power-bi-in-your-organization/admin-portal.png)
+![Captura de tela do portal de administração do Power BI mostrando as configurações de toda a organização.](media/service-admin-administering-power-bi-in-your-organization/admin-portal.png)
 
 ## <a name="administrator-roles-related-to-power-bi"></a>Funções de administrador relacionadas ao Power BI
 
@@ -82,5 +82,5 @@ Agora que você conhece as noções básicas do que está envolvido na administr
 - [Usar cmdlets do PowerShell](https://docs.microsoft.com/powershell/power-bi/overview)
 - [Perguntas frequentes de administração do Power BI](service-admin-faq.md)
 - [Como licenciar o serviço do Power BI para usuários na sua organização](service-admin-licensing-organization.md)
-- Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+- Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
 - Sugestões? [Contribuir com ideias para aprimorar o Power BI](https://ideas.powerbi.com/)

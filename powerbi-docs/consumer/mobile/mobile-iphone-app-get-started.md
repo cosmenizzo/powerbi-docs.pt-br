@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: 1f71c2c835c729f3a0afe824835deaee719568c2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 989e77eeaa559ac74579c1d981f77f2bca374f01
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219978"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264772"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Introdução ao aplicativo móvel do Power BI em dispositivos iOS
 O aplicativo Microsoft Power BI para iOS no iPhone ou no iPad oferece a experiência móvel do BI para Power BI, Servidor de Relatório do Power BI e Reporting Services. Exiba e interaja com os dashboards de sua empresa localmente e na nuvem em qualquer lugar, com acesso móvel dinâmico e habilitado para toque. Explore os dados em dashboards e compartilhe com seus colegas em mensagens de email ou de texto. Além disso, mantenha atualizado com seus dados mais recentes em seu [Apple Watch](mobile-apple-watch.md).  
@@ -66,7 +66,7 @@ Vários exemplos do Power BI são seguidos por vários exemplos de Servidor de r
 Toque na lupa no cabeçalho para começar a pesquisar seu conteúdo do Power BI.
 
 ## <a name="view-your-favorite-dashboards-and-reports"></a>Exibir seus dashboards e relatórios favoritos
-Toque em **Favoritos** (![](./media/mobile-iphone-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) na barra de navegação para exibir a página Favoritos. 
+Toque em **Favoritos** (![ícone de Favoritos](./media/mobile-iphone-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) na barra de navegação para ver a página Favoritos. 
 
 Leia mais sobre [favoritos nos aplicativos móveis do Power BI](mobile-apps-favorites.md).
 
@@ -84,4 +84,4 @@ Leia mais sobre [Configurar aplicativos móveis do Power BI com o Microsoft Intu
 ## <a name="next-steps"></a>Próximas etapas
 
 * [O que é o Power BI?](../../fundamentals/power-bi-overview.md)
-* Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+* Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

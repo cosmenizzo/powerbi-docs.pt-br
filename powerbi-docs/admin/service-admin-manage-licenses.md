@@ -10,12 +10,12 @@ ms.date: 04/08/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 8b110dceb7427e3aeefe8e7ef48e579943a7e6f3
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: af58a79c5c81e8f04e5d0ba714703c202f9c8000
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228449"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161343"
 ---
 # <a name="view-and-manage-power-bi-user-licenses"></a>Exibir e gerenciar licenças do usuário do Power BI
 
@@ -30,12 +30,12 @@ Este artigo explica como os administradores podem usar o centro de administraç�
 
 Para ver quais assinaturas do Power BI sua organização tem, siga estas etapas.
 
-1. Entre no [centro de administração do Microsoft 365](https://admin.microsoft.com).
+1. Entre no [Centro de Administração do Microsoft 365](https://admin.microsoft.com).
 2. No menu de navegação, selecione **Cobrança** > **Produtos e serviços**.
 
 Suas assinaturas ativas do Power BI são listadas junto com as outras assinaturas que você tem. Você pode ver uma assinatura inesperada para Power BI (gratuito), conforme mostrado aqui.
 
-  ![Assinatura do Power BI Gratuito ativada pelo usuário](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
+  ![Captura de tela da assinatura do Power BI mostrando uma assinatura gratuita.](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
 
 Esse tipo de assinatura é criado para você quando os usuários aproveitam a inscrição por autoatendimento. Para ler mais a respeito, confira [Power BI em sua organização](https://docs.microsoft.com/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide).
 

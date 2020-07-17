@@ -5,14 +5,14 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 04/05/2020
+ms.date: 07/14/2020
 ms.author: painbar
-ms.openlocfilehash: 62d95c09761a22f514bb55b5eadd82a6214fdbeb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f9b6efd07aad3d2058e49f81ae21095b618123ee
+ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235126"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86385919"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Configurar remotamente o aplicativo do Power BI usando a ferramenta de MDM (gerenciamento de dispositivo móvel)
 
@@ -22,6 +22,7 @@ O aplicativo Power BI Mobile é compatível com os cenários de configuração a
 
 * Configuração de Servidor de Relatório (iOS e Android)
 * Configurações de proteção de dados (iOS e Android)
+* Desabilitar logon único (iOS e Android)
 * Configurações de interação (iOS e Android)
 
 ## <a name="report-server-configuration-ios-and-android"></a>Configuração de Servidor de Relatório (iOS e Android)
@@ -30,10 +31,10 @@ O aplicativo Power BI para iOS e Android permite aos administradores efetuar pus
 
 | Chave | Type | Descrição |
 |---|---|---|
-| com.microsoft.powerbi.mobile.ServerURL | Cadeia de caracteres | URL do Servidor de Relatório.<br><br>Deve começar com http/https.|
-| com.microsoft.powerbi.mobile.ServerUsername | Cadeia de caracteres | [opcional]<br><br>O nome de usuário a ser usado para conectar o servidor.<br><br>Se não existir, o aplicativo solicitará ao usuário que digite o nome de usuário para a conexão.|
-| com.microsoft.powerbi.mobile.ServerDisplayName | Cadeia de caracteres | [opcional]<br><br>O valor padrão é "Servidor de relatório"<br><br>Um nome amigável usado no aplicativo para representar o servidor. |
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Booliano | [opcional]<br><br>O valor padrão é True. Quando definido como True, substituirá qualquer definição do Servidor de Relatório que já estiver no dispositivo móvel. Os servidores existentes que já estão configurados serão excluídos. Substituir a definição para True também evita que o usuário remova essa configuração.<br><br>Se definido como False, adicionará os valores enviados por push, mantendo as configurações atuais. Se a mesma URL do servidor já estiver configurada no aplicativo móvel, o aplicativo deixará essa configuração como está. O aplicativo não solicita ao usuário para se autenticar novamente no mesmo servidor. |
+| com.microsoft.powerbi.mobile.ServerURL | String | URL do Servidor de Relatório.<br><br>Deve começar com http/https.|
+| com.microsoft.powerbi.mobile.ServerUsername | String | [opcional]<br><br>O nome de usuário a ser usado para conectar o servidor.<br><br>Se não existir, o aplicativo solicitará ao usuário que digite o nome de usuário para a conexão.|
+| com.microsoft.powerbi.mobile.ServerDisplayName | String | [opcional]<br><br>O valor padrão é "Servidor de relatório"<br><br>Um nome amigável usado no aplicativo para representar o servidor. |
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | [opcional]<br><br>O valor padrão é True. Quando definido como True, substituirá qualquer definição do Servidor de Relatório que já estiver no dispositivo móvel. Os servidores existentes que já estão configurados serão excluídos. Substituir a definição para True também evita que o usuário remova essa configuração.<br><br>Se definido como False, adicionará os valores enviados por push, mantendo as configurações atuais. Se a mesma URL do servidor já estiver configurada no aplicativo móvel, o aplicativo deixará essa configuração como está. O aplicativo não solicita ao usuário para se autenticar novamente no mesmo servidor. |
 
 ## <a name="data-protection-settings-ios-and-android"></a>Configurações de proteção de dados (iOS e Android)
 
@@ -41,10 +42,23 @@ O aplicativo móvel do Power BI para iOS e Android oferece aos administradores a
 
 | Chave | Type | Descrição |
 |---|---|---|
-| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Booliano | Valor padrão é False. <br><br>A biometria, como o Touch ID ou o Face ID (iOS) ou a ID da Impressão Digital (Android), pode ser necessária para que os usuários acessem o aplicativo nos próprios dispositivos. Quando for necessária, a biometria será usada, além da autenticação.<br><br>Se você está usando políticas de proteção de aplicativo, a Microsoft recomenda desabilitar essa configuração para evitar duplo prompt de acesso. |
+| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolean | O valor padrão é Falso. <br><br>A biometria, como o Touch ID ou o Face ID (iOS) ou a ID da Impressão Digital (Android), pode ser necessária para que os usuários acessem o aplicativo nos próprios dispositivos. Quando for necessária, a biometria será usada, além da autenticação.<br><br>Se você está usando políticas de proteção de aplicativo, a Microsoft recomenda desabilitar essa configuração para evitar duplo prompt de acesso. |
 
 >[!NOTE]
 >As configurações de proteção de dados serão aplicadas somente aos dispositivos Android que dão suporte à autenticação biométrica.
+
+## <a name="disable-single-sign-on-ios-and-android"></a>Desabilitar logon único (iOS e Android)
+
+Por padrão, o aplicativo móvel do Power BI fornece uma experiência conveniente de logon único para um usuário individual, minimizando o número de vezes que ele precisa fornecer um nome de usuário e uma senha. Esse comportamento de logon único se baseia na suposição de que o dispositivo é o dispositivo pessoal do usuário e que há apenas um usuário que usa o dispositivo e os aplicativos contidos nele.
+
+Os administradores podem ativar a configuração **DisableSingleSignOn** no arquivo de configuração do aplicativo para configurar remotamente o aplicativo a fim de desabilitar o logon único e solicitar explicitamente a senha do usuário durante a entrada.
+
+Essa é uma configuração somente de administrador que é feita por meio da configuração remota. O usuário final não pode alterá-la.
+
+| Chave | Type | Descrição |
+|---|---|---|
+| com.microsoft.powerbi.mobile.DisableSingleSignOn | Boolean | O valor padrão é Falso.<br><br>Depois que um usuário se desconectar, o aplicativo não reutilizará as credenciais existentes, mas solicitará ao próximo usuário que forneça uma senha para se autenticar e se conectar ao serviço do Power BI.
+ |
 
 ## <a name="interaction-settings-ios-and-android"></a>Configurações de interação (iOS e Android)
 
@@ -55,10 +69,10 @@ O aplicativo Power BI para iOS e Android oferecerá aos administradores a capaci
 
 | Chave | Type | Valores | Descrição |
 |---|---|---|---|
-| com.microsoft.powerbi.mobile.ReportTapInteraction | Cadeia de caracteres |  <nobr>toque simples</nobr><br><nobr>toque duplo</nobr> | Configure se um toque no visual também fará uma seleção de ponto de dados. |
-| com.microsoft.powerbi.mobile.EnableMultiSelect | Booliano |  <nobr>Verdadeiro</nobr><br><nobr>Falso</nobr> | Configure se um toque em um ponto de dados substituirá a seleção atual ou será adicionado à seleção atual. |
-| com.microsoft.powerbi.mobile.RefreshAction | Cadeia de caracteres |  <nobr>deslizar para atualizar</nobr><br>. | Configure se o usuário terá um botão para atualizar o relatório ou deverá usar o recurso "deslizar para atualizar". |
-| com.microsoft.powerbi.mobile.FooterAppearance | Cadeia de caracteres |  encaixado<br>dinâmico | Configure se o rodapé do relatório será encaixado na parte inferior do relatório ou ocultado automaticamente. |
+| com.microsoft.powerbi.mobile.ReportTapInteraction | String |  <nobr>toque simples</nobr><br><nobr>toque duplo</nobr> | Configure se um toque no visual também fará uma seleção de ponto de dados. |
+| com.microsoft.powerbi.mobile.EnableMultiSelect | Boolean |  <nobr>Verdadeiro</nobr><br><nobr>Falso</nobr> | Configure se um toque em um ponto de dados substituirá a seleção atual ou será adicionado à seleção atual. |
+| com.microsoft.powerbi.mobile.RefreshAction | String |  <nobr>deslizar para atualizar</nobr><br>botão | Configure se o usuário terá um botão para atualizar o relatório ou deverá usar o recurso "deslizar para atualizar". |
+| com.microsoft.powerbi.mobile.FooterAppearance | String |  encaixado<br>dinâmico | Configure se o rodapé do relatório será encaixado na parte inferior do relatório ou ocultado automaticamente. |
 
 ## <a name="deploying-app-configuration-settings"></a>Implantando definições de configuração de aplicativos
 

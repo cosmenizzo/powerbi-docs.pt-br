@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: kfollis
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 6c6bbf8476087532fd3a049a0e4bde3191892325
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: d2d28d8ea3f7e2e7217124483f90ecc28d44314f
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564034"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161686"
 ---
 # <a name="use-an-alternate-email-address"></a>Usar um endereço de email alternativo
 
@@ -37,7 +37,7 @@ Para especificar um endereço alternativo no Microsoft 365, execute estas etapas
 
     Se você não puder editar seus detalhes, significa que seu administrador gerencia seu endereço de email. Entre em contato com o administrador para atualizar seu endereço de email.
 
-    ![Detalhes do contato](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
+    ![Captura de tela da caixa de diálogo Detalhes do contato mostrando como especificar um email alternativo.](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
 
 1. No campo **Email alternativo**, insira o endereço de email que você gostaria que o Microsoft 365 usasse para as atualizações do Power BI.
 

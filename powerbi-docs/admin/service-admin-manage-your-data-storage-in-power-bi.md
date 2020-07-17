@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 02/25/2020
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: bd671e32167837a5b8b96388bb2687616e6cada5
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 50d3adef65791c3fecd1a2125f67318fb8ab0298
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228568"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214252"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Gerenciar o armazenamento de dados em workspaces do Power BI
 
@@ -48,40 +48,38 @@ No armazenamento de dados estão incluídos seus próprios conjuntos de dados e 
 
 O tamanho de um dashboard que você compartilha varia dependendo do que é fixado a ele. Por exemplo, se você fixar itens de dois relatórios que façam parte de dois conjuntos de dados diferentes, o tamanho incluirá os dois conjuntos de dados.
 
-<a name="manage"/>
-
 ## <a name="manage-items-you-own"></a>Gerenciar os itens que você tem
 
 Veja a quantidade de armazenamento de dados que você está usando em sua conta do Power BI e gerencie sua conta.
 
 1. Para gerenciar seu armazenamento, acesse **Meu Workspace** no painel de navegação.
    
-    ![Meu Workspace](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
+    ![Captura de tela do painel de navegação com Meu Workspace em destaque.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
 
-2. Selecione o ícone de engrenagem ![Ícone de engrenagem](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) no canto superior direito \> **Gerenciar armazenamento pessoal**.
+2. Selecione o ícone de engrenagem ![ícone de Engrenagem](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) no canto superior direito **Gerenciar armazenamento pessoal**.
    
     A barra superior mostra o limite de armazenamento que você usou.
    
-    ![Gerenciar limite de armazenamento](media/service-admin-manage-your-data-storage-in-power-bi/pbi_persnlstorage.png)
+    ![Captura de tela de Gerenciar limite de armazenamento mostrando quanto armazenamento foi usado.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_persnlstorage.png)
    
     Os conjuntos de dados e os relatórios são separados em duas guias:
    
     **Pertencente a mim:** Você carregou esses relatórios e conjuntos de dados em sua conta do Power BI, incluindo os conjuntos de dados de serviço, como o Salesforce e o Dynamics CRM.  
 
     **Pertencente a outros:** Outras pessoas compartilharam esses relatórios e conjuntos de dados com você.
-1. Para excluir um conjunto de dados ou um relatório, selecione o ícone de lixeira ![ícone de lixeira](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
+1. Para excluir um conjunto de dados ou um relatório, selecione o ícone de lixeira ![Ícone de lixeira](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
 
 Tenha em mente que você ou outra pessoa pode ter relatórios e painéis com base em um conjunto de dados. Se você excluir o conjunto de dados, os relatórios e painéis de controle não funcionarão mais.
 
 ## <a name="manage-your-workspace"></a>Gerenciar seu workspace
-1. Selecione a seta ao lado de **Workspaces** \> selecione o nome do workspace.
+1. Selecione a seta ao lado de **Workspaces** e escolha o nome do workspace.
    
-    ![Selecionar um workspace](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
-2. Selecione o ícone de engrenagem ![ícone de engrenagem](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) no canto superior direito \> **Gerenciar armazenamento de grupo**.
+    ![Captura de tela da seleção de Workspace mostrando o workspace do Grupo de Vendas.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
+2. Selecione o ícone de engrenagem ![ícone de Engrenagem](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) no canto superior direito **Gerenciar armazenamento de grupo**.
    
     A barra superior mostra o limite de armazenamento de grupo que você usou.
    
-    ![Gerenciar armazenamento de um workspace](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
+    ![Captura de tela de Gerenciar armazenamento mostrando quanto do limite de armazenamento do Grupo de Vendas foi usado.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
    
     Os conjuntos de dados e os relatórios são separados em duas guias:
    
@@ -89,7 +87,7 @@ Tenha em mente que você ou outra pessoa pode ter relatórios e painéis com bas
 
     **Pertencente a outros:** Outras pessoas compartilharam esses relatórios e conjuntos de dados com seu grupo.
 
-3. Para excluir um conjunto de dados ou um relatório, selecione o ícone de lixeira ![ícone de lixeira](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
+3. Para excluir um conjunto de dados ou um relatório, selecione o ícone de lixeira ![Ícone de lixeira](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
    
    > [!NOTE]
    > Tenha em mente que você ou outra pessoa do grupo pode ter relatórios e painéis com base em um conjunto de dados. Se você excluir o conjunto de dados, os relatórios e painéis de controle não funcionarão mais.
@@ -102,17 +100,17 @@ Há um limite de 1 GB por conjunto de dados que é importado para o Power BI. Se
 ## <a name="what-happens-when-you-reach-a-limit"></a>O que acontece quando você atinge um limite
 Ao atingir o limite da capacidade de dados daquilo que você pode fazer, serão exibidos avisos dentro do serviço. 
 
-Ao selecionar o ícone de engrenagem ![ícone de engrenagem](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png), será exibida uma barra vermelha indicando que você está acima do limite da capacidade de dados.
+Ao selecionar o ícone de engrenagem ![Ícone de engrenagem](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png), será exibida uma barra vermelha indicando que você está acima do limite da capacidade de dados.
 
-![Limite de armazenamento atingido](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit.png)
+![Captura de tela da capacidade de armazenamento mostrando que o limite foi atingido.](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit.png)
 
 Esse limite também é indicado em **Gerenciar armazenamento pessoal**.
 
- ![Gerenciar armazenamento pessoal, limite de armazenamento atingido](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
+ ![Captura de tela da capacidade de armazenamento pessoal mostrando que o limite de Beatriz foi atingido.](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
 
- Quando você tentar executar uma ação que atingirá um dos limites, será exibida uma mensagem informando que você está acima do limite. Você pode [gerenciar](#manage) o armazenamento para reduzir a quantidade de armazenamento e ultrapassar o limite.
+ Quando você tentar executar uma ação que atingirá um dos limites, será exibida uma mensagem informando que você está acima do limite. Você pode [gerenciar seu armazenamento](#manage-items-you-own) para reduzir a quantidade de armazenamento e ultrapassar o limite.
 
- ![Acima do seu limite de armazenamento](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
+ ![Captura de tela da caixa de diálogo Acima do seu limite de armazenamento mostrando que os limites foram atingidos.](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
  ## <a name="next-steps"></a>Próximas etapas
 

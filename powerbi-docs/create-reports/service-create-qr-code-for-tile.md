@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5a363a951e9c8f6cc04f825c64dce811d0a954e8
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7ce25bb448d698f8c1ce4b77e8823e96220a1792
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219311"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264464"
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>Criar um código QR para um bloco no Power BI a ser usado nos aplicativos móveis
 Os códigos QR no Power BI podem conectar qualquer coisa do mundo real diretamente às informações do BI relacionadas &#151; não é necessária navegação ou pesquisa.
@@ -26,13 +26,13 @@ Os colegas com quem você compartilhou o painel podem [digitalizar o código QR 
 
 ## <a name="create-a-qr-code-for-a-tile"></a>Criar um código QR para um bloco
 1. Abra um painel no serviço do Power BI.
-2. Selecione **Mais opções** (...) no canto superior direito do bloco e selecione **modo de Foco** ![](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
+2. Selecione **Mais opções** (...) no canto superior direito do bloco e escolha **Modo de foco** ![ícone de Tela inteira](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
 3. Selecione **Mais opções** (...) no canto superior direito e selecione **Gerar código QR**. 
    
-    ![](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
+    ![Captura de tela de um bloco mostrando um ponteiro das reticências até a opção Gerar código QR.](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
 4. Será exibida uma caixa de diálogo com o código QR. 
    
-    ![](media/service-create-qr-code-for-tile/pbi_qrcode_opportunity_count.png)
+    ![Captura de tela de uma caixa de diálogo mostrando que o código QR está pronto para ser baixado ou salvo.](media/service-create-qr-code-for-tile/pbi_qrcode_opportunity_count.png)
 5. Aqui, você pode escanear o código QR ou baixe e salvá-lo para: 
    
    * Adicioná-lo a um email ou a outro documento ou 
@@ -54,4 +54,4 @@ Power BI gera o código QR como um arquivo JPG, pronto para imprimir.
 * [Conectar-se a dados do Power BI do mundo real](../consumer/mobile/mobile-apps-data-in-real-world-context.md) com os aplicativos móveis
 * [Digitalizar um código QR do Power BI em seu dispositivo móvel](../consumer/mobile/mobile-apps-qr-code.md)
 * [Criar um código QR para um relatório](service-create-qr-code-for-report.md)
-* Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+* Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

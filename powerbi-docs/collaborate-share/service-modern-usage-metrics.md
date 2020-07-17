@@ -10,11 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ee5536f2c4026ceb019c5f89b6045afd44b35529
-ms.sourcegitcommit: 0b1e96de184caf2371adedcc3ee43bcb88048187
+ms.openlocfilehash: 380fe94a123c26d7502ce68bc21372f791a3508f
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85299608"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86162033"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Monitorar métricas de uso na nova experiência de workspace
 
@@ -81,13 +82,13 @@ O relatório de métricas de uso aprimorado inclui as seguintes páginas:
 | Uso de relatórios | Visualizadores únicos | Um visualizador é alguém que abriu o relatório pelo menos uma vez durante determinado período (com base na conta de usuário do Azure Active Directory). |
 | Uso de relatórios | Tendência de visualização | A tendência da visualização reflete as alterações na contagem de visualizações ao longo do tempo. Ela compara a primeira metade do período selecionado com a segunda metade. |
 | Uso de relatórios | Segmentação de datas | Você pode alterar os períodos na página de uso do Relatório, por exemplo, para calcular as tendências semanal ou quinzenalmente. No canto inferior esquerdo da página de Uso do relatório, é possível determinar as datas mais antiga e mais recente entre as quais os dados de uso estarão disponíveis no relatório selecionado. |
-| Uso de relatórios | Classificação | Com base na contagem de visualizações, a classificação mostra a popularidade de um relatório em comparação com todos os outros relatórios da organização.   |
+| Uso de relatórios | Rank | Com base na contagem de visualizações, a classificação mostra a popularidade de um relatório em comparação com todos os outros relatórios da organização. Uma classificação igual a 1 significa que o relatório tem a maioria das exibições de todos os relatórios na organização.   |
 | Uso de relatórios | Visualizações do relatório por dia | Número total de visualizações por dia. |
 | Uso de relatórios | Visualizadores diários do relatório | Número total de usuários diferentes que visualizaram o relatório (com base na conta de usuário do Azure Active Directory). |
 | Uso de relatórios | Método de distribuição | Forma como os usuários obtêm acesso ao relatório, por exemplo, na condição de membros de um workspace, ao ter o relatório compartilhado com eles ou ao instalar um aplicativo. |
 | Uso de relatórios | Segmentação de plataforma | Se o relatório foi acessado por meio do serviço do Power BI (powerbi.com), do Power BI Embedded ou de um dispositivo móvel. |
 | Uso de relatórios | Usuários com visualizações do relatório | Mostra a lista de usuários que abriram o relatório classificada por contagem de visualizações. |
-| Uso de relatórios | Páginas | Se o relatório tiver mais de uma página, segmente o relatório por página(s) que foi exibido. Se houver uma opção de lista "Em Branco", isso significará que uma página de relatório foi adicionada recentemente (em até 24 horas, o nome real da nova página será exibido na lista de segmentação) e/ou que páginas do relatório foram excluídas. "Em branco" captura esses tipos de situações. |
+| Uso de relatórios | Pages (Páginas) | Se o relatório tiver mais de uma página, segmente o relatório por página(s) que foi exibido. Se houver uma opção de lista "Em Branco", isso significará que uma página de relatório foi adicionada recentemente (em até 24 horas, o nome real da nova página será exibido na lista de segmentação) e/ou que páginas do relatório foram excluídas. "Em branco" captura esses tipos de situações. |
 | Desempenho do relatório | Horário de abertura típico | O horário de abertura típico do relatório corresponde ao 50º percentil do tempo necessário para abri-lo. Em outras palavras, é o tempo abaixo do qual 50% das ações de abertura do relatório são concluídas. A página Desempenho do relatório também divide o horário de abertura típico do relatório por método de consumo e tipo de navegador.   |
 | Desempenho do relatório | Tendência de horário de abertura | A tendência de horário de abertura reflete as alterações no desempenho de abertura do relatório ao longo do tempo. Ela compara os horários de abertura do relatório da primeira metade do período selecionado com os horários de abertura da segunda metade. |
 | Desempenho do relatório | Segmentação de datas | Você pode alterar o período na página de Desempenho do relatório, por exemplo, para calcular tendências semanal ou quinzenalmente. No canto inferior esquerdo da página de Desempenho do relatório, é possível determinar as datas mais antiga e mais recente entre as quais os dados de uso estarão disponíveis no relatório selecionado. |
@@ -103,7 +104,7 @@ Use o procedimento a seguir para assumir o controle de um conjunto de dados do R
 1. Abra o workspace que contém o relatório para o qual você deseja atualizar o conjunto de dados do Relatório de Métricas de Uso.
 2. Na barra de cabeçalho preta na parte superior, selecione o ícone **Configurações** e selecione **Configurações**.
 
-    ![selecione Configurações](media/service-modern-usage-metrics/power-bi-settings-settings.png)
+    ![Escolha Configurações](media/service-modern-usage-metrics/power-bi-settings-settings.png)
 
 3. Alterne para a guia **Conjuntos de dados**.
 
@@ -257,6 +258,8 @@ Além das diferenças acima entre os relatórios de métricas de uso anteriores 
 - A inicialização do conjunto de dados do Relatório de Métricas de Uso pode levar alguns minutos, resultando na exibição de um relatório de métricas de uso em branco porque a interface do usuário do Power BI não aguarda o término da atualização. Verifique o histórico de atualização nas configurações do conjunto de dados do Relatório de Métricas de Uso para verificar se a operação de atualização foi bem-sucedida.
 - A inicialização do conjunto de dados do Relatório de Métricas de Uso pode falhar por tempo limite esgotado durante a atualização. Confira a seção Solução de problemas abaixo para resolver esse problema.
 - O compartilhamento é desabilitado para o relatório de métricas de uso. Para dar às pessoas acesso de leitura ao relatório, primeiro você precisa dar a elas acesso ao workspace.
+- Em alguns cenários, você pode observar que os dados de desempenho estão ausentes. Isso poderá ocorrer se um usuário abrir um relatório e interagir com ele antes de concluir o carregamento ou se ocorrer um erro durante o carregamento do relatório.
+- Os dados de desempenho dependem do envio dos dados pelo cliente/pelo dispositivo ao Power BI. Dependendo da latência de rede, dos bloqueadores de anúncios, das regras de rede e dos firewalls definidos pela sua organização, talvez os dados de desempenho nunca cheguem ao Power BI. Portanto, os dados de desempenho só podem apresentar uma amostra e não podem incluir nem mostrar todos os usuários. 
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
@@ -308,7 +311,7 @@ A plataforma indica a tecnologia que um visualizador usou para abrir um relatór
 
 **P:** Como funciona a classificação de relatórios?
 
-**R:** Com base na contagem de visualizações, a classificação mostra a popularidade de um relatório em comparação com todos os outros relatórios da organização.
+**R:** Com base na contagem de visualizações, a classificação mostra a popularidade de um relatório em comparação com todos os outros relatórios da organização. Uma classificação igual a 1 significa que o relatório tem a maioria das exibições de todos os relatórios na organização.
 
 **P:** O que são "usuários sem nome"?
 
@@ -336,7 +339,7 @@ Se você suspeitar de problemas de consistência ou atualização de dados, talv
 
 2. Na barra de cabeçalho preta na parte superior, selecione o ícone **Configurações** e selecione **Configurações**.
 
-    ![selecione Configurações](media/service-modern-usage-metrics/power-bi-settings-settings.png)
+    ![Escolha Configurações](media/service-modern-usage-metrics/power-bi-settings-settings.png)
 
 3. Alterne para a guia **Conjuntos de dados** e selecione o conjunto de dados Relatório de Métricas de Uso. 
 

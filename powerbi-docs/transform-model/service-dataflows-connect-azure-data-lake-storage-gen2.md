@@ -9,11 +9,12 @@ ms.topic: how-to
 ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d6301b4eea49ab4ae5714446e051290cb254c324
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 92244304bcffc3544ca8616fd0b16226361d58c8
+ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354744"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86385942"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Conectar-se ao Azure Data Lake Storage Gen2 para armazenamento de fluxo de dados
 
@@ -45,6 +46,7 @@ Antes de configurar o Power BI com uma conta do Azure Data Lake Storage Gen2, vo
 2. A conta de armazenamento deve ser criada no mesmo locatário do AAD que seu locatário do Power BI.
 3. A conta de armazenamento deve ser criada na mesma região do AAD que seu locatário do Power BI. Para determinar onde seu locatário do Power BI está localizado, confira o artigo [Onde meu locatário do Power BI está localizado](../admin/service-admin-where-is-my-tenant-located.md).
 4. A conta de armazenamento deve ter o recurso *Namespace hierárquico* habilitado.
+5. Se a conta de armazenamento não foi criada pelo usuário atual, verifique se o usuário atual recebeu as permissões [proprietário de Dados do Blob de Armazenamento](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#storage-blob-data-owner) e [proprietário](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner). (Como o proprietário não contém a permissão no nível dos dados, a permissão proprietário de Dados do Blob é necessária.)
 
 As seções a seguir percorrem as etapas necessárias para configurar sua conta do Azure Data Lake Storage Gen2 detalhadamente.
 
@@ -142,7 +144,7 @@ Este artigo fornece orientações sobre como se conectar a um Azure Data Lake Ge
 Para saber mais sobre fluxos de dados, CDM e o Azure Data Lake Storage Gen2, confira os seguintes artigos:
 
 * [Integração entre fluxos de dados e o Azure Data Lake (versão prévia)](service-dataflows-azure-data-lake-integration.md)
-* [Definir configurações de fluxo de dados de workspace (versão prévia)](service-dataflows-configure-workspace-storage-settings.md)
+* [Definir configurações de fluxo de dados de workspace (visualização)](service-dataflows-configure-workspace-storage-settings.md)
 * [Adicionar uma pasta do CDM ao Power BI como um fluxo de dados (versão prévia)](service-dataflows-add-cdm-folder.md)
 
 Para saber mais sobre fluxos de dados em geral, confira estes artigos:

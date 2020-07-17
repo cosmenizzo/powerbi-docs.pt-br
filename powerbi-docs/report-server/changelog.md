@@ -7,18 +7,19 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 06/30/2020
-ms.openlocfilehash: 0339dd4a8fa7b429db01715060bfd146db115e46
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.date: 07/08/2020
+ms.openlocfilehash: 8b777cba35f32dcf2d6561b73c350d047d473223
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782733"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86162265"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Log de alterações para o Servidor de Relatórios do Power BI
 
 Esse log de alterações é para o Servidor de Relatório do Power BI e lista novos itens juntamente com correções de bug para cada build lançado.
 
-Para obter informações detalhadas sobre os novos recursos, consulte [Novidades no Servidor de Relatório do Power BI](whats-new.md). 
+Confira [Novidades do Servidor de Relatórios do Power BI](whats-new.md) para obter mais informações sobre os novos recursos. 
 
 ## <a name="may-2020"></a>Maio de 2020
 - **Servidor de Relatório do Power BI**
@@ -59,7 +60,7 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
 ## <a name="january-2020"></a>Janeiro de 2020
 - **Servidor de Relatório do Power BI**
     - *Versão: 1.6.7364.4075 (Build 15.0.1102.777), Lançamento: 2 de março de 2020*
-         - Correções de bug
+         - Correções de bugs
            -  Correção de relatórios do Power BI com falha ao carregar certas fontes de dados
            -  Correção do local de download de links da área de trabalho do Servidor de Relatórios do Power BI no portal
            -  Correção de DynamicImageDPI para renderização de Excel
@@ -141,7 +142,7 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
 
 - **Servidor de Relatório do Power BI**          
     - *Versão 1.5.7074.36177 (Build 15.0.1102.371), lançamento: 21 de maio de 2019*
-        - Correções de bug
+        - Correções de bugs
             - Relatórios paginados
                 - Correção para sempre habilitar a inserção de fonte do pdf.
                 - Correção para definir cookies enviados via https como Seguro
@@ -169,14 +170,14 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
 
 - **Servidor de Relatório do Power BI**          
     - *Versão 1.4.7024.16477 (Build 15.0.1102.299), lançamento: 28 de março de 2019*
-        - Correções de bug
+        - Correções de bugs
             - Relatórios do Power BI
                 - Correção de problema com credenciais básicas ao usar a consulta direta para SAP Hana e SAP BW
                 - Correção de atualização de dados de feed OData falha com "Não foi possível carregar o arquivo ou o assembly ' Microsoft.OData.Core.NetFX35.V7'"
 
 - **Servidor de Relatório do Power BI**            
     - *Versão 1.4.6969.7395 (build 15.0.1102.235), Lançamento: 30 de janeiro de 2019*
-        - Correções de bug
+        - Correções de bugs
             - Relatórios do Power BI
                 - Correção de problema com credenciais básicas ao usar a Consulta Direta
                 - Correção de relações bidirecionais com filtros aplicados à Segurança em Nível de Linha
@@ -201,7 +202,7 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
                 - Nova API Web: /PowerBIReports({Id})/DataModelRoles (GET)
                 - Nova API Web: /PowerBIReports({Id})/DataModelRoleAssignments (GET e PUT)
                 - Para ver mais detalhes, confira [API REST do Servidor de Relatórios do Power BI](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0)
-        - Correções de bug
+        - Correções de bugs
             - Vulnerabilidade de injeção de HTML
             - A exportação para PDF não está mostrando o símbolo de Euro
             - A ação de salvar uma senha com várias fontes de dados em relatórios do Power BI invalida as senhas não alteradas
@@ -291,24 +292,24 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
 - **Servidor de Relatório do Power BI**
     - *Versão 1.1.6582.41691 (Build 14.0.600.442), lançamento: 10 de janeiro de 2018*
         - Atualizações de Segurança
-        - Correções de bug
+        - Correções de bugs
             - Correção para Model.GetParameters retornando 400
             - Correção para configurar o conjunto de dados compartilhado para Relatórios Paginados existentes (RDL)
             - Correção para ExecutionNotFoundException ao exportar o relatório com valores de parâmetros diferentes para PDF
 
     - *Versão 1.1.6551.5155 (Build 14.0.600.438), lançamento: 11 de dezembro de 2017*
-        - Correções de bug
+        - Correções de bugs
             - Falha ao salvar dados após a atualização para determinados relatórios do Power BI Desktop.
 
     - *Versão 1.1.6530.30789 (Build 14.0.600.437), lançamento: 17 de novembro de 2017*
-        - Correções de bug
+        - Correções de bugs
             - Correção para Cenários de Autenticação Básica 
             - A correção para dias da semana não pode ser selecionada na página de agendamentos para Assinaturas, Planos de Atualização de Cache e Instantâneos de Histórico no Portal
             - Para Relatórios Paginados (RDL), correção para expressões na caixa de texto com a propriedade CanGrow configurada como false resulta em valores que não mostram cores e fontes inadequadas
             - Para Relatórios do Power BI (PBIX), a correção para adicionar Legendas de gráfico de linhas renderiza um visual vazio
 
     - *Versão 1.1.6514.9163 (Build 14.0.600.434), lançamento: 1º de novembro de 2017*
-        - Correções de bug
+        - Correções de bugs
             - Corrigir problemas de confiabilidade de upload para relatórios PBIX acima de 500 MB
             - Corrigir problemas de carregamento de problema para relatórios PBIX acima de 1GB
 
@@ -332,7 +333,7 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
         - Atualizações de Segurança
 
     - *Versão: 2.51.4885.1423 (outubro de 2017), lançamento: 17 de novembro de 2017*
-        - Correções de bug
+        - Correções de bugs
             - Correção para Power BI Desktop de 32 bits falha na execução em SO x86
             - Para os Relatórios do Power BI (PBIX), correção para mostrar linhas de grade do eixo x
             - Outras correções de bugs secundários
@@ -348,11 +349,11 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
         - Atualizações de Segurança
 
     - *Build 14.0.600.305, lançamento: 19 de setembro de 2017*  
-        - Correções de bug
+        - Correções de bugs
             - Atualizar para a versão mais recente do [Controle da Web do Bing Maps](https://msdn.microsoft.com/library/mt712542.aspx)
 
     - *Build 14.0.600.301, lançamento: 11 de julho de 2017*
-        - Correções de bug
+        - Correções de bugs
             - A marca `{{UserId}}` resolve para as credenciais armazenadas, em vez do usuário que executa o relatório nos Relatórios do Power BI
             - Algumas imagens apresentam falha ao ser renderizadas em relatórios do Servidor de Relatório do Power BI
             - Não é possível alterar o nome de um Relatório do Power BI no Servidor de Relatório do Power BI
@@ -370,7 +371,7 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
 [O que é o Servidor de Relatórios do Power BI?](get-started.md)
 [Visão geral do administrador](admin-handbook-overview.md)  
 [Instalar o Servidor de Relatório do Power BI](install-report-server.md)  
-[Baixar o Construtor de Relatórios](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Baixar o SSDT (SQL Server Data Tools)](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Baixe o Construtor de Relatórios](https://www.microsoft.com/download/details.aspx?id=53613)  
+[Baixar o SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)

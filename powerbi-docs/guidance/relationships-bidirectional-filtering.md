@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 9c883b32d03362e5d0e0d6d5ed074cb627fabaf1
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: c362a8012635becb68200a9d513157c05310edaf
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273169"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215151"
 ---
 # <a name="bi-directional-relationship-guidance"></a>Diretrizes de relação bidirecional
 
@@ -40,7 +40,7 @@ As relações bidirecionais têm uma função importante na criação dos dois s
 
 As relações bidirecionais podem fornecer segmentações que limitam os itens para onde existam dados. (Se você está familiarizado com segmentações e tabelas dinâmicas do Excel, esse é o comportamento padrão ao obter dados de um conjunto de dados do Power BI ou de um modelo do Analysis Services.) Para ajudar a explicar o que isso significa, primeiro considere o diagrama do modelo a seguir.
 
-![Um diagrama de modelo contém três tabelas. O design é descrito no parágrafo a seguir.](media/relationships-bidirectional-filtering/sales-model-diagram.png)
+![Diagrama mostrando um modelo que contém três tabelas. O design é descrito no parágrafo a seguir.](media/relationships-bidirectional-filtering/sales-model-diagram.png)
 
 A primeira tabela é denominada **Customer** e contém três colunas: **Country-Region**, **Customer** e **CustomerCode**. A segunda tabela é denominada **Product** e contém três colunas: **Color**, **Product** e **SKU**. A terceira tabela é denominada **Sales** e contém três colunas: **CustomerCode**, **OrderDate**, **Quantity** e **SKU**. As tabelas **Customer** e **Product** são do tipo dimensional, e cada uma tem uma relação um para muitos com a tabela **Sales**. Cada relação é filtrada em uma única direção.
 
@@ -49,7 +49,7 @@ Para ajudar a descrever como funciona a filtragem bidirecional, o diagrama de mo
 > [!NOTE]
 > Não é possível exibir linhas de tabela no diagrama de modelo do Power BI Desktop. Isso é feito neste artigo a fim de contribuir com a discussão, fornecendo exemplos claros.
 
-![O diagrama de modelo agora revela as linhas de tabela. Os detalhes de linha são descritos no parágrafo a seguir.](media/relationships-bidirectional-filtering/sales-model-diagram-rows.png)
+![Diagrama mostrando que o modelo agora revela as linhas da tabela. Os detalhes de linha são descritos no parágrafo a seguir.](media/relationships-bidirectional-filtering/sales-model-diagram-rows.png)
 
 Os detalhes de linha das três tabelas são descritos na seguinte lista com marcadores:
 
@@ -67,17 +67,17 @@ Os detalhes de linha das três tabelas são descritos na seguinte lista com marc
 
 Agora, considere a página de relatório a seguir.
 
-![A página de relatório contém três visuais. Os detalhes são descritos no parágrafo a seguir.](media/relationships-bidirectional-filtering/sales-report-no-bi-directional-filter.png)
+![Diagrama mostrando a página de relatório contendo três visuais. Os detalhes são descritos no parágrafo a seguir.](media/relationships-bidirectional-filtering/sales-report-no-bi-directional-filter.png)
 
 A página consiste em duas segmentações e um visual de cartão. A primeira segmentação é para **Country-Region** e tem dois itens: Australia e United States. Atualmente, está segmentado por Australia. A segunda segmentação é para **Product** e tem três itens: Hat, Jeans e T-shirt. Nenhum item está selecionado (ou seja, _nenhum produto_ está filtrado). O visual de cartão exibe uma quantidade de 30.
 
 Quando os usuários dos relatórios segmentam por Australia, convém limitar a segmentação de **Product** para exibir itens cujos dados se _relacionam_ às vendas australianas. É isso que significa exibir os itens da segmentação "com dados". Você pode conseguir esse comportamento configurando a relação entre as tabelas **Product** e **Sales** para filtrar nas duas direções.
 
-![O diagrama do modelo que mostra a relação entre as tabelas Product e Sales agora é bidirecional.](media/relationships-bidirectional-filtering/sales-model-diagram-rows-bi-directional-filter.png)
+![Diagrama mostrando um modelo indicando que a relação entre as tabelas Product e Sales agora é bidirecional.](media/relationships-bidirectional-filtering/sales-model-diagram-rows-bi-directional-filter.png)
 
 A segmentação **Product** agora relaciona um único item: T-shirt. Esse item representa o único produto vendido para clientes australianos.
 
-![A página de relatório contém três visuais. Os detalhes são descritos no parágrafo a seguir.](media/relationships-bidirectional-filtering/sales-report-bi-directional-filter.png)
+![Diagrama mostrando a página de relatório contendo três visuais. Os detalhes são descritos no parágrafo a seguir.](media/relationships-bidirectional-filtering/sales-report-bi-directional-filter.png)
 
 Primeiro, sugerimos que você considere cuidadosamente se esse design funciona para os seus usuários de relatórios. Alguns usuários de relatórios consideram essa experiência confusa. Eles não entendem porque os itens são dinamicamente exibidos ou ocultados quando interagem com outras segmentações.
 
@@ -93,7 +93,7 @@ Total Quantity = SUM(Sales[Quantity])
 
 Para mostrar os itens "com dados" da segmentação de **Product**, eles simplesmente precisam ser filtrados pela medida **Total Quantity** usando a condição "não está em branco".
 
-![Agora o painel Filtros da segmentação Product filtra por "Total Quantity não está em branco".](media/relationships-bidirectional-filtering/filter-product-slicer-measure-is-not-blank.png)
+![Diagrama mostrando que o painel Filtros da segmentação Product agora filtra o conteúdo por "Total Quantity não está em branco".](media/relationships-bidirectional-filtering/filter-product-slicer-measure-is-not-blank.png)
 
 ## <a name="dimension-to-dimension-analysis"></a>Análise de dimensão a dimensão
 
@@ -128,7 +128,7 @@ Durante a avaliação da expressão de medida **Different Countries Sold**, a re
 
 O visual da tabela a seguir apresenta as estatísticas de cada produto vendido. A coluna **Quantity** é simplesmente a soma dos valores de quantidade. A coluna **Different Countries Sold** representa a contagem distinta de valores de país-região de todos os clientes que compraram o produto.
 
-![Dois produtos são listados em um visual de tabela. Na coluna "Different Countries Sold", Jeans é 1, e T-shirt é 2.](media/relationships-bidirectional-filtering/country-sales-crossfilter-function.png)
+![Diagrama mostrando que dois produtos estão listados em um visual de tabela. Na coluna "Different Countries Sold", Jeans é 1, e T-shirt é 2.](media/relationships-bidirectional-filtering/country-sales-crossfilter-function.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -139,6 +139,5 @@ Para obter mais informações relacionadas a este artigo, confira os seguintes r
 - [Diretrizes de relação um-para-um](relationships-one-to-one.md)
 - [Diretrizes da relação muitos para muitos](relationships-many-to-many.md)
 - [Diretrizes da solução de problemas de relação](relationships-troubleshoot.md)
-- Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+- Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
 - Sugestões? [Contribuir com ideias para aprimorar o Power BI](https://ideas.powerbi.com/)
-
