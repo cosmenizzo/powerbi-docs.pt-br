@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c691446d7cc9a976e38cab5aefc385c988cb1552
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 9f434d27a11d171509645594a6f7f67e62c16faa
+ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347759"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86409296"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Conectar-se à API de Segurança do Microsoft Graph no Power BI Desktop
 
@@ -32,6 +32,7 @@ O consentimento requer a ID e o nome do aplicativo do conector, sendo que esse n
 |----------|-------|
 | **Nome do aplicativo** | `MicrosoftGraphSecurityPowerBIConnector` |
 | **ID do Aplicativo** | `cab163b7-247d-4cb9-be32-39b6056d4189` |
+| **URI de redirecionamento** | `https://oauth.powerbi.com/views/oauthredirect.html` |
 |||
 
 Para fornecer consentimento ao conector, o administrador de locatários do Azure AD poderá usar qualquer um destes métodos:
