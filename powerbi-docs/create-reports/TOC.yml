@@ -11,6 +11,10 @@
     - name: Tutoriais
       expanded: true
       items:
+        - name: 'Power BI Desktop: do Excel para o relatório'
+          href: desktop-excel-stunning-report.md
+        - name: 'Serviço do Power BI: do Excel para o relatório'
+          href: service-from-excel-to-stunning-report.md
         - name: 'Curso online: Relatórios paginados'
           href: ../learning-catalog/paginated-reports-online-course.md
         - name: Criar e carregar um relatório paginado
