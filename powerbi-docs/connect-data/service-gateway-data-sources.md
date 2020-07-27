@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/21/2020
+ms.date: 07/16/2020
 ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5e1b127bae83338264ac450438956e03a5ec24cb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7fecec5ed41f0de9227cf30ed3ba4f39b23f21e9
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236633"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459544"
 ---
 # <a name="manage-data-sources"></a>Gerenciar fontes de dados
 
@@ -102,9 +102,12 @@ Depois de adicionar uma fonte de dados a um gateway, você dá acesso a usuário
 
 Você também pode dar acesso administrativo a usuários e grupos de segurança para o gateway.
 
+> [!NOTE]
+> Usuários com acesso à fonte de dados podem associar conjuntos de dados à fonte e se conectar, com base nas opções de segurança (credenciais armazenadas ou logon único) selecionadas durante a criação de uma fonte de dados.
+
 ### <a name="add-users-to-a-data-source"></a>Adicionar usuários a uma fonte de dados
 
-1. No canto superior direito do serviço do Power BI, selecione o ícone de engrenagem ![Ícone de engrenagem de configurações](media/service-gateway-data-sources/icon-gear.png) > **Gerenciar gateways**.
+1. No canto superior direito do serviço do Power BI, selecione o ícone de engrenagem ![Configurações](media/service-gateway-data-sources/icon-gear.png) > **Gerenciar gateways**.
 
 2. Selecione a fonte de dados à qual deseja adicionar usuários.
 

@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/08/2020
-ms.openlocfilehash: 037fbdf3c1e4c01bac91e6089f9fa1c7dd1635d1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.date: 07/14/2020
+ms.openlocfilehash: 94cd4fd652fc1b06a73e1ea319a65e1aa5b46c7e
+ms.sourcegitcommit: 8b8d54d46470a311d8654abe92b5a223b696af28
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238977"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86437205"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publicar visuais do Power BI no Partner Center
 
@@ -23,7 +23,7 @@ Depois de criar seu visual do Power BI, talvez você queira publicá-lo no AppSo
 
 O [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) é o lugar para encontrar suplementos e aplicativos SaaS para seus produtos e serviços da Microsoft.
 
-![Office Store](media/office-store/appsource-01.png)
+![Captura de tela dos visuais do Power BI no AppSource.](media/office-store/appsource-01.png)
 
 ## <a name="preparing-to-submit-your-power-bi-visual"></a>Preparação para envio de seu visual do Power BI
 
@@ -61,7 +61,7 @@ Anexe o **arquivo pbiviz** e o **arquivo de relatório pbix de exemplo** ao seu 
 
 ## <a name="submitting-to-appsource"></a>Enviar para AppSource
 
-Para enviar seu visual do Power BI ao AppSource, você precisa obter um pacote de aplicativo da equipe do Power BI e enviá-lo ao Partner Center. 
+Para enviar seu visual do Power BI ao AppSource, você precisa obter um pacote de aplicativo da equipe do Power BI e enviá-lo ao Partner Center.
 
 ### <a name="getting-the-app-package"></a>Obter o pacote do aplicativo
 
@@ -73,6 +73,11 @@ A equipe do Power BI tem que verificar os arquivos quanto a novos envios de visu
 
 Para enviar seu visual do Power BI ao Partner Center, você precisa estar registrado no Partner Center. Se ainda não estiver, [Abra uma conta de desenvolvedor no Partner Center](https://docs.microsoft.com/office/dev/store/open-a-developer-account).
 
+>[!NOTE]
+>**Editores individuais** podem usar um destes métodos para enviar um visual do Power BI:
+>* Se você tiver uma conta do Painel do Vendedor antiga, poderá continuar usando as credenciais dessa conta para entrar na Central de Parceiros.
+>* Se você não tiver uma conta do Painel do Vendedor antiga e não estiver registrado na Central de Parceiros, será necessário [Abrir uma conta de desenvolvedor na Central de Parceiros](https://docs.microsoft.com/office/dev/store/open-a-developer-account) usando seu email de trabalho.
+
 Siga as etapas abaixo para enviar seu visual do Power BI ao Partner Center. Confira mais informações sobre o processo de envio em [Enviar sua solução do Office ao AppSource por meio do Partner Center](https://docs.microsoft.com/office/dev/store/use-partner-center-to-submit-to-appsource).
 
 1. Faça logon no **Partner Center**.
@@ -83,7 +88,7 @@ Siga as etapas abaixo para enviar seu visual do Power BI ao Partner Center. Conf
 
 4. Selecione **Criar um novo** e, no menu suspenso, selecione **Visual do Power BI**.
 
-    ![Office Store](media/office-store/power-bi-visual.png)
+    ![Captura da criação de um novo visual do Power BI na guia Office Store na Central de Parceiros.](media/office-store/power-bi-visual.png)
 
 5. Na janela **Criar um novo visual do Power BI**, insira um nome para o seu visual do Power BI e selecione **Criar**.
 
@@ -122,4 +127,4 @@ Depois de criar seu visual, você tem a opção de [certificá-lo](power-bi-cust
 
 * [Obter um visual do Power BI certificado](power-bi-custom-visuals-certified.md)
 
-* Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+* Mais perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

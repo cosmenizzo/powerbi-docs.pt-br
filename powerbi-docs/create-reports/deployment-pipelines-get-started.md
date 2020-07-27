@@ -7,11 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
-ms.openlocfilehash: 6e9ed3217a7ee589eaf1469ba179ef8c8bc474e9
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 8ce11c0ac6a5098c49f4d8aba0b0a09f28be975b
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354721"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557246"
 ---
 # <a name="get-started-with-deployment-pipelines-preview"></a>Introdução aos pipelines de implantação (versão prévia)
 
@@ -30,7 +31,7 @@ Você poderá acessar o recurso de pipelines de implantação se as seguintes co
 >[!NOTE]
 > Você também poderá ver o botão de pipelines de implantação se tiver criado anteriormente um pipeline ou se um pipeline tiver sido compartilhado com você.
 
-![página de aterrissagem dos pipelines de implantação](media/deployment-pipelines-get-started/creating-pipeline.png)
+![Uma captura de tela da página de aterrissagem dos pipelines de implantação.](media/deployment-pipelines-get-started/creating-pipeline.png)
 
 ## <a name="step-1---create-a-deployment-pipeline"></a>Etapa 1 – criar um pipeline de implantação
 
@@ -83,7 +84,7 @@ Depois que a implantação for concluída, atualize o conjunto de dados. Para ob
 
 Selecione o estágio a ser implantado e clique no botão de implantação. O processo de implantação cria um workspace duplicado no estágio de destino. Esse workspace inclui todo o conteúdo existente no estágio atual.
 
-[![implantar](media/deployment-pipelines-get-started/deploy.png "Exibir todo o conteúdo")](media/deployment-pipelines-get-started/deploy.png#lightbox)
+[![Uma captura de tela mostrando o botão de implantação para os estágios de desenvolvimento e teste em um pipeline de implantação.](media/deployment-pipelines-get-started/deploy.png)](media/deployment-pipelines-get-started/deploy.png#lightbox)
 
 ### <a name="selective-deployment"></a>Implantação seletiva
 
@@ -91,7 +92,7 @@ Para implantar apenas itens específicos, clique no link **Mostrar mais** e sele
 
 Como os dashboards, relatórios e conjuntos de dados estão relacionados e têm dependências, você pode usar o botão de seleção para marcar todos os itens dos quais eles são dependentes. Por exemplo, se você quiser implantar um relatório no próximo estágio, clicar no botão de seleção relacionado marcará o conjunto de dados ao qual o relatório está conectado, para que ambos sejam implantados de uma só vez e o relatório não seja interrompido.
 
-[![implantação seletiva](media/deployment-pipelines-get-started/selective-deploy.png "Implantação seletiva")](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
+[![Uma captura de tela mostrando a opção de implantação seletiva em pipelines de implantação, disponível após a seleção de Mostrar mais.](media/deployment-pipelines-get-started/selective-deploy.png)](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
 
 >[!NOTE]
 > * Não será possível implantar um relatório ou dashboard no próximo estágio se os itens dos quais eles dependem não existirem no estágio em que você está implantando.
@@ -103,7 +104,7 @@ Você pode optar por implantar em um estágio anterior, por exemplo, em um cená
 
 A implantação em um estágio anterior funcionará somente se o estágio anterior estiver sem conteúdo. Ao implantar em um estágio anterior, não é possível selecionar itens específicos. Todo o conteúdo do estágio será implantado.
 
-[![implantação em estágios anteriores](media/deployment-pipelines-get-started/deploy-back.png "Implantação em estágios anteriores")](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
+[![Uma captura de tela mostrando o botão Implantar no estágio anterior, disponível nos menus do estágio de teste ou produção.](media/deployment-pipelines-get-started/deploy-back.png)](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
 
 ## <a name="step-4---create-dataset-rules"></a>Etapa 4 – criar regras de conjunto de dados
 
@@ -120,15 +121,15 @@ As regras de conjunto de dados são definidas nas fontes de dados e nos parâmet
 
 1. Clique em **Configurações de implantação** no estágio de pipeline no qual você deseja criar uma regra de conjunto de dados.
 
-    ![configurações de implantação](media/deployment-pipelines-get-started/deployment-settings.png)
+    ![Uma captura de tela do botão de configurações da implantação, localizado no canto superior direito de cada estágio do pipeline de implantação.](media/deployment-pipelines-get-started/deployment-settings.png)
 
 2. No painel Configurações de implantação, selecione o conjunto de dados para o qual você deseja criar uma regra.
 
-    [![regras de conjunto de dados](media/deployment-pipelines-get-started/dataset-rules.png "Selecionar um conjunto de dados")](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
+    [![Uma captura de tela mostrando a seleção de um conjunto de dados para a criação de uma regra do conjunto de dados.](media/deployment-pipelines-get-started/dataset-rules.png)](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
 
 3. Selecione o tipo de regra que você deseja criar, expanda a lista e clique em **Adicionar regra**.
 
-     [![adicionar regra](media/deployment-pipelines-get-started/add-rule.png "Adicionar uma regra")](media/deployment-pipelines-get-started/add-rule.png#lightbox)
+     [![Uma captura de tela mostrando a seleção de uma regra da fonte de dados e a seleção de Adicionar regra.](media/deployment-pipelines-get-started/add-rule.png)](media/deployment-pipelines-get-started/add-rule.png#lightbox)
 
 ### <a name="dataset-rule-types"></a>Tipos de regras de conjunto de dados
 
@@ -151,6 +152,8 @@ Há dois tipos de regras que você pode criar:
 * Quando um item é removido ou excluído, suas regras também são excluídas. Essas regras não podem ser restauradas.
 
 * Se a fonte de dados ou os parâmetros definidos em uma regra são alterados ou removidos do conjunto de dados de origem, a regra não será válida, e ocorrerá uma falha na implantação.
+
+* As regras de parâmetro não podem ser definidas para parâmetros do tipo *Qualquer* ou *Binário*. Para obter mais informações, confira [restrições de parâmetros de atualização de conjuntos de dados](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparameters).
 
 * As regras de fonte de dados só podem ser definidas para as seguintes fontes de dados:
     * Azure Analysis Services
@@ -179,7 +182,7 @@ O tempo de implantação é útil para estabelecer quando um estágio foi atuali
 
 Quando dois estágios sequenciais têm conteúdo, o conteúdo é comparado com base nos metadados de itens de conteúdo. Essa comparação não inclui comparar dados ou atualizar o tempo entre os estágios.
 
- [![fluxo de implantação](media/deployment-pipelines-get-started/deployment-flow.png "Comparar estágios")](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
+ [![Uma captura de tela mostrando um pipeline de implantação com seus indicadores de comparação.](media/deployment-pipelines-get-started/deployment-flow.png)](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
 
 Para permitir um insight visual rápido das diferenças entre dois estágios sequenciais, um indicador de ícone de comparação aparece entre eles. O indicador de comparação tem dois estados:
 
@@ -200,13 +203,13 @@ Quando dois estágios sequenciais não são os mesmos, um link **comparar** apar
     >[!NOTE]
     >A implantação não afetará os itens com rótulo *Ausente de*.
 
- [![comparar](media/deployment-pipelines-get-started/compare.png "Exibição de comparação")](media/deployment-pipelines-get-started/compare.png#lightbox)
+ [![Uma captura de tela mostrando a opção de comparação, que expande a exibição de comparação e permite comparar itens entre os estágios do pipeline de implantação.](media/deployment-pipelines-get-started/compare.png)](media/deployment-pipelines-get-started/compare.png#lightbox)
 
 ## <a name="overriding-content"></a>Substituir conteúdo
 
 Quando você implanta após fazer alterações no conteúdo no estágio de origem, o conteúdo alterado no estágio de destino é substituído. Depois de clicar em *implantar*, você receberá um aviso indicando o número de itens que serão substituídos.
 
-![aviso de conteúdo substituído](media/deployment-pipelines-get-started/replaced-content.png)
+![Uma captura de tela do aviso de conteúdo substituído, que é exibido quando uma implantação está prestes a realizar alterações nos itens no estágio em que você está implantando.](media/deployment-pipelines-get-started/replaced-content.png)
 
 Saiba mais sobre [quais itens são copiados para o próximo estágio](deployment-pipelines-process.md#deployed-items) e [quais itens não são copiados](deployment-pipelines-process.md#unsupported-items) em [Entender o processo de implantação](deployment-pipelines-process.md).
 

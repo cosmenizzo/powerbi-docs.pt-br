@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
-ms.openlocfilehash: e41a13fac3e0ffea5171d2927cc0f3b9debbeef1
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: b911af4c7137aac9352c16985aac3a79a7eec87e
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485865"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557154"
 ---
 # <a name="deployment-pipelines-troubleshooting-preview"></a>Solução de problemas de pipelines de implantação (versão prévia)
 
@@ -110,7 +110,7 @@ Se a sua implantação foi bem-sucedida anteriormente e, de repente, está falha
 
 Suas regras de conjunto de dados têm valores ausentes. Isso pode ter ocorrido caso seu conjunto de dados tenha sido alterado.
 
-![regra desfeita](media/deployment-pipelines-troubleshooting/broken-rule.png)
+![Quando uma implantação falhar devido a links desfeitos, uma captura de tela do erro de regras inválidas será exibida.](media/deployment-pipelines-troubleshooting/broken-rule.png)
 
 Quando uma implantação bem-sucedida anteriormente falha devido a links desfeitos, um aviso é exibido. Você pode clicar em **Configurar regras** para navegar até o painel de configurações de implantação, no qual o conjunto de dados com falha está marcado. Quando você clica no conjunto de dados, as regras desfeitas são marcadas.
 

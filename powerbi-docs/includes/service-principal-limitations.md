@@ -7,12 +7,12 @@ ms.author: kesharab
 ms.topic: include
 ms.date: 06/06/2020
 ms.custom: include file
-ms.openlocfilehash: 8e50a529bfd398a4075ebf049ee4aec1bcf48b4d
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: 569d7dfe251183962a14de1c42d85ee2e58950af
+ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84315733"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86401681"
 ---
 ## <a name="considerations-and-limitations"></a>Considerações e limitações
 
@@ -25,3 +25,4 @@ ms.locfileid: "84315733"
 * Não há suporte para gerenciamento de [fluxos de dados](../transform-model/service-dataflows-overview.md).
 * No momento, a entidade de serviço não dá suporte a nenhuma API de administrador.
 * Ao usar uma entidade de serviço com uma fonte de dados do [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview), a própria entidade de serviço precisa ter permissões de uma instância do Azure Analysis Services. O uso de um grupo de segurança que contenha a entidade de serviço para essa finalidade não funciona.
+* No momento, a entidade de serviço não pode acessar fontes de dados no gateway. Ou seja, não é possível adicionar a entidade de serviço como os usuários da fonte de dados no gateway.

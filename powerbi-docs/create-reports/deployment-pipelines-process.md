@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 06/25/2020
-ms.openlocfilehash: eee8d67caab4a3d7b888396fa62debaf0aab2490
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: 002a50fd2e8e55d5ec06d7f15420ae8299861b37
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034280"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557200"
 ---
 # <a name="understand-the-deployment-process-preview"></a>Compreender o processo de implantação (versão prévia)
 
@@ -152,11 +152,11 @@ As seguintes propriedades do conjunto de dados também não são copiadas durant
 
 Crie um aplicativo para cada estágio do pipeline de implantação, para que você possa testar cada atualização de aplicativo do ponto de vista do usuário final. Um pipeline de implantação permite que você gerencie esse processo facilmente. Use o botão Publicar ou Exibir no cartão do workspace para publicar ou exibir o aplicativo em um estágio específico do pipeline.
 
-[![publicar aplicativo](media/deployment-pipelines-process/publish.png "Publicar aplicativo")](media/deployment-pipelines-process/publish.png#lightbox)
+[![Uma captura de tela destacando o botão de publicação do aplicativo, na parte inferior direita do estágio de produção.](media/deployment-pipelines-process/publish.png)](media/deployment-pipelines-process/publish.png#lightbox)
 
 No estágio de produção, o botão de ação principal no canto inferior esquerdo abre a página de atualização do aplicativo no Power BI, para que qualquer atualização de conteúdo fique disponível para os usuários do aplicativo.
 
-[![atualizar aplicativo](media/deployment-pipelines-process/update-app.png "Atualizar aplicativo")](media/deployment-pipelines-process/update-app.png#lightbox)
+[![Uma captura de tela destacando o botão de atualização do aplicativo, na parte inferior direita do estágio de produção.](media/deployment-pipelines-process/update-app.png)](media/deployment-pipelines-process/update-app.png#lightbox)
 
 >[!IMPORTANT]
 >O processo de implantação não inclui a atualização do conteúdo ou das configurações do aplicativo. Para alterar o conteúdo ou as configurações, você precisa atualizar manualmente o aplicativo no estágio de pipeline necessário.

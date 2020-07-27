@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 03/24/2020
-ms.openlocfilehash: 5763c3fc72632e6e734e0dc0a32854e719709d01
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.date: 07/13/2020
+ms.openlocfilehash: 04dae0a59391ba48c7a8b6858c98ed11490ca946
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034487"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557085"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Exportar relatório do Power BI para um arquivo (versão prévia)
 
@@ -117,9 +117,10 @@ Um trabalho que excede o número de solicitações simultâneas não será concl
 
 Ao criar um trabalho de exportação, é necessário seguir três etapas:
 
-1. Enviar uma solicitação de exportação.
-2. Executar a sondagem.
-3. Obter o arquivo.
+1. [Enviar uma solicitação de exportação](#step-1---sending-an-export-request).
+2. [Executar a sondagem](#step-2---polling).
+3. [Obter o arquivo](#step-3---getting-the-file).
+4. [Usar o fluxo de arquivos](#step-4---using-the-file-stream).
 
 Esta seção fornece exemplos para cada etapa.
 
@@ -231,6 +232,10 @@ public class ExportedFile
     public string FileSuffix;
 }
 ```
+
+### <a name="step-4---using-the-file-stream"></a>Etapa 4 – Usar o fluxo de arquivos
+
+Quando você tiver um fluxo de arquivos, poderá lidar com ele da forma mais adequada às suas necessidades. Por exemplo, você pode enviar por email ou usar para baixar os relatórios exportados.
 
 ### <a name="end-to-end-example"></a>Exemplo de ponta a ponta
 

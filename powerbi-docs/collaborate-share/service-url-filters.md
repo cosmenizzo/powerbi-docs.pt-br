@@ -8,20 +8,22 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/04/2020
+ms.date: 07/16/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: dc71bff7cd27ec369899a02cc9da0f916a043af1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 59e99bc44b9b438c76b72addf49beee2b69b8623
+ms.sourcegitcommit: 8b8d54d46470a311d8654abe92b5a223b696af28
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225237"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86437228"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrar relatórios usando parâmetros da cadeia de caracteres de consulta na URL
 
 Ao abrir um relatório no serviço do Power BI, cada página do relatório tem sua própria URL exclusiva. Para filtrar essa página do relatório, é possível usar o painel Filtros na tela de relatório.  Outra opção é adicionar os parâmetros de cadeia de consulta na URL para filtrar o relatório. Talvez você tenha um relatório que gostaria de mostrar aos colegas, mas antes deseja filtrá-lo previamente para enviar a eles. Uma maneira de filtrar isso é iniciar com a URL padrão do relatório, adicionar os parâmetros de filtro à URL e, em seguida, enviá-los a nova URL inteira por email.
 
-![Relatório do Power BI no serviço](media/service-url-filters/power-bi-report2.png)
+Este artigo usa o relatório Amostra de Análise de Varejo. Se você quiser acompanhar, [baixe o relatório de amostra](../create-reports/sample-retail-analysis.md#get-the-sample).
+
+![Captura de tela do relatório do Power BI no serviço.](media/service-url-filters/power-bi-retail-analysis-sample.png)
 
 ## <a name="uses-for-query-string-parameters"></a>Usos dos parâmetros de cadeia de consulta
 
@@ -35,18 +37,10 @@ Com parâmetros, você pode filtrar o relatório usando um ou mais valores, mesm
 
 *URL*?filter=*Table*/*Field* eq '*value*'
 
-![URL com filtro](media/service-url-filters/power-bi-filter-urls7b.png)
+![Captura de tela da URL com filtro.](media/service-url-filters/power-bi-filter-urls7b.png)
 
 * Os nomes de **Tabela** e **Campo** diferenciam maiúsculas de minúsculas, o **valor** não.
 * Os campos ocultos na exibição de relatório ainda podem ser filtrados.
-
-### <a name="reports-in-apps"></a>Relatórios em aplicativos
-
-Para adicionar um filtro de URL a um relatório em um aplicativo, a formatação é um pouco diferente. Os links para relatórios em um aplicativo têm um parâmetro de consulta (ctid) que é adicionado à URL. Separe os parâmetros de consulta com um E comercial (&). Mantenha "?filter=" e mova o parâmetro ctid para o final da URL, precedido por um E comercial (&). 
-
-Como neste exemplo:
-
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*'&ctid=*ctid*
 
 ### <a name="field-types"></a>Tipos de campo
 
@@ -62,27 +56,19 @@ Se ainda estiver confuso, continue lendo e nós explicaremos detalhadamente.
 
 Suponhamos que a URL do nosso relatório seja a seguinte.
 
-![URL de início](media/service-url-filters/power-bi-filter-urls6.png)
+![Captura de tela da URL inicial.](media/service-url-filters/power-bi-filter-urls6.png)
 
-Podemos ver em nossa visualização de mapa (acima) que temos lojas na Carolina do Norte.
+Podemos ver em nossa visualização de mapa acima que temos lojas na Carolina do Norte. *NC* é um valor que representa a Carolina do Norte no campo **Território** da tabela **Repositório**. Portanto, para filtrar o relatório para mostrar dados somente de repositórios em "NC", acrescente esta cadeia de caracteres à URL:
 
->[!NOTE]
->Este exemplo baseia-se na [amostra da Análise de Varejo](../create-reports/sample-datasets.md).
-> 
-
-Para filtrar o relatório para mostrar dados somente de lojas em "NC" (Carolina do Norte), inclua a URL com o seguinte:
-
+```
 ?filter=Store/Territory eq 'NC'
+```
 
-![URL com filtro](media/service-url-filters/power-bi-filter-urls7.png)
+![Captura de tela da URL com filtro.](media/service-url-filters/power-bi-filter-urls7.png)
 
->[!NOTE]
->*NC* é um valor armazenado no campo **Território** da tabela **Repositório**.
-> 
+Nosso relatório agora está filtrado para Carolina do Norte; todas as visualizações no relatório mostram dados apenas da Carolina do Norte.
 
-Nosso relatório é filtrado para Carolina do Norte; todas as visualizações na página de relatório mostram dados apenas da Carolina do Norte.
-
-![Relatório filtrado para a Carolina do Norte](media/service-url-filters/power-bi-report4.png)
+![Captura de tela do relatório filtrado para Carolina do Norte.](media/service-url-filters/power-bi-url-filter-nc.png)
 
 ## <a name="filter-on-more-than-one-value-in-a-field"></a>Filtrar por mais de um valor em um campo
 
@@ -92,7 +78,9 @@ Para filtrar por mais de um valor em um único campo, use o operador **in** em v
 
 Usando o mesmo exemplo, para filtrar o relatório para mostrar dados somente de lojas em "NC" (Carolina do Norte) ou "TN" (Tennessee), inclua a URL com o seguinte:
 
+```
 ?filter=Store/Territory in ('NC', 'TN')
+```
 
 Confira a tabela [Operadores](#operators) mais adiante neste artigo para obter uma lista de outros operadores úteis.
 
@@ -167,10 +155,10 @@ Caracteres especiais e espaços em nomes de tabela e coluna exigem uma formataç
 |**[Column]**     |  [ é 0x005B ] é 0x005D       |  _x005B_Column_x005D_       |
 |**Column+Plus**     | + é 0x2B        |  Column_x002B_Plus       |
 
-Table_x0020_Name/Column_x002B_Plus eq 3 ![visual de tabela renderizando caracteres especiais](media/service-url-filters/power-bi-special-characters1.png)
+Table_x0020_Name/Column_x002B_Plus eq 3 ![Captura de tela do visual da tabela renderizando caracteres especiais.](media/service-url-filters/power-bi-special-characters1.png)
 
 
-Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]' ![visual de tabela renderizando caracteres especiais](media/service-url-filters/power-bi-special-characters2.png)
+Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]' ![Captura de tela do visual da tabela renderizando caracteres especiais.](media/service-url-filters/power-bi-special-characters2.png)
 
 ### <a name="special-characters-in-values"></a>Caracteres especiais em valores
 
@@ -200,7 +188,9 @@ TerritoryChain = [Território] & " - " & [Cadeia]
 
 Publique o relatório no serviço do Power BI e, em seguida, use a cadeia de caracteres de consulta de URL para filtrar e exibir dados somente de lojas Lindseys em NC.
 
-    https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC – Lindseys'
+```
+https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC – Lindseys'
+```
 
 ## <a name="pin-a-tile-from-a-filtered-report"></a>Fixar um bloco de um relatório filtrado
 
@@ -216,6 +206,7 @@ Há alguns pontos a serem considerados ao usar os parâmetros da cadeia de carac
 * O Servidor de Relatórios do Power BI também é compatível com a capacidade de especificar filtros adicionais usando o parâmetro de URL "filter". Veja um exemplo da aparência de uma URL em um Servidor de Relatórios do Power BI: `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * Filtros de URL do relatório têm um limite de 10 expressões (10 filtros conectados por AND).
 * O tipo de dados Long é (2^53-1) devido a limitações de JavaScript.
+* O Power BI não limita o número de caracteres em cadeias de consulta de URL. Diferentes navegadores têm diferentes restrições de comprimento.
 
 Os filtros de URL são compatíveis com alguns cenários de inserção e não com outros.
 
@@ -230,7 +221,7 @@ Os filtros de URL são compatíveis com alguns cenários de inserção e não co
 [Fixar uma visualização em um dashboard](../create-reports/service-dashboard-pin-tile-from-report.md)  
 [Inscrever-se em uma avaliação gratuita](https://powerbi.microsoft.com/get-started/)
 
-Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+Mais perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
 
 
 
