@@ -11,11 +11,12 @@ ms.author: kfollis
 ms.custom: MC
 ROBOTS: NOINDEX
 LocalizationGroup: Admin
-ms.openlocfilehash: cc9364129159b5527d309f125d42e661d0b4c206
-ms.sourcegitcommit: a58d10ca62bc55e83b58cf8e8495ac01a4bd6532
+ms.openlocfilehash: 099cd750328bed0b23524d6119c4d7ce91548a23
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2020
-ms.locfileid: "85120542"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252028"
 ---
 # <a name="power-bi-planned-maintenance"></a>Manutenção planejada do Power BI
 
@@ -36,7 +37,7 @@ Se a sua organização for afetada, enviaremos um aviso com antecedência. Os ad
 * Os usuários do aplicativo Power BI Mobile precisarão verificar se estão usando a versão mais recente e sair e entrar novamente no aplicativo. Confira a loja de aplicativos do seu telefone ou nossa página do [Power BI Mobile](https://powerbi.microsoft.com/mobile/).
 * Os clientes que estavam editando ou publicando de forma ativa relatórios que usam visuais organizacionais, localmente ou no OneDrive e SharePoint, precisarão reimportar o visual por meio do repositório de visuais da organização ou baixar um PBIX atualizado antes da republicação. Para obter mais informações sobre visuais organizacionais, confira [Visuais da organização](service-admin-portal.md#organization-visuals).
 * Se as pastas de trabalho do Excel que usam o recurso Analisar no Excel não forem atualizadas, poderá ser necessário atualizar a cadeia de conexão ou baixar novamente a conexão ODC para esse conjunto de dados. Para obter mais informações, confira [Analisar no Excel](../collaborate-share/service-analyze-in-excel.md#connect-to-power-bi-data).
-* A conexão a links para o Power BI inseridos no conteúdo pode falhar quando a manutenção é feita. Por exemplo, um link inserido no SharePoint ou no Teams pode resultar em um erro de usuário. Para resolver esse problema, você precisa regenerar o link inserido no Power BI e atualizar os locais onde eles são usados. Para obter mais informações sobre links inseridos, confira [Inserir uma web part de relatório no SharePoint Online](../collaborate-share/service-embed-report-spo.md) e [Colaborar no Microsoft Teams com o Power BI](../collaborate-share/service-embed-report-microsoft-teams.md).
+* A conexão a links para o Power BI inseridos no conteúdo pode falhar quando a manutenção é feita. Por exemplo, um link inserido no SharePoint ou no Teams pode resultar em um erro de usuário. Para resolver esse problema, você precisa regenerar o link inserido no Power BI e atualizar os locais onde eles são usados. Para obter mais informações sobre links inseridos, confira [Inserir uma web part de relatório no SharePoint Online](../collaborate-share/service-embed-report-spo.md) e [Colaborar no Microsoft Teams com o Power BI](../collaborate-share/service-collaborate-microsoft-teams.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

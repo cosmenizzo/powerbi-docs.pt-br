@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 02/25/2020
+ms.date: 07/27/2020
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: 50d3adef65791c3fecd1a2125f67318fb8ab0298
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: eb59359497dec351c960ce0c6a3ce11b4f6eab0d
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214252"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252097"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Gerenciar o armazenamento de dados em workspaces do Power BI
 
@@ -28,7 +28,7 @@ Os limites de armazenamento do workspace, sejam para meu workspace ou um workspa
 ### <a name="shared-capacity-limits"></a>Limites de capacidade compartilhada
 Para workspaces em capacidade compartilhada: 
 
-- Há um limite de armazenamento de 100 GB por workspace.
+- Há um limite de armazenamento por workspace de 10 GB.
 - Para workspaces de aplicativos, o uso total não pode exceder o limite de armazenamento do locatário de 10 GB, multiplicado pelo número de licenças Pro no locatário.
 
 ### <a name="premium-capacity-limits"></a>Limites de capacidade Premium

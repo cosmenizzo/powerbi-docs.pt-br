@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/05/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: def07ed0ea061c02489d6e92b9648ad1a8d0edad
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: ea161af0156aa0bee2fe92ab2f87fb82630f5589
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034997"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252120"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Rótulos de confidencialidade no Power BI
 
@@ -83,7 +83,7 @@ Você pode inserir relatórios, dashboards e visuais do Power BI em aplicativos 
 
 Há suporte para os seguintes cenários de inserção:
 * [Inserir para a organização](../developer/embedded/embed-sample-for-your-organization.md)
-* Aplicativos Microsoft 365 (por exemplo, [Teams](../collaborate-share/service-embed-report-microsoft-teams.md) e [SharePoint](../collaborate-share/service-embed-report-spo.md))
+* Aplicativos Microsoft 365 (por exemplo, [Teams](../collaborate-share/service-collaborate-microsoft-teams.md) e [SharePoint](../collaborate-share/service-embed-report-spo.md))
 * [Inserção de URL segura](../collaborate-share/service-embed-secure.md) (inserção do serviço do Power BI) 
 
 ## <a name="sensitivity-labels-in-the-power-bi-mobile-apps"></a>Rótulos de confidencialidade em aplicativos móveis do Power BI
