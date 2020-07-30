@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: a797547562a8968591ca6551f85a56e0da98d680
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: ee123bed8940b52a66f3b0f860671a87210c261f
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83793279"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952675"
 ---
 # <a name="where-is-my-power-bi-tenant-located"></a>Onde está localizado meu locatário do Power BI?
 
@@ -34,7 +34,7 @@ Para localizar em qual região seu locatário está, execute estas etapas.
 
 ## <a name="how-the-data-region-is-selected"></a>Como a região de dados é selecionada
 
-A região de dados tem base no país selecionado quando você cria o locatário. A seleção se aplica à inscrição do Microsoft 365 e do Power BI, pois essas informações são compartilhadas. Se esse for um novo locatário, selecione o país apropriado na lista quando você se inscrever.
+A região de dados está localizada na região/no país que você seleciona quando cria o locatário. A seleção se aplica à inscrição do Microsoft 365 e do Power BI, pois essas informações são compartilhadas. Se esse for um novo locatário, selecione a região/o país apropriado na lista quando você se inscrever.
 
 ![Seleção de país](media/service-admin-where-is-my-tenant-located/sign-up-country-selection.png)
 
@@ -44,4 +44,3 @@ O Power BI seleciona uma região de dados mais próxima de sua seleção, o que 
 > Não é possível alterar a seleção após a criação do locatário.
 
 Mais perguntas? [Experimente a Comunidade do Power BI](https://community.powerbi.com/)
-

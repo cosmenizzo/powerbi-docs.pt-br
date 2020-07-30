@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 02/03/2020
+ms.date: 07/24/2020
 ms.author: maggies
-ms.openlocfilehash: 8e907b87c26dd7f2e764705a1178efc5df432a3e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 73772b96929ffd91dc5a38634ab9a1a2e57286b1
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239010"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87251315"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Criar um relatório do Power BI para o Servidor de Relatórios do Power BI
 É possível armazenar e gerenciar relatórios do Power BI localmente no portal da Web do Servidor de Relatórios do Power BI, do mesmo modo que você pode armazenar relatórios do Power BI na nuvem no serviço do Power BI (https://powerbi.com). Você cria e edita relatórios no Power BI Desktop e, em seguida, publica-os no portal da Web. Em seguida, os leitores de relatório em sua organização poderão exibi-los em um navegador ou em um aplicativo móvel do Power BI em um dispositivo móvel.
@@ -40,13 +40,13 @@ Se você já tiver criado relatórios do Power BI no Power BI Desktop, então vo
 
     - **PBIDesktopRS_x64.msi** (a versão de 64 bits).
 
-4. Depois de baixar o instalador, execute o Assistente de Instalação do Power BI Desktop (Setembro de 2019).
+4. Depois de baixar o instalador, execute o Assistente de Instalação do Power BI Desktop.
 
 2. No final da instalação, marque **Iniciar o Power BI Desktop agora**.
    
-    Ele é iniciado automaticamente e você está pronto para começar. Você saberá que tem a versão correta porque **Power BI Desktop (Setembro de 2019)** consta na barra de título.
+    Ele é iniciado automaticamente e você está pronto para começar. Você saberá que tem a versão correta, porque verá **Power BI Desktop (Maio de 2020)** na barra de título.
 
-    ![Power BI Desktop Setembro de 2019](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-sept-2019.png)
+    ![Power BI Desktop Maio de 2020](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-may-2020.png)
 
 3. Se você não estiver familiarizado com o Power BI Desktop, considere assistir aos vídeos na tela de boas-vindas.
    

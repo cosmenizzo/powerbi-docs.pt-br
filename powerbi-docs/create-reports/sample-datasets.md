@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/27/2020
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 305da7339159500a8e6de410bb4bf7f0b06d10e0
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: a268247d13fdfe71e17e5c0a6fafeeb635b96984
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349622"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86953043"
 ---
 # <a name="get-samples-for-power-bi"></a>Obter exemplos para o Power BI
 Digamos que você é novo no Power BI e queira experimentá-lo, mas não tem todos os dados.  Ou quem sabe você queira ver os relatórios que ilustram alguns dos recursos do Power BI. Nós podemos ajudar.
@@ -25,7 +25,7 @@ O Power BI oferece diferentes tipos de exemplos, para distintas finalidades:
 - Um **[aplicativo de exemplo](#sample-app-from-appsource)** que pode ser baixado do AppSource, também no serviço do Power BI. Os aplicativos incluem painéis, relatórios e conjuntos de dados. É possível modificá-los e distribuí-los para seus colegas.
 - **[Oito exemplos originais internos](#eight-original-samples)** no serviço do Power BI como *pacotes de conteúdo*, com painéis, relatórios e conjuntos de dados. Eles são instalados diretamente no serviço do Power BI. Os exemplos internos também estão disponíveis como relatórios do Power BI (.pbix) e pastas de trabalho do Excel (.xlsx).
 - Versões da **[pasta de trabalho do Excel](#download-sample-excel-files)** dos exemplos internos, contendo o modelo de dados e as planilhas de Power View. O modelo de dados do Excel pode ser explorado ou editado, e a pasta de trabalho do Excel pode ser usada como uma fonte de dados para um relatório do Power BI. A pasta de trabalho também pode ser carregada como um arquivo do Excel, e os elementos visuais e Tabelas Dinâmicas do Excel podem ser exibidos em relatórios do Power BI. 
-- E ainda um **[pasta de trabalho de dados financeiros de exemplo](sample-financial-download.md)** , uma tabela simples em um arquivo do Excel disponível para download. Ela contém dados anônimos com produtos fictícios, com vendas divididas por segmentos e países/regiões. Serve de fonte de dados básica útil para um relatório do Power BI.
+- E ainda um **[pasta de trabalho de dados financeiros de exemplo](sample-financial-download.md)** , uma tabela simples em um arquivo do Excel disponível para download. Ela traz dados anônimos contendo produtos fictícios, com as vendas divididas por segmentos e países/regiões. Serve de fonte de dados básica útil para um relatório do Power BI.
 
 Nossa documentação online usa os mesmos modelos nos tutoriais e nos exemplos para que você possa acompanhar.
 

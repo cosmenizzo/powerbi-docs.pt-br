@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5ebc9a36b4a4e54d6388625921c98c571859568f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0b617afdeb69f2367b83ad40b2146f5ce78cdc89
+ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237583"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87363998"
 ---
 # <a name="manage-your-data-source---oracle"></a>Gerenciar sua fonte de dados – Oracle
 
@@ -22,44 +22,22 @@ ms.locfileid: "85237583"
 
 Depois de [instalar o gateway de dados local](/data-integration/gateway/service-gateway-install), será necessário [adicionar fontes de dados](service-gateway-data-sources.md#add-a-data-source) que possam ser usadas com o gateway. Este artigo aborda como trabalhar com gateways e fontes de dados Oracle para a atualização agendada ou para o DirectQuery.
 
+## <a name="connect-to-an-oracle-database"></a>Conectar-se a um banco de dados Oracle
+Para se conectar a um banco de dados Oracle com o gateway de dados local, o software cliente Oracle correto precisa estar instalado no computador que executa o gateway. O software cliente Oracle usado depende da versão do servidor Oracle, mas sempre corresponderá ao gateway de 64 bits.
+
+Versões do Oracle com suporte: 
+- Oracle Server 9 e posterior
+- Software ODAC (Oracle Data Access Client) 11.2 e posterior
+
 ## <a name="install-the-oracle-client"></a>Instalar o cliente Oracle
+- [baixar e instalar o cliente Oracle de 64 bits](https://www.oracle.com/database/technologies/odac-downloads.html).
 
-Para conectar o gateway ao servidor Oracle, o Provedor de dados Oracle para .NET (ODP.NET) precisa ser instalado e configurado. O ODP.NET faz parte do ODAC (Oracle Data Access Components).
-
-Para versões de 32 bits do Power BI Desktop, use o seguinte link para baixar e instalar o cliente Oracle de 32 bits:
-
-* [ODAC (Oracle Data Access Components) de 32 bits com Ferramentas de desenvolvimento da Oracle para Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
-
-Para versões de 64 bits do Power BI Desktop ou para o gateway de dados local, use o seguinte link para baixar e instalar o cliente Oracle de 64 bits:
-
-* [ODAC de 64 bits, 12.2c versão 1 (12.2.0.1.0) para Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
-
-Após o cliente ser instalado, configure o arquivo tnsnames.ora com as informações apropriadas para seu banco de dados. O Power BI Desktop e o gateway saem do net_service_name definido no arquivo tnsnames.ora. Se net_service_name não estiver configurado, você não poderá se conectar. O caminho padrão de tnsnames.ora é `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. Para saber mais sobre como configurar arquivos tnsnames.ora, consulte [Oracle: Parâmetros de nomenclatura local (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
-
-### <a name="example-tnsnamesora-file-entry"></a>Exemplo de entrada de arquivo tnsnames.ora
-
-Este é o formato básico de uma entrada em tnsname.ora:
-
-```
-net_service_name=
- (DESCRIPTION=
-   (ADDRESS=(protocol_address_information))
-   (CONNECT_DATA=
-     (SERVICE_NAME=service_name)))
-```
-
-Aqui está um exemplo de informações de servidor e porta preenchidas:
-
-```
-CONTOSO =
-  (DESCRIPTION =
-    (ADDRESS = (PROTOCOL = TCP)(HOST = oracleserver.contoso.com)(PORT = 1521))
-    (CONNECT_DATA =
-      (SERVER = DEDICATED)
-      (SERVICE_NAME = CONTOSO)
-    )
-  )
-```
+> [!NOTE]
+> Escolha uma versão do ODAC (Oracle Data Access Client) que seja compatível com o Oracle Server. Por exemplo, o ODAC 12.x nem sempre dá suporte ao Oracle Server versão 9.
+> Escolha o Windows Installer do Oracle Client.
+> Durante a instalação do cliente Oracle, habilite a opção *Configurar os provedores ODP.NET e/ou Oracle para ASP.NET em nível de computador* marcando a caixa de seleção correspondente durante o assistente de instalação. Algumas versões do assistente de cliente Oracle marcam a caixa de seleção por padrão, outras não. Verifique se a caixa de seleção está selecionada para que Power BI possa se conectar ao seu banco de dados Oracle.
+ 
+Após o cliente ser instalado e o ODAC ser configurado corretamente, é recomendável usar o PowerBI Desktop ou outro cliente de teste para verificar a instalação e a configuração corretas no gateway.
 
 ## <a name="add-a-data-source"></a>Adicionar uma fonte de dados
 
@@ -111,7 +89,7 @@ Se estiver listado na guia **Usuários** da fonte de dados configurada no gatewa
 
 ## <a name="troubleshooting"></a>Solução de problemas
 
-Você poderá encontrar vários erros do Oracle quando a sintaxe de nomenclatura estiver incorreta ou não estiver configurada corretamente:
+Você pode encontrar um destes vários erros do Oracle quando a sintaxe de nomenclatura está incorreta ou não está configurada corretamente:
 
 * ORA-12154: TNS: não foi possível resolver o identificador de conexão especificado.
 * ORA-12514: o ouvinte TNS no momento não sabe sobre o serviço solicitado no descritor de conexão.
@@ -121,8 +99,9 @@ Você poderá encontrar vários erros do Oracle quando a sintaxe de nomenclatura
 
 Esses erros poderão ocorrer se o cliente Oracle não estiver instalado ou não estiver configurado corretamente. Se ele estiver instalado, verifique se o arquivo tnsnames.ora está configurado corretamente e se você está usando o net_service_name adequado. Você também precisará garantir que o net_service_name seja o mesmo entre o computador que está usando o Power BI Desktop e o computador que está executando o gateway. Para obter mais informações, consulte [Instalando o cliente Oracle](#install-the-oracle-client).
 
-> [!NOTE]
-> Você também poderá enfrentar um problema de compatibilidade entre a versão do servidor Oracle e a versão do cliente Oracle. Normalmente, é recomendável que essas versões sejam correspondentes.
+Também poderá ocorrer um problema de compatibilidade entre a versão do servidor Oracle e a versão do Oracle Data Access Client. Normalmente, o ideal é que essas versões sejam correspondentes, pois algumas combinações são incompatíveis. Por exemplo, o ODAC 12.x não dá suporte ao Oracle Server versão 9.
+
+Para diagnosticar problemas de conectividade entre o servidor de fonte de dados e o computador do gateway, é recomendável instalar um cliente (como o PowerBI Desktop ou o Oracle ODBC Test) no computador do gateway. Use o cliente para verificar a conectividade com o servidor de fonte de dados.
 
 Para obter informações adicionais de solução de problemas relativas ao gateway, veja [Solução de problemas do gateway de dados local](/data-integration/gateway/service-gateway-tshoot).
 

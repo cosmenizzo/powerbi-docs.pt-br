@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 07/08/2020
-ms.openlocfilehash: 34f4265444d030902474c740dda91f8431d36625
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.date: 07/27/2020
+ms.openlocfilehash: c91642a08642a52b333ccba14078068eaa9ba616
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216530"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252856"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Comparando o Servidor de Relatórios do Power BI e o serviço do Power BI
 
@@ -48,6 +48,7 @@ O Servidor de Relatórios do Power BI e o serviço do Power BI têm muitas semel
 | Assinaturas de email para relatórios paginados | Sim | Sim | [Obtenha uma assinatura para você e para outras pessoas de relatórios paginados no Serviço do Power BI](../consumer/paginated-reports-subscriptions.md)<br><br>[Entrega de email no Reporting Services](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal)  |
 | Alertas de dados | Não | Sim | [Alertas de dados](../create-reports/service-set-data-alerts.md) no serviço do Power BI
 | Segurança no nível da linha (RLS) | Sim | Sim | Disponível nos modos de DirectQuery (fonte de dados) e de Importação <br><br>Segurança em nível de linha do [serviço do Power BI](../admin/service-admin-rls.md) <br><br>RLS (Segurança em Nível de Linha) no [Servidor de Relatórios do Power BI](row-level-security-report-server.md) |
+| Detalhamento entre relatórios | Não | Sim | [Usar o detalhamento entre relatórios](../create-reports/desktop-cross-report-drill-through.md) |
 | Sair do modo de tela inteira | Não | Sim | [Modo de tela inteira](../consumer/end-user-focus.md) no serviço do Power BI |
 | Colaboração avançada do Microsoft 365 | Não | Sim | [Colaborar em um workspace](../collaborate-share/service-collaborate-power-bi-workspace.md) com o Microsoft 365 |
 | Scripts e visuais R | Não | Sim | [Criar visuais do R](../create-reports/desktop-r-visuals.md) e executar scripts do R no Power BI Desktop e publicá-los no serviço do Power BI. Não é possível salvar relatórios do Power BI com scripts ou visuais do R no Servidor de Relatórios do Power BI.  |
