@@ -7,15 +7,15 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 06/01/2020
+ms.date: 07/28/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 48ff2852f2c7df3a1b005d730a3f91dc9e434f62
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: fdd08c32277dfaa9a619b024a7fb0ece0517f1cb
+ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232239"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87364090"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Usar temas de relatório no Power BI Desktop
 
@@ -43,6 +43,9 @@ Para aplicar um tema de relatório a um relatório do Power BI Desktop, você po
 * [Importe um arquivo JSON de tema personalizado](#import-custom-report-theme-files).
 
 Vamos dar uma olhada em cada uma dessas opções de cada vez.
+
+> [!NOTE]
+> Os temas podem ser aplicados somente ao usar o Power BI Desktop. Não é possível aplicar temas a relatórios existentes no serviço do Power BI. 
 
 ### <a name="built-in-report-themes"></a>Temas de relatório internos
 
@@ -198,6 +201,15 @@ Para exibir as cores disponíveis em um tema de relatório:
 Em nosso exemplo, após você aplicar diversos tons de verde e marrom do tema de relatório Dia de São Patrício, exiba as cores do tema. Viu todo esse verde? Isso ocorre porque essas cores faziam parte do tema de relatório importado e aplicado.
 
 As cores da paleta também têm relação com o tema atual. Por exemplo, suponha que você selecione a terceira cor da linha superior para um ponto de dados. Posteriormente, se você alterar para um tema diferente, a cor desse ponto de dados será atualizada automaticamente para a terceira cor da linha superior no novo tema, assim como você veria ao alterar os temas no Microsoft Office.
+
+Configurar o tema de um relatório altera as cores padrão usadas nos visuais em todo o relatório. O Power BI mantém uma lista com centenas de cores a fim de garantir que os visuais tenham diversas cores exclusivas para exibição nos relatórios. Quando o Power BI atribui cores à série de um visual, essas cores são selecionadas por ordem de chegada conforme as cores da série são atribuídas. Quando você importa um tema, o mapeamento de cores da série de dados é redefinido. 
+
+O Power BI acompanha a cor de uma série dinâmica e usa a mesma cor para o valor em outros visuais. Em uma *série dinâmica*, o número de séries apresentadas nos visuais pode mudar com base nas medidas, nos valores ou em outros aspectos. Por exemplo, se mostrar o *Lucro por região* em um relatório, você poderá ter cinco ou poderá ter nove regiões de vendas. O número de regiões é dinâmico e, portanto, é considerado uma série dinâmica. 
+
+Por outro lado, em uma *série estática*, o número de séries é conhecido. Por exemplo, *Lucro* e *Receita* são séries estáticas. Em séries estáticas, o Power BI atribui as cores de acordo com o índice dentro das paletas do tema. Você pode substituir a atribuição de cor padrão selecionando uma cor no painel de formatação em **Cores de dados**. Talvez você precise alterar suas seleções de segmentação para ver todos os valores potenciais da série e definir as cores deles também. Se você definir explicitamente a cor de um só visual usando o painel **Propriedades**, o tema importado não se aplicará a nenhuma dessas cores definidas explicitamente. 
+
+Para que o tema se aplique às cores selecionadas explicitamente, use **Reverter para o padrão** na seção **Cores de dados** do visual cuja cor foi definida explicitamente, a fim de desfazer a aplicação de cor explícita e permitir que o tema seja aplicado.
+
 
 ### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Situações em que as cores do tema de relatório não permanecem nos relatórios
 

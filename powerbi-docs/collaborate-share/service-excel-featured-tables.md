@@ -6,96 +6,94 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/20/2020
+ms.date: 07/24/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a872c0ada80a7168ebc6bb545de1ad474c4561b7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 00fba391a6ad92f1e3edaf0e2af9691452724f6e
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226353"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87251371"
 ---
 # <a name="access-power-bi-featured-tables-in-excel-preview"></a>Acessar tabelas em destaque do Power BI no Excel (versão preliminar)
 
-No Excel, você pode encontrar dados de tabelas em destaque em conjuntos de dados do Power BI na Galeria de Tipos de Dados. As tabelas em destaque facilitam a adição de dados empresariais a suas planilhas do Excel. Usando os recursos de conjuntos de dados certificados e promovidos do Power BI, as organizações permitem que mais usuários encontrem e usem dados relevantes e atualizáveis para tomar decisões melhores. Leia a documentação do Excel para saber mais como usar [tipos de dados do Excel vinculados ao Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9).
+Na Galeria de Tipos de Dados do Excel, você poderá encontrar dados das *tabelas em destaque* em conjuntos de dados do Power BI. As tabelas em destaque facilitam a adição de dados empresariais a suas planilhas do Excel. Veja a seguir as etapas necessárias para inserir os dados do Power BI em planilhas do Excel.
 
-A galeria Tipos de Dados mostra somente as tabelas em destaque definidas por um modelador nos conjunto de dados do Power BI. Os conjuntos de dados acessíveis no Power BI também podem ser encontrados no Excel. No Excel, selecione a opção **Conjunto de Dados do Power BI** em **Obter Dados** na faixa de opções **Dados**.
+- Um modelador de dados do Power BI [promove ou certifica um conjunto de dados no Power BI](../connect-data/service-datasets-promote.md).
+- O modelador de dados [identifica as tabelas em destaque](service-create-excel-featured-tables.md) no conjunto de dados e salva esse conjunto de dados no serviço do Power BI.
+- O restante da organização pode se conectar a essas tabelas em destaque no Excel para obter dados relevantes e atualizáveis. O Excel se refere a essas tabelas como *tipos de dados* e as lista na Galeria de Tipos de Dados.
 
-## <a name="access-power-bi-data-through-the-excel-data-types-gallery"></a>Acessar dados do Power BI por meio da galeria Tipos de Dados do Excel
-As tabelas em destaque nos conjuntos de dados do Power BI são exibidas na galeria Tipos de Dados do Excel na faixa de opções Dados.
+> [!NOTE]
+> No Excel, você também pode obter dados de qualquer conjunto de dados que possa ser acessado no Power BI. Na faixa de opções **Dados**, selecione **Obter Dados** > **Do Power BI (Microsoft)** .
+> :::image type="content" source="media/service-excel-featured-tables/excel-get-data-power-bi.png" alt-text="Captura de tela da opção Obter Dados do Power BI na faixa de opções Dados.":::
 
-:::image type="content" source="media/service-excel-featured-tables/excel-data-ribbon.png" alt-text="Faixa de opções Dados Excel":::
+## <a name="the-excel-data-types-gallery"></a>A Galeria de Tipos de Dados do Excel
+As tabelas em destaque nos conjuntos de dados do Power BI são exibidas como *tipos de dados* na faixa de opções **Dados**, na galeria de **Tipos de Dados** do Excel.
 
-Quando expandida, a galeria mostra os principais tipos de dados disponíveis.
+:::image type="content" source="media/service-excel-featured-tables/excel-data-ribbon.png" alt-text="Captura de tela da galeria de Tipos de Dados na faixa de opções Dados do Excel.":::
 
-:::image type="content" source="media/service-excel-featured-tables/excel-data-types-gallery.png" alt-text="Galeria Tipos de Dados do Excel":::
+Quando expandida, a galeria mostra os tipos de dados genéricos, como **Ações** e **Geografia**, além dos dez principais tipos de dados da **Organização** disponíveis para você: as tabelas em destaque dos conjuntos de dados do Power BI.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-data-types-gallery.png" alt-text="Captura de tela da Galeria de Tipos de Dados do Excel.":::
+
+## <a name="format-a-range-of-cells-as-a-table-optional"></a>Formatar um intervalo de células como uma tabela (opcional)
+
+ Antes de você começar, recomendamos formatar seus dados como uma tabela do Excel. Dessa forma, as alterações feitas em uma linha serão aplicadas às outras linhas da tabela. 
+
+1. Adicione um cabeçalho de coluna. 
+2. Em seguida, selecione uma célula nos dados e clique em CTRL + T. 
+3. Marque **Minha tabela tem cabeçalhos** > **OK**.
+
+    :::image type="content" source="media/service-excel-featured-tables/excel-format-table.png" alt-text="Captura de tela da conversão de intervalo em tabela.":::
+
+## <a name="search-for-power-bi-data-in-the-excel-data-types-gallery"></a>Pesquisar dados do Power BI na Galeria de Tipos de Dados do Excel
+
+Para pesquisar dados em uma tabela em destaque do Power BI, selecione uma célula ou um intervalo na planilha do Excel que contém um valor que corresponda ao valor de uma tabela em destaque. Selecione **Organização**. O Excel pesquisará todas as tabelas em destaque às quais você tem acesso, procurando uma correspondência.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-table-organization.png" alt-text="Captura de tela de Selecionar uma célula ou um intervalo de células.":::
  
-Para pesquisar dados em uma tabela em destaque do Power BI, selecione uma célula ou um intervalo na planilha do Excel.
+Se você souber a tabela em destaque que está procurando, escolha **Da sua organização (versão prévia)** na galeria e selecione-a.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-select-cell.png" alt-text="Selecionar uma célula":::
+:::image type="content" source="media/service-excel-featured-tables/excel-organizational-data-table.png" alt-text="Captura de tela de Dados Organizacionais do Excel, tabela de tipo de dados Fornecedores.":::
  
-Selecione a opção **Dados Organizacionais** da galeria para pesquisar dados em tabelas em destaque nos conjuntos de dados certificados aos quais você tem acesso.
+Quando você faz a pesquisa, se o Excel encontra linhas correspondentes com alta confiança, as células são imediatamente vinculadas a essas linhas. O ícone do item vinculado indica que as células estão vinculadas às linhas no Power BI.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-organizational-data.png" alt-text="Dados organizacionais do Excel":::
+:::image type="content" source="media/service-excel-featured-tables/excel-linked-card-icon.png" alt-text="Captura de tela do ícone do Item vinculado.":::
+
+Se uma célula tiver mais de uma linha correspondente em potencial, a célula mostrará um ícone de ponto de interrogação e o painel do **Seletor de Dados** será aberto. No exemplo a seguir, o usuário selecionou um intervalo B2:B10 e procurou uma tabela em destaque do Power BI. Todas as linhas tinham correspondências, exceto a célula B5, "Ma Maison". O **Seletor de Dados** mostra duas correspondências possíveis.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-pane.png" alt-text="Captura de tela do painel Seletor de Dados do Excel.":::
  
-Selecione um tipo de dados específico se você souber que tipo de dados está pesquisando, ou se não encontrar linhas correspondentes usando a opção Dados Organizacionais.
+A opção Dados organizacionais pode retornar linhas de várias tabelas em destaque. O Excel agrupa as linhas potencialmente correspondentes pelo tipo de dados do qual elas vieram. O Excel classifica os tipos de dados com base na linha correspondente mais forte possível. Use as setas de divisa para recolher e expandir os tipos de dados para linhas correspondentes.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-select-data-type.png" alt-text="Selecionar um tipo de dados":::
+:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-multiple.png" alt-text="Captura de tela do painel Seletor de Dados do Excel com várias possibilidades.":::
  
-Ao fazer uma pesquisa, se uma linha correspondente for encontrada com alta confiança, a célula será imediatamente vinculada a essa linha. O ícone do item vinculado indica que a célula está vinculada à linha no Power BI.
+Para escolher a linha correta, selecione o nome da linha para ver mais detalhes. Depois de encontrá-la, clique em **Selecionar** para vincular a linha à célula no Excel. 
 
-:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-icon.png" alt-text="Ícone de item vinculado":::
-
-Se uma célula tiver várias linhas correspondentes potenciais, um painel seletor de dados será mostrado. A célula mostra o ícone de ponto de interrogação, que abre o painel seletor de dados para essa linha. No exemplo a seguir, o usuário já selecionou um intervalo de A2:A7 e pesquisou uma tabela de recursos do Power BI.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-multiple-matches.png" alt-text="Várias linhas correspondentes possíveis":::
-
-O painel **Seletor de Dados** mostra as linhas potencialmente correspondentes.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-pane.png" alt-text="Painel Seletor de Dados do Excel":::
+:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-details.png" alt-text="Captura de tela dos detalhes do Seletor de Dados.":::
  
-A opção Dados Organizacionais pode retornar linhas de vários tipos de dados. O Excel agrupa as linhas potencialmente correspondentes pelo tipo de dados do qual elas vieram. O Excel classifica os tipos de dados com base na linha correspondente mais forte possível. Use as setas de divisa para recolher e expandir os tipos de dados para linhas correspondentes.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-multiple.png" alt-text="Painel Seletor de Dados do Excel":::
+A seleção do ícone de **Cartão** na célula mostra um cartão com os dados de qualquer campo e os campos calculados na tabela em destaque. O título do cartão mostra o valor do campo do rótulo de linha na tabela em destaque.
  
-Para escolher a linha correta, selecione o nome da linha para ver mais detalhes. Após encontrar uma linha, pressione **Selecionar** para vincular a linha à célula no Excel. 
+:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-details.png" alt-text="Captura de tela dos detalhes do Item vinculado.":::
 
-:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-select.png" alt-text="Detalhes do Seletor de Dados":::
- 
-Quando uma linha é selecionada, a célula é vinculada à linha e seu valor corresponde ao valor do campo **Rótulo de Linha** na tabela em destaque do Power BI. 
+Selecione o ícone **Inserir Dados** e escolha um nome de campo na lista de campos para adicionar o respectivo valor à grade.  
 
-:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-icon.png" alt-text="Item vinculado do Excel":::
- 
-A seleção do ícone de **célula vinculada** mostra um cartão com dados de quaisquer campos e campos calculados na tabela em destaque. O título do cartão mostra o valor do campo do rótulo de linha na tabela em destaque.
- 
-:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-details.png" alt-text="Detalhes do item vinculado":::
+:::image type="content" source="media/service-excel-featured-tables/excel-select-field.png" alt-text="Captura de tela de Selecionar um nome de campo.":::
 
-Selecione o ícone **Inserir Dados** para adicionar valores de campo à grade.
+Os valores do campo são colocados nas células adjacentes. A fórmula da célula refere-se à célula vinculada e ao nome do campo, para que você possa usar os dados em funções do Excel.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-insert-data.png" alt-text="Inserir dados"::: 
-
-Selecione um nome de campo na lista de campos para adicionar seu valor à grade.  
-
-:::image type="content" source="media/service-excel-featured-tables/excel-select-field.png" alt-text="Selecionar um nome de campo":::
-
-O valor do campo é colocado na célula adjacente. A fórmula da célula refere-se à célula vinculada e ao nome do campo, para que você possa usar os dados em funções do Excel.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-cell-formula.png" alt-text="Fórmula de célula do Excel":::
- 
-Quando você formata seus dados como uma tabela do Excel, a adição de campos expande a tabela e define o cabeçalho da coluna para corresponder ao nome do campo. As linhas vinculadas aos mesmos tipos de dados também são preenchidas com seus respectivos valores.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-field-column-name.png" alt-text="O campo é o nome da coluna"::: 
+:::image type="content" source="media/service-excel-featured-tables/excel-cell-formula.png" alt-text="Captura de tela da fórmula de célula do Excel.":::
 
 ## <a name="cell-formulas"></a>Fórmulas de células
 
 Ao usar uma tabela do Excel, você pode fazer referência à coluna da tabela vinculada e, em seguida, adicionar campos de dados usando a referência de `.` (ponto).
 
-:::image type="content" source="media/service-excel-featured-tables/excel-dot-reference.png" alt-text="Referência de ponto do Excel":::
+:::image type="content" source="media/service-excel-featured-tables/excel-dot-reference.png" alt-text="Captura de tela da referência de período do Excel.":::
 
 Da mesma forma, ao usar uma célula, você pode fazer referência à célula e usar a referência de `.` (ponto) para recuperar campos.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-cell-dot-reference.png" alt-text="Referência de ponto da célula":::
+:::image type="content" source="media/service-excel-featured-tables/excel-cell-dot-reference.png" alt-text="Captura de tela da referência do período da célula.":::
  
 ## <a name="data-caching-and-refresh"></a>Atualização e cache de dados
 
@@ -103,24 +101,25 @@ Quando o Excel vincula uma célula a uma linha em uma tabela em destaque do Powe
 
 Use o botão **Atualizar Tudo** na faixa de opções **Dados** para atualizar dados em células vinculadas. 
 
-:::image type="content" source="media/service-excel-featured-tables/excel-refresh-all.png" alt-text="Atualizar Tudo":::
+:::image type="content" source="media/service-excel-featured-tables/excel-refresh-all.png" alt-text="Captura de tela de Atualizar Tudo.":::
  
 Você também pode atualizar células individuais. Clique com o botão direito do mouse na célula e selecione **Tipos de Dados** > **Atualizar**.
 
 ## <a name="show-a-card-change-or-convert-to-text"></a>Mostrar um cartão, alterar ou converter em texto
 
-As células vinculadas têm opções de menu com o botão direito do mouse adicionadas. Clique com o botão direito do mouse em uma célula > selecione **Tipos de Dados** >  
+As células vinculadas têm opções de menu com o botão direito do mouse adicionadas. Clique com o botão direito do mouse em uma célula. Juntamente com as opções usuais, você também vê:
 
-- **Mostrar Cartão**
-- **Atualizar**
-- **Alteração** 
+- **Mostrar Cartão do Tipo de Dados**.
+- **Atualizar**.
+- **Alterar**.
 - **Converter em Texto**.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-right-click-data-type.png" alt-text="Clique com o botão direito do mouse em Converter em Texto":::
+:::image type="content" source="media/service-excel-featured-tables/excel-right-click-data-type.png" alt-text="Captura de tela do clique com o botão direito do mouse, Converter em Texto.":::
  
 **Converter em Texto** remove o link para a linha na tabela em destaque do Power BI. Além disso, o texto na célula será o valor do rótulo de linha da célula vinculada. Se você vinculou uma célula a uma linha que não pretendia, selecione **Desfazer** no Excel para restaurar os valores iniciais da célula.
 
 ## <a name="licensing"></a>Licenças
+
 A galeria Tipos de Dados do Excel e experiências conectadas para tabelas em destaque do Power BI estão disponíveis somente para clientes do Excel E5 e G5. 
 
 ## <a name="security"></a>Segurança
@@ -128,39 +127,6 @@ A galeria Tipos de Dados do Excel e experiências conectadas para tabelas em des
 Você vê somente tabelas em destaque de conjuntos de dados dos quais tem permissão no Power BI. Durante a atualização de dados, você deve ter permissão para acessar o conjunto de dados no Power BI para recuperar as linhas. Isso requer a permissão Criar ou Gravar no conjunto de dados. O Excel armazena em cache os dados retornados para a linha inteira. Qualquer pessoa com a qual você compartilha o arquivo do Excel pode ver os dados de todos os campos em todas as células vinculadas.
 
 Se um conjunto de dados Power BI tiver segurança em nível de linha ou um rótulo de confidencialidade da Proteção de Informações da Microsoft aplicado a ele, as tabelas em destaque desse conjunto não serão incluídas na galeria Tipos de Dados do Excel. Essa é uma limitação da versão preliminar inicial.
-
-## <a name="curate-a-featured-table-in-power-bi-desktop"></a>Coletar uma tabela em destaque no Power BI Desktop
-A galeria Tipos de Dados do Excel mostra as tabelas em destaque em conjuntos de dados carregados para o serviço do Power BI. Use o Power BI Desktop para coletar as tabelas em destaque no modelo de dados e carregá-las no serviço do Power BI.
-
-### <a name="turn-on-the-featured-table-preview"></a>Ativar a versão preliminar da tabela em destaque
-
-1. No Power BI Desktop, selecione **Arquivo** > **Opções e Configurações** > **Opções** > **Versão Prévia dos Recursos**.
-2. Marque a caixa de seleção **Tabelas em destaque**.
-
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-preview-featured-tables.png" alt-text="Opção Versão prévia das tabelas em destaque":::
-
-### <a name="select-a-table"></a>Selecionar uma tabela
-
-1. No Power BI Desktop, vá para Exibição de modelo.
-
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-model-view.png" alt-text="Exibição de modelo":::
- 
-2. Selecione uma tabela e defina **É tabela em destaque** para **Sim**.
-
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-featured-table-yes.png" alt-text="Definir É tabela em destaque como Sim":::
-
-4. Em **Configurar esta tabela em destaque**, forneça os campos obrigatórios:
-
-    - Uma **Descrição**.
-    - O valor do campo **Rótulo de linha** é usado no Excel para que os usuários possam identificar facilmente a linha. Ele aparece como o valor da célula de uma célula vinculada, no painel **Seletor de Dados** e no cartão **Informações**. 
-    - O valor do campo **Coluna de chave** fornece a ID exclusiva para a linha. Esse valor permite que o Excel vincule uma célula a uma linha específica na tabela.
-
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-set-up-featured-table.png" alt-text="Configurar tabela em destaque":::
-
-Após publicar ou importar o conjunto de dados para a serviço do Power BI, a tabela em destaque é exibida na galeria Tipos de Dados do Excel.
-
-- O Excel armazena em cache a lista de tipos de dados, portanto, é necessário reiniciar o Excel para ver as tabelas em destaque publicadas recentemente.
-- Alguns conjuntos de dados não têm suporte na versão preliminar, as tabelas em destaque definidas neles não aparecerão no Excel. Confira considerações e limitações para obter mais detalhes.
 
 ## <a name="administrative-control"></a>Controle administrativo
 
@@ -193,7 +159,7 @@ Aqui estão as limitações para a versão preliminar inicial:
     - Medidas definidas na tabela de recursos.
     - Medidas definidas em tabelas relacionadas e medidas implícitas calculadas de relações.
 
-- O Excel exibe somente tabelas em destaque armazenadas nos novos workspaces do Power BI. Tabelas em destaque armazenadas nos workspaces clássicos, ou em Meu Workspace, não são mostradas como tipos de dados no Excel. Você pode [atualizar workspaces clássicos para os novos workspaces](service-upgrade-workspaces.md) no Power BI.
+- O Excel só exibe as tabelas em destaque (*tipos de dados*) armazenadas nos novos workspaces do Power BI. Tabelas em destaque armazenadas nos workspaces clássicos, ou em Meu Workspace, não são mostradas como tipos de dados no Excel. Você pode [atualizar workspaces clássicos para os novos workspaces](service-upgrade-workspaces.md) no Power BI.
 
 A experiência de Tipos de Dados no Excel é semelhante a uma função de pesquisa. Usa um valor de célula fornecido pela planilha do Excel e pesquisa linhas correspondentes nas tabelas em destaque do Power BI. A experiência de pesquisa tem os seguintes comportamentos:
 
@@ -213,5 +179,7 @@ A experiência de Tipos de Dados no Excel é semelhante a uma função de pesqui
 
 ## <a name="next-steps"></a>Próximas etapas
 
+- [Definir tabelas em destaque no Power BI Desktop](service-create-excel-featured-tables.md)
+- Leia mais sobre como [usar tipos de dados do Excel por meio do Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) na documentação do Excel.
 - Dúvidas? [Experimente a Comunidade do Power BI](https://community.powerbi.com/)
 

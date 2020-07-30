@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/28/2020
-ms.openlocfilehash: 865b60800b68aed410f10964148afdf2791b1ae1
-ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
+ms.date: 07/27/2020
+ms.openlocfilehash: 4f4650d47e420313075509301e940bf7092d4d5a
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "83279148"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252833"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Fontes de dados com suporte para relatórios paginados do Power BI
 
@@ -29,7 +29,7 @@ Os relatórios paginados oferecem suporte nativo à seguinte lista de fontes de 
 | Instância Gerenciada do SQL do Azure | Básico | por meio do ponto de extremidade público ou privado (o ponto de extremidade privado precisa ser roteado pelo gateway corporativo)  |
 | Azure Analysis Services | SSO, OAuth2 | O firewall do AAS deve ser desabilitado ou configurado para permitir todos os intervalos de IP.|
 | Conjunto de dados do Power BI | SSO | Conjuntos de dados do Power BI Premium e não Premium. Exige permissão de leitura |
-| Conjunto de dados do Power BI Premium (XMLA) | SSO |   |
+| Conjunto de dados do Power BI Premium (XMLA) | SSO | Os conjuntos de dados do Power BI não têm suporte como uma fonte de dados para relatórios paginados inseridos.  |
 | Inserir Dados | N/D | Os dados são inseridos no relatório. |
 
 Exceto para o Banco de Dados SQL do Azure, todas as fontes estão prontas para uso depois que você carrega o relatório para o serviço do Power BI. As fontes de dados assumem como padrão o uso de SSO (logon único), quando aplicável. Para o Azure Analysis Services, você pode alterar o tipo de autenticação para OAuth2. No entanto, depois que o tipo de autenticação de uma determinada fonte de dados é alterado para OAuth2, ele não pode voltar a usar o SSO.  Além disso, essa alteração se aplica a todos os relatórios que usam essa fonte de dados em todos os espaços de trabalho para um determinado locatário.  A segurança no nível de linha em relatórios paginados não funcionará, a menos que os usuários escolham SSO para o tipo de autenticação.

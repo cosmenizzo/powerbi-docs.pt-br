@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/13/2020
+ms.date: 07/28/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 83383b93d9f61c30c22afa30a5d092aa62ce3a10
-ms.sourcegitcommit: 94fc44928bff09d874793964b5d7443db40934cd
+ms.openlocfilehash: de5ab7b75967e752615bf7415c81ba7bb18c1a80
+ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84754183"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87364044"
 ---
 # <a name="what-is-power-bi-premium"></a>O que é o Power BI Premium?
 
@@ -84,7 +85,11 @@ Os recursos e limites de cada SKU Premium (e o SKU A de tamanho equivalente) sã
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
+| P4/A7 <sup>[1](#limit)</sup>| 64 | 32 | 200 | 32 | 240 | 48 |
+| P5/A8 <sup>[1](#limit)</sup>| 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
+
+<a name="limit">1</a> – somente mediante solicitação especial. Para modelos muito grandes, com mais de 100 GB.
 
 >[!NOTE]
 >É preferível usar um único SKU grande (por exemplo, um SKU P2) em vez de combinar SKUs menores (por exemplo, dois SKUs P1). Por exemplo, você pode usar modelos maiores e obter melhor paralelismo com P2.
@@ -246,6 +251,6 @@ Para saber mais, confira [Conectividade do conjunto de dados com o ponto de extr
 > [!div class="nextstepaction"]
 > [Como gerenciar capacidades Premium](service-premium-capacity-manage.md)
 
-Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+Mais perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
 
 

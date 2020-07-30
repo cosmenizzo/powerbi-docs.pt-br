@@ -1,5 +1,5 @@
 ---
-title: Monitorar métricas de uso na nova experiência de workspace
+title: Monitorar as métricas de uso na nova experiência de workspace (versão prévia)
 description: Como exibir, salvar e utilizar métricas de uso em dashboards e relatórios do Power BI na nova experiência de workspace.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/22/2020
+ms.date: 07/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 380fe94a123c26d7502ce68bc21372f791a3508f
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 7c8c1744c8ecbbf170ae073d2e302fe55faea55b
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162033"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86953020"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Monitorar métricas de uso na nova experiência de workspace
 
@@ -65,6 +65,9 @@ Quando você exibe o relatório de métricas de uso aprimorado seguindo o proced
 ### <a name="usage-metrics-report-dataset"></a>Conjunto de dados do relatório de métricas de uso
 
 O relatório de métricas de uso aprimorado baseia-se em um conjunto de dados de um relatório que o Power BI cria automaticamente quando você inicializa o relatório de métricas de uso aprimorado pela primeira vez. O Power BI atualiza esse conjunto de dados diariamente. Embora não seja possível alterar a programação de atualização, você pode atualizar as credenciais que o Power BI usa para introduzir novos dados de métricas de uso. Poderá ser necessário retomar a atualização programada se as credenciais expirarem ou se você remover o usuário que inicializou o relatório de métricas de uso pela primeira vez a partir de um workspace em que o conjunto de dados está.
+
+> [!NOTE]
+> Durante a versão prévia, o conjunto de dados de métricas de uso poderá ter alterações secundárias que afetam os relatórios personalizados.  
 
 ### <a name="usage-metrics-report-pages"></a>Páginas de relatório de métricas de uso
 

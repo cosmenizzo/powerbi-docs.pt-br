@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0d388127ab42c4f60d1e08efea6b3fdbbbf7045b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ca04a5404f0868f85a9c7ed840109efe6d213760
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238821"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952629"
 ---
 # <a name="consume-power-bi-reports-by-using-accessibility-features"></a>Consumir relatórios do Power BI usando ferramentas de acessibilidade
 O Power BI tem muitos recursos internos para ajudar pessoas com deficiências a consumir os relatórios do Power BI Desktop e interagir com eles de maneira mais fácil. Essas ferramentas ajudam os usuários a obter as mesmas informações de um relatório que aqueles que não usam a tecnologia assistencial.
@@ -30,7 +30,7 @@ As seções a seguir descrevem as ferramentas de acessibilidade disponíveis par
 
 ## <a name="keyboard-navigation"></a>Navegação pelo teclado
 
-Quando você inicia o Power BI Desktop ou o serviço do Power BI, ao pressionar o **Tab** uma dica de ferramenta aparece no canto superior direito. O link intitulado **dicas para usar o Power BI com um leitor de tela** direciona você para este artigo, fornecendo informações sobre como consumir um relatório com auxilio das ferramentas de acessibilidade. Clique no link **Ir para o conteúdo principal** para ser direcionado diretamente à tela do relatório.
+Quando você inicia o Power BI Desktop ou o serviço do Power BI e clica em **Tab**, uma dica de ferramenta é exibida no canto superior direito. O link intitulado **dicas para usar o Power BI com um leitor de tela** direciona você para este artigo, fornecendo informações sobre como consumir um relatório com auxilio das ferramentas de acessibilidade. Clique no link **Ir para o conteúdo principal** para ser direcionado diretamente à tela do relatório.
 
 ![Pressione a tecla Tab para ver dicas de acessibilidade](media/desktop-accessibility/accessibility-consuming-tools-02.png)
 
@@ -114,5 +114,3 @@ A coleção de artigos sobre a acessibilidade no Power BI é a seguinte:
 * [Criação de relatórios do Power BI com ferramentas de acessibilidade](desktop-accessibility-creating-tools.md)
 * [Atalhos de teclado com acessibilidade para relatórios do Power BI](desktop-accessibility-keyboard-shortcuts.md)
 * [Lista de verificação de acessibilidade do relatório](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
-
-

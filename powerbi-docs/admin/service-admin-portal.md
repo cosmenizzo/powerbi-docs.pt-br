@@ -10,12 +10,12 @@ ms.date: 05/12/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f2fb659188a5c413ec7a203c6f1a55bb24826c15
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 90cd12bc7d8d7261e25edd32c5afa7cf144e8202
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228748"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252467"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Como administrar o Power BI no portal de administração
 
@@ -185,6 +185,7 @@ Em **Configurações de locatário**, o portal de administração tem duas seç�
 
 - Criar as experiências de workspace.
 - Usar conjuntos de dados em workspaces.
+- Bloquear a criação de workspaces clássicos.
 
 ### <a name="create-the-new-workspaces"></a>Criar os novos workspaces
 
@@ -213,6 +214,13 @@ Os administradores podem controlar quais usuários na organização podem usar c
 
 Confira [Introdução a conjuntos de dados entre workspaces](../connect-data/service-datasets-across-workspaces.md) para saber mais.
 
+### <a name="block-classic-workspace-creation"></a>Bloquear a criação de workspaces clássicos
+
+Os administradores podem controlar se a organização pode criar workspaces clássicos. Quando essa configuração é habilitada, os usuários que criam workspaces podem criar apenas novas experiências de workspaces. 
+
+![Bloquear a criação de workspaces clássicos](media/service-admin-portal/power-bi-admin-block-classic-workspaces.png)
+
+Quando habilitado, grupos recém-criados do Office 365 não são mostrados na lista de workspaces do Power BI. Workspaces clássicos existentes continuam sendo mostrados na lista. Quando a configuração está desabilitada, todos os grupos do Office 365 de que o usuário é membro aparecem na lista de workspaces. Leia mais sobre a [nova experiência de workspaces](../collaborate-share/service-new-workspaces.md).
 
 ## <a name="export-and-sharing-settings"></a>Configurações de exportação e compartilhamento
 
@@ -369,6 +377,15 @@ Em **Configurações de locatário**, a configuração de locatário **Permitir 
 As conexões a tabelas em destaque também serão desabilitadas se a configuração de locatário **Exportar dados** estiver definida como **Desabilitado**.
 
 Confira [Tabelas em destaque no Excel do Power BI](../collaborate-share/service-excel-featured-tables.md).
+
+## <a name="share-to-teams-tenant-setting"></a>Configuração de locatário Compartilhar no Teams
+
+A configuração **Compartilhar com o Teams** está na seção **Configurações de locatário** do portal de administração do Power BI. Essa configuração permite que as organizações ocultem os botões **Compartilhar com o Teams** no serviço do Power BI. Com a configuração desabilitada, os usuários não veem os botões **Compartilhar com o Teams** na barra de ação nem nos menus de contexto quando exibem relatórios e dashboards no serviço do Power BI.
+
+![Captura de tela da configuração de locatário Compartilhar com o Teams no portal de administração do Power BI.](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
+
+Leia mais sobre o [compartilhamento de conteúdo do Power BI com o Teams](../collaborate-share/service-share-report-teams.md).
+
 
 ## <a name="power-bi-visuals-settings"></a>Configurações de visuais do Power BI
 
@@ -637,4 +654,4 @@ Confira [Conteúdo em destaque](#featured-content) neste artigo para obter infor
 [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md)  
 [Auditoria do Power BI em sua organização](service-admin-auditing.md)  
 
-Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+Mais perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

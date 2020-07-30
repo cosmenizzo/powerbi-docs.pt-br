@@ -6,21 +6,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/15/2020
+ms.date: 07/22/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f0eef1441eb0bb87b6e7b85e791c47174c752bc7
-ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
+ms.openlocfilehash: 01155e3ed4921a11f87acaeaf67f20772a4d01dd
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86409411"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252741"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Atualizações mensais anteriores ao Power BI Desktop
 
 Este artigo descreve as atualizações anteriores para o **Power BI Desktop**. Para a versão mais atual do mês, consulte as atualizações mais recentes do [**Power BI Desktop**](desktop-latest-update.md).
 
 Obtenha a última versão do Power BI Desktop no [Centro de Download](https://www.microsoft.com/download/details.aspx?id=58494). Se estiver executando o Windows 10, obtenha também o Power BI Desktop na Microsoft Store do Windows 10. Seja qual for o modo de instalação do Power BI Desktop, as versões mensais são as mesmas, embora a numeração de versão possa ser diferente. Para obter mais informações sobre como baixar e instalar o Power BI Desktop, confira [Obter o Power BI Desktop](desktop-get-the-desktop.md). 
+
+
+> [!IMPORTANT]
+> O Power BI Desktop é atualizado e lançado mensalmente, incorporando comentários dos clientes e novos recursos. Há suporte somente para a versão mais recente do Power BI Desktop, e os clientes que entrarem em contato com o suporte do Power BI Desktop serão solicitados a atualizar para a versão mais recente. Obtenha a versão mais recente do Power BI Desktop da [Microsoft Store](https://aka.ms/pbidesktopstore) ou como um executável contendo todos os idiomas com suporte que você [baixa](https://www.microsoft.com/download/details.aspx?id=58494) e instala no computador.
+
 
 Os links ao lado de cada atualização significam o seguinte:
 

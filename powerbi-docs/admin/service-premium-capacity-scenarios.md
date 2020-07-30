@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 9b3e06172d29f218f9234cf1f3d7e1f623495001
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: dc5f952aa38e2ab36887ec3f2727e2e253389460
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83135316"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952652"
 ---
 # <a name="premium-capacity-scenarios"></a>Cenários de capacidade Premium
 
@@ -67,7 +67,7 @@ O administrador do Power BI pode tentar resolver o problema executando etapas pa
 
 ## <a name="identifying-slow-responding-datasets"></a>Como identificar conjuntos de dados com resposta lenta
 
-Nesse cenário, uma investigação começou quando os usuários reclamaram que determinados relatórios levaram muito tempo para abrir e, às vezes, travavam.
+Nesse cenário, uma investigação começou quando os usuários reclamaram que alguns relatórios levavam muito tempo para ser abertos e, às vezes, paravam de responder.
 
 No aplicativo, o administrador do Power BI pode usar o visual **Durações de Consulta** para determinar os conjuntos de dados de pior desempenho, classificando conjuntos de dados por **Duração Média** decrescente. Esse visual também mostra contagens de consulta do conjunto de dados, assim, você pode ver com que frequência os conjuntos de dados são consultados.
 
@@ -141,7 +141,7 @@ Esse efeito pode ser especialmente aparente quando um conjunto de dados é consu
 
 Em alguns casos, os administradores do Power BI podem solicitar que os proprietários do conjunto de dados criem uma carga de trabalho de consulta menos volátil criando um dashboard (que consulta periodicamente qualquer atualização de conjunto de dados para blocos armazenados em cache), em vez de um relatório. Isso pode ajudar a evitar picos quando o dashboard é carregado. Essa solução nem sempre é possível para determinados requisitos de negócios, no entanto, pode ser uma maneira eficaz de evitar a saturação da CPU sem alterar o conjunto de dados.
 
-## <a name="acknowledgements"></a>Agradecimentos
+## <a name="acknowledgments"></a>Agradecimentos
 
 Este artigo foi escrito por Peter Myers, MVP de plataforma de dados e especialista independente de BI da [Bitwise Solutions](https://www.bitwisesolutions.com.au/).
 

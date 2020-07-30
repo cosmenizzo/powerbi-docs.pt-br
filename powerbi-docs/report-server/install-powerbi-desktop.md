@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 02/13/2020
-ms.openlocfilehash: 3f4538639765f62387fe6b4e493886f85ba22c3d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.date: 07/24/2020
+ms.openlocfilehash: d361430387d9c24b8b4ef0b673c50cf4cec5a24b
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239364"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252580"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Instalar o Power BI Desktop otimizado para o Servidor de Relatório do Power BI
 
-Para criar relatórios do Power BI para o Servidor de Relatórios do Power BI, você precisará baixar e instalar a versão do Power BI Desktop otimizada para o Servidor de Relatórios do Power BI. Essa versão é diferente do Power BI Desktop usado com o serviço do Power BI. Por exemplo, a versão do Power BI Desktop para o serviço do Power BI inclui a versão prévia dos recursos que não estão na versão do Servidor de Relatórios do Power BI até que estejam em disponibilidade geral. Usar essa versão garante que o servidor de relatórios pode interagir com uma versão conhecida dos relatórios e do modelo. 
+Para criar relatórios do Power BI para o Servidor de Relatórios do Power BI, você precisará baixar e instalar a versão do Power BI Desktop otimizada para o Servidor de Relatórios do Power BI. Essa versão é diferente do Power BI Desktop usado com o serviço do Power BI. Por exemplo, a versão do Power BI Desktop para o serviço do Power BI inclui versões prévias de recursos. Esses recursos não chegam à versão do Servidor de Relatórios do Power BI até que estejam em disponibilidade geral. Usar essa versão garante que o servidor de relatórios pode interagir com uma versão conhecida dos relatórios e do modelo. 
 
-A boa notícia é que você pode instalar o Power BI Desktop e o Power BI Desktop otimizado para o Servidor de Relatórios do Power BI lado a lado no mesmo computador.
+Não se preocupe. Instale o Power BI Desktop e o Power BI Desktop otimizado para o Servidor de Relatórios do Power BI lado a lado no mesmo computador.
 
 ## <a name="download-and-install-power-bi-desktop"></a>Baixar e instalar o Power BI Desktop
 
@@ -38,27 +38,27 @@ A maneira mais fácil de ter certeza que você tem a versão mais recente do Pow
     - **PBIDesktopRS.msi** (a versão de 32 bits) ou
     - **PBIDesktopRS_x64.msi** (a versão de 64 bits).
 
-1. Depois de baixar o instalador, execute o Assistente de Instalação do Power BI Desktop (Setembro de 2019).
+1. Depois de baixar o instalador, execute o Assistente de Instalação do Power BI Desktop.
 
 2. No final da instalação, selecione **Iniciar o Power BI Desktop**.
 
     Ele é iniciado automaticamente e você está pronto para começar.
 
 ## <a name="verify-youre-using-the-correct-version"></a>Verifique se você está usando a versão correta
-É fácil verificar se você está usando o Power BI Desktop correto: Observe a tela de inicialização ou a barra de título no Power BI Desktop. Você saberá que tem a versão correta porque **Power BI Desktop (Setembro de 2019)** consta na barra de título. Além disso, as cores de logotipo do Power BI estão invertidas; amarelo em preto, em vez do preto em amarelo.
+É fácil verificar se você está usando o Power BI Desktop correto: Observe a tela de inicialização ou a barra de título no Power BI Desktop. Você saberá que tem a versão correta, porque verá **Power BI Desktop (Maio de 2020)** na barra de título. Além disso, as cores de logotipo do Power BI estão invertidas; amarelo em preto, em vez do preto em amarelo.
 
-![Power BI Desktop Setembro de 2019](media/install-powerbi-desktop/power-bi-report-server-desktop-sept-2019.png)
+![Power BI Desktop Maio de 2020](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2020.png)
 
 A versão do Power BI Desktop para o serviço do Power BI não tem o mês nem o ano na barra de título.
 
 ## <a name="file-extension-association"></a>Associação de extensão de arquivo
-Se você instalar o Power BI Desktop e o Power BI Desktop otimizado para o Servidor de Relatórios do Power BI no mesmo computador, a instalação mais recente do Power BI Desktop terá a associação de arquivo com o arquivo .pbix. Assim, quando você clicar duas vezes em um arquivo .pbix, ele iniciará o Power BI Desktop instalado mais recentemente.
+Digamos que você tenha instalado o Power BI Desktop e o Power BI Desktop otimizado para o Servidor de Relatórios do Power BI no mesmo computador. A instalação mais recente do Power BI Desktop tem a associação de arquivo com arquivos .pbix. Assim, quando você clicar duas vezes em um arquivo .pbix, ele iniciará o Power BI Desktop instalado mais recentemente.
 
 Se você tiver o Power BI Desktop e, em seguida, instalar o Power BI Desktop otimizado para o Servidor de Relatórios do Power BI, todos os arquivos .pbix serão abertos no Power BI Desktop otimizado para o Servidor de Relatórios do Power BI por padrão. Se, em vez disso, você preferir que o Power BI Desktop seja o padrão para iniciar ao abrir um arquivo .pbix, reinstale o [Power BI Desktop da Microsoft Store](https://aka.ms/pbidesktopstore).
 
 Sempre é possível abrir a versão do Power BI Desktop que você deseja usar primeiro. E, em seguida, abra o arquivo no Power BI Desktop.
 
-Editar um relatório do Power BI no Servidor de Relatórios do Power BI ou criar um novo relatório do Power BI no portal da Web sempre abre a versão correta do Power BI Desktop.
+Esta é a maneira mais segura de sempre abrir a versão correta do Power BI Desktop. Comece a editar um relatório do Power BI no Servidor de Relatórios do Power BI ou crie um relatório do Power BI no serviço do Power BI.
 
 ## <a name="considerations-and-limitations"></a>Considerações e limitações
 
@@ -100,12 +100,6 @@ O Power BI Desktop otimizado para o Servidor de Relatórios do Power BI não dá
 ### <a name="saving-reports-to-a-power-bi-report-server-in-a-different-domain"></a>Como salvar relatórios em um Servidor de Relatórios do Power BI em outro domínio
 
 Quando você salva um relatório do Power BI no Servidor de Relatórios do Power BI, suas credenciais do Windows são usadas. Não há suporte para o salvamento direto em um servidor de relatório em um domínio diferente das suas credenciais do Windows. Use um navegador da Web para ver o servidor de relatório e carregue o arquivo manualmente do computador.
-
-## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop para versões anteriores do Servidor de Relatórios do Power BI
-
-Se seu servidor de relatório é de uma versão anterior, você precisa da versão correspondente do Power BI Desktop. Este é o link para baixar uma versão anterior.
-
-- Microsoft Power BI Desktop ([otimizado para o Servidor de Relatórios do Power BI – setembro de 2019](https://go.microsoft.com/fwlink/?linkid=2103723))
 
 ## <a name="next-steps"></a>Próximas etapas
 
