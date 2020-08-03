@@ -37,6 +37,8 @@
               href: service-data-lineage.md
             - name: Análise do impacto do conjunto de dados
               href: service-dataset-impact-analysis.md
+            - name: Análise de impacto da fonte de dados
+              href: service-data-source-impact-analysis.md
             - name: Aplicar rótulos de confidencialidade de dados
               href: ../admin/service-security-apply-data-sensitivity-labels.md
             - name: Conectar-se a arquivos no OneDrive do seu grupo
@@ -45,6 +47,16 @@
               href: service-collaborate-power-bi-workspace.md
             - name: Gerenciar seu grupo no Power BI e no Microsoft 365
               href: service-manage-app-workspace-in-power-bi-and-office-365.md
+        - name: Power BI no Teams
+          items:
+            - name: Colaborar no Teams
+              href: service-collaborate-microsoft-teams.md
+            - name: Inserir relatórios no Teams
+              href: service-embed-report-microsoft-teams.md
+            - name: Compartilhar diretamente no Teams
+              href: service-share-report-teams.md
+            - name: Obter uma visualização de link no Teams
+              href: service-teams-link-preview.md
         - name: Publicar e compartilhar seu trabalho
           items:
             - name: Compartilhar dashboards e relatórios
@@ -61,8 +73,6 @@
               href: service-report-subscribe.md
             - name: Conteúdo do recurso na Página Inicial
               href: service-featured-content.md
-            - name: Inserir o relatório no Microsoft Teams
-              href: service-embed-report-microsoft-teams.md
             - name: Inserir o relatório no SharePoint Online
               href: service-embed-report-spo.md
             - name: Inserir o relatório em um site ou portal seguro
@@ -71,20 +81,22 @@
               href: service-publish-to-web.md
             - name: Compartilhar um dashboard que é vinculado a uma pasta de trabalho do Excel no OneDrive
               href: service-share-dashboard-that-links-to-excel-onedrive.md
-        - name: Estenda o Power BI
+        - name: Power BI no Excel
           items:
             - name: Analisar no Excel
               href: service-analyze-in-excel.md
-            - name: Tabelas em destaque do Power BI no Excel
+            - name: Usar as tabelas em destaque do Power BI no Excel
               href: service-excel-featured-tables.md
+            - name: Configurar tabelas em destaque
+              href: service-create-excel-featured-tables.md
             - name: Análise de solução de problemas no Excel
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Erro: não foi possível localizar dados na sua pasta de trabalho do Excel'
               href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
-            - name: Power Automate e Power BI
-              href: service-flow-integration.md
-            - name: Usar aplicativos de terceiros
-              href: service-power-bi-get-started-third-party-apps.md
+        - name: Power Automate e Power BI
+          href: service-flow-integration.md
+        - name: Usar aplicativos de terceiros
+          href: service-power-bi-get-started-third-party-apps.md
         - name: Pacotes de conteúdo organizacional
           items:
             - name: Introdução aos pacotes de conteúdo organizacional
