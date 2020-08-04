@@ -24,9 +24,9 @@
           href: funnel-plot-from-r.md
     - name: Conceitos
       items:
-        - name: Estrutura do projeto do visual do Power BI
+        - name: Estrutura do projeto de visuais do Power BI
           href: visual-project-structure.md
-        - name: Conceitos visuais
+        - name: ' Integração do sistema de visuais do Power BI'
           href: power-bi-visuals-concept.md
         - name: Visuais para organizações no Power BI
           href: power-bi-custom-visuals-organization.md
