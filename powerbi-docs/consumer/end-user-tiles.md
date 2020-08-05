@@ -2,19 +2,19 @@
 title: Blocos de dashboard no serviço do Power BI para consumidores
 description: Tudo sobre blocos de dashboard no Power BI para consumidores. Isso inclui blocos que são criados no SSRS (SQL Server Reporting Services).
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 1020a40da1022b20552ff06a75316352cbb97e94
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7d1ecb8f15cc6d10bc2e04d43796874efb161a83
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238674"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87537908"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Blocos de painel no Power BI
 

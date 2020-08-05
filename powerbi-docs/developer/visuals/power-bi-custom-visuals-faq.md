@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 0a66b0fc1a984e0905fba209ca59afb3a02696b2
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 8003d7ed6d6b455860ed5ed3bc4ada06c0a35c5f
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83131304"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87537793"
 ---
 # <a name="power-bi-visuals-faq"></a>Perguntas frequentes sobre os visuais do Power BI
 
@@ -24,7 +24,7 @@ O portal de administração permite o gerenciamento de visuais do Power BI para 
 
 ### <a name="how-can-the-admin-manage-organizational-power-bi-visuals"></a>De que maneira o administrador pode gerenciar os visuais do Power BI da organização?
 
-Na guia *Visuais da organização* do Portal de Administração, o administrador consegue visualizar e [gerenciar todos os visuais do Power BI da organização na empresa](../../admin/service-admin-portal.md#organizational-visuals). Isso inclui adicionar, desabilitar, habilitar e excluir os visuais do Power BI.
+Na guia *Visuais da organização* do Portal de Administração, o administrador consegue visualizar e [gerenciar todos os visuais do Power BI da organização na empresa](../../admin/organizational-visuals.md#organizational-visuals). Isso inclui adicionar, desabilitar, habilitar e excluir os visuais do Power BI.
 
 Os usuários na organização podem encontrar com facilidade os visuais do Power BI e importá-los para seus relatórios diretamente do Power BI Desktop ou do Serviço do Power BI.
 
