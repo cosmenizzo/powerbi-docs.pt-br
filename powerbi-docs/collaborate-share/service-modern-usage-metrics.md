@@ -10,14 +10,14 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7c8c1744c8ecbbf170ae073d2e302fe55faea55b
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 9aad77f162a49697466899afce44284c7f063746
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86953020"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478143"
 ---
-# <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Monitorar métricas de uso na nova experiência de workspace
+# <a name="monitor-usage-metrics-in-the-new-workspace-experience-preview"></a>Monitorar as métricas de uso na nova experiência de workspace (versão prévia)
 
 Saber como seu conteúdo está sendo usado ajuda a demonstrar seu impacto e priorizar esforços. As métricas de uso podem mostrar que um dos relatórios é usado diariamente por um grande segmento da organização e pode mostrar que um dashboard criado não está sendo exibido. Esse tipo de comentário é imprescindível para orientar seus esforços de trabalho.
 
@@ -81,7 +81,7 @@ O relatório de métricas de uso aprimorado inclui as seguintes páginas:
 
 | **Página** | **Métrica** | **Descrição** |
 | --- | --- | --- |
-| Uso de relatórios | Visualizações do relatório | Uma visualização do relatório é registrada sempre que alguém o abre. Observe que a definição de visualização é diferente nos relatórios de métricas de uso anteriores. A alteração de páginas do relatório não é mais considerada uma visualização adicional. |
+| Uso de relatórios | Visualizações do relatório | Uma visualização do relatório é registrada sempre que alguém o abre. Observe que a definição de visualização é diferente nos relatórios de métricas de uso anteriores. A alteração de páginas do relatório não é mais considerada uma visualização adicional. Atividades como compartilhamento e fixação não são mais consideradas em métricas de uso.|
 | Uso de relatórios | Visualizadores únicos | Um visualizador é alguém que abriu o relatório pelo menos uma vez durante determinado período (com base na conta de usuário do Azure Active Directory). |
 | Uso de relatórios | Tendência de visualização | A tendência da visualização reflete as alterações na contagem de visualizações ao longo do tempo. Ela compara a primeira metade do período selecionado com a segunda metade. |
 | Uso de relatórios | Segmentação de datas | Você pode alterar os períodos na página de uso do Relatório, por exemplo, para calcular as tendências semanal ou quinzenalmente. No canto inferior esquerdo da página de Uso do relatório, é possível determinar as datas mais antiga e mais recente entre as quais os dados de uso estarão disponíveis no relatório selecionado. |

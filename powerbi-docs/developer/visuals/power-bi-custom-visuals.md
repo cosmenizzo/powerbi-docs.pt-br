@@ -1,6 +1,6 @@
 ---
 title: Visuais no Power BI
-description: Visualizações personalizadas no Power BI
+description: Este artigo descreve visuais personalizados do Power BI
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -8,20 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: overview
-ms.date: 01/03/2019
+ms.date: 07/14/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e9dc53eb3f49a1ef62e4e3539ac7eb6d92b317af
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: e56b03eeccc3140709fb458d4e42a9065a4da5d4
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83561629"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87538000"
 ---
 # <a name="visuals-in-power-bi"></a>Visuais no Power BI
 
 O Power BI vem com muitos visuais prontos para uso. Esses visuais estão disponíveis no painel de visualização do [Power BI Desktop](https://powerbi.microsoft.com/desktop/) e do [serviço do Power BI](https://app.powerbi.com) e podem ser usados para criar e editar o conteúdo do Power BI.
 
-![visualizações](media/power-bi-custom-visuals/power-bi-visualizations.png)
+![Captura de tela do painel de visualização do Power BI como ele aparece no Power BI Desktop e no serviço do Power BI.](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
 Muitos outros visuais do Power BI estão disponíveis no Microsoft [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) ou por meio do Power BI. Esses visuais são criados pela Microsoft e por parceiros da Microsoft e são testados e validados pela equipe de validação do AppSource.
 
@@ -38,6 +38,11 @@ Para restaurar os visuais padrão do Power BI no painel de visualização, cliqu
 ## <a name="appsource-power-bi-visuals"></a>Visuais do Power BI no AppSource
 
 A Microsoft e os membros da comunidade contribuem com visuais do Power BI para o benefício público e os publicam no [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Baixe esses visuais e adicione-os aos seus relatórios do Power BI. A Microsoft testou e aprovou esses visuais do Power BI com relação à funcionalidade e à qualidade.
+
+>[!NOTE]
+>* Ao usar visuais do Power BI criados com o nosso SDK, talvez você esteja importando dados de/enviando dados para terceiros ou outros serviços localizados fora da região geográfica do seu locatário do Power BI, limite de conformidade ou instância de nuvem nacional.
+>* Visuais certificados do Power BI são visuais no AppSource que foram adicionalmente testados para verificar que o visual não acessa serviços nem recursos externos.
+>* Após os visuais do Power BI do AppSource serem importados, eles poderão ser atualizados automaticamente sem outros avisos.
 
 ### <a name="what-is-appsource"></a>O que é o AppSource?
 
@@ -74,10 +79,17 @@ Se você é desenvolvedor da Web e está interessado em criar seu próprio visua
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Se você é desenvolvedor, comece com o tutorial [Como desenvolver um visual do Power BI](custom-visual-develop-tutorial.md).
+>[!div class="nextstepaction"]
+>[Desenvolver um visual do Power BI](custom-visual-develop-tutorial.md)
 
-* Saiba como um [projeto de visuais do Power BI é estruturado](visual-project-structure.md).
+>[!div class="nextstepaction"]
+>[Estrutura de projeto de visuais do Power BI](visual-project-structure.md)
 
-* Explore as [diretrizes para visuais do Power BI](guidelines-powerbi-visuals.md).
+>[!div class="nextstepaction"]
+>[Diretrizes para visuais do Power BI](guidelines-powerbi-visuals.md)
 
-Mais perguntas? Experimente acessar a página [Perguntas frequentes sobre visuais do Power BI](power-bi-custom-visuals-faq.md) ou a [Comunidade do Power BI](https://community.powerbi.com/).
+>[!div class="nextstepaction"]
+>[Perguntas frequentes](power-bi-custom-visuals-faq.md)
+
+>[!div class="nextstepaction"]
+>[Comunidade do Power BI](https://community.powerbi.com/)

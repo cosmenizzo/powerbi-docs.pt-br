@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b792c7d9f6200544188e9f9fe711cd1394e8b921
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2c3733f98c278895102165e9d2db52f0e9318903
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279562"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87537517"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX: Função DIVIDE versus operador dividir (/)
 
@@ -65,5 +65,6 @@ Considere cuidadosamente se a função DIVIDE deve retornar um valor alternativo
 Para obter mais informações sobre este artigo, confira os seguintes recursos:
 
 - [Referência do DAX (Data Analysis Expressions)](/dax/)
-- Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
-
+- Roteiro de aprendizagem: [Usar o DAX no Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/)
+- Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
+- Sugestões? [Contribuir com ideias para aprimorar o Power BI](https://ideas.powerbi.com)

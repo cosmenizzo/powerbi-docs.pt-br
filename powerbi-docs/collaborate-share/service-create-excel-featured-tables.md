@@ -6,24 +6,26 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/24/2020
+ms.date: 07/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e39d2fe11a58691b259784c292fec6e5ee6cb322
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: c74c618eb4c748d94260573c1ddd4266d3cf5c0e
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87253800"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478074"
 ---
 # <a name="set-featured-tables-in-power-bi-desktop-preview"></a>Definir tabelas em destaque no Power BI Desktop (versão prévia)
 
 Na Galeria de Tipos de Dados do Excel, seus usuários podem encontrar dados das *tabelas em destaque* em seus conjuntos de dados do Power BI. Neste artigo, você aprende a configurar tabelas como *em destaque* em seus conjuntos de dados. Com essas marcas, seus usuários têm mais facilidade para adicionar dados corporativos a suas planilhas do Excel. Confira as etapas básicas para definir e compartilhar tabelas em destaque.
 
-1. [Promova ou certifique conjuntos de dados no Power BI](../connect-data/service-datasets-promote.md). 
 1. Identifique as tabelas em destaque em seus conjuntos de dados no Power BI Desktop (este artigo)
 1. Salve esses conjuntos de dados com as tabelas em destaque em um dos novos workspaces. Os criadores de relatório podem criar relatórios com essas tabelas em destaque. 
 1. O restante da organização pode se conectar às tabelas em destaque, chamadas de *tipos de dados* no Excel, para obter dados relevantes e atualizáveis. O artigo [Acessar tabelas em destaque do Power BI no Excel (versão prévia)](service-excel-featured-tables.md) descreve o consumo dessas tabelas no Excel.
+
+> [!NOTE]
+> É possível [promover ou certificar conjuntos de dados no Power BI](../connect-data/service-datasets-promote.md). Isso é chamado de *endosso*. O Excel prioriza as tabelas em conjuntos de dados endossados na Galeria de Tipos de Dados. O Excel lista as tabelas em destaque em conjuntos de tabela certificados primeiro e depois as tabelas em conjuntos de dados promovidos. O Excel lista, em seguida, as tabelas em destaque em conjuntos de dados não endossados. 
 
 ## <a name="turn-on-the-featured-table-preview"></a>Ativar a versão preliminar da tabela em destaque
 
@@ -31,6 +33,8 @@ Na Galeria de Tipos de Dados do Excel, seus usuários podem encontrar dados das 
 2. Marque a caixa de seleção **Tabelas em destaque**.
 
     :::image type="content" source="media/service-excel-featured-tables/power-bi-preview-featured-tables.png" alt-text="Opção Versão prévia das tabelas em destaque":::
+
+3. Reinicie o Power BI Desktop.
 
 ## <a name="select-a-table"></a>Selecionar uma tabela
 

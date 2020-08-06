@@ -3,17 +3,17 @@ title: inserir um relatório do Servidor de Relatórios do Power BI usando um iF
 description: Este artigo mostra como inserir um relatório do Servidor de Relatórios do Power BI em um iFrame no SharePoint Server
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 08/12/2019
+ms.date: 07/28/2020
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 4e7616ec3ce6552130848bc0508bf8b9ac8ac965
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4f6382b78a02750c76987de4fa911eb8c7d33b50
+ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75762590"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87411993"
 ---
 # <a name="embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>inserir um relatório do Servidor de Relatórios do Power BI usando um iFrame no SharePoint Server
 
@@ -24,7 +24,7 @@ Neste artigo, você aprenderá a inserir um relatório do Servidor de Relatório
 ## <a name="prerequisites"></a>Pré-requisitos
 * [Servidor de Relatórios do Power BI](https://powerbi.microsoft.com/report-server/) instalado e configurado.
 * [Power BI Desktop otimizado para o Servidor de Relatórios do Power BI](install-powerbi-desktop.md) instalado.
-* Um ambiente do [SharePoint](https://docs.microsoft.com/sharepoint/install/install) instalado e configurado.
+* Um [ambiente do SharePoint 2013, 2016 ou 2019](https://docs.microsoft.com/sharepoint/install/install) instalado e configurado.
 * O Internet Explorer 11 só será compatível se o modo do documento for definido como o modo IE11 (Edge) ou ao usar o SharePoint Online. Você pode usar outros navegadores compatíveis com o SharePoint local e o SharePoint Online.
 
 ## <a name="create-the-power-bi-report-url"></a>Criar a URL do relatório do Power BI

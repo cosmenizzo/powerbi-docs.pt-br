@@ -9,17 +9,17 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 07/22/2020
-ms.openlocfilehash: 17a0879dac416a98d214ed11861947cb2c311487
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.date: 07/31/2020
+ms.openlocfilehash: 01e5b470e0beb189d64da18785a17e771bcaf59b
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87253799"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478028"
 ---
 # <a name="collaborate-in-microsoft-teams-with-power-bi"></a>Colaborar no Microsoft Teams com o Power BI
 
-Há várias opções para compartilhar e colaborar em conteúdos interativos do Power BI em canais e chats do Microsoft Teams. 
+Conforme uma força de funcionários distribuída e remota está se tornando a norma, cada vez mais organizações estão contando com o Microsoft Teams para manter os funcionários em sincronia. O Power BI oferece várias opções para compartilhar e colaborar em conteúdos interativos do Power BI em canais e chats do Microsoft Teams. 
 
 - Com a guia **Power BI** no Microsoft Teams, você pode [inserir relatórios interativos em canais e chats do Microsoft Teams](service-embed-report-microsoft-teams.md). A guia **Power BI** ajuda seus colegas a encontrar os dados de sua equipe e a discutir os dados nos canais de sua equipe. 
 - Crie uma [visualização de link](service-teams-link-preview.md) quando você colar um link para seus relatórios, dashboards e aplicativos na caixa de mensagem do Microsoft Teams. A visualização de link mostra informações sobre o link. 
@@ -34,17 +34,6 @@ De modo geral, para que o Power BI funcione no Microsoft Teams, assegure os segu
 - Os usuários têm uma licença do Power BI Pro ou se o relatório está contido em uma [capacidade do Power BI Premium (SKU P ou EM)](../admin/service-premium-what-is.md) com uma licença do Power BI.
 - Os usuários entraram no serviço do Power BI para ativar suas licenças do Power BI.
 - Os usuários atendem aos requisitos para usar a guia **Power BI** no Microsoft Teams.
-
-Para usar a guia **Power BI** no Microsoft Teams, assegure os seguintes elementos:
-
-- O Microsoft Teams tem a guia do **Power BI**.
-- Para adicionar um relatório ao Microsoft Teams com a guia do **Power BI**, você precisa pelo menos de uma função de Visualizador no workspace que hospeda o relatório. Para obter informações sobre as diferentes funções, confira [Funções nos novos workspaces](service-new-workspaces.md#roles-in-the-new-workspaces).
-- Para ver o relatório na guia do **Power BI** no Microsoft Teams, os usuários devem ter permissão para exibir o relatório.
-- Eles devem ser usuários do Microsoft Teams com acesso a canais e chats.
-
-Para usar o a funcionalidade **Compartilhar com o Teams** no Power BI, assegura esta configuração:
-
-- Os administradores do Power BI não desabilitaram a configuração de locatário **Compartilhar no Teams** no portal de administração do Power BI. Essa configuração permite que as organizações ocultem os botões **Compartilhar com o Teams**. Confira o artigo [Portal de administração do Power BI](../admin/service-admin-portal.md#share-to-teams-tenant-setting) para obter detalhes.
 
 ## <a name="grant-access-to-reports"></a>Conceder acesso aos relatórios
 

@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: ff79017bd77dd63ce1aa50b9c5361bf82a060820
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ec45d971855aefe35161f2b10fecd483f0345a46
+ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236403"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87768793"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportar relatórios do Power BI para PDF
 
@@ -55,7 +55,7 @@ Há algumas considerações e limitações para ter em mente ao trabalhar com o 
 * No momento, não há suporte para visuais de R e Python. No PDF, esses elementos visuais ficam em branco e exibem uma mensagem de erro. 
 * Há suporte para visuais do Power BI que foram certificados. Para obter mais informações sobre visuais do Power BI certificados, incluindo como certificar um visual do Power BI, confira [Certificar um visual do Power BI](../developer/visuals/power-bi-custom-visuals-certified.md). Não há suporte para visuais do Power BI que não foram certificados. No PDF, eles são exibidos com uma mensagem de erro.
 * O visual ESRI não é compatível
-* No momento, não é possível exportar relatórios com mais de 30 páginas.
+* No momento, não é possível exportar relatórios com mais de 50 páginas.
 * O processo de exportar o relatório para PDF pode levar alguns minutos para ser concluído, seja paciente. Os fatores que podem afetar o tempo necessário incluem a estrutura do relatório e a carga atual no serviço do Power BI.
 * Se o item de menu **Exportar para PDF** não estiver disponível no serviço do Power BI, provavelmente será porque seu administrador de locatários desabilitou o recurso. Entre em contato com seu administrador de locatários para obter detalhes.
 * As imagens de segundo plano são cortadas com a área delimitadora do gráfico. Recomendamos que você remova as imagens de segundo plano antes de exportar para o PDF.

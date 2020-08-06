@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 07/27/2020
-ms.openlocfilehash: c91642a08642a52b333ccba14078068eaa9ba616
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.date: 07/28/2020
+ms.openlocfilehash: 44cfbeb85f30e2d84dc2c693ab4837606eb899eb
+ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252856"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87412039"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Comparando o Servidor de Relatórios do Power BI e o serviço do Power BI
 
@@ -48,6 +48,7 @@ O Servidor de Relatórios do Power BI e o serviço do Power BI têm muitas semel
 | Assinaturas de email para relatórios paginados | Sim | Sim | [Obtenha uma assinatura para você e para outras pessoas de relatórios paginados no Serviço do Power BI](../consumer/paginated-reports-subscriptions.md)<br><br>[Entrega de email no Reporting Services](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal)  |
 | Alertas de dados | Não | Sim | [Alertas de dados](../create-reports/service-set-data-alerts.md) no serviço do Power BI
 | Segurança no nível da linha (RLS) | Sim | Sim | Disponível nos modos de DirectQuery (fonte de dados) e de Importação <br><br>Segurança em nível de linha do [serviço do Power BI](../admin/service-admin-rls.md) <br><br>RLS (Segurança em Nível de Linha) no [Servidor de Relatórios do Power BI](row-level-security-report-server.md) |
+| Relacionamentos de muitos para muitos | Não | Sim | [Aplicar relações muitos para muitos](../transform-model/desktop-many-to-many-relationships.md) no Power BI Desktop |
 | Detalhamento entre relatórios | Não | Sim | [Usar o detalhamento entre relatórios](../create-reports/desktop-cross-report-drill-through.md) |
 | Sair do modo de tela inteira | Não | Sim | [Modo de tela inteira](../consumer/end-user-focus.md) no serviço do Power BI |
 | Colaboração avançada do Microsoft 365 | Não | Sim | [Colaborar em um workspace](../collaborate-share/service-collaborate-power-bi-workspace.md) com o Microsoft 365 |

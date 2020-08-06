@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 07/01/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: d49d92261b141a66021bb0809c214e712bd687c8
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 3707399d21d15b16236e0e33da6c264fb6e364b4
+ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86263730"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87768961"
 ---
 # <a name="export-reports-to-powerpoint"></a>Exportar relatórios para o PowerPoint
 
@@ -104,7 +104,7 @@ Há algumas considerações e limitações para ter em mente ao trabalhar com o 
 * Alguns relatórios não podem ser exportados. Elas incluem:
     - Relatórios que são propriedade de um usuário fora de seu domínio de locatário do Power BI, como um relatório de alguém de fora de sua organização e compartilhado com você.
     - Se você compartilhar um dashboard com alguém fora de sua organização, ou seja, um usuário que não está em seu locatário do Power BI, esse usuário não poderá exportar os relatórios associados ao dashboard compartilhado para o PowerPoint. Por exemplo, se você for aaron@contoso.com, poderá compartilhar com david@cohowinery.com. No entanto, david@cohowinery.com não poderá exportar os relatórios associados para o PowerPoint.
-    - Relatórios com mais de 30 páginas. Apenas as primeiras 30 páginas serão exportadas.
+    - Relatórios com mais de 50 páginas. Apenas as primeiras 50 páginas serão exportadas.
     - Relatórios sendo exportados para versões mais antigas do PowerPoint.
     - Relatórios que demoram mais de uma hora para serem processados. 
     - Páginas de relatório que demoram mais de seis minutos para serem carregadas. 

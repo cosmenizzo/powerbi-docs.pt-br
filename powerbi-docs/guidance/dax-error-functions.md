@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 4730e835c511153232f79c193de5bbd56d63b963
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f00f554a35c4e92328b1ea1017baf7d8006386a0
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "74410920"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87537471"
 ---
 # <a name="dax-appropriate-use-of-error-functions"></a>DAX: Uso apropriado de funções de erro
 
@@ -64,4 +64,7 @@ Profit Margin
 Para obter mais informações sobre este artigo, confira os seguintes recursos:
 
 - [Referência do DAX (Data Analysis Expressions)](/dax/)
-- Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+
+- Roteiro de aprendizagem: [Usar o DAX no Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/)
+- Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
+- Sugestões? [Contribuir com ideias para aprimorar o Power BI](https://ideas.powerbi.com)

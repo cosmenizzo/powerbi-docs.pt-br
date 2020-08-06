@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/19/2020
+ms.date: 07/28/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9d20f9aa5311d8ee96246ab8b3ed832330742973
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: dcdd663ec9899f7623789915754087c4643c9806
+ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223914"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87411970"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Fontes de dados no Power BI Desktop
 
@@ -73,7 +73,7 @@ A categoria **Banco de dados** fornece as seguintes conexões de dados:
 * Banco de dados do Access
 * Banco de dados do SQL Server Analysis Services
 * Oracle Database
-* Banco de dados IBM DB2
+* Banco de dados IBM Db2
 * Banco de dados IBM Informix (Beta)
 * IBM Netezza
 * Banco de dados MySQL
@@ -116,7 +116,7 @@ A categoria **Power Platform** fornece as seguintes conexões de dados:
 * Conjuntos de dados do Power BI
 * Fluxos de dados do Power BI
 * Common Data Service
-* Fluxo de dados do Power Platform
+* Fluxos de dados do Power Platform (Beta)
 
 A imagem a seguir mostra a janela **Obter Dados** do **Power Platform**.
 
@@ -133,6 +133,7 @@ A categoria **Azure** fornece as seguintes conexões de dados:
 * Armazenamento de Blobs do Azure
 * Armazenamento de Tabelas do Azure
 * Azure Cosmos DB
+* Azure Data Explorer (Kusto)
 * Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
@@ -171,21 +172,19 @@ A categoria **Serviços Online** fornece as seguintes conexões de dados:
 * Merketo (Beta)
 * Mixpanel (Beta)
 * Planview Enterprise One – PRM (Beta)
-* Planview Projectplace (Beta)
 * QuickBooks Online (Beta)
 * Smartsheet
 * SparkPost (Beta)
 * SweetIQ (Beta)
 * Planview Enterprise One – CTM (Beta)
 * Twilio (Beta)
-* tyGraph (Beta)
-* Webtrends (Beta)
 * ZenDesk (Beta)
 * Asana (Beta)
 * Dynamics 365 Customer Insights (beta)
 * Fonte de dados do Emigo
 * Entersoft Business Suite (Beta)
-* FactSet Analytics (Beta)
+* FactSet Analytics
+* Palantir Foundry
 * Industrial App Store
 * Intune Data Warehouse (Beta)
 * Segurança do Microsoft Graph (Beta)
@@ -218,7 +217,10 @@ A categoria **Outros** fornece as seguintes conexões de dados:
 * Script Python
 * ODBC
 * OLE DB
+* Acterys: Planejamento e Automação de Modelos (Beta)
+* Automation Anywhere (Beta)
 * Solver
+* Cherwell (Beta)
 * Fusão de Dados Cognite (Beta)
 * FHIR
 * Grade de Informações (Beta)
@@ -233,6 +235,7 @@ A categoria **Outros** fornece as seguintes conexões de dados:
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (Beta)
 * Vena (Beta)
+* Vessel Insight (Beta)
 * Workforce Dimensions (Beta)
 * Zucchetti HR Infinity (Beta)
 * Consulta em Branco

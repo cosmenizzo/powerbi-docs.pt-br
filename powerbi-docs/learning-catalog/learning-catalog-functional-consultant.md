@@ -6,12 +6,12 @@ ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
 ms.author: margoc
-ms.openlocfilehash: e4514cae5f083ace75c9703999a177da033a844d
-ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
+ms.openlocfilehash: 11150686d1ff922877081a672290069f85b1afc5
+ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84532317"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87411901"
 ---
 # <a name="functional-application-consultant-learning-catalog"></a>Catálogo de aprendizagem para consultores de aplicativos funcionais
 
@@ -35,6 +35,7 @@ Para consultores funcionais, nossa pesquisa de análise de tarefa de trabalho mo
 | [Três maneiras como a IA está mudando o BI](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI-OnDemand.html)  | É fundamental que os analistas investiguem e visualizem dados para ajudar os stakeholders a encontrar insights de maneira rápida e eficaz. As demandas de negócios evoluíram; antes, os executivos se perguntam o que e quando algo aconteceu, hoje perguntam por que aconteceu – e o que ocorrerá no futuro. Registre-se neste webinar para conhecer as três oportunidades de insights de dados que combinam IA com BI (business intelligence).   | Webinar       |                   |
 | [Aproveite o poder do Power BI – dicas e truques por Philip Seamark](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/6-22-2017-Unleash-the-Power-of-Power-BI-tips-and-tricks-by/td-p/161490) | Junte-se à Mark Philip enquanto ele explica alguns dos detalhes sobre a maior implantação do Power BI no hemisfério sul, como ele é usado e como ele atende às suas necessidades de BI. Essa sessão abordará uma variedade de dicas e truques para ajudar você a aprimorar seus relatórios do Power BI.   | Webinar       | 53min47s       |
 | [O que é o Power BI?](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview)  | Visão geral do Power BI   | Site       | 3 minutos para ler |
+| [Usar o DAX no Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/) | Este roteiro de aprendizagem apresenta o DAX (Data Analysis Expressions) e fornece a você as habilidades essenciais necessárias para aprimorar modelos de dados com cálculos.  | Caminho de aprendizado online gratuito e individual | 4h30min |
 ## <a name="best-practices"></a>Melhores práticas<a name="best-practices"></a>
 | Conteúdo   | Descrição  | Formatar   | Tamanho   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|-------------------|

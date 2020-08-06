@@ -9,19 +9,28 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 07/22/2020
-ms.openlocfilehash: 68459deb29c59af3b9e2b185d54cf4e523d555d8
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.date: 07/31/2020
+ms.openlocfilehash: 53126fe044f65740b9dac072422f749312b960da
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252557"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478005"
 ---
 # <a name="embed-power-bi-content-in-microsoft-teams"></a>Inserir conteúdo do Power BI no Microsoft Teams
 
 Você pode inserir facilmente relatórios interativos do Power BI em canais e chats do Microsoft Teams. 
 
-Confira [Colaborar no Microsoft Teams com o Power BI](service-embed-report-microsoft-teams.md) para saber como o Power BI e o Teams funcionam juntos, incluindo os requisitos que você precisa atender.
+## <a name="requirements"></a>Requisitos
+
+Para usar a guia **Power BI** no Microsoft Teams, assegure os seguintes elementos:
+
+- O Microsoft Teams tem a guia do **Power BI**.
+- Para adicionar um relatório ao Microsoft Teams com a guia do **Power BI**, você precisa pelo menos de uma função de Visualizador no workspace que hospeda o relatório. Para obter informações sobre as diferentes funções, confira [Funções nos novos workspaces](service-new-workspaces.md#roles-in-the-new-workspaces).
+- Para ver o relatório na guia do **Power BI** no Microsoft Teams, os usuários devem ter permissão para exibir o relatório.
+- Eles devem ser usuários do Microsoft Teams com acesso a canais e chats.
+
+Confira [Colaborar no Microsoft Teams com o Power BI](service-embed-report-microsoft-teams.md) para saber como o Power BI e o Teams funcionam juntos, incluindo outros requisitos.
 
 ## <a name="embed-a-report-in-teams"></a>Inserir um relatório no Teams
 
