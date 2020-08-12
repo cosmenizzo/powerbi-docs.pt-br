@@ -6,13 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 06/28/2020
+ms.date: 08/11/2020
 ms.author: painbar
-ms.openlocfilehash: 436ef20a54312f2e169c428cf1d2914bc47eafb0
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 85ba8b893dfa6da7934aff6b7890530e0acb2961
+ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782672"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88091677"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Exibir relatórios e dashboards no modo de apresentação no Surface Hub e em dispositivos Windows 10
 É possível usar o modo de apresentação para exibir relatórios e dashboards em tela inteira em dispositivos Windows 10 e no Surface Hub. O modo de apresentação é útil para a exibição do Power BI em reuniões ou conferências ou em um projetor dedicado no escritório ou até mesmo para maximizar o espaço em uma tela pequena.
@@ -72,4 +73,3 @@ Por padrão, uma apresentação de slides percorre páginas, à taxa de uma a ca
 ## <a name="next-steps"></a>Próximas etapas
 * [Exibir painéis e relatórios no modo de tela inteira do serviço do Power BI](../end-user-focus.md)
 * Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
-

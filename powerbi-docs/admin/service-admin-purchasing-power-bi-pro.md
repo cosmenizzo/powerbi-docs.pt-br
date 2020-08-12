@@ -10,12 +10,12 @@ ms.date: 04/08/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 72e2744fc325f5e5b36f3abcf4a6d3d71767fbd4
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 899055ea26d1f36592c426ba402aa363b65bfa15
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227646"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878351"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Comprar e atribuir licenças de usuário do Power BI Pro
 
@@ -29,7 +29,7 @@ O Power BI Pro é uma licença individual de usuário que permite que eles leiam
 Este artigo explica como comprar licenças de usuário do Power BI Pro no Centro de administração do Microsoft 365. Após comprar licenças, é possível atribuí-las a usuários no Centro de administração do Microsoft 365 ou no Portal do Azure.
 
 > [!NOTE]
-> Desde 14 de janeiro de 2020, as funcionalidades de compra por autoatendimento, assinatura e gerenciamento de licenças para os produtos da Power Platform (Power BI, Power Apps e Power Automate) estão disponíveis para clientes da nuvem comercial. Para obter mais informações, confira [Perguntas frequentes sobre compras por autoatendimento](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq). Para habilitar ou desabilitar as funcionalidades de compra por autoatendimento, confira [Habilitar ou desabilitar a inscrição e a compra por autoatendimento](/service-admin-disable-self-service.md).
+> Desde 14 de janeiro de 2020, as funcionalidades de compra por autoatendimento, assinatura e gerenciamento de licenças para os produtos da Power Platform (Power BI, Power Apps e Power Automate) estão disponíveis para clientes da nuvem comercial. Para obter mais informações, confira [Perguntas frequentes sobre compras por autoatendimento](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq). Para habilitar ou desabilitar as funcionalidades de compra por autoatendimento, confira [Habilitar ou desabilitar a inscrição e a compra por autoatendimento](/power-bi/admin/service-admin-disable-self-service).
 
 ### <a name="prerequisites"></a>Pré-requisitos
 

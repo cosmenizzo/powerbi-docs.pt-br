@@ -9,17 +9,18 @@ ms.topic: conceptual
 ms.date: 06/11/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0a09311c5fdb1a8b2e008996d993015f33ee9b5f
-ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
+ms.openlocfilehash: b1204b28ae5239bf4080472129b0862862446e5d
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84739243"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878459"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Usar metadados aprimorados de conjunto de dados (versão prévia)
 
 Quando o Power BI Desktop cria relatórios, ele também cria metadados de conjunto de dados nos arquivos PBIX e PBIT correspondentes. Anteriormente, os metadados eram armazenados em um formato específico para Power BI Desktop. Eles usavam expressões e fontes de dados M codificadas em base 64 e suposições eram feitas sobre como esses metadados eram armazenados.
 
-Com o lançamento do recurso de **metadados aprimorados de conjunto de dados**, muitas dessas limitações foram removidas. Com o recurso **metadados aprimorados de conjunto de dados** habilitado, os metadados criados pelo Power BI Desktop usam um formato semelhante ao usado para modelos tabulares do Analysis Services, com base no [Modelo de Objeto Tabular](https://docs.microsoft.com/bi-reference/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo).
+Com o lançamento do recurso de **metadados aprimorados de conjunto de dados**, muitas dessas limitações foram removidas. Com o recurso **metadados aprimorados de conjunto de dados** habilitado, os metadados criados pelo Power BI Desktop usam um formato semelhante ao usado para modelos tabulares do Analysis Services, com base no [Modelo de Objeto Tabular](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo).
 
 
 O recurso **metadados aprimorados de conjunto de dados** é estratégico e fundamental, pois a funcionalidade futura do Power BI será criada com base nos metadados dela. Algumas funcionalidades adicionais que têm muito a se beneficiar do recurso metadados aprimorados de conjunto de dados incluem [leitura/gravação XMLA](https://docs.microsoft.com/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite) para o gerenciamento de conjuntos de dados do Power BI e a migração de cargas de trabalho do Analysis Services para o Power BI para se beneficiar de recursos da próxima geração.

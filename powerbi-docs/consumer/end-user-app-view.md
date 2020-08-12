@@ -10,12 +10,12 @@ ms.date: 07/08/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7362eb683dae6318dc0e64de68afb8a8b57d62c6
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: bfda795e02ef53188c5125bc2f0674e859ebd450
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162080"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878812"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Instalar e usar aplicativos com dashboards e relatórios no Power BI
 
@@ -76,7 +76,7 @@ Você também pode instalar um aplicativo organizacional por meio de um link dir
 
 **No computador** 
 
-Quando você seleciona o link no email, o serviço do Power BI ([https://powerbi.com](https://app/powerbi.com)) abre o aplicativo em um navegador. 
+Quando você seleciona o link no email, o serviço do Power BI ([https://app.powerbi.com](https://app.powerbi.com)) abre o aplicativo em um navegador. 
 
 **No dispositivo móvel Android ou iOS** 
 

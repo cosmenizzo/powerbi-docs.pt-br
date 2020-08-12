@@ -8,11 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/13/2019
-ms.openlocfilehash: 3cf415cbd14da28d523a042fdf4099fe464a4a8b
-ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
+ms.openlocfilehash: 95d2cec8cf731c403e204beeb6c013c2cfe0ce1d
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84739174"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878562"
 ---
 # <a name="power-bi-visuals-api-changelog"></a>Log de mudanças de API de visuais do Power BI
 Esta página contém um rápido resumo das versões da API. As versões listadas aqui são consideradas estáveis e não serão alteradas.
@@ -90,7 +91,7 @@ Esta página contém um rápido resumo das versões da API. As versões listadas
 
 ## <a name="api-v162"></a>API v1.6.2
 * Dá suporte ao **[Modo de edição](./advanced-edit-mode.md)** para que o visual entre no modo de edição no visual
-* Dá suporte aos **[Visuais interativos do Power BI em R (HTML)](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-r-visuals.md)** , baseados em HTML
+* Dá suporte aos **[Visuais interativos do Power BI em R (HTML)](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** , baseados em HTML
 
 ## <a name="api-v150"></a>API v1.5.0
 * Dá suporte a **[Permitir interações](./visuals-interactions.md)** para interatividade do visual
@@ -104,7 +105,7 @@ Esta página contém um rápido resumo das versões da API. As versões listadas
 ## <a name="api-v120"></a>API v1.2.0
 * Adiciona **colorPalette** para gerenciar as cores usadas no visual.
 * Dá suporte a **Seleção múltipla** – selectionManager pode aceitar uma matriz de `SelectionId`.
-* Dá suporte a **[Visuais do R](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-r-visuals.md)** usando scripts do R
+* Dá suporte a **[Visuais do R](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** usando scripts do R
 
 ## <a name="api-v110"></a>API v1.1.0
 * Dá suporte ao visual de depuração em iFrame
