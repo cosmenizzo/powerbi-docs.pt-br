@@ -114,6 +114,8 @@
               href: service-admin-premium-multi-geo.md
             - name: Traga suas próprias chaves de criptografia
               href: service-encryption-byok.md
+            - name: Usar chaves gerenciadas pelo cliente
+              href: service-encryption-customer-managed-keys.md
             - name: Reiniciar uma capacidade Premium
               href: service-admin-premium-restart.md
             - name: Conectividade do conjunto de dados com o ponto de extremidade XMLA
