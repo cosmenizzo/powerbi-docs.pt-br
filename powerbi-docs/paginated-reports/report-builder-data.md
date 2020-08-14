@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: seodec18
-ms.date: 06/06/2019
-ms.openlocfilehash: fea4e4927b009e30bc040593f9237cc49ff73956
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.date: 08/04/2020
+ms.openlocfilehash: fe6ca733a5498c0e576ec30e6992ffbf26d54319
+ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78921437"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87837579"
 ---
 # <a name="report-data-in-power-bi-report-builder"></a>Dados de relatório no Construtor de Relatórios do Power BI
 
@@ -27,33 +27,36 @@ Saiba como [Criar uma fonte de dados inserida para relatórios paginados no Cons
   
 - **Conexão de dados.** Também conhecida como *fonte de dados*. Uma conexão de dados inclui propriedades de nome e de conexão que dependem do tipo de conexão. Por design, uma conexão de dados não inclui credenciais. Uma conexão de dados não especifica quais dados serão recuperados da fonte de dados externa. Para fazer isso, especifique uma consulta quando você criar um conjunto de dados.  
   
-- **Cadeia de conexão.** Uma cadeia de conexão é uma versão de cadeia de caracteres das propriedades de conexão que são necessárias para se conectar a uma fonte de dados. As propriedades de conexão variam de acordo com o tipo de conexão de dados.  
+- **Cadeia de conexão.** Uma cadeia de conexão é uma versão de cadeia de caracteres das propriedades de conexão que são necessárias para se conectar a uma fonte de dados. As propriedades de conexão variam de acordo com o tipo de conexão de dados. 
+
+    > [!NOTE]
+    > As cadeias de conexão da fonte de dados não podem ser baseadas em expressão.
   
-- **Fonte de dados inserida.** Também conhecida como *fonte de dados específica do relatório*. Uma fonte de dados que é definida em um relatório e usada apenas por esse relatório.  
+- **Fonte de dados inserida** Também conhecida como uma *Fonte de dados específica de relatório*. Uma fonte de dados que é definida em um relatório e é usada apenas por esse relatório.  
   
-- **Credenciais.** As credenciais são as informações de autenticação que precisam ser fornecidas para permitir acesso a dados externos.  
+- **Credenciais.** Credenciais são as informações de autenticação a serem fornecidas para permitir que você acesse dados externos.  
   
 ##  <a name="tips-for-specifying-report-data"></a><a name="BkMk_ReportDataTips"></a> Dicas para especificar dados de relatório
 
  Use as informações a seguir para criar sua estratégia de dados de relatório.  
   
-- **Filtrar dados** Os dados de relatório podem ser filtrados na consulta ou no relatório. Use conjuntos de dados e variáveis de consulta para criar parâmetros em cascata e proporcione a um usuário a capacidade de refinar as escolhas de milhares de seleções a um número mais gerenciável. Filtre os dados de uma tabela ou um gráfico com base em valores de parâmetros ou outros valores especificados.  
+- **Dados de filtro** Os dados de relatório podem ser filtrados na consulta ou no relatório. Você pode usar conjuntos de dados e variáveis de consulta para criar parâmetros em cascata e fornecer aos usuários a capacidade de refinar escolhas de milhares de seleções para um número mais fácil de gerenciar. Você pode filtrar dados em uma tabela ou gráfico com base em valores de parâmetros ou outros valores que você especifica.  
   
-- **Parâmetros** Os comandos da consulta de conjunto de dados que incluem variáveis de consulta criam automaticamente parâmetros de relatório correspondentes. Crie também parâmetros manualmente. Quando você exibe um relatório, a barra de ferramentas do relatório exibe os parâmetros. Os usuários podem selecionar valores para controlar os dados ou a aparência do relatório. Para personalizar os dados de relatório para públicos-alvo específicos, crie conjuntos de parâmetros de relatório com diferentes valores padrão vinculados à mesma definição de relatório ou use o campo interno **UserID**. 
+- **Parâmetros** Os comandos de consulta de conjunto de dados que incluem variáveis de consulta criam parâmetros de relatório correspondentes. Também é possível criar parâmetros manualmente. Quando você exibe um relatório, a barra de ferramentas de relatório exibe os parâmetros. Os usuários podem selecionar valores para controlar os dados ou a aparência do relatório. Para personalizar dados de relatório para audiências específicas, você pode criar conjuntos de parâmetros de relatório com diferentes valores padrão vinculados à mesma definição de relatório ou usar o campo interno **UserID** . 
   
-- **Agrupar e agregar dados** Os dados de relatório podem ser agrupados e agregados na consulta ou no relatório. Se você agregar valores na consulta, poderá continuar combinando valores no relatório dentro das restrições do que é significativo.  
+- **Agrupar e agregar dados** Os dados de relatório podem ser agrupados e agregados na consulta ou no relatório. Se você agregar valores na consulta, poderá continuar a combinar valores no relatório dentro das restrições do que é significativo.  
   
-- **Classificar dados** Os dados de relatório podem ser classificados na consulta ou no relatório. Em tabelas, adicione também um botão de classificação interativo para permitir que o usuário controle a ordem de classificação.  
+- **Classificar dados** Os dados de relatório podem ser classificados na consulta ou no relatório. Em tabelas, você também pode adicionar um botão de classificação interativo para permitir que o usuário controle a ordem de classificação.  
   
-- **Dados baseados em expressão** Como a maioria das propriedades de relatório pode ser baseada em expressão e as expressões podem incluir referências a campos de conjunto de dados e parâmetros de relatório, você pode escrever expressões avançadas para controlar os dados e a aparência do relatório. Proporcione a um usuário a capacidade de controlar os dados vistos pela definição de parâmetros.  
+- **Dados baseados em expressão** Como a maioria das propriedades de relatório podem ser baseadas em expressões, e como as expressões podem incluir referências a campos de conjuntos de dados e a parâmetros de relatório, você pode escrever expressões poderosas para controlar os dados e a aparência do relatório. Você pode fornecer a um usuário a capacidade de controlar os dados que eles vê por meio da definição de parâmetros.  
   
-- **Exibir dados de um conjunto de dados** Os dados de um conjunto de dados normalmente são exibidos em uma ou mais regiões de dados, por exemplo, uma tabela e um gráfico.  
+- **Exibir dados de um conjunto de dados** Os dados de um conjunto de dados normalmente são exibidos em uma ou mais regiões de dados, por exemplo, em uma tabela e em um gráfico.  
   
-- **Exibir dados de vários conjuntos de dados** Escreva expressões em uma região de dados com base em um conjunto de dados que procuram valores ou agregações em outros conjuntos de dados. Inclua sub-relatórios em uma tabela com base em um conjunto de dados para exibir os dados de outra fonte de dados.  
+- **Exibir dados de vários conjuntos de dados**  Você pode escrever expressões em uma região de dados com base em um conjunto de dados que procuram valores ou agregações em outros conjuntos de dados. Você pode incluir sub-relatórios em uma tabela com base em um conjunto de dados para exibir os dados de outra fonte de dados.  
   
  Use a lista a seguir para ajudar a definir fontes de dados para um relatório.  
   
-- Entenda a arquitetura da camada de dados de software de sua organização e os problemas potenciais decorrentes dos tipos de dados. Entenda como as extensões de dados e as extensões de processamento de dados podem afetar os resultados da consulta. Os tipos de dados variam de acordo com a fonte, os provedores e os tipos de dados armazenados no arquivo de definição de relatório (.rdl).  
+- Compreenda a arquitetura da camada de dados do software de sua organização e os problemas potenciais oriundos dos tipos de dados. Compreenda como as extensões de dados e as extensões de processamento de dados podem afetar os resultados da consulta. Os tipos de dados diferem entre a fonte de dados, os provedores de dados e os tipos de dados armazenados no arquivo de definição de relatório (.rdl).  
   
 - As fontes de dados e os conjuntos de dados são criados em um relatório e publicados no serviço do Power BI. Depois que eles forem publicados, você poderá configurar as credenciais diretamente no serviço do Power BI ou no Gateway Corporativo. 
 

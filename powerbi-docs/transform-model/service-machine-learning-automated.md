@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/18/2019
+ms.date: 08/03/2020
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 3b4d7eb41e04a173f763dd09caf5fa94bfc444d4
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: caccfdede32e91aa6265db0d38e26e96f8a7852c
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232628"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878640"
 ---
 # <a name="automated-machine-learning-in-power-bi"></a>Machine Learning Automatizado no Power BI
 
@@ -142,11 +142,15 @@ A aplicação do modelo de ML cria duas entidades de fluxo de dados que contêm 
 
 ![Editor de consultas](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
 
+Também é possível aplicar qualquer modelo de AutoML do Power BI a entidades em qualquer fluxo de dados no mesmo workspace usando Insights da IA no navegador de funções PQO. Dessa forma, você pode usar modelos criados por outras pessoas no mesmo workspace sem necessariamente ser um proprietário do fluxo de dados que contém o modelo. O Power Query descobre todos os modelos de ML (Machine Learning) do Power BI no workspace e os expõe como funções dinâmicas do Power Query. É possível invocar essas funções acessando-as por meio da faixa de opções no Editor do Power Query ou invocando diretamente a função M.Atualmente, essa funcionalidade só tem suporte para fluxos de dados do Power BI e para o Power Query Online no serviço do Power BI. Observe que isso é muito diferente de aplicar modelos de ML em um fluxo de dados usando o assistente de AutoML. Não há nenhuma entidade de explicações criada usando esse método e, a menos que você seja o proprietário do fluxo de dados, não será possível acessar relatórios de treinamento de modelo ou retreinar o modelo. Se o modelo de origem for editado (adicionando ou removendo campos de entrada) ou o modelo ou fluxo de dados de origem for excluído, esse fluxo de dados dependente será interrompido.
+
+![Aplicar um modelo usando o navegador de funções PQO](media/service-machine-learning-automated/automated-machine-learning-power-bi-20.png)
+
 Depois que você aplica o modelo, o AutoML sempre mantém suas previsões atualizadas sempre que o fluxo de dados é atualizado.
 
 Para usar os insights e previsões do modelo de ML em um relatório do Power BI, você pode se conectar à entidade de saída no Power BI Desktop usando o conector de **fluxo de dados**.
 
-## <a name="binary-prediction-models"></a>Modelos de Previsão Binária
+## <a name="binary-prediction-models"></a>Modelos de previsão binária
 
 Os modelos de Previsão Binária, mais formalmente conhecidos como **modelos de classificação binária**, são usados para classificar um conjunto de dados em dois grupos. Eles são usados para prever eventos que possam ter um resultado binário. Por exemplo, se uma oportunidade de vendas será convertida, se uma conta terá rotatividade, se uma fatura será paga no prazo, se uma transação é fraudulenta etc.
 
@@ -238,7 +242,7 @@ A coluna **ClassificationResult** contém a classe previsível mais provável pa
 
 A coluna **ClassificationExplanation** contém uma explicação com a influência específica que os recursos de entrada tiveram na **ClassificationScore**.
 
-## <a name="regression-models"></a>Modelos de Regressão
+## <a name="regression-models"></a>Modelos de regressão
 
 Os modelos de regressão são usados para prever um valor numérico. Por exemplo: a receita provável a ser obtida de uma oferta de vendas, o valor de tempo de vida de uma conta, a quantia de uma fatura a receber que provavelmente será paga, a data na qual uma fatura pode ser paga etc.
 

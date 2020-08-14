@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/15/2019
+ms.date: 08/07/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: dea1198519f59a81c49e2f7a95a903c37bd4fb11
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c171369cad8a311f91bd4b8542577cbd0c8e4657
+ms.sourcegitcommit: 154946ece829360cc0ff3be13276cd7a129f3388
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236626"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87988698"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Usar conectores de dados personalizados com o gateway de dados local
 
@@ -47,6 +47,7 @@ Quando essa opção estiver habilitada, você verá seus conectores personalizad
 * Certifique-se de que a pasta criada está acessível para o serviço de gateway de tela de fundo. Normalmente, as pastas na pasta Windows ou em pastas do sistema do seu usuário não estarão acessíveis. O aplicativo de gateway de dados local mostrará uma mensagem se a pasta não estiver acessível. Essa instrução não se aplica ao gateway de dados local (modo pessoal).
 * Para os conectores personalizados funcionarem com o gateway de dados local, eles precisam implementar uma seção "TestConnection" no código do conector personalizado. Essa seção não é obrigatória quando você usa conectores personalizados com o Power BI Desktop. Por esse motivo, você pode ter um conector que funciona com o Power BI Desktop, mas não com o gateway. Para obter mais informações sobre como implementar uma seção de TestConnection, consulte [esta documentação](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support).
 * Atualmente, o OAuth para conectores personalizados por gateways tem suporte apenas para administradores de gateway, mas não para outros usuários da fonte de dados.
+* Se o seu conector personalizado estiver em uma unidade de rede, inclua o caminho totalmente qualificado no aplicativo de gateway de dados local.
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -55,7 +56,7 @@ Quando essa opção estiver habilitada, você verá seus conectores personalizad
 * [Gerenciar sua fonte de dados – SQL Server](service-gateway-enterprise-manage-sql.md)  
 * [Gerenciar sua fonte de dados – Oracle](service-gateway-onprem-manage-oracle.md)  
 * [Gerenciar sua fonte de dados – Importar/atualização agendada](service-gateway-enterprise-manage-scheduled-refresh.md)
-* [Definir as configurações de proxy do gateway de dados local](/data-integration/gateway/service-gateway-proxy)
-* [Usar o Kerberos para logon único (SSO) do Power BI para fontes de dados locais](service-gateway-sso-kerberos.md)  
+* [Definir configurações de proxy para o gateway de dados local](/data-integration/gateway/service-gateway-proxy)
+* [Use o Kerberos para logon único (SSO) do Power BI para fontes de dados locais](service-gateway-sso-kerberos.md)  
 
 Mais perguntas? Experimente perguntar à [Comunidade do Power BI](https://community.powerbi.com/).

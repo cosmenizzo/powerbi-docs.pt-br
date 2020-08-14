@@ -6,17 +6,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 04/08/2020
+ms.date: 08/04/2020
 ms.author: maggies
-ms.openlocfilehash: 166f72a717c99457e1d6b8e9a1f30535a9b4686f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 00c00ca7bbd7ad3f901c98f44a2900f332e3616a
+ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80979835"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87837602"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Fontes de dados de relatórios do Power BI no Servidor de Relatórios do Power BI
-Os relatórios do Power BI podem se conectar a diversas fontes de dados. Dependendo de como os dados são usados, fontes de dados diferentes estão disponíveis. Os dados podem ser importados ou consultados diretamente usando o DirectQuery ou uma conexão dinâmica ao SQL Server Analysis Services.
+Os relatórios do Power BI podem se conectar a diversas fontes de dados. Dependendo de como os dados são usados, fontes de dados diferentes estão disponíveis. Os dados podem ser importados ou consultados diretamente usando o DirectQuery ou uma conexão dinâmica ao SQL Server Analysis Services. Algumas fontes de dados têm suporte no Power BI Desktop otimizado para o Servidor de Relatórios do Power BI, mas não nos relatórios do Power BI publicados no Servidor de Relatórios do Power BI. Confira na lista a seguir as fontes de dados com suporte em ambos os locais.
 
 Essas fontes de dados são específicas aos relatórios do Power BI usados no Servidor de Relatórios do Power BI. Para obter informações sobre fontes de dados compatíveis com relatórios paginados (.rdl), veja [Fontes de dados com suporte no Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
 
@@ -24,9 +24,7 @@ Essas fontes de dados são específicas aos relatórios do Power BI usados no Se
 > Todas as fontes de dados em um relatório do Power BI Desktop devem ser compatíveis com a configuração da atualização agendada.
 >  
 
-## <a name="list-of-supported-data-sources"></a>Lista de fontes de dados compatíveis
-
-Outras fontes de dados podem funcionar mesmo que não estejam na lista de compatibilidade.
+## <a name="list-of-supported-data-sources"></a>Lista das fontes de dados com suporte
 
 | **Fonte de dados** | **Dados armazenados em cache** | **Atualização agendada** | **Live/DirectQuery** |
 | --- | --- | --- | --- |
@@ -39,7 +37,7 @@ Outras fontes de dados podem funcionar mesmo que não estejam na lista de compat
 | Active Directory |Sim |Sim |Não |
 | Amazon Redshift |Sim |Não |Não |
 | Armazenamento de Blobs do Azure |Sim |Sim |Não |
-| Azure Data Lake Store |Sim |Não |Não |
+| Repositório Azure Data Lake |Sim |Não |Não |
 | Azure HDInsight (HDFS) |Sim |Não |Não |
 | Azure HDInsight (Spark) |Sim |Não |Não |
 | Armazenamento de Tabelas do Azure |Sim |Sim |Não |
@@ -75,12 +73,12 @@ Outras fontes de dados podem funcionar mesmo que não estejam na lista de compat
 | Web |Sim |Sim |Não |
 | XML |Sim |Sim |Não |
 | appFigures (Beta) |Sim |Não |Não |
-| Banco de dados do Azure Analysis Services |Sim |Não |Sim |
+| Banco de Dados do Azure Analysis Services |Sim |Não |Sim |
 | Azure Cosmos DB (Beta) |Sim |Não |Não |
 | Azure HDInsight Spark (Beta) |Sim |Não |Não |
 | Common Data Service (Beta) |Sim |Não |Não |
 | comScore Digital Analytix (Beta) |Sim |Não |Não |
-| Dynamics 365 para Customer Insights (Beta) |Sim |Não |Não |
+| Dynamics 365 for Customer Insights (Beta) |Sim |Não |Não |
 | Dynamics 365 for Financials (Beta) |Sim |Não |Não |
 | GitHub (Beta) |Sim |Não |Não |
 | Google BigQuery (Beta) |Sim |Não |Não |
@@ -116,7 +114,7 @@ Outras fontes de dados podem funcionar mesmo que não estejam na lista de compat
 
 O Servidor de Relatórios do Power BI não é compatível com a autenticação com base em OAuth para a atualização do modelo. Algumas fontes de dados, como bancos de dados do Excel ou do Access, usam uma etapa separada como Arquivo ou Web para se conectarem a dados.
 
-| **Fonte de dados** | **Autenticação Anônima** | **Autenticação da Chave** | **Nome de Usuário e Senha** | **Autenticação do Windows** |
+| **Fonte de dados** | **Autenticação Anônima** | **Autenticação de chave** | **Nome de usuário e senha** | **Autenticação do Windows** |
 | --- | --- | --- | --- | --- |
 | Banco de dados do SQL Server |Não |Não |Sim |Sim |
 | SQL Server Analysis Services |Não |Não |Sim |Sim |
@@ -126,7 +124,7 @@ O Servidor de Relatórios do Power BI não é compatível com a autenticação c
 | Active Directory |Não |Não |Sim |Sim |
 | Amazon Redshift |Não |Não |Não |Não |
 | Armazenamento de Blobs do Azure |Sim |Sim |Não |Não |
-| Azure Data Lake Store |Não |Não |Não |Não |
+| Repositório Azure Data Lake |Não |Não |Não |Não |
 | Azure HDInsight (HDFS) |Não |Não |Não |Não |
 | Azure HDInsight (Spark) |Não |Não |Não |Não |
 | Armazenamento de Tabelas do Azure |Não |Sim |Não |Não |
@@ -163,7 +161,7 @@ O Servidor de Relatórios do Power BI não é compatível com a autenticação c
 | Azure HDInsight Spark (Beta) |Não |Não |Não |Não |
 | Common Data Service (Beta) |Não |Não |Não |Não |
 | comScore Digital Analytix (Beta) |Não |Não |Não |Não |
-| Dynamics 365 para Customer Insights (Beta) |Não |Não |Não |Não |
+| Dynamics 365 for Customer Insights (Beta) |Não |Não |Não |Não |
 | Dynamics 365 for Financials (Beta) |Não |Não |Não |Não |
 | GitHub (Beta) |Não |Não |Não |Não |
 | Google BigQuery (Beta) |Não |Não |Não |Não |
@@ -196,7 +194,7 @@ O Servidor de Relatórios do Power BI não é compatível com a autenticação c
 
 O Servidor de Relatórios do Power BI não é compatível com a autenticação com base em OAuth para DirectQuery.
 
-| **Fonte de dados** | **Autenticação Anônima** | **Autenticação da Chave** | **Nome de Usuário e Senha** | **Autenticação do Windows** | **Autenticação Integrada do Windows** |
+| **Fonte de dados** | **Autenticação Anônima** | **Autenticação de chave** | **Nome de usuário e senha** | **Autenticação do Windows** | **Autenticação Integrada do Windows** |
 | --- | --- | --- | --- | --- | --- |
 | Banco de dados do SQL Server |Não |Não |Sim |Sim |Sim |
 | SQL Server Analysis Services |Não |Não |Sim |Sim |Sim |
@@ -210,6 +208,7 @@ O Servidor de Relatórios do Power BI não é compatível com a autenticação c
 **O SAP HANA é compatível com o DirectQuery com Autenticação Integrada do Windows somente ao usá-lo como um banco de dados relacional no arquivo do Power BI Desktop publicado (.pbix).
 
 ## <a name="next-steps"></a>Próximas etapas
-Agora que você se conectou à sua fonte de dados, [crie um relatório do Power BI](quickstart-create-powerbi-report.md) usando os dados da fonte de dados.
 
-Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+[Fontes de dados para relatórios do Power BI[(../connect-data/power-bi-data-sources.md) no serviço do Power BI. Agora que você se conectou à fonte de dados, [crie um relatório do Power BI](quickstart-create-powerbi-report.md) usando os dados dessa fonte.
+
+Mais perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

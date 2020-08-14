@@ -6,14 +6,14 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 08/10/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 7dd6c812116d9ba196b157bd12d6362c19ac64ec
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: eeb879fc70effa166d08c9a342f77ad614779751
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216710"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049289"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Diretrizes de configuração do administrador de locatários
 
@@ -39,9 +39,13 @@ Se você fizer isso, recomendamos que habilite a configuração **Publicar as in
 Essas URLs ficarão disponíveis como links no menu de ajuda do Power BI.
 
 > [!NOTE]
-> Fornecer a URL de **Solicitações de licenciamento** impedirá que usuários individuais se inscrevam para a avaliação gratuita de 60 dias do Power BI Pro. Em vez disso, eles serão direcionados para seu site interno com informações sobre como adquirir uma licença Gratuita ou Pro.
+> Fornecer a URL das **Solicitações de licenciamento** impede que usuários individuais comprem uma licença do Power BI Pro. Em vez disso, eles serão direcionados para seu site interno com informações sobre como adquirir uma licença. A configuração **Permitir que os usuários experimentem o Power BI Pro** é habilitada por padrão e separa as experiências de compra e avaliação. Para saber mais sobre como essas configurações funcionam juntas, confira [Permitir que os usuários experimentem o Power BI Pro](../admin/service-admin-portal.md#allow-users-to-try-power-bi-pro).
+>
+>
 
 ![Captura de tela do Power BI Desktop mostrando as configurações de Ajuda e Suporte.](media/admin-tenant-settings/publish-get-help-information.png)
+
+Para obter mais informações, confira as [Configurações de ajuda e suporte](../admin/service-admin-portal.md#help-and-support-settings).
 
 ## <a name="manage-risk"></a>gerenciar riscos
 As configurações para gerenciar riscos podem ajudar você a estabelecer políticas de governança no seu locatário do Power BI. No entanto, tenha em mente que as configurações de governança não são uma medida de segurança. Por exemplo, desabilitar a configuração **Exportar dados** remove o recurso da interface do usuário do Power BI e ajuda, dessa forma, os usuários do Power BI a trabalharem em conformidade com as políticas de governança da sua organização, mas não impede que determinados usuários exportem dados usando outras opções. Do ponto de vista de segurança, um usuário do Power BI com acesso de leitura a um conjunto de dados tem a permissão para consultar esse conjunto de dados e pode persistir os resultados, independentemente dos recursos disponíveis na interface do usuário do Power BI.
@@ -142,6 +146,6 @@ Se você não tem intenção de usar as APIs de desenvolvedor para inserir conte
 Para obter mais informações relacionadas a este artigo, confira os seguintes recursos:
 
 - [O que é administração do Power BI?](../admin/service-admin-administering-power-bi-in-your-organization.md)
-- [Administrando o Power BI no portal de administração](../admin/service-admin-portal.md)
+- [Como administrar o Power BI no portal de administração](../admin/service-admin-portal.md)
 - Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
 - Sugestões? [Contribuir com ideias para aprimorar o Power BI](https://ideas.powerbi.com)

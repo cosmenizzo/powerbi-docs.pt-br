@@ -5,15 +5,15 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 07/06/2020
+ms.date: 08/10/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: f92d10fdff880049460d24c714201d9a433745d8
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: be2f98341abd581cd2df717d19b3a9110548a2ec
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034999"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049197"
 ---
 # <a name="how-to-apply-sensitivity-labels-in-power-bi"></a>Como aplicar rótulos de confidencialidade no Power BI
 
@@ -21,8 +21,8 @@ Os rótulos de confidencialidade da Proteção de Informações da Microsoft par
 
 Para ser capaz de aplicar rótulos de confidencialidade no Power BI:
 * Você precisa ter uma licença do Power BI Pro e permissões de edição no conteúdo que deseja rotular.
-* Você precisa pertencer a um grupo de segurança que tenha permissões para aplicar rótulos de confidencialidade, conforme descrito no artigo intitulado [Habilitar rótulos de confidencialidade no Power BI](./service-security-enable-data-sensitivity-labels.md#enable-sensitivity-labels).
-* Todos os [pré-requisitos](./service-security-sensitivity-label-overview.md#requirements-for-using-sensitivity-labels-in-power-bi) e [requisitos de licenciamento](./service-security-data-protection-overview.md#licensing) precisam ter sido atingidos.
+* Você precisa pertencer a um grupo de segurança que tenha permissões para aplicar rótulos de confidencialidade, conforme descrito no artigo intitulado [Habilitar rótulos de confidencialidade no Power BI](./service-security-enable-data-sensitivity-labels.md).
+* Todos os [critérios de licenciamento e outros requisitos](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) devem ser atendidos.
 
 Para obter mais informações sobre rótulos de confidencialidade no Power BI, confira [Rótulos de confidencialidade no Power BI](service-security-sensitivity-label-overview.md).
 

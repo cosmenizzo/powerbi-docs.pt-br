@@ -6,13 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2020
+ms.date: 08/05/2020
 ms.author: davidi
-ms.openlocfilehash: 0bc6b844457f625d0287f2ec85f582a6ea874624
-ms.sourcegitcommit: 6d3a37eb636e1b71c7dcb9d1c3a9e495b78dec97
+ms.openlocfilehash: 6afc5dd36127390dd359d76fc8970d5ef6f7b590
+ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84681849"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87837556"
 ---
 # <a name="power-bi-data-sources"></a>Fontes de dados do Power BI
 
@@ -93,7 +94,7 @@ A tabela a seguir mostra as fontes de dados para as quais o Power BI dá suporte
 | ODBC | Sim | Sim | Não | Sim | Sim |
 | OleDb | Sim | Sim | Não | Sim | Sim |
 | Oracle | Sim | Sim | Sim | Sim | Sim |
-| Paxata | Sim | Sim | Não | Sim | Não |
+| Paxata <sup>8</sup> | Sim | Sim | Não | Sim | Não |
 | PDF | Sim | Sim | Não | Sim | Não <sup>4</sup> |
 | Planview Enterprise One – CTM | Sim | Sim | Não | Não | Não |
 | Planview Enterprise One – PRM | Sim | Sim | Não | Não | Não |
@@ -154,6 +155,8 @@ A tabela a seguir mostra as fontes de dados para as quais o Power BI dá suporte
 
 <sup>7</sup> O serviço do Power BI não dá suporte a feeds OData que exigem autenticação.
 
+<sup>8</sup> O Paxata tem suporte na versão do Power BI Desktop otimizada para o Servidor de Relatórios do Power BI. Ele não tem suporte nos relatórios do Power BI publicados no Servidor de Relatórios. Confira [Fontes de dados de relatórios do Power BI no Servidor de Relatórios do Power BI](../report-server/data-sources.md) para obter a lista de fontes de dados com suporte.
+
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>SSO (logon único) para fontes do DirectQuery
 
 Quando a opção de SSO está habilitada e os usuários acessam os relatórios baseados na fonte de dados, o Power BI envia suas credenciais autenticadas do Azure AD nas consultas à fonte de dados subjacente. Isso permite que o Power BI respeite as configurações de segurança que são configuradas no nível da fonte de dados.
@@ -179,3 +182,4 @@ A opção de SSO entra em vigor em todos os conjuntos de dados que usam essa fon
 [Usar o DirectQuery no Power BI](desktop-directquery-about.md)  
 [Dados dinâmicos do SQL Server Analysis Services no Power BI](sql-server-analysis-services-tabular-data.md)  
 [O que é um gateway de dados local?](service-gateway-onprem.md)  
+[Fontes de dados de relatórios do Power BI no Servidor de Relatórios do Power BI](../report-server/data-sources.md)

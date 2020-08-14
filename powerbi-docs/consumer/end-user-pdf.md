@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 08/05/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: ec45d971855aefe35161f2b10fecd483f0345a46
-ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
+ms.openlocfilehash: 4f02a98ca13bd5808bde987889c3f4404c9100f0
+ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87768793"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87837487"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportar relatórios do Power BI para PDF
 
@@ -52,6 +52,7 @@ E isso é tudo para ele. Você pode baixar o arquivo e abri-lo com qualquer visu
 ## <a name="limitations-and-considerations"></a>Limitações e considerações
 Há algumas considerações e limitações para ter em mente ao trabalhar com o recurso **Exportar para PDF**.
 
+* O PDF incluirá as visualizações e os dados visíveis na tela do Power BI. Se o visual incluir barras de rolagem, o PDF o incluirá em seu estado padrão sem rolagem.  
 * No momento, não há suporte para visuais de R e Python. No PDF, esses elementos visuais ficam em branco e exibem uma mensagem de erro. 
 * Há suporte para visuais do Power BI que foram certificados. Para obter mais informações sobre visuais do Power BI certificados, incluindo como certificar um visual do Power BI, confira [Certificar um visual do Power BI](../developer/visuals/power-bi-custom-visuals-certified.md). Não há suporte para visuais do Power BI que não foram certificados. No PDF, eles são exibidos com uma mensagem de erro.
 * O visual ESRI não é compatível

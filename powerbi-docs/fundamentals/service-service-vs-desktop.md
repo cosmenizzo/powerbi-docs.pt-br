@@ -7,15 +7,15 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 08/07/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 0be1f3aeb48e4596566c36c1ee8cfadeb3c33d10
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 4118e5c009a8d7372d5cb58d1e1b9d033a70494e
+ms.sourcegitcommit: 154946ece829360cc0ff3be13276cd7a129f3388
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214021"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87988726"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Comparando o Power BI Desktop e o serviço do Power BI
 
@@ -23,15 +23,17 @@ Em um diagrama de Venn que compara o Power BI Desktop e o serviço do Power BI, 
 
 ![Diagrama de Venn mostrando a relação entre o Power BI Desktop e o serviço do Power BI.](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
-O **Power BI Desktop** é uma ferramenta completa para criação de relatório e análise de dados que você instala para aplicativos gratuitos em seu computador local. Ele inclui o Editor de Consultas, em que você pode se conectar a várias fontes de dados diferentes e combiná-las em um modelo de dados (o que geralmente é chamado de modelagem). Em seguida, você designa um relatório com base no modelo de dados. O [guia de Introdução ao Power BI Desktop](desktop-getting-started.md) percorre esse processo.
+O **Power BI Desktop** é uma ferramenta completa para criação de relatórios e análise de dados que você instala gratuitamente em seu computador local. Ele inclui o Editor de Consultas, em que você pode se conectar a várias fontes de dados diferentes e combiná-las em um modelo de dados (o que geralmente é chamado de modelagem). Em seguida, você designa um relatório com base no modelo de dados. O [guia de Introdução ao Power BI Desktop](desktop-getting-started.md) percorre esse processo.
 
-O **serviço do Power BI** é um serviço baseado em nuvem. Ele dá suporte à edição e à colaboração de relatórios leves para equipes e organizações. Você também pode se conectar a fontes de dados no serviço do Power BI, mas a modelagem é limitada. 
+O **serviço do Power BI** é um serviço baseado em nuvem. Ele dá suporte à edição e à colaboração de relatórios leves para equipes e organizações. Você também pode se conectar a fontes de dados no serviço do Power BI, mas a modelagem é limitada.
 
-A maioria dos designers de relatório que trabalham em projetos de business intelligence usam o **Power BI Desktop** para criar relatórios e, em seguida, usam o **serviço do Power BI** para distribuir seus relatórios com outras pessoas.
+A maioria dos designers de relatórios do Power BI que trabalham em projetos de business intelligence usa o **Power BI Desktop** para criar relatórios do Power BI e o **Serviço do Power BI** para colaborar e distribuir seus relatórios.
 
-## <a name="report-editing"></a>Edição de relatório
+O serviço do Power BI também hospeda *relatórios paginados* em worskpaces com suporte de uma capacidade do Power BI Premium. Para criar relatórios paginados, use o Power BI Report Builder. Confira [Comparar relatórios do Power BI e relatórios paginados](../paginated-reports/paginated-reports-report-builder-power-bi.md#compare-power-bi-reports-and-paginated-reports) no artigo "O que são relatórios paginados no Power BI Premium?" para obter mais informações.
 
-No aplicativo e no serviço, você cria e edita *relatórios*. Um relatório pode ter uma ou várias páginas, com visuais e coleções de visuais. Adicione indicadores, botões, filtros e detalhamento para melhorar a navegação nos relatórios.
+## <a name="editing-power-bi-reports"></a>Editar relatórios do Power BI
+
+Tanto no aplicativo quanto no serviço, os *relatórios* são criados e editados no Power BI. Um relatório pode ter uma ou várias páginas, com visuais e coleções de visuais. Adicione indicadores, botões, filtros e detalhamento para melhorar a navegação nos relatórios.
 
 ![Capturas de tela do Power BI Desktop e do serviço do Power BI, com as seções numeradas.](media/service-service-vs-desktop/power-bi-editing-desktop-service.png)
 
@@ -48,7 +50,6 @@ Este vídeo mostra o editor de relatório no Power BI Desktop.
 ## <a name="working-in-the-power-bi-service"></a>Trabalhar no serviço do Power BI
 
 ### <a name="collaborating"></a>Colaborar
-
 
 Depois de criar seus relatórios, você pode salvá-los em um *workspace* no **serviço do Power BI**, no qual você e seus colegas poderão colaborar. Os *dashboards* são criados com base nesses relatórios. Em seguida, compartilhe esses dashboards e relatórios com os consumidores de relatórios dentro e fora da organização. Os consumidores veem os relatórios no serviço do Power BI em um *Modo de exibição de leitura*, não no Modo de exibição de edição. Eles não têm acesso a todos os recursos disponíveis para os criadores de relatório.  Você também pode compartilhar seus conjuntos de dados e permitir que outras pessoas criem seus próprios relatórios com base neles. Leia mais sobre [como colaborar no serviço do Power BI](../collaborate-share/service-new-workspaces.md).
 

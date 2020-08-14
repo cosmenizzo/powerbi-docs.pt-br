@@ -6,15 +6,15 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 07/05/2020
+ms.date: 08/10/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: ea161af0156aa0bee2fe92ab2f87fb82630f5589
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: 4d719d7df5b982341b6377c41e448267197e769b
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252120"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049220"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Rótulos de confidencialidade no Power BI
 
@@ -39,7 +39,7 @@ Os rótulos de confidencialidade e a criptografia de arquivo **não são** aplic
 
 ## <a name="how-sensitivity-labels-work-in-power-bi"></a>Como os rótulos de confidencialidade funcionam no Power BI
 
-Quando você aplica um rótulo de confidencialidade a um dashboard, relatório, conjunto de dados ou fluxo de dados do Power BI, o processo é semelhante a aplicar uma tag a esse recurso, que tem os seguintes benefícios:
+Quando você aplica um rótulo de confidencialidade a um dashboard, relatório, conjunto de dados ou fluxo de dados do Power BI, o processo é semelhante a aplicar uma marca a esse recurso, que tem os seguintes benefícios:
 * **Personalizável** – você pode criar categorias para diferentes níveis de conteúdo confidencial em sua organização, como Pessoal, Público, Geral, Confidencial e Altamente Confidencial.
 * **Texto não criptografado** – como o rótulo está em texto não criptografado, é fácil para os usuários entenderem como tratar o conteúdo de acordo com as diretrizes dos rótulos de confidencialidade.
 * **Persistente** – depois que um rótulo de confidencialidade tiver sido aplicado ao conteúdo, ele acompanhará esse conteúdo quando ele for exportado para arquivos do Excel, do PowerPoint e PDF e se tornará a base para a aplicação e a imposição de políticas.
@@ -69,21 +69,33 @@ Quando os dados são exportados do Power BI para arquivos Excel, PowerPoint ou P
 
 Um usuário que exporta um arquivo do Power BI tem permissões para acessar e editar esse arquivo de acordo com as configurações de rótulo de confidencialidade. Ele não obtém permissões de proprietário para o arquivo.
 
-Os rótulos de confidencialidade e a proteção não serão aplicados quando os dados forem exportados para arquivos .csv ou .pbix, Analisar no Excel ou qualquer outro caminho de exportação.
+Os rótulos de confidencialidade e a proteção não são aplicados quando os dados são exportados para arquivos .csv, .pbix ou qualquer outro caminho de exportação.
 
 A aplicação de um rótulo de confidencialidade e a proteção para um arquivo exportado não adiciona a marcação de conteúdo ao arquivo. No entanto, se o rótulo estiver configurado para aplicar marcações de conteúdo, as marcações serão automaticamente aplicadas pelo cliente de rotulagem unificado da Proteção de Informações do Azure quando o arquivo for aberto em aplicativos da área de trabalho do Office. As marcações de conteúdo não são aplicadas automaticamente quando você usa rotulagem interna para aplicativos Web, de área de trabalho ou de dispositivos móveis. Consulte [Quando os aplicativos do Office aplicam criptografia e marcação de conteúdo](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#when-office-apps-apply-content-marking-and-encryption) para obter mais detalhes.
 
 A exportação falhará se um rótulo não puder ser aplicado quando os dados forem exportados para um arquivo. Para verificar se a exportação falhou porque o rótulo não pôde ser aplicado, clique no nome do dashboard ou do relatório no centro da barra de título e veja se ele diz "O rótulo de confidencialidade não pode ser carregado" no menu suspenso de informações que é aberto. Isso poderá acontecer como resultado de um problema do sistema temporário ou se o rótulo aplicado não tiver sido publicado ou tiver sido excluído pelo administrador de segurança.
 
+## <a name="sensitivity-label-inheritance-in-analyze-in-excel"></a>Herança de rótulo de confidencialidade em Analisar no Excel
+
+Quando uma Tabela Dinâmica no Excel é criada com uma conexão ativa com um conjunto de dados do Power BI (é possível fazer isso no Power BI por meio da ferramenta [Analisar no Excel](../collaborate-share/service-analyze-in-excel.md) ou no [Excel](https://support.microsoft.com/office/create-a-pivottable-from-power-bi-datasets-31444a04-9c38-4dd7-9a45-22848c666884?ui=en-US&rs=en-US&ad=US) mesmo), o rótulo de confidencialidade do conjunto de dados é herdado e aplicado ao arquivo Excel, junto com qualquer proteção associada. Se o rótulo no conjunto de dados for alterado posteriormente para que seja mais restritivo, o rótulo aplicado no arquivo vinculado do Excel será atualizado automaticamente na atualização dos dados.
+
+![Captura de tela do Excel mostrando o rótulo de confidencialidade herdado do conjunto de dados via conexão dinâmica.](media/service-security-sensitivity-label-overview/live-connection-inheritance.png)
+ 
+Os rótulo de confidencialidade definidos manualmente no Excel não são substituídos automaticamente pelo rótulo de confidencialidade do conjunto de dados. Em vez disso, você verá uma faixa informando que o conjunto de dados tem um rótulo de confidencialidade e recomendando a aplicação dele.
+
+>[!NOTE]
+>Se o rótulo de confidencialidade do conjunto de dados for menos restritivo que o rótulo de confidencialidade do arquivo do Excel, não ocorrerá nenhuma herança ou atualização de rótulo. Um arquivo do Excel nunca herda um rótulo de confidencialidade menos restritivo.
+
+
 ## <a name="sensitivity-label-persistence-in-embedded-reports-and-dashboards"></a>Persistência de rótulo de confidencialidade em relatórios e dashboards inseridos
 
-Você pode inserir relatórios, dashboards e visuais do Power BI em aplicativos de negócios, como o Microsoft Teams e o SharePoint, ou no site de uma organização. Quando você insere um visual, relatório ou dashboard que tem um rótulo de confidencialidade aplicado, o rótulo de confidencialidade fica visível na exibição inserida e o rótulo e a proteção serão mantidos quando os dados forem exportados para o Excel.
+Você pode inserir relatórios, dashboards e visuais do Power BI em aplicativos de negócios, como o Microsoft Teams e o SharePoint, ou no site de uma organização. Quando você insere um visual, relatório ou dashboard com rótulo de confidencialidade aplicado, esse rótulo fica visível na exibição incorporada, e tanto o rótulo quanto a proteção são mantidos quando os dados são exportados para o Excel.
 
 ![Captura de tela do relatório inserido no SharePoint Online](media/service-security-sensitivity-label-overview/embedded-report-sensitivity-label.png)
 
 Há suporte para os seguintes cenários de inserção:
 * [Inserir para a organização](../developer/embedded/embed-sample-for-your-organization.md)
-* Aplicativos Microsoft 365 (por exemplo, [Teams](../collaborate-share/service-collaborate-microsoft-teams.md) e [SharePoint](../collaborate-share/service-embed-report-spo.md))
+* Microsoft 365 Apps (como [Teams](../collaborate-share/service-embed-report-microsoft-teams.md) e [SharePoint](../collaborate-share/service-embed-report-spo.md))
 * [Inserção de URL segura](../collaborate-share/service-embed-secure.md) (inserção do serviço do Power BI) 
 
 ## <a name="sensitivity-labels-in-the-power-bi-mobile-apps"></a>Rótulos de confidencialidade em aplicativos móveis do Power BI
@@ -95,18 +107,9 @@ Os rótulos de confidencialidade podem ser exibidos em relatórios e dashboards 
 ## <a name="supported-clouds"></a>Nuvens com suporte
 Os rótulos de confidencialidade têm suporte apenas em locatários de nuvens (públicas) globais, eles não têm suporte em locatários de nuvens como as nacionais.
 
-## <a name="requirements-for-using-sensitivity-labels-in-power-bi"></a>Requisitos para usar rótulos de confidencialidade no Power BI
+## <a name="licensing-and-requirements"></a>Licenciamento e requisitos
 
-Antes que os rótulos de confidencialidade possam ser habilitados e usados no Power BI, você precisará concluir os seguintes pré-requisitos:
-* garantir que os rótulos de confidencialidade tenham sido definidos na [central de segurança do Microsoft 365](https://security.microsoft.com/) ou na [central de conformidade do Microsoft 365](https://compliance.microsoft.com/).
-* [Habilitar rótulos de confidencialidade](service-security-enable-data-sensitivity-labels.md) no Power BI.
-* Garantir que os usuários tenham as [licenças apropriadas](#licensing).
-
-## <a name="licensing"></a>Licenças
-
-* Aplicar e exibir os rótulos de confidencialidade da Proteção de Informações da Microsoft no Power BI exige uma licença Premium P1 ou Premium P2 da Proteção de Informações do Azure. A Proteção de Informações do Microsoft Azure pode ser adquirida de forma independente ou por meio de um dos pacotes de licenciamento da Microsoft. Confira [preço da Proteção de Informações do Azure](https://azure.microsoft.com/pricing/details/information-protection/) para obter detalhes.
-* A exibição e a aplicação de rótulos em aplicativos do Office têm [requisitos de licenciamento](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels).
-* Para aplicar rótulos a conteúdo do Power BI, o usuário precisa ter uma licença do Power BI Pro, além de uma das licenças da Proteção de Informações do Azure mencionadas acima.
+Confira [Licenciamento e requisitos](service-security-enable-data-sensitivity-labels.md#licensing-and-requirements).
 
 ## <a name="sensitivity-label-creation-and-management"></a>Criação e gerenciamento de rótulo de confidencialidade
 

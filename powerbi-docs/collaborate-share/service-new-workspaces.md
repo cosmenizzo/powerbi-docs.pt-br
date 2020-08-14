@@ -6,20 +6,22 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/26/2020
+ms.date: 08/07/2020
 ms.author: maggies
 ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 77de9608978379cee83236b0c362bd2d7d57d5c6
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: 56dd9e07e7c0647e7f92cc5d701b260483e2fbdf
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84120353"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049266"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organizar o trabalho em novos workspaces no Power BI
 
-*Workspaces* são locais para colaborar com colegas e criar coleções de painéis, relatórios, conjuntos de dados e relatórios paginados. A nova experiência com o workspace ajuda você a gerenciar melhor o acesso ao conteúdo. Este artigo descreve os novos espaços de trabalho e como eles diferem dos clássicos.  Como ocorre com espaços de trabalho clássicos, você ainda os usa para criar e distribuir aplicativos. Pronto para criar um workspace? Leia [Criar uma experiência de workspace](service-create-the-new-workspaces.md).
+*Workspaces* são locais para colaborar com colegas e criar coleções de painéis, relatórios, conjuntos de dados e relatórios paginados. A nova experiência com o workspace ajuda você a gerenciar melhor o acesso ao conteúdo. Este artigo descreve os novos espaços de trabalho e como eles diferem dos clássicos.  Como ocorre com espaços de trabalho clássicos, você ainda os usa para criar e distribuir aplicativos. 
+
+Pronto para criar um workspace? Leia [Criar uma experiência de workspace](service-create-the-new-workspaces.md).
 
 :::image type="content" source="media/service-new-workspaces/power-bi-workspace-opportunity.png" alt-text="Nova experiência de workspace do Power BI":::
 
@@ -86,8 +88,10 @@ Se um dos novos workspaces estiver em uma capacidade compartilhada, todos que vo
 
 Quando o novo workspace está em uma capacidade do Power BI Premium, os usuários com a função de visualizador podem acessar o workspace, mesmo que não tenham uma licença do Power BI Pro. No entanto, se você atribuir a esses usuários uma função mais elevada, como Administrador, Membro ou Colaborador, será solicitado que eles iniciem uma avaliação do Pro quando tentarem acessar o workspace. Se você quiser que os usuários sem licenças Pro usem a função de Visualizador, verifique se eles também não têm outras funções do workspace, seja como indivíduos ou como parte de um grupo de usuários.
 
+A publicação de relatórios em uma nova experiência de workspace tem a imposição mais rigorosa das regras de licenciamento existentes. Se o usuário tentar publicar a partir do Power BI Desktop ou de outras ferramentas de cliente sem uma licença Pro, verá o erro: "Somente usuários com licenças do Power BI Pro podem publicar neste workspace."
+
 > [!NOTE]
-> A publicação de relatórios em uma nova experiência de workspace tem a imposição mais rigorosa das regras de licenciamento existentes. Se o usuário tentar publicar a partir do Power BI Desktop ou de outras ferramentas de cliente sem uma licença Pro, verá o erro: "Somente usuários com licenças do Power BI Pro podem publicar neste workspace."
+> O Power BI for US Government não está disponível como uma licença gratuita. Para obter detalhes de licenciamento, confira [Clientes do Power BI for US government](../admin/service-govus-overview.md).
 
 ### <a name="guest-users"></a>Usuários convidados
 
@@ -95,7 +99,9 @@ Por padrão, [os usuários Convidados do Azure AD B2B](../admin/service-admin-az
 
 ### <a name="administering-new-workspace-experience-workspaces"></a>Administrar as novas experiências de workspaces
 
-A administração de novas experiências de workspace está no Portal de administração do Power BI. Os administradores do Power BI decidem quem em uma organização pode criar workspaces e distribuir aplicativos. Os administradores podem ver o estado de todos os workspaces em sua organização. Eles também podem gerenciar e recuperar workspaces. Leia mais sobre como [administrar os novos workspaces](../admin/service-admin-portal.md#create-the-new-workspaces) no artigo do Portal de administração.
+A administração de novas experiências de workspace está no Portal de administração do Power BI. Os administradores do Power BI decidem quem em uma organização pode criar workspaces e distribuir aplicativos. Leia sobre [como gerenciar a capacidade dos usuários de criar workspaces](../admin/service-admin-portal.md#create-the-new-workspaces) no artigo do "Portal de administração". 
+
+Os administradores também podem ver o estado de todos os workspaces da organização. Eles podem gerenciar, recuperar e até mesmo excluir workspaces. Leia sobre [como gerenciar os próprios workspaces](../admin/service-admin-portal.md#workspaces) no artigo do "Portal de administração".
 
 ### <a name="auditing"></a>Auditoria
 
@@ -137,5 +143,5 @@ Sim. Como damos suporte a ambos os tipos de workspaces lado a lado, continuamos 
 * [Criar novos workspaces no Power BI](service-create-the-new-workspaces.md)
 * [Criar espaços de trabalho clássicos](service-create-workspaces.md)
 * [Instalar e usar aplicativos no Power BI](service-create-distribute-apps.md)
-* Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+* Dúvidas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
 

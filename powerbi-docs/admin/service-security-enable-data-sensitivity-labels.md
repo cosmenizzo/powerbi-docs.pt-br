@@ -5,15 +5,15 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 07/06/2020
+ms.date: 08/10/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 0fe1b7b1b8175511838005b7b63ca7543bbf939a
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: ebc4601f3575e84c248aef9204537a7d93c428ac
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034326"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049174"
 ---
 # <a name="enable-sensitivity-labels-in-power-bi"></a>Habilitar rótulos de confidencialidade no Power BI
 
@@ -24,7 +24,20 @@ Quando os rótulos de confidencialidade estão habilitados:
 * Usuários e grupos de segurança específicos em uma organização podem classificar e [aplicar rótulos de confidencialidade](./service-security-apply-data-sensitivity-labels.md) aos seus relatórios, dashboards, conjuntos de dados e fluxos de dados do Power BI.
 * Todos os membros da organização podem ver esses rótulos.
 
-Habilitar rótulos de confidencialidade requer uma licença da Proteção de Informações do Azure. Consulte [Licenciamento](service-security-sensitivity-label-overview.md#licensing) para obter mais detalhes.
+Habilitar rótulos de confidencialidade requer uma licença da Proteção de Informações do Azure. Confira [Licenciamento e requisitos](#licensing-and-requirements) para obter mais detalhes.
+
+## <a name="licensing-and-requirements"></a>Licenciamento e requisitos
+
+* É necessário ter uma licença da Proteção de Informações do Azure Premium P1 ou P2 para aplicar ou exibir os rótulos de confidencialidade da Proteção de Informações do Microsoft Azure no Power BI. A Proteção de Informações do Azure pode ser adquirida de forma independente ou por meio de um dos pacotes de licenciamento da Microsoft. Confira [preço da Proteção de Informações do Azure](https://azure.microsoft.com/pricing/details/information-protection/) para obter detalhes.
+
+* Para conseguir aplicar rótulos a conteúdo do Power BI, o usuário precisa ter uma licença do Power BI Pro, além de uma das licenças da Proteção de Informações do Azure mencionadas acima.
+
+* Os aplicativos do Office têm [requisitos exclusivos de licenciamento para visualização e aplicação de rótulos de confidencialidade]( https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels ).
+
+* Antes de habilitar rótulos de confidencialidade em seu locatário, verifique se os rótulos foram definidos e publicados para os usuários e grupos relevantes. Confira [Criar e configurar rótulos de confidencialidade e suas políticas](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide) para obter mais detalhes.
+
+>[!NOTE]
+> Se a sua organização usar rótulos de confidencialidade da Proteção de Informações do Azure, eles precisarão ser migrados para a plataforma de Rotulagem Unificada de Proteção de Informações da Microsoft para que sejam usados no Power BI. [Saiba mais sobre como migrar rótulos de confidencialidade](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
 ## <a name="enable-sensitivity-labels"></a>Habilitar rótulos de confidencialidade
 
@@ -52,9 +65,9 @@ Na seção **Proteção de Informações**, execute as seguintes etapas:
 
 O Power BI usa rótulos de confidencialidade da Proteção de Informações da Microsoft. Portanto, se você encontrar uma mensagem de erro ao tentar habilitar rótulos de confidencialidade, pode ser devido aos seguintes motivos:
 
-* Você não tem uma [licença](service-security-sensitivity-label-overview.md#licensing) da Proteção de Informações do Azure.
-* Os rótulos de confidencialidade não foram migrados para a versão da Proteção de Informações da Microsoft compatível com o Power BI. Saiba mais sobre [migrar rótulos de confidencialidade](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
-* Nenhum rótulo de confidencialidade da Proteção de Informações da Microsoft foi definido na organização. Observe que, para ser utilizável, um rótulo precisa fazer parte de uma política publicada. [Saiba mais sobre os rótulos de confidencialidade](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels) ou visite o [centro de conformidade e segurança da Microsoft](https://sip.protection.office.com/sensitivity?flight=EnableMIPLabels) para ler sobre como definir rótulos e publicar políticas para sua organização.
+* Você não tem uma [licença](#licensing-and-requirements) da Proteção de Informações do Azure.
+* Os rótulos de confidencialidade não foram [migrados](#enable-sensitivity-labels) para a versão da Proteção de Informações da Microsoft compatível com o Power BI.
+* Nenhum rótulo de confidencialidade da Proteção de Informações da Microsoft foi [definido na organização](#enable-sensitivity-labels).
 
 ## <a name="considerations-and-limitations"></a>Considerações e limitações
 

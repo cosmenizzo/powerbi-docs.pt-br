@@ -10,12 +10,12 @@ ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 195d1284fedc9f9c51c6fed2ff03cc0883b16405
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: e8e81c297841e32d1f4d966de23b5d752b654c20
+ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161711"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88091608"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Acompanhar atividades do usuário no Power BI
 
@@ -318,6 +318,9 @@ As operações a seguir estão disponíveis nos logs de auditoria e de atividade
 | Atualização de fluxo de dados do Power BI solicitada               | RequestDataflowRefresh                      | Não usado no momento                       |
 | Atualização de conjunto de dados do Power BI solicitada                | RefreshDataset                              |                                          |
 | Workspaces do Power BI recuperados                     | GetWorkspaces                               |                                          |
+| Rótulo de confidencialidade aplicado                         | SensitivityLabelApplied                     |                                          |
+| Rótulo de confidencialidade alterado                         | SensitivityLabelChanged                     |                                          |
+| Rótulo de confidencialidade removido                         | SensitivityLabelRemoved                     |                                          |
 | Definir o local de armazenamento do fluxo de dados como um workspace     | SetDataflowStorageLocationForWorkspace      |                                          |
 | Definir atualização agendada no fluxo de dados do Power BI        | SetScheduledRefreshOnDataflow               |                                          |
 | Definir atualização agendada no conjunto de dados do Power BI         | SetScheduledRefresh                         |                                          |
@@ -364,4 +367,4 @@ As operações a seguir estão disponíveis nos logs de auditoria e de atividade
 
 [Portal de administração do Power BI](service-admin-portal.md)  
 
-Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+Mais perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
