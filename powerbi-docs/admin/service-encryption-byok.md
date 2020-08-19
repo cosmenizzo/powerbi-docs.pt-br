@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 02/20/2020
+ms.date: 08/13/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 944d115b0592954d92460ca26ae5b59311abc42e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a6513bdf7451db7068fe2540d32546df4d42ae8e
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227481"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204570"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi"></a>Traga suas próprias chaves de criptografia para o Power BI
 
@@ -32,7 +32,7 @@ Para usar o BYOK, você deve fazer upload dos dados no serviço do Power BI em u
 - Pastas de trabalho do Excel (a menos que os dados sejam primeiramente importados no Power BI Desktop)
 - [Enviar conjuntos de dados por push](/rest/api/power-bi/pushdatasets)
 - [Fazer streaming de conjuntos de dados](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
-- [Modelos grandes](service-premium-large-models.md)
+
 
 BYOK aplica-se somente a conjuntos de dados. Conjuntos de arquivos de envio por push, arquivos do Excel e arquivos CSV que os usuários podem carregar no serviço não são criptografados usando sua própria chave. Para identificar quais artefatos são armazenados em seus workspaces, use o seguinte comando do PowerShell:
 
@@ -45,7 +45,7 @@ BYOK aplica-se somente a conjuntos de dados. Conjuntos de arquivos de envio por 
 
 Nesta seção, você aprenderá como configurar o Azure Key Vault, uma ferramenta para armazenar e acessar segredos com segurança, como chaves de criptografia. Você pode usar um cofre de chaves existente para armazenar chaves de criptografia ou pode criar um novo especificamente para uso com o Power BI.
 
-As instruções nesta seção pressupõem conhecimento básico do Azure Key Vault. Para obter mais informações, veja [O que é o Azure Key Vault?](/azure/key-vault/key-vault-whatis). Configure o cofre de chaves da seguinte maneira:
+As instruções nesta seção pressupõem conhecimento básico do Azure Key Vault. Para obter mais informações, veja [O que é o Cofre da Chave do Azure?](/azure/key-vault/key-vault-whatis). Configure o cofre de chaves da seguinte maneira:
 
 1. Adicione o serviço do Power BI como uma entidade de serviço para o cofre de chaves, com permissões de encapsulamento e desencapsulamento.
 

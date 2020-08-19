@@ -9,12 +9,12 @@ ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
 ms.date: 08/02/2020
-ms.openlocfilehash: 5a84c67a2efd57376afc289f965da9dc5dafd3c6
-ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
+ms.openlocfilehash: 2f330b42e674f11f27d695fb65bc8d5de928eaae
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87768557"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204825"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Criar uma capacidade do Power BI Embedded no portal do Azure
 
@@ -56,7 +56,7 @@ Antes de criar uma capacidade do Power BI Embedded, verifique se você entrou no
 
     * **Local** – o local em que o Power BI está hospedado para seu locatário. O local padrão é sua região de residência, mas você pode alterar o local usando [Opções de Multi-Geo](embedded-multi-geo.md).
 
-    * **Tamanho** – o [SKU A](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) necessário. Para obter mais informações, confira [Memória e capacidade de computação do SKU](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
+    * **Tamanho** – o [SKU A](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) necessário. Para obter mais informações, confira [Memória e capacidade de computação do SKU](/power-bi/developer/embedded/embedded-capacity).
 
     * **Administrador de capacidade do Power BI** – um administrador para a capacidade.
         >[!NOTE]
@@ -229,9 +229,10 @@ Um recurso do Azure está definido no modelo [Microsoft.PowerBIDedicated/capacit
 
     * **Nome** – o nome da capacidade.
 
-    * **Local** – o local em que o Power BI está hospedado para seu locatário. O local padrão é sua região de residência, mas você pode alterar o local usando [Opções de Multi-Geo](/embedded/embedded-multi-geo.md).
+    * **Local** – o local em que o Power BI está hospedado para seu locatário. O local padrão é sua região de residência, mas você pode alterar o local usando [Opções de Multi-Geo](https://docs.microsoft.com/power-bi/developer/embedded/embedded-multi-geo
+).
 
-    * **SKU** – o [SKU A](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) necessário. Para obter mais informações, confira [Memória e capacidade de computação do SKU](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
+    * **SKU** – o [SKU A](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) necessário. Para obter mais informações, confira [Memória e capacidade de computação do SKU](/power-bi/developer/embedded/embedded-capacity).
 
     * **Administrador** – um administrador para a capacidade.
         >[!NOTE]

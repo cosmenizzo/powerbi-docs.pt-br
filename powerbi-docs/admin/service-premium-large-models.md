@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 03/03/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 0169eba3e27b4014f9dbf20f88a10575caf903fe
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7ea6601514d77f9f7e2e416b358194e871f6445b
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227257"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204318"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Modelos grandes no Power BI Premium (versão prévia)
 
@@ -114,7 +114,6 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
 
 Tenha em mente as seguintes restrições ao usar modelos grandes:
 
-- **Criptografia BYOK (Bring Your Own Key)** : os conjuntos de dados habilitados para Arquivos Premium não são criptografados por [BYOK](service-encryption-byok.md).
 - **Suporte Multi-Geo**: Os conjuntos de dados habilitados para Arquivos Premium falharão em capacidades em que a opção [várias áreas geográficas](service-admin-premium-multi-geo.md) também esteja habilitada.
 
 - **Baixar para o Power BI Desktop**: se um conjunto de dados for armazenado em Arquivos Premium, [Baixar como um arquivo .pbix](../create-reports/service-export-to-pbix.md) falhará.
@@ -131,18 +130,18 @@ A lista a seguir informa as regiões que disponibilizam os modelos grandes no Po
 |Região do Azure  |Abreviação da região do Azure  |
 |---------|---------|
 |Leste da Austrália     | australiaeast        |
-|Sudeste da Austrália     | australiasoutheast        |
-|EUA Central     | centralus        |
+|Australia Southeast     | australiasoutheast        |
+|Centro dos EUA     | centralus        |
 |Leste da Ásia     | eastasia        |
 |Leste dos EUA     | eastus        |
 |Leste dos EUA 2     | eastus2        |
-|Leste do Japão     | japaneast        |
+|Japan East     | japaneast        |
 |Oeste do Japão     | japanwest        |
 |Coreia Central     | koreacentral        |
 |Sul da Coreia     | koreasouth        |
 |Centro-Norte dos EUA     | northcentralus        |
 |Norte da Europa     | northeurope        |
-|Centro-Sul dos EUA     | southcentralus        |
+|Centro-Sul dos Estados Unidos     | southcentralus        |
 |Sudeste Asiático     | southeastasia        |
 |Sul do Reino Unido     | uksouth        |
 |Oeste do Reino Unido     | ukwest        |

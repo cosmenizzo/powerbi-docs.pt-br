@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 07/01/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3707399d21d15b16236e0e33da6c264fb6e364b4
-ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
+ms.openlocfilehash: 2cffd2b9913773e7f29d1afa960209ddeddd3583
+ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87768961"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88160408"
 ---
 # <a name="export-reports-to-powerpoint"></a>Exportar relatórios para o PowerPoint
 
@@ -102,7 +102,6 @@ Há algumas considerações e limitações para ter em mente ao trabalhar com o 
    - As imagens de segundo plano são cortadas com a área delimitadora do gráfico. Recomendamos que você remova as imagens de segundo plano antes de exportar para o PowerPoint.
 
 * Alguns relatórios não podem ser exportados. Elas incluem:
-    - Relatórios que são propriedade de um usuário fora de seu domínio de locatário do Power BI, como um relatório de alguém de fora de sua organização e compartilhado com você.
     - Se você compartilhar um dashboard com alguém fora de sua organização, ou seja, um usuário que não está em seu locatário do Power BI, esse usuário não poderá exportar os relatórios associados ao dashboard compartilhado para o PowerPoint. Por exemplo, se você for aaron@contoso.com, poderá compartilhar com david@cohowinery.com. No entanto, david@cohowinery.com não poderá exportar os relatórios associados para o PowerPoint.
     - Relatórios com mais de 50 páginas. Apenas as primeiras 50 páginas serão exportadas.
     - Relatórios sendo exportados para versões mais antigas do PowerPoint.
