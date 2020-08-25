@@ -7,107 +7,160 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 06/10/2020
+ms.date: 08/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9a1e42b4901e8659bb5d999294f29a80a0389280
-ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.openlocfilehash: 070dfd4048c494f9a1865603be4e692231f771f5
+ms.sourcegitcommit: 9b193dc155a306738a23b6bf20bcc424b8c64afd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86557223"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247130"
 ---
-# <a name="automatic-page-refresh-in-power-bi-desktop"></a>Atualização automática de página no Power BI Desktop 
+# <a name="automatic-page-refresh-in-power-bi"></a>Atualização automática de página no Power BI
 
-Ao monitorar eventos críticos, é importante que os dados sejam atualizados no mesmo momento que os dados de origem. Por exemplo, no setor de manufatura, é essencial saber quando um computador está com problemas de funcionamento ou prestes a ter esse tipo de problema.
+Ao monitorar eventos críticos, é importante que os dados sejam atualizados no mesmo momento que os dados de origem. Por exemplo, no setor de manufatura, é essencial saber quando um computador está com problemas de funcionamento ou prestes a ter esse tipo de problema. Caso esteja monitorando sinais, como sentimentos em mídias sociais, você desejará saber sobre alterações repentinas no momento em que elas acontecerem.
 
-O recurso de atualização automática de página do Power BI permite que a página de relatório ativa consulte novos dados, em uma frequência predefinida, em [fontes do DirectQuery](https://docs.microsoft.com/power-bi/desktop-directquery-about).
+A atualização automática de página no Power BI permite que a página ativa do relatório consulte novos dados de [fontes do DirectQuery](../connect-data/desktop-directquery-about.md), em uma cadência predefinida.
 
-## <a name="using-automatic-page-refresh"></a>Uso da atualização automática de página
+## <a name="refresh-types"></a>Tipos de atualização
 
-A atualização automática de página está disponível somente para fontes de dados do DirectQuery.
+Ao usar a atualização automática de página, há dois tipos de atualização disponíveis: intervalo fixo e detecção de alterações.
 
-Para usar a atualização automática de página, selecione a página de relatório cuja atualização você deseja habilitar. No painel **Visualizações**, selecione o botão **Formatação** (um rolo de pintura) e localize **Atualização de página** próximo à parte inferior do painel. 
+### <a name="fixed-interval"></a>Intervalo fixo
+
+Esse tipo de atualização permite atualizar todos os elementos visuais em uma página de relatório com base em um intervalo constante, como um segundo ou cinco minutos. Quando esse intervalo específico é atingido, todos os elementos visuais da página enviam uma consulta de atualização para a fonte de dados e realizam a atualização de maneira correspondente.
+
+### <a name="change-detection"></a>Detecção de alteração
+
+Esse tipo de atualização permite atualizar elementos visuais em uma página com base na detecção de alterações nos dados, em vez de usar um intervalo de atualização específico. Essa medida pesquisa alterações especificamente em sua [fonte do DirectQuery](../connect-data/desktop-directquery-about.md). Além de definir a medida, também é necessário selecionar com que frequência o Power BI Desktop verificará se há alterações. Ao publicar no serviço, esse tipo de atualização será compatível somente com workspaces que fazem parte de uma capacidade Premium.
+
+## <a name="authoring-reports-with-automatic-page-refresh-in-power-bi-desktop"></a>Como criar relatórios usando a atualização automática de página no Power BI Desktop
+
+A atualização automática de página está disponível somente para [fontes do DirectQuery](../connect-data/desktop-directquery-about.md), portanto, ela estará disponível apenas quando você estiver conectado a uma fonte de dados do DirectQuery. Essa restrição se aplica aos dois tipos de atualização automática de página.
+
+Para usar a atualização automática de página no Power BI Desktop, selecione a página do relatório para a qual deseja habilitar a atualização automática de página. No painel **Visualizações**, selecione o botão **Formatação** (um rolo de pintura) e localize a seção **Atualização de página**, próxima à parte inferior do painel.
 
 ![Local de atualização de página](media/desktop-automatic-page-refresh/automatic-page-refresh-01.png)
 
-A imagem a seguir mostra o cartão **Atualização de página**. Os elementos numerados são descritos após a imagem.
+1. Ativa ou desativa a atualização da página.
+2. Tipo de atualização
+3. Entradas e informações (dependendo do tipo de atualização)
 
-![Cartão Atualizar página](media/desktop-automatic-page-refresh/automatic-page-refresh-02.png)
+O cartão **Atualizar página** estará disponível somente se você estiver conectado a uma [fonte do DirectQuery](../connect-data/desktop-directquery-about.md). Para habilitar a atualização automática de página, a alternância precisa estar na posição Ativada. As entradas necessárias e as informações fornecidas dependerão do tipo de atualização selecionado.
 
-1.    Ativa ou desativa a atualização da página
-2.    Valor numérico para o intervalo de atualização de página
-3.    Unidade para o intervalo de atualização de página
+### <a name="fixed-interval-setup"></a>Configuração do intervalo fixo
 
-Nesse cartão, você pode ativar a atualização de página e selecionar a duração da atualização. O valor padrão é de 30 minutos. (O intervalo de atualização mínimo é de um segundo). O relatório começará a ser atualizado no intervalo que você definir. 
+Ao selecionar **Atualização automática de página** como o tipo de atualização, será necessário fornecer o intervalo de atualização desejado. O valor padrão é de 30 minutos. (O intervalo de atualização mínimo é de um segundo). O relatório começará a ser atualizado no intervalo que você definir.
 
-## <a name="determining-the-page-refresh-interval"></a>Como determinar o intervalo de atualização de página
+Ao clicar em Mostrar detalhes, o Power BI fornecerá informações adicionais sobre:
+
+- Se o recurso for habilitado pelo administrador (somente quando conectado à sua conta do Power BI)
+- O intervalo mínimo permitido pelo administrador (somente quando conectado à sua conta do Power BI)
+- A taxa real de atualização (geralmente maior do que o intervalo selecionado)
+- O horário da última atualização
+
+![Mostrar detalhes da atualização de página](media/desktop-automatic-page-refresh/automatic-page-refresh-02.png)
+
+### <a name="change-detection-setup"></a>Configuração da detecção de alterações
+
+Ao selecionar **Detecção de alterações** como o tipo de atualização, um link será exibido para **Adicionar a detecção de alterações**. Também é possível acessar a janela **Detecção de alterações** da guia Modelagem na faixa de opções. Clique no ícone **Detecção de alterações** na seção **Atualização de página**. Por fim, é possível clicar com o botão direito do mouse ou selecionar a seta suspensa ao lado de qualquer valor na caixa Valores e selecionar **Detecção de alterações** no menu.
+
+![Cartão de detecção de alterações](media/desktop-automatic-page-refresh/automatic-page-refresh-03.png)
+
+Depois que a janela estiver aberta, será exibida a opção **Tipo de medida** em que é possível selecionar uma medida existente ou criar uma do zero. Ao selecionar uma existente, basta clicar na medida desejada na lista de campos ou arrastá-la e soltá-la na seção **Escolher medida existente**. Ao criar uma medida, será possível **Escolher um cálculo** para ela entre contagem, contagem distinta, mínimo, máximo e soma. Por exemplo: é possível usar uma contagem distinta para contar IDs de clientes e atualizar somente quando um novo cliente for adicionado à lista. Depois de selecionar uma medida, será necessário definir com que frequência o Power BI poderá **Verificar se há alterações**. Esse será o intervalo da frequência com que o Power BI calculará a medida e pesquisará as alterações. Depois de clicar em aplicar, uma nova medida será exibida na lista Campos com o ícone de detecção de alterações.
+
+![Janela da detecção de alterações](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
+
+Ao retornar para a seção de atualização de página, serão exibidas informações sobre qual medida está sendo usada para a detecção de alterações e o intervalo definido para sua referência.
+
+![Cartão da detecção de alterações com detalhes](media/desktop-automatic-page-refresh/automatic-page-refresh-05.png)
+
+> [!NOTE]
+> Somente uma medida de detecção de alterações será permitida por modelo.
+
+## <a name="determining-the-refresh-interval"></a>Como determinar o intervalo de atualização
 
 Quando a atualização automática de página está habilitada, o Power BI Desktop envia constantemente consultas para sua fonte do DirectQuery. Depois que a consulta é enviada, há um atraso antes que os dados sejam retornados. Portanto, em intervalos de atualização curtos, você deve confirmar se as consultas retornam os dados consultados dentro do intervalo configurado. Se os dados não forem retornados dentro do intervalo, os visuais serão atualizados com menos frequência do que o configurado.
 
+Essas considerações se aplicam aos dois tipos de atualização: intervalo fixo e detecção de alterações. A principal diferença é que na detecção de alterações somente uma consulta voltará para a fonte em um intervalo fixo. Além disso, a atualização de elementos visuais será disparada somente quando o valor da medida de detecção de alterações for alterado.
+
 Como prática recomendada, o intervalo de atualização deve corresponder ao menos à sua nova taxa de chegada de dados esperada:
 
-* Se os dados novos chegarem à fonte a cada 20 minutos, o intervalo de atualização não poderá ser inferior a 20 minutos. 
-
-* Se novos dados chegarem a cada segundo, defina o intervalo para um segundo. 
+* Se os dados novos chegarem à fonte a cada 20 minutos, o intervalo de atualização não poderá ser inferior a 20 minutos.
+* Se novos dados chegarem a cada segundo, defina o intervalo para um segundo.
 
 Em intervalos de baixa atualização, como um segundo, considere os seguintes fatores:
+
 - O tipo da fonte de dados do DirectQuery
 - A carga que suas consultas criam nele
-- A distância dos visualizadores de relatório do datacenter da capacidade 
+- A distância dos visualizadores de relatório do datacenter da capacidade
 
-Você pode estimar os tempos de retorno usando o Performance Analyzer no Power BI Desktop. O Performance Analyzer permite verificar se cada consulta de visual tem tempo suficiente para voltar com resultados da fonte. Ele também permite que você determine onde o tempo é gasto. Com base nos resultados do Performance Analyzer, você pode ajustar a fonte de dados ou experimentar outros visuais e medidas em seu relatório.
+É possível estimar os tempos de retorno usando o [Performance Analyzer](desktop-performance-analyzer.md) no Power BI Desktop, bem como o menu Mostrar detalhes na seção de atualização de página para o tipo de atualização de intervalo fixo. O Performance Analyzer permite verificar se cada consulta de visual tem tempo suficiente para voltar com resultados da fonte. Ele também permite que você determine onde o tempo é gasto. Com base nos resultados do Performance Analyzer, você pode ajustar a fonte de dados ou experimentar outros visuais e medidas em seu relatório.
 
-Esta imagem mostra os resultados de uma consulta do DirectQuery no Performance Analyzer:
+Esta imagem mostra os resultados de uma fonte do DirectQuery no Performance Analyzer:
 
-![Resultados do Performance Analyzer](media/desktop-automatic-page-refresh/automatic-page-refresh-03.png)
+![Resultados do Performance Analyzer](media/desktop-automatic-page-refresh/automatic-page-refresh-06.png)
 
-Vamos considerar algumas outras características dessa fonte de dados: 
+Vamos considerar algumas outras características dessa fonte de dados:
 
--    Os dados chegam a uma taxa de dois segundos. 
--    O Performance Analyzer mostra a consulta máxima + tempo de exibição de aproximadamente 4,9 segundos (4.688 milissegundos). 
--    A fonte de dados está configurada para lidar com aproximadamente 1.000 consultas simultâneas por segundo. 
--    Você espera que aproximadamente 10 usuários exibam simultaneamente o relatório.
+- Os dados chegam a obter uma taxa de 2 segundos
+- O Performance Analyzer mostra a consulta máxima + o tempo de exibição de aproximadamente 4,9 segundos (4.688 milissegundos)
+- A fonte de dados está configurada para lidar com aproximadamente 1.000 consultas simultâneas por segundo
+- É esperado que aproximadamente 10 usuários exibam o relatório simultaneamente
 
 Isso resulta na seguinte equação:
 
-**5 visuais x 10 usuários = aproximadamente 50 consultas**
+- **5 visuais x 10 usuários = aproximadamente 50 consultas**
 
-O resultado desse cálculo mostra muito mais carga do que a fonte de dados consegue suportar. Os dados chegam a uma taxa de dois segundos, de modo que essa deve ser a taxa de atualização. Porém, como a consulta leva cerca de cinco segundos para ser concluída, você deve defini-la como mais de cinco segundos. 
+O resultado desse cálculo mostra muito mais carga do que a fonte de dados consegue suportar. Os dados chegam a uma taxa de dois segundos, de modo que essa deve ser a taxa de atualização. Porém, como a consulta leva cerca de cinco segundos para ser concluída, você deve defini-la como mais de cinco segundos.
 
-Observe também que esse resultado pode ser diferente quando você publica o relatório no serviço. Essa diferença ocorre porque o relatório usará a instância do Azure Analysis Services hospedada na nuvem. Talvez você queira ajustar suas taxas de atualização de acordo com isso. 
+Observe também que esse resultado pode ser diferente quando você publica o relatório no serviço. Essa diferença ocorre porque o relatório usará a instância do Azure Analysis Services hospedada na nuvem. Talvez você queira ajustar suas taxas de atualização de acordo com isso.
 
-Para considerar as consultas e atualizar o tempo, o Power BI só executará a próxima consulta de atualização quando todas as consultas de atualização restantes forem concluídas. Portanto, mesmo que o intervalo de atualização seja menor do que o tempo que suas consultas levam para serem processadas, o Power BI só será atualizado novamente quando as consultas restantes forem concluídas. 
+Para considerar as consultas e atualizar o tempo, o Power BI só executará a próxima consulta de atualização quando todas as consultas de atualização restantes forem concluídas. Portanto, mesmo que o intervalo de atualização seja menor do que o tempo que suas consultas levam para serem processadas, o Power BI só será atualizado novamente quando as consultas restantes forem concluídas.
+
+No caso do tipo de atualização de detecção de alterações, essas considerações ainda se aplicam. Além disso, o [Performance Analyzer](desktop-performance-analyzer.md) mostrará os resultados da consulta da medida de detecção de alterações, mesmo que eles não correspondam a nenhum elemento visual em seu relatório. Fornecemos essa funcionalidade para que seja possível solucionar problemas desse tipo específico de medida, seguindo as mesmas diretrizes mencionadas anteriormente. A principal diferença desse tipo de atualização é que somente uma consulta será enviada para a fonte de dados, em vez de todas as consultas de todos os elementos visuais. Isso também ocorrerá caso vários usuários estejam exibindo o relatório.
+
+![Resultados do Performance Analyzer com a detecção de alterações](media/desktop-automatic-page-refresh/automatic-page-refresh-07.png)
+
+Para o mesmo cenário discutido anteriormente:
+
+- **Uma consulta da medida de detecção de alterações para 5 elementos visuais gerará somente uma consulta para qualquer número de visualizadores**
+
+- **Quando a medida de detecção de alterações disparar uma atualização, supondo que o cenário seja igual ao anterior, o resultado será 5 elementos visuais x 10 usuários = 50 consultas, aproximadamente**
+
+Em resumo, ao usar a detecção de alterações, somente uma consulta será enviada para a fonte de dados até que uma alteração seja detectada. Quando isso acontecer, a mesma lógica usada para o tipo de atualização de intervalo fixo aplicará a atualização de todos os elementos visuais para todos os usuários, gerando o mesmo número de consultas. Essa abordagem deverá ser mais eficiente a longo prazo.
 
 Agora, vamos examinar como é possível detectar e diagnosticar problemas de desempenho como um administrador de capacidade. Você também pode conferir a seção [Perguntas frequentes](#frequently-asked-questions), mais adiante neste artigo, para ver mais perguntas e respostas sobre desempenho e solução de problemas.
 
 ## <a name="automatic-page-refresh-in-the-power-bi-service"></a>Atualização automática de página no serviço do Power BI
 
-Você também pode definir intervalos de atualização automática de página para relatórios criados no Power BI Desktop e publicados no serviço do Power BI. 
+Também é possível definir a atualização automática de página para relatórios que foram publicados no serviço do Power BI, contanto que a fonte de dados esteja no [DirectQuery](../connect-data/desktop-directquery-about.md).
 
-Para configurar a atualização automática de página para relatórios no serviço do Power BI, use etapas semelhantes às etapas que você usaria no Power BI Desktop. Quando configurada no serviço do Power BI, a atualização automática de página também é compatível com o conteúdo do [Power BI inserido](../developer/embedded/embedding.md). A seguinte imagem mostra a configuração de **Atualização de página** para o serviço do Power BI:
+Para configurar a atualização automática de página para relatórios no serviço do Power BI, as etapas serão semelhantes às do Power BI Desktop. Quando configurada no serviço do Power BI, a atualização automática de página também é compatível com o conteúdo do [Power BI inserido](../developer/embedded/embedding.md). A seguinte imagem mostra a configuração de **Atualização de página** para o serviço do Power BI:
 
-![Atualização automática de página no serviço do Power BI](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
+![Local da atualização de página no serviço](media/desktop-automatic-page-refresh/automatic-page-refresh-08.png)
 
-Essas descrições correspondem aos elementos numerados: 
+1. Ativa ou desativa a atualização da página.
+2. Tipo de atualização
+3. Entradas e informações (dependendo do tipo de atualização)
 
-1.    Ativa ou desativa a atualização da página.
-2.    Valor numérico do intervalo de atualização de página. Deve ser um número inteiro.
-3.    Unidade para o intervalo de atualização de página.
+> [!NOTE]
+> Ao publicar o relatório com a atualização automática de página habilitada do Power BI Desktop para o serviço, você precisará fornecer as credenciais para a fonte de dados do DirectQuery no menu de configurações do conjunto. É possível configurar credenciais para que os visualizadores de relatórios acessem essa fonte de dados com identidades próprias, respeitando todas as configurações de segurança da fonte. No caso da medida de detecção de alterações, ela sempre será avaliada com as credenciais do autor.
 
 ### <a name="page-refresh-intervals"></a>Intervalos de atualização de página
 
-Os intervalos de atualização de página permitidos no serviço do Power BI são afetados pelo tipo de workspace do relatório. Isso se aplica a estes relatórios:
+Os tipos e intervalos da atualização de página permitidos no serviço do Power BI serão afetados pelo tipo de workspace do relatório. Isso se aplicará a estes relatórios:
 
 * Publicar um relatório em um workspace com atualização automática de página habilitada
 * Editar um intervalo de atualização de página que já esteja em um workspace
 * Criar um relatório diretamente no serviço
 
-O Power BI Desktop não tem restrições para intervalos de atualização. O intervalo de atualização pode ter a frequência de um segundo. Porém, quando os relatórios são publicados no serviço do Power BI, determinadas restrições se aplicam. Essas restrições são descritas nas seções a seguir.
+O Power BI Desktop não tem restrições para intervalos de atualização e a frequência pode ser a cada segundo. No entanto, quando os relatórios são publicados no serviço do Power BI, determinadas restrições se aplicarão. Elas serão descritas nas seções a seguir.
 
 ### <a name="restrictions-on-refresh-intervals"></a>Restrições em intervalos de atualização
 
-No serviço do Power BI, as restrições para a atualização automática de página se aplicam com base em fatores como o workspace e se você está usando os serviços Premium.
+No serviço do Power BI, as restrições da atualização automática de página se aplicam com base no workspace em que o relatório é publicado, caso esteja usando os serviços Premium e as configurações de administrador da capacidade Premium.
 
 Para esclarecer como essas restrições funcionam, vamos começar com um pouco de contexto sobre capacidades e workspaces.
 
@@ -119,26 +172,31 @@ Os *workspaces* do Power BI residem em capacidades. Eles representam contêinere
 
 Confira alguns detalhes dos dois cenários de workspaces:
 
-**W compartilhados**. Em workspaces normais (que não fazem parte de uma capacidade Premium), a atualização automática de página tem um intervalo mínimo de 30 minutos (o menor intervalo permitido).
+**W compartilhados**. Em workspaces normais (que não fazem parte de uma capacidade Premium), a atualização automática de página tem um intervalo mínimo de 30 minutos (o menor intervalo permitido). O tipo de atualização de detecção de alterações não está disponível em capacidades compartilhadas.
 
-**Workspaces Premium**. A disponibilidade da atualização automática de página nos workspaces Premium depende das configurações de carga de trabalho que o administrador Premium configurou para a capacidade do Power BI Premium. Há duas variáveis que podem afetar a capacidade de configurar a atualização automática de página:
+**Workspaces Premium**. A disponibilidade da atualização automática de página nos workspaces Premium (para o intervalo fixo e a detecção de alterações) depende das configurações da carga de trabalho que o administrador Premium configurou para a capacidade Premium do Power BI. Há duas variáveis que podem afetar a capacidade de configurar a atualização automática de página:
 
- - **Ativar/desativar recurso**. Se o administrador da capacidade tiver desabilitado o recurso, você não conseguirá configurar nenhum tipo de atualização de página em seu relatório publicado.
+ - **Ativar/desativar recurso**. Se o administrador da capacidade tiver desabilitado o recurso, você não conseguirá configurar nenhum tipo de atualização de página em seu relatório publicado. O intervalo fixo e a detecção de alterações podem ser ativados e desativados de maneira separada.
 
- - **Intervalo mínimo de atualização**. Ao habilitar o recurso, o administrador da capacidade precisará configurar um intervalo mínimo de atualização. Se o intervalo for menor do que o mínimo, o serviço do Power BI substituirá o intervalo para respeitar o intervalo mínimo definido pelo administrador de capacidade. Essa substituição é conhecida como "Substituição da capacidade pelo administrador" na tabela a seguir. 
+ - **Intervalo mínimo de atualização**. Ao habilitar a atualização automática de página para obter um intervalo fixo, o administrador de capacidade deverá configurar um intervalo mínimo de execução (o valor padrão é de cinco minutos). Se o intervalo for menor do que o mínimo, o serviço do Power BI substituirá o intervalo para respeitar o intervalo mínimo definido pelo administrador de capacidade.
+
+ - **Intervalo mínimo de execução**. Ao habilitar a detecção de alterações, o administrador de capacidade deverá configurar um intervalo mínimo de execução (o valor padrão é de cinco segundos). Se o intervalo for menor do que o mínimo, o serviço do Power BI substituirá o intervalo para respeitar o intervalo mínimo definido pelo administrador de capacidade.
+
+![Configurações de atualização automática de página no portal de administração de capacidade](media/desktop-automatic-page-refresh/automatic-page-refresh-09.png)
 
 Esta tabela descreve com mais detalhes onde esse recurso está disponível e os limites para cada tipo de capacidade e [modo de armazenamento](../connect-data/service-dataset-modes-understand.md):
 
 | Modo de armazenamento | Capacidade dedicada | Capacidade compartilhada |
 | --- | --- | --- |
-| DirectQuery | **Com suporte**: Sim <br>**Intervalo mínimo de atualização**: Um segundo <br>**Substituição da capacidade pelo administrador**: Sim | **Com suporte**: Sim <br>**Intervalo mínimo de atualização**: 30 minutos <br>**Substituição da capacidade pelo administrador**: Não |
-| Importar | **Com suporte**: Não <br>**Intervalo mínimo de atualização**: N/D <br>**Substituição da capacidade pelo administrador**: N/D | **Com suporte**: Não <br>**Intervalo mínimo de atualização**: N/D <br>**Substituição da capacidade pelo administrador**: N/D |
-| Modo misto (DirectQuery + outras fontes de dados) | **Com suporte**: Sim <br>**Intervalo mínimo de atualização**: Um segundo <br>**Substituição da capacidade pelo administrador**: Sim | **Com suporte**: Sim <br>**Intervalo mínimo de atualização**: 30 minutos <br>**Substituição da capacidade pelo administrador**: Não |
-| Live Connect | **Com suporte**: Não <br>**Intervalo mínimo de atualização**: N/D <br>**Substituição da capacidade pelo administrador**: N/D | **Com suporte**: Não <br>**Intervalo mínimo de atualização**: N/D <br>**Substituição da capacidade pelo administrador**: N/D |
-| Live Connect PBI | **Com suporte**: Não <br>**Intervalo mínimo de atualização**: N/D <br>**Substituição da capacidade pelo administrador**: N/D | **Com suporte**: Não <br>**Intervalo mínimo de atualização**: N/D <br>**Substituição da capacidade pelo administrador**: N/D |
+| DirectQuery | **FI compatível**: Sim <br>**CD compatível**: Sim <br>**Mínimo**: Um segundo <br>**Substituição do administrador**: Sim | **FI compatível**: Sim <br>**CD compatível**: Não <br>**Mínimo**: 30 minutos <br>**Substituição do administrador**: Não |
+| Importar | **FI compatível**: Não <br>**CD compatível**: Não <br>**Mínimo**: N/D <br>**Substituição do administrador**: N/D | **FI compatível**: Não <br>**CD compatível**: Não <br>**Mínimo**: N/D <br>**Substituição do administrador**: N/D |
+| Modo misto (DirectQuery + outras fontes de dados) | **FI compatível**: Sim <br>**CD compatível**: Sim <br>**Mínimo**: Um segundo <br>**Substituição do administrador**: Sim | **FI compatível**: Sim <br>**CD compatível**: Não <br>**Mínimo**: 30 minutos <br>**Substituição do administrador**: Não |
+| Live Connect | **FI compatível**: Não <br>**CD compatível**: Não <br>**Mínimo**: N/D <br>**Substituição do administrador**: N/D | **FI compatível**: Não <br>**CD compatível**: Não <br>**Mínimo**: N/D <br>**Substituição do administrador**: N/D |
+| Live Connect PBI | **FI compatível**: Não <br>**CD compatível**: Não <br>**Mínimo**: N/D <br>**Substituição do administrador**: N/D | **FI compatível**: Não <br>**CD compatível**: Não <br>**Mínimo**: N/D <br>**Substituição do administrador**: N/D |
 
-> [!NOTE]
-> Ao publicar o relatório com a atualização automática de página habilitada do Power BI Desktop para o serviço, você precisará fornecer as credenciais para a fonte de dados do DirectQuery no menu de configurações do conjunto.
+*Legenda da tabela:*
+1. *FI: intervalo fixo*
+2. *CD: detecção de alterações*
 
 ## <a name="considerations-and-limitations"></a>Considerações e limitações
 
@@ -146,8 +204,9 @@ Há alguns lembretes importantes ao usar a atualização automática de página,
 
 * Os modos de armazenamento Importar, Live Connect e Push não dão suporte à atualização automática de página.  
 * Há suporte para modelos compostos com pelo menos uma fonte de dados do DirectQuery.
-* O Power BI Desktop não tem restrições para intervalos de atualização. O intervalo pode ter a frequência de um segundo. Quando os relatórios são publicados no serviço do Power BI, determinadas restrições se aplicam, conforme descrito [anteriormente](#restrictions-on-refresh-intervals) neste artigo.
-* A integração do SharePoint Online, que não oferece suporte à atualização automática da página.
+* O Power BI Desktop não tem restrições para intervalos de atualização. A frequência do intervalo pode ser a cada segundo para os tipos de atualização de intervalo fixo e detecção de alterações. Quando os relatórios são publicados no serviço do Power BI, determinadas restrições se aplicam, conforme descrito [anteriormente](#restrictions-on-refresh-intervals) neste artigo.
+* É possível ter somente uma medida de detecção de alterações por conjunto de dados.
+* Somente pode haver um número máximo de 10 modelos com a medida de detecção de alterações em um locatário do Power BI.
 
 ### <a name="performance-diagnostics"></a>Diagnósticos de desempenho
 
@@ -181,13 +240,14 @@ Se você observar que sua capacidade está ficando sobrecarregada com consultas 
 **Sou autor de relatório. Defini o intervalo de atualização do relatório como um segundo no Power BI Desktop, mas, depois da publicação, meu relatório não está sendo atualizado no serviço.**
 
 * Verifique se a atualização automática está ativada para a página. Como essa configuração é definida por página, você precisa garantir que ela esteja ativada para cada página do relatório que deseja atualizar.
-* Verifique se você carregou em um workspace com uma capacidade Premium anexada. Se você não tiver feito isso, seu intervalo de atualização será bloqueado aos 30 minutos.
-* Se o relatório estiver em um workspace Premium, pergunte ao administrador se esse recurso está habilitado para a capacidade anexada. Além disso, verifique se o intervalo mínimo de atualização para a capacidade é menor ou igual ao do relatório.
+* Verifique se você carregou em um workspace com uma capacidade Premium anexada. Caso contrário, seu intervalo de atualização será bloqueado em 30 minutos para o intervalo fixo e não estará disponível para a detecção de alterações.
+* Se o relatório estiver em um workspace Premium, pergunte ao administrador se esse recurso está habilitado para a capacidade anexada. Além disso, certifique-se de que o intervalo mínimo de atualização para a capacidade seja igual ou menor do que o intervalo do relatório. Isso se aplicará de maneira separada para o intervalo fixo e a detecção de alterações
 
 **Sou administrador de uma capacidade. Alterei as configurações do meu intervalo de atualização de página automático, mas as alterações não são refletidas. Ou seja, os relatórios ainda são atualizados em uma taxa incorreta ou não são atualizados, mesmo que eu tenha ativado a atualização automática da página.**
 
 * Demora até cinco minutos para a atualização automática de página feita na interface do usuário do administrador de capacidade ser propagada para os relatórios.
 * Além de ativar a atualização automática de página para a capacidade, você também precisará ativá-la para as páginas de um relatório em que deseja habilitá-la.
+* Os dois tipos de atualização são gerenciados de maneira separada, portanto, certifique-se de que o tipo de atualização que você está habilitando está ativado.
 
 **Meu relatório está operando no modo misto. (O modo misto significa que o relatório tem uma conexão DirectQuery e uma fonte de dados de importação). Alguns visuais não estão sendo atualizados.**
 
@@ -207,6 +267,13 @@ Se você observar que sua capacidade está ficando sobrecarregada com consultas 
 **As consultas de atualização automática de página são atendidas pelo cache?**
 
 * Não. Todas as consultas de atualização automática de página ignoram os dados armazenados em cache.
+
+**Minha medida de detecção de alterações não dispara nenhuma atualização**
+
+* Certifique-se de que a detecção de alterações esteja ativada para a página. Como essa configuração é definida por página, você precisa garantir que ela esteja ativada para cada página do relatório que deseja atualizar.
+* Verifique se você carregou em um workspace com uma capacidade Premium anexada. Caso contrário, a detecção de alterações não funcionará.
+* Se o relatório estiver em um workspace Premium, pergunte ao administrador se esse recurso está habilitado para a capacidade anexada. Além disso, certifique-se de que o intervalo mínimo de execução para a capacidade seja igual ou menor do que o intervalo do relatório.
+* Caso tenha verificado todos os itens mencionados anteriormente, verifique no Power BI Desktop ou no modo de edição se a medida está sendo alterada. Para fazer isso, arraste-a para a tela e verifique se o valor é alterado. Caso contrário, a medida pode não ser uma boa opção para pesquisar alterações da fonte de dados.
 
 
 ## <a name="next-steps"></a>Próximas etapas

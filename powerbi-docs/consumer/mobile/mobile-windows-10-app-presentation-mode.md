@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/11/2020
+ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: 85ba8b893dfa6da7934aff6b7890530e0acb2961
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: c4453f1475ac2ab227294b0b3bd8ba5dba10de67
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091677"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204486"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Exibir relatórios e dashboards no modo de apresentação no Surface Hub e em dispositivos Windows 10
 É possível usar o modo de apresentação para exibir relatórios e dashboards em tela inteira em dispositivos Windows 10 e no Surface Hub. O modo de apresentação é útil para a exibição do Power BI em reuniões ou conferências ou em um projetor dedicado no escritório ou até mesmo para maximizar o espaço em uma tela pequena.
@@ -64,12 +64,27 @@ Quando você seleciona o botão **Reproduzir** na barra de ferramentas de ação
 
  O controlador mostra o nome da exibição mostrada no momento (página ou indicador e página). Na imagem acima, vemos que, no relatório chamado **Vendas**, estamos exibindo o indicador **Pacífico Asiático** na página **Desempenho de Vendas**.
 
+Por padrão, uma apresentação de slides reproduz somente páginas, a uma taxa de 1 página a cada 30 segundos. O comportamento padrão nas [Configurações de apresentação de slides](#slideshow-settings).
+
+
+### <a name="auto-play-a-slideshow-on-startup"></a>Reprodução automática de uma apresentação de slides na inicialização
+
+É possível configurar o aplicativo móvel do Power BI para iniciar a reprodução de uma apresentação de slides de modo automático, sempre que o aplicativo for iniciado. Essa opção é útil para criar uma experiência semelhante a um quiosque que executa um relatório em exibições públicas, sem intervenção manual. Confira a opção [Configurações de apresentação de slides](#slideshow-settings) para obter detalhes sobre como configurar um relatório para reprodução automática.
+
 ### <a name="slideshow-settings"></a>Configurações da apresentação de slides
 
-Por padrão, uma apresentação de slides percorre páginas, à taxa de uma a cada 30 segundos. Você pode alterar essas configurações padrão acessando **Configurações > Opções**, conforme ilustrado abaixo.
+Por padrão, uma apresentação de slides reproduz somente páginas, a uma taxa de 1 página a cada 30 segundos. É possível alterar esse comportamento padrão acessando **Configurações > Opções**, conforme ilustrado abaixo. Também é possível ativar a reprodução automática e escolher um relatório para reprodução.
+
+1. Selecione o ícone Configurações.
+
+1. Abra a guia Opções.
+
+1. É possível alterar as configurações padrão para selecionar como a apresentação de slides será exibida (páginas, indicadores ou ambos) e a frequência da transição dos slides.
+
+1. Caso queira que o relatório comece a ser reproduzido automaticamente quando o aplicativo for iniciado, ative a alternância e escolha **Selecionar Relatório**. Será possível pesquisar os relatórios aos quais você tem acesso.
 
 ![Captura de tela das configurações de apresentação de slides](././media/mobile-windows-10-app-presentation-mode//power-bi-windows-10-slideshow-settings.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 * [Exibir painéis e relatórios no modo de tela inteira do serviço do Power BI](../end-user-focus.md)
-* Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+* Dúvidas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

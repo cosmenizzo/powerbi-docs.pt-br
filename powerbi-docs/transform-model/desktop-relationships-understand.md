@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 4928d194367c1bb2f38fb520722dd040e8ee1a3f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3df3e29d2f6517fec68bf185bf71d9f4f3c5618a
+ms.sourcegitcommit: 642b0c04d3ff3aa4d5422ca5054a5a158fb01b22
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83296700"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88512852"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Modelar relações no Power BI Desktop
 
@@ -42,7 +42,7 @@ Uma consulta (possivelmente gerada por um visual de cartão do Power BI) solicit
 
 É incomum que uma tabela de modelo não esteja relacionada a outra tabela de modelo. Essa tabela em um design de modelo válido pode ser descrita como uma _tabela desconectada_. Uma tabela desconectada não se destina a propagar filtros para outras tabelas de modelo. Em vez disso, ela é usada para aceitar "entrada do usuário" (talvez com um visual de segmentação), permitindo que os cálculos de modelo usem o valor de entrada de uma maneira útil. Por exemplo, considere uma tabela desconectada carregada com um intervalo de valores de taxa de câmbio monetário. Desde que um filtro seja aplicado para filtrar por um único valor de taxa, o valor pode ser usado por uma expressão de medida para converter valores de vendas.
 
-O parâmetro what-if do Power BI Desktop é um recurso que cria uma tabela desconectada. Para obter mais informações, confira o artigo [Criar e usar um parâmetro What If para visualizar variáveis no Power BI Desktop](desktop-what-if.md).
+O parâmetro de hipóteses do Power BI Desktop é um recurso que cria uma tabela desconectada. Para obter mais informações, confira o artigo [Criar e usar um parâmetro What If para visualizar variáveis no Power BI Desktop](desktop-what-if.md).
 
 ## <a name="relationship-properties"></a>Propriedades do relacionamento
 

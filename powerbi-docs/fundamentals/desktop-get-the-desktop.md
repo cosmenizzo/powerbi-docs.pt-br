@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 07/23/2020
+ms.date: 08/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: ab1dd7be867d886f4944e9771be5c9ff188d2037
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: c5c4c7b08f69bd91fc8a4e6ab13a05878936225d
+ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252626"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88160201"
 ---
 # <a name="get-power-bi-desktop"></a>Obter o Power BI Desktop
 O Power BI Desktop permite a criação de consultas, modelos e relatórios avançados que visualizam dados. Com o Power BI Desktop, você pode criar modelos de dados, criar relatórios e compartilhar seu trabalho publicando-o no serviço do Power BI. O Power BI Desktop é um download gratuito.
@@ -97,6 +97,9 @@ Daí, você pode começar a criar relatórios ou modelos de dados e compartilhá
 
 ## <a name="minimum-requirements"></a>Requisitos mínimos
 A lista a seguir fornece os requisitos mínimos para executar o Power BI Desktop:
+
+> [!IMPORTANT]
+> O Power BI Desktop não será mais compatível com o Windows 7 a partir de 31 de janeiro de 2021. Após essa data, o Power BI Desktop será compatível com o Windows 8 ou versões mais recentes do Windows. Isso se aplicará somente à versão mais recente do Power BI Desktop. 
 
 * Windows 7 / Windows Server 2008 R2 ou posterior
 * .NET 4.5

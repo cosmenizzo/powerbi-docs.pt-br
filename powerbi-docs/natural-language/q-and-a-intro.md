@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/01/2020
 ms.author: mohaali
-ms.openlocfilehash: 295fc7732729fc464676257ab63dcadfa967771b
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: de16ddbbaca69aea5283c7ab61c462493a6da1d0
+ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939649"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88578095"
 ---
 # <a name="intro-to-power-bi-qa"></a>Introdução à P e R do Power BI
 
@@ -43,22 +43,20 @@ Ao digitar sua pergunta, a P e R do Power BI mostra sugestões relevantes e cont
 
 ![Conclusão de frase de P e R](media/qna-suggestion-phrase-completion.png)
 
-### <a name="redblue-underlines"></a>Sublinhado em vermelho e azul
+### <a name="redblueorange-underlines"></a>Sublinhados com as cores vermelho, azul e laranja
 
 A P e R mostra palavras com sublinhados para ajudá-lo a ver quais palavras o sistema entendeu ou não reconheceu. Um sublinhado em azul sólido indica que o sistema combinou com êxito à palavra a um campo ou valor no modelo de dados. O exemplo a seguir mostra que a P e R reconheceu a palavra *Vendas da UE*.
 
 ![Sublinhado em azul na P e R](media/qna-blue-underline.png)
 
-Geralmente, quando você digita uma palavra na P e R, ela é marcada com um sublinhado em vermelho. Um sublinhado em vermelho pode indicar um destes dois problemas em potencial. O primeiro tipo de problema é classificado como *baixa confiança*. Se você digitar uma palavra vaga ou ambígua, o campo será sublinhado em vermelho. Um exemplo poderia ser a palavra "Vendas". Vários campos podem conter a palavra "Vendas", assim, o sistema usa um sublinhado em vermelho para solicitar que você escolha o campo desejado. Outro exemplo de baixa confiança poderia ser você digitar a palavra "Área", mas a coluna correspondente ser "Região". A P e R do Power BI reconhece palavras com o mesmo significado graças à integração com o Bing e o Office. A P e R sublinha a palavra em vermelho para que você saiba que ela não é uma correspondência direta.
+ Um sublinhado laranja indica que a(s) palavra(s) é(são) categorizada(s) como *confiança baixa*. Caso digite uma palavra vaga ou ambígua, o campo terá um sublinhado laranja. Um exemplo poderia ser a palavra "Vendas". Vários campos podem conter a palavra "Vendas", dessa maneira, o sistema usará um sublinhado laranja para solicitar que você escolha o campo desejado. Outro exemplo de baixa confiança poderia ser você digitar a palavra "Área", mas a coluna correspondente ser "Região". A P e R do Power BI reconhece palavras que têm o mesmo significado, devido à integração com o Bing e o Office, além de interpretar renomeações de um relatório como possíveis sugestões. A P e R sublinha a palavra com a cor laranja para que você saiba que ela não é uma correspondência direta.
 
-![Vendas sublinhadas em vermelho em P e R](media/qna-red-underline-sales.png)
-
-O segundo tipo de problema é quando a P e R não reconhece a palavra. Você poderá encontrar esse problema a usar um termo específico de domínio que não é mencionado em nenhum lugar nos dados ou quando os campos de dados têm nomes definidos incorretamente. Um exemplo poderia ser usar a palavra "Custos", embora ela não exista em nenhum lugar dos dados. A palavra está no dicionário em inglês, mas a P e R marca esse termo com um sublinhado vermelho.
+Um sublinhado vermelho significa que a P e R não reconheceu a palavra. Você poderá encontrar esse problema a usar um termo específico de domínio que não é mencionado em nenhum lugar nos dados ou quando os campos de dados têm nomes definidos incorretamente. Um exemplo seria usar a palavra "Custos", embora a palavra não esteja presente de maneira alguma nos dados. A palavra está no dicionário, porém a P e R marcará esse termo com um sublinhado vermelho para indicar que ele não foi encontrado nos dados.
 
 ![Vendas sublinhadas em vermelho em P e R](media/qna-red-underline-costs.png)
 
 > [!NOTE]
-> Você pode personalizar as cores de sublinhado em azul/vermelho no painel **Formatação visual** da P e R. Além disso, o artigo [Ferramenta de P e R](q-and-a-tooling-teach-q-and-a.md) explica *Ensinar P e R*, que você usa para definir os termos que a P e R não reconheceu.
+> É possível personalizar o sublinhado com as cores azul, vermelho e laranja no painel **Formatação de elementos visuais** da P e R. Além disso, o artigo [Ferramenta de P e R](q-and-a-tooling-teach-q-and-a.md) explica *Ensinar P e R*, que você usa para definir os termos que a P e R não reconheceu.
 
 ### <a name="visualization-results"></a>Resultados da visualização
 

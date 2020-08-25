@@ -6,16 +6,16 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 07/08/2020
+ms.date: 08/17/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Share your work
-ms.openlocfilehash: bfda795e02ef53188c5125bc2f0674e859ebd450
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: d7ad3722b609d76383a7a404ef94655ec9ef8711
+ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878812"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88578026"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Instalar e usar aplicativos com dashboards e relatórios no Power BI
 
@@ -35,7 +35,7 @@ Com o Power BI Mobile, você pode instalar apenas um aplicativo de um link diret
 
 ## <a name="apps-and-licenses"></a>Aplicativos e licenças
 Nem todos os usuários do Power BI podem ver aplicativos e interagir com eles. 
-- Se você tiver uma licença gratuita, poderá abrir aplicativos que foram compartilhados com você e que estão armazenados em um workspace na capacidade Premium.
+- Caso tenha uma licença gratuita, será possível abrir aplicativos armazenados na capacidade Premium e que foram compartilhados com você.  
 - Se você tiver uma licença Pro, poderá abrir aplicativos compartilhados com você.
 
 ## <a name="get-the-app-from-the-power-bi-apps-marketplace"></a>Obter o aplicativo do marketplace de aplicativos do Power BI
@@ -47,7 +47,7 @@ Você pode encontrar e instalar aplicativos do marketplace de aplicativos do Pow
 
 1. [Entre no serviço do Power BI](./end-user-sign-in.md), se você ainda não tiver feito isso. 
 
-1. Quando estiver no Power BI, selecione **Aplicativos > Obter aplicativos**. 
+1. Depois de abrir o serviço do Power BI, selecione **Aplicativos > Obter aplicativos**. 
 
     ![Obter aplicativos  ](./media/end-user-app-view/power-bi-get-apps.png)
 
@@ -65,11 +65,14 @@ Você pode encontrar e instalar aplicativos do marketplace de aplicativos do Pow
    A caixa de pesquisa é sensível à guia aberta – apenas aplicativos do tipo selecionado serão retornados. Se a guia **Todos os aplicativos** estiver aberta, os aplicativos organizacionais e de modelo serão retornados. Isso pode ser confuso quando um aplicativo organizacional e um aplicativo de modelo têm o mesmo nome. Apenas se lembre de que os blocos de aplicativo de modelo têm um ícone de sacola de compras no canto superior direito.
 
 Quando você encontrar o aplicativo desejado, selecione **Obter agora** para instalá-lo.
+
+   ![Captura de tela mostrando o botão Obter agora](./media/end-user-app-view/power-bi-get-it.png)
+
 * Se você estiver instalando um aplicativo organizacional, ele será imediatamente adicionado à sua lista de aplicativos.
 * Se estiver instalando um aplicativo de modelo, você será levado para a oferta de aplicativo de modelo no AppSource. Confira [um exemplo](end-user-app-marketing.md) de como baixar e instalar um aplicativo de modelo de exemplo do marketplace de aplicativos do Power BI. O aplicativo é instalado, juntamente com um workspace com o mesmo nome.
 
    > [!NOTE]
-   > Se você estiver usando uma licença de usuário gratuita, poderá baixar aplicativos, mas não poderá vê-los, a menos que atualize sua conta para uma conta do Power BI Pro ou a menos que o aplicativo esteja armazenado em uma capacidade Premium compartilhada. Para obter mais informações, confira [Licenças para consumidores](end-user-license.md).
+   > Se você estiver usando uma licença de usuário gratuita, poderá baixar aplicativos, mas não poderá vê-los, a menos que atualize sua conta para uma conta do Power BI Pro ou a menos que o aplicativo esteja armazenado em uma capacidade Premium compartilhada. Para obter mais informações, confira as [licenças para usuários de negócios](end-user-license.md).
 
 ## <a name="install-an-app-from-a-direct-link"></a>Instalar um aplicativo por meio de um link direto
 Você também pode instalar um aplicativo organizacional por meio de um link direto no email do designer de aplicativo.  
@@ -112,9 +115,9 @@ O aplicativo será aberto. Cada aplicativo terá uma aparência diferente: layou
 1. O painel de navegação do aplicativo.  Abaixo do nome do aplicativo está a lista de páginas do relatório. Selecione o nome de uma página do relatório para abri-la. Atualmente, temos a página *Taxa de retorno* aberta. 
 1. Selecione a seta para expandir o painel **Filtros**.
 
-Explore também o workspace associado. [Saiba mais sobre workspaces](end-user-workspaces.md)
+Explore também o workspace associado. [Saiba mais sobre os workspaces](end-user-workspaces.md). Selecione **Power BI** (número 2) para retornar à **Página Inicial** e clique em **Workspaces**. 
 
-![Captura de tela do workspace Vendas e Marketing mostrando um relatório e um conjunto de dados. ](./media/end-user-app-view/power-bi-new-workspace.png)
+![Captura de tela do workspace Vendas e Marketing mostrando um relatório e um conjunto de dados. ](./media/end-user-app-view/power-bi-new-workspaces.png)
 
 ## <a name="update-an-app"></a>Atualizar um aplicativo 
 
@@ -136,8 +139,8 @@ Periodicamente, os designers de aplicativo podem lançar novas versões dos apli
 
         ![Substituir a versão antiga do aplicativo](./media/end-user-app-view/power-bi-already-installed.png) 
 
-    > [!NOTE] 
-    > A instalação de uma nova versão substitui as alterações que possam ter sido feitas nos relatórios e nos dashboards. Para manter seus relatórios e seus dashboard atualizados, salve-os com outro nome ou em uma localização diferente antes da instalação. 
+     > [!NOTE] 
+     > A instalação de uma nova versão substitui as alterações que possam ter sido feitas nos relatórios e nos dashboards. Para manter seus relatórios e seus dashboard atualizados, salve-os com outro nome ou em uma localização diferente antes da instalação. 
 
     4. Depois de instalar a versão atualizada, selecione **Atualizar aplicativo** para concluir o processo de atualização. 
 

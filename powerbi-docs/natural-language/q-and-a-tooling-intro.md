@@ -7,12 +7,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/17/2020
 ms.author: maggies
-ms.openlocfilehash: 6178c9f157578110a09abf3fcbebccba54339f13
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 47ab35113bbf6564cbc824b48891cd9f58370c8a
+ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865979"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88578118"
 ---
 # <a name="intro-to-qa-tooling-to-train-power-bi-qa-preview"></a>Introdução à ferramenta de P e R para treinar a P e R do Power BI (versão prévia)
 
@@ -42,13 +42,31 @@ A ferramenta de P e R só está disponível no Power BI Desktop e, no momento, d
 
     ![Introdução a P e R](media/q-and-a-tooling-intro/qna-tooling-dialog.png)
 
-### <a name="review-questions"></a>Examinar perguntas
+### <a name="field-synonyms"></a>Campo Sinônimos
+
+Selecione o **Campo Sinônimos** para conferir todas as tabelas e colunas que pertencem ao modelo. Essa exibição permite adicionar nomes alternativos para obter uma correspondência com as colunas com o objetivo de ajudar os usuários. Também é possível escolher se uma coluna ou tabela deve ser ocultada ou não de P e R.
+
+![Página inicial do campo Sinônimos de P e R](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-home.png)
+
+Clique em uma das tabelas para expandir e uma caixa de diálogo semelhante à mostrada abaixo será exibida.
+
+![Campo Sinônimos de P e R expandido](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-expanded.png)
+
+A caixa de diálogo mostrará todas as colunas e tabelas e os respectivos termos/sinônimos que os usuários podem usar ao fazer perguntas em relação ao conjunto de dados. É possível conferir rapidamente todos os termos em um só lugar e também adicionar ou remover termos de várias colunas. 
+
+- Adicionar termos: caso tenha um campo chamado Vendas, será possível decidir adicionar um termo chamado Receita para que um usuário possa usar essa palavra em vez de ser solicitado a usar a palavra vendas. Clique no sinal de mais para adicionar um novo termo rapidamente
+
+- Incluir em P e R: essa opção permite que uma coluna ou tabela seja omitida de P e R, o que significa que ela não será mostrada, tampouco um resultado poderá ser exibido com essa coluna. Lidar com datas é uma circunstância em que você pode decidir não incluir uma coluna. Caso haja vários campos de datas ou chaves estrangeiras, será possível decidir remover todos eles, exceto um dos campos de data, para que a coluna correta de data seja escolhida quando um usuário fizer uma pergunta relacionada à data.
+
+- Termos sugeridos: a P e R também recomendará termos sugeridos recuperados do nosso mecanismo de sugestões para ajudar você a adicionar termos/sinônimos rapidamente. Caso as sugestões não sejam adicionadas, elas ainda funcionarão, porém exibirão uma linha pontilhada laranja ao usuário indicando que P e R considera ter uma resposta, mas não tem certeza. Caso o sinônimo sugerido esteja correto, clique no ícone + para que ele possa ser usado. Caso a sugestão esteja incorreta, clique no X para remover o termo e garantir que ele não seja usado como termo/sinônimo. Além disso, ele não funcionará dentro da P e R. As sugestões são fornecidas pelo Dicionário do Office e também são provenientes de renomeações encontradas dentro de um relatório
+
+### <a name="review-questions"></a>Revisar perguntas
 
 Selecione **Perguntas de revisão** para ver uma lista de conjuntos de valores que estão sendo usados no serviço do Power BI para seu locatário. A página **Perguntas de revisão** também exibe o proprietário do conjunto de dados, o workspace e a data da última atualização. Aqui, você pode selecionar um conjunto de dados e ver que perguntas os usuários estão fazendo. Os dados também mostram as palavras que não foram reconhecidas. Todos os dados mostrados aqui são dos últimos 28 dias.
 
 ![Perguntas de revisão de P e R](media/q-and-a-tooling-intro/qna-tooling-review-questions.png)
 
-### <a name="teach-qa"></a>Ensinar P e R
+### <a name="teach-qa"></a>Treinar as perguntas e respostas
 
 A seção **Ensinar P e R** permite treinar o P e R para reconhecer palavras. Para começar, você digita uma pergunta que contém uma ou mais palavras que o P e R não reconhece. O P e R solicita a definição desse termo. Insira um filtro ou um nome de campo que corresponda ao que a palavra representa. O P e R então reinterpreta a pergunta original. Se você estiver satisfeito com os resultados, poderá salvar sua entrada. Para saber mais, confira [Ensinar P e R](q-and-a-tooling-teach-q-and-a.md)
 
@@ -62,7 +80,7 @@ Tudo o que você salvou da seção Ensinar P e R aparece aqui, assim, você pode
 
 ### <a name="suggest-questions"></a>Sugerir perguntas
 
-Sem fazer nenhuma configuração, o visual de P e R vai sugerir várias perguntas para começar. Essas perguntas são geradas automaticamente com base em seu modelo de dados. Em **Sugerir perguntas**, é possível substituir as perguntas geradas automaticamente com suas próprias perguntas. 
+Sem fazer nenhuma configuração, o visual de P e R vai sugerir várias perguntas para começar. Essas perguntas são geradas automaticamente com base em seu modelo de dados. Em **Sugerir perguntas**, é possível substituir as perguntas geradas automaticamente com suas próprias perguntas.
 
 Para iniciar, digite a pergunta que você deseja adicionar na caixa de texto. Na seção de visualização, você verá como será o resultado no visual de P e R. 
 
@@ -74,30 +92,12 @@ Selecione o botão **Adicionar** para adicionar essa pergunta a **Suas perguntas
  
 Selecione **Salvar** para mostrar a lista de perguntas sugeridas no visual de P e R. 
 
+> [!NOTE]
+> As perguntas sugeridas serão exibidas para todas as instâncias do elemento visual de P e R. Não é possível criar um conjunto separado de sugestões para cada elemento visual de P e R.
+> 
+> 
 
 ## <a name="other-qa-settings"></a>Outras configurações de P e R
-
-### <a name="bulk-synonyms"></a>Sinônimos em massa
-
-A guia **Modelagem** do Power BI Desktop tem mais opções para melhorar a experiência de P e R. 
-
-1. No Power BI Desktop, selecione modo de exibição Modelagem.
-
-2. Selecione um campo ou uma tabela para exibir o painel **Propriedades**.  Esse painel é exibido no lado direito da tela e lista várias ações do P e R. Uma opção é **Sinônimos**. Na caixa **Sinônimos**, é possível definir rapidamente alternativas para a tabela ou o campo selecionado. Você também pode definir sinônimos na seção **Ensinar P e R** da caixa de diálogo ferramentas, mas geralmente é mais rápido definir sinônimos aqui para muitos campos em uma tabela.
-
-    ![Sinônimos no painel Modelagem de P e R](media/q-and-a-tooling-intro/qna-modelling-pane-synonyms.png)
-
-3. Para definir vários sinônimos para um único campo, use vírgulas para denotar o próximo sinônimo.
-
-### <a name="hide-from-qa"></a>Ocultar de P e R
-
-Você também pode ocultar campos e tabelas para que não apareçam nos resultados de P e R. 
-
-1. No Power BI Desktop, selecione modo de exibição Modelagem.
-
-2. Selecione um campo ou tabela para exibir o painel **Propriedades** e **Ative** **Está oculto**.
-
-    O P e R respeita essa configuração e garante que o campo não seja reconhecido pelo P e R. Por exemplo, talvez você queira ocultar campos de ID e as chaves estrangeiras para evitar campos duplicados desnecessários com o mesmo nome. Mesmo que você oculte o campo, ainda poderá usá-lo no Power BI Desktop em visuais fora do P e R.
 
 ### <a name="set-a-row-label"></a>Definir um rótulo de linha
 

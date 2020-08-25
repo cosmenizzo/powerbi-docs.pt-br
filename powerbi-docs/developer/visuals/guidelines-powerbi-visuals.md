@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 07/16/2019
-ms.openlocfilehash: 1602743230f1a369fe3da48fa37a313b9d9bbea4
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.date: 08/12/2020
+ms.openlocfilehash: c9d6b10c05ac3e19c5ebdcb5a0f3a1ab9b989a10
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435871"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204915"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Diretrizes para visuais do Power BI
 Antes de [publicar](office-store.md) seu visual do Power BI no Microsoft AppSource para outras pessoas descobrirem e usarem, siga as diretrizes para criar uma experiência excelente para seus usuários.
@@ -59,6 +59,9 @@ O menu de contexto é o menu de clique com o botão direito do mouse que é exib
 Todos os visuais do Power BI devem habilitar o menu de contexto para trazer uma experiência unificada.
 Confira [este artigo](https://github.com/Microsoft/PowerBI-visuals/blob/gh-pages/tutorials/building-bar-chart/adding-context-menu-to-the-bar.md) para saber como adicionar um menu de contexto.
 
+>[!div class="mx-imgBorder"]
+>![Captura de tela do menu de contexto de um elemento visual do Power BI.](media/guidelines-powerbi-visuals/context-menu.png)
+
 ## <a name="commercial-logo"></a>Logotipo comercial
 Esta seção descreve as especificações para adicionar logotipos comerciais em visuais do Power BI. Os logotipos comerciais não são obrigatórios. Se adicionados, eles deverão seguir estas diretrizes.
 
@@ -74,15 +77,15 @@ Esta seção descreve as especificações para adicionar logotipos comerciais em
 Há três tipos de logotipos comerciais:
 * **Logotipos:** um logotipo é composto por dois elementos bloqueados juntos, um ícone e um nome.
 
-    ![Logotipo da Microsoft](media/guidelines-powerbi-visuals/microsoft-logo.png)
+    ![Uma captura de tela do logotipo da Microsoft.](media/guidelines-powerbi-visuals/microsoft-logo.png)
 
 * **Símbolo:** um gráfico sem nenhum texto.
 
-    ![Símbolo da Microsoft](media/guidelines-powerbi-visuals/microsoft-symbol.png)
+    ![Uma captura de tela do símbolo da Microsoft.](media/guidelines-powerbi-visuals/microsoft-symbol.png)
 
 * **Logotipo:** um logotipo sem um ícone, composto apenas por texto.
 
-    ![Símbolo da Microsoft](media/guidelines-powerbi-visuals/microsoft-logotype.png)
+    ![Uma captura de tela do logotipo da Microsoft sem ícone.](media/guidelines-powerbi-visuals/microsoft-logotype.png)
 
 ### <a name="commercial-logo-color"></a>Cor do logotipo comercial
 
@@ -90,15 +93,15 @@ Ao usar um logotipo comercial, a cor dele deverá ser cinza (cor hexadecimal #C8
 
 * **Logotipo**
 
-    ![Símbolo da Microsoft](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)
+    ![Uma captura de tela do logotipo da Microsoft de cor cinza.](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)
 
 * **Símbolo:** um gráfico sem nenhum texto.
 
-    ![Símbolo da Microsoft](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)
+    ![Uma captura de tela do símbolo da Microsoft de cor cinza.](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)
 
 * **Logotipo:** um logotipo sem um ícone, composto apenas por texto.
 
-    ![Símbolo da Microsoft](media/guidelines-powerbi-visuals/grey-microsoft-logotype.png)
+    ![Uma captura de tela do logotipo da Microsoft de cor cinza sem ícone.](media/guidelines-powerbi-visuals/grey-microsoft-logotype.png)
 
 > [!TIP]
 > * Se seu visual do Power BI contém um gráfico, considere adicionar uma tela de fundo branca com margens de 10 px ao seu logotipo.
@@ -110,13 +113,13 @@ Um visual do Power BI exige dois logotipos comerciais, um para blocos grandes e 
 
 A tabela a seguir descreve as considerações de tamanho dos visuais do Power BI.
 
-|  |Visual do Power BI pequeno  |Visual do Power BI grande  |
+|Configurações  |Visual do Power BI pequeno  |Visual do Power BI grande  |
 |---------|---------|---------|
 |*Largura do logotipo*    |Até 240 px         |Maior que 240 px         |
 |*Altura do logotipo*     |Até 160 px         |Maior que 160 px         |
 |*Tamanho da caixa delimitadora*     |40 x 15 px         |101 x 30 px         |
-|*Exemplo do logotipo comercial*     |![Símbolo da Microsoft](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)         |![Logotipo da Microsoft](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)         |
-|*Exemplo de caixa delimitadora*    |![exemplo de logotipo pequeno](media/guidelines-powerbi-visuals/small-logo-box.png)         |![exemplo de logotipo grande](media/guidelines-powerbi-visuals/big-logo-box.png)         |
+|*Exemplo do logotipo comercial*     |![Uma captura de tela da versão pequena do logotipo do Microsoft Commercial.](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)         |![Uma captura de tela do logotipo do Microsoft Commercial.](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)         |
+|*Exemplo de caixa delimitadora*    |![Uma captura de tela com as dimensões de um logotipo pequeno.](media/guidelines-powerbi-visuals/small-logo-box.png)         |![Uma captura de tela com as dimensões de um logotipo grande.](media/guidelines-powerbi-visuals/big-logo-box.png)         |
 |    |         |         |
 
 ### <a name="commercial-logo-behavior"></a>Comportamento do logotipo comercial
@@ -140,11 +143,11 @@ Os logotipos comerciais são permitidos apenas no modo de edição. Quando clica
 
 * Evite um logotipo comercial colorido ou um preto. O logotipo comercial deve ser cinza (cor hexadecimal #C8C8C8).
 
-    ![Logotipo colorido não autorizado](media/guidelines-powerbi-visuals/no-color-logo.png) ![Logotipo preto não autorizado](media/guidelines-powerbi-visuals/black-logo.png)
+    ![Captura de tela de um logotipo colorido da Microsoft não autorizado.](media/guidelines-powerbi-visuals/no-color-logo.png) ![Captura de tela de um logotipo preto da Microsoft não autorizado](media/guidelines-powerbi-visuals/black-logo.png)
 
 * Um logotipo comercial com efeitos como gradientes ou sombras fortes.
 
-    ![Estilo de logotipo não autorizado](media/guidelines-powerbi-visuals/no-style-logo.png)
+    ![Captura de tela com o exemplo de um estilo de logotipo da Microsoft não autorizado.](media/guidelines-powerbi-visuals/no-style-logo.png)
 
 ## <a name="best-practices"></a>Práticas recomendadas
 
@@ -164,4 +167,7 @@ Para saber mais sobre visuais do Power BI, confira [Perguntas frequentes sobre o
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Saiba como você pode publicar seu visual do Power BI no [Microsoft AppSource](office-store.md) para outras pessoas descobrirem e usarem.
+Saiba como você pode publicar seu visual do Power BI no Microsoft AppSource para outras pessoas descobrirem e usarem.
+
+>[!div class="nextstepaction"]
+>[Publicar visuais do Power BI](office-store.md)

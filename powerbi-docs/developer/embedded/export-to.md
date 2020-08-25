@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 07/13/2020
-ms.openlocfilehash: fd30b9df6fce484bffab430888260145bb374ce9
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: 8e3ca6d9615a348fec928f13a561fbb97e719d6a
+ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091562"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88160362"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Exportar relatório do Power BI para um arquivo (versão prévia)
 
@@ -103,8 +103,7 @@ Um trabalho que excede o número de solicitações simultâneas não será concl
 * Para versão prévia pública, o número de páginas de relatório do Power BI exportadas por hora é limitado a 50 por capacidade.
 * Os relatórios exportados não podem exceder um tamanho de arquivo de 250 MB.
 * Ao exportar para um .png, não há suporte aos rótulos de confidencialidade.
-* Um relatório com um rótulo de confidencialidade não pode ser exportado para um .pdf ou um .pptx com uma [entidade de serviço](embed-service-principal.md).
-* O número de páginas que podem ser incluídas em um relatório exportado é 30. Se o relatório incluir mais páginas, a API retornará um erro, e o trabalho de exportação será cancelado.
+* Um relatório exportado pode ter 50 páginas incluídas. Se o relatório incluir mais páginas, a API retornará um erro, e o trabalho de exportação será cancelado.
 * Não há suporte para [indicadores pessoais](../../consumer/end-user-bookmarks.md#personal-bookmarks) e [filtros persistentes](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
 * Não há suporte para os visuais do Power BI listados abaixo. Quando um relatório que contém estes visuais é exportado, as partes do relatório que os contêm não são renderizadas, e é exibido um símbolo de erro.
     * Visuais do Power BI não certificados

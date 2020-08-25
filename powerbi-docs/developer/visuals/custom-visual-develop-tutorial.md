@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/15/2019
-ms.openlocfilehash: d82f09fa4c545129bbd1032041dcfab6f4f67901
-ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
+ms.openlocfilehash: ebb0107b158e505a8095b4c8f6b6b32731e7e98d
+ms.sourcegitcommit: 642b0c04d3ff3aa4d5422ca5054a5a158fb01b22
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84739335"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88512921"
 ---
 # <a name="tutorial-developing-a-power-bi-visual"></a>Tutorial: Desenvolver um visual do Power BI
 
@@ -130,7 +130,7 @@ Agora, é necessário instalar o pacote **pbiviz**.
 4. Feche todos os navegadores que estiverem abertos.
 
 > [!NOTE]
-> Se o certificado não for reconhecido, poderá ser necessário reiniciar o computador.
+> Se o certificado não for reconhecido, poderá ser necessário reiniciar o computador. Alguns navegadores, como o Firefox, exigem que você confie no certificado autoassinado. Para fazer isso, navegue até a página do servidor do webpack (https://localhost:8080/webpack-dev-server) ) e aceite o risco.
 
 ## <a name="creating-a-custom-visual"></a>Criando um visual personalizado
 
@@ -537,7 +537,7 @@ Agora podemos explorar como desenvolver o visual personalizado para mostrar um c
 
 Defina as funções e os mapeamentos de exibição de dados e, em seguida, modifique a lógica do visual personalizado para exibir o valor e o nome de exibição de uma medida.
 
-### <a name="configuring-the-capabilities"></a>Configurando as funcionalidades
+### <a name="configuring-the-capabilities"></a>Como configurar as funcionalidades
 
 Modifique o arquivo **capabilities.json** para definir a função e os mapeamentos de exibição de dados.
 
@@ -650,4 +650,4 @@ Para obter dicas de como depurar seu visual personalizado, veja o [guia depuraç
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Adicionando opções de formatação](custom-visual-develop-tutorial-format-options.md)
+> [Como adicionar opções de formatação](custom-visual-develop-tutorial-format-options.md)

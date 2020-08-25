@@ -6,59 +6,58 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 06/09/2020
+ms.date: 08/12/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5f2e97a5b1ba8fc62581244cf26cd069ce5c2586
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: f8020e68db6b0baaabdde626d1b17674fe995ca2
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162242"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88205075"
 ---
 # <a name="install-and-use-the-sample-sales-and-marketing-app-in-the-power-bi-service"></a>Instalar e usar o aplicativo de Vendas e Marketing de exemplo no serviço do Power BI
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Agora que você tem uma [compreensão básica de como obter o conteúdo do Power BI](end-user-app-view.md), vamos obter o aplicativo de Vendas e Marketing do Microsoft AppSource (appsource.com). 
+Agora que você tem uma [compreensão básica de como obter conteúdos do Power BI](end-user-app-view.md), vamos usar o Microsoft AppSource para obter o aplicativo de Marketing e Vendas. 
 
 
-## <a name="get-the-app-from-the-power-bi-apps-marketplace"></a>Obter o aplicativo do marketplace de aplicativos do Power BI
+## <a name="get-the-app-from-microsoft-appsource"></a>Obter o aplicativo no Microsoft AppSource
 
-1. [Entre no serviço do Power BI](./end-user-sign-in.md), se você ainda não tiver feito isso. 
+1. Abra [https://appsource.microsoft.com](https://appsource.microsoft.com).
 
-1. Quando estiver no Power BI, selecione **Aplicativos > Obter aplicativos**. 
+   ![abrir o site do AppSource  ](./media/end-user-app-marketing/power-bi-appsource.png)
 
-    ![Obter aplicativos  ](./media/end-user-app-marketing/power-bi-get-apps.png)
+1. Na caixa de pesquisa, insira **Marketing** e posicione uma marca de seleção ao lado de **Refinar por produto > Aplicativos do Power BI**. 
 
-1. O marketplace de aplicativos do Power BI é aberto. Encontre o aplicativo de Vendas e Marketing. Se você não o encontrar, tente digitar "vendas" na caixa de pesquisa.
+    ![Obter aplicativos  ](./media/end-user-app-marketing/power-bi-search-appsource.png)
 
-    ![Marketplace de aplicativos do Power BI  ](./media/end-user-app-marketing/power-bi-apps-marketplace.png)
 
-1. Clique no bloco do aplicativo. A oferta do aplicativo no AppSource será aberta. Clique em **OBTER AGORA**.
+1. Selecione o bloco do aplicativo para **amostra da Microsoft – Vendas e Marketing**. Também é possível ler a visão geral e as revisões e conferir as imagens.  Em seguida, selecione **Obter agora**.
 
-   ![Oferta do aplicativo no AppSource](./media/end-user-app-marketing/power-bi-apps-app-offering.png)
+   ![Oferta do aplicativo no AppSource](./media/end-user-app-marketing/power-bi-app-offering.png)
 
 1. Confirme que deseja instalar o aplicativo.
 
-   ![Instalar este aplicativo?](./media/end-user-app-marketing/power-bi-app-install.png)
+   ![Instalar este aplicativo?](./media/end-user-app-marketing/power-bi-installs.png)
 
 5. O serviço do Power BI exibirá uma mensagem quando o aplicativo for instalado. Selecione **Ir para o aplicativo** para abri-lo. De acordo com o designer que criou o aplicativo, será exibido o dashboard ou o relatório.
 
     ![Aplicativo instalado ](./media/end-user-app-marketing/power-bi-app-ready.png)
 
-    Também é possível abrir o aplicativo diretamente na lista de conteúdo do aplicativo selecionando **Aplicativos** e escolhendo **Vendas e Marketing**.
+    Também é possível abrir o aplicativo diretamente na lista de conteúdo do aplicativo selecionando **Aplicativos** e escolhendo o bloco do aplicativo **Vendas e Marketing**.
 
-    ![Aplicativos no Power BI](./media/end-user-app-marketing/power-bi-apps-sales-marketing.png)
+    ![Aplicativos no Power BI](./media/end-user-app-marketing/power-bi-sales-marketing.png)
 
 
-6. Escolha se deseja explorar ou personalizar e compartilhar seu novo aplicativo. Como selecionamos um aplicativo de exemplo da Microsoft, vamos começar explorando. 
+6. Escolha se deseja conectar os próprios dados, explorar os dados de exemplo ou personalizar e compartilhar seu novo aplicativo. Como selecionamos um aplicativo de exemplo da Microsoft, vamos começar explorando. 
 
-    ![Explorar com os dados de exemplo](./media/end-user-app-marketing/power-bi-explore.png)
+    ![Explorar com os dados de exemplo](./media/end-user-app-marketing/power-bi-explore-app.png)
 
 7.  Seu novo aplicativo é aberto com um dashboard. O *designer* de aplicativo pode ter definido o aplicativo para ser aberto em um relatório.  
 
-    ![Explorar com os dados de exemplo](./media/end-user-app-marketing/power-bi-new-app.png)
+    ![Explorar com os dados de exemplo](./media/end-user-app-marketing/power-bi-app-new.png)
 
 
 
@@ -70,6 +69,6 @@ Reserve algum tempo para explorar os dados nos dashboards e relatórios que comp
 
 
 ## <a name="next-steps"></a>Próximas etapas
-* [Voltar para a visão geral de aplicativos](end-user-apps.md)
-* [Exibir um relatório do Power BI](end-user-report-open.md)
+* [Voltar para a visão geral de aplicativos](end-user-apps.md)    
+* [Exibir um relatório do Power BI](end-user-report-open.md)    
 * [Outras maneiras como o conteúdo é compartilhado com você](end-user-shared-with-me.md)

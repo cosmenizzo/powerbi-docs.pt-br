@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 1213d02926db3b1d356e7fefffb44bcc41b8ab96
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 829de249b71076ccd1ed2a60348170e93b68e507
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227692"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204428"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Configurar cargas de trabalho em uma capacidade Premium
 
@@ -59,8 +59,10 @@ A carga de trabalho de conjuntos de dados está habilitada por padrão e não po
 | **Contagem máxima do conjunto de linhas de resultado** | O número máximo de linhas retornadas em uma consulta DAX. O valor padrão é -1 (nenhum limite) e o intervalo permitido é de 100.000 a 214.7483.647. |
 | **Limite de memória de consulta (%)** | A porcentagem máxima de memória disponível na carga de trabalho que pode ser usada para executar uma consulta MDX ou DAX. O valor padrão é 0, o que resulta na aplicação do limite de memória de consulta automática específico do SKU. |
 | **Tempo limite da consulta (segundos)** | A quantidade máxima de tempo antes que uma consulta expire. O padrão é de 3.600 segundos (1 hora). Um valor de 0 especifica que as consultas não atingirão o tempo limite. |
-| **Atualização automática de página (visualização)** | Botão de alternância para permitir que workspaces premium tenham relatórios com atualização automática de página. |
+| **Atualização automática de página** | Alterne Ativar/Desativar para permitir que workspaces Premium tenham relatórios com uma atualização automática de página baseada em intervalos fixos. |
 | **Intervalo mínimo de atualização** | Se a atualização automática de página estiver ativada, esse será o intervalo mínimo permitido para o intervalo de atualização de página. O valor padrão é cinco minutos, e o mínimo permitido é um segundo. |
+| **Medida de detecção de alterações** | Alterne Ativar/Desativar para permitir que workspaces Premium tenham relatórios com uma atualização automática de página baseada na detecção de alterações. |
+| **Intervalo mínimo de execução** | Caso a medida de detecção de alterações esteja ativada, o intervalo mínimo de execução permitido para pesquisar dados será alterado. O valor padrão será de cinco minutos e o mínimo permitido será um segundo. |
 |  |  |  |
 
 #### <a name="max-intermediate-row-set-count"></a>Contagem Máxima de Conjuntos de Linhas Intermediárias

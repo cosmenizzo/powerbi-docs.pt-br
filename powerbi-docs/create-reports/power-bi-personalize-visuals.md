@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/21/2020
+ms.date: 08/12/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 0fdee37f682774e1dac2b1ac6a4fc7a6e8dabe91
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8dd6e64943ea05f2219efa471cd3fcfa4152650b
+ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238082"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88160431"
 ---
 # <a name="let-users-personalize-visuals-in-a-report"></a>Permitir que os usuários personalizem visuais em um relatório
 
@@ -41,6 +41,59 @@ Esse recurso não só permite novas funcionalidades de exploração, como inclui
 - Redefinir todas as alterações de um relatório
 - Redefinir todas as alterações de um visual
 - Desmarcar as alterações recentes
+
+## <a name="use-perspectives-for-a-more-focused-view"></a>Usar a opção Perspectivas para obter uma exibição mais focada
+
+Para Personalizar elementos visuais é possível usar a opção **Perspectivas** com o objetivo de escolher o subconjunto de um modelo que fornecerá uma exibição mais focada. Escolher um subconjunto pode ser útil ao trabalhar com um grande modelo de dados. Isso permite se concentrar em um subconjunto de campos gerenciável e não sobrecarregar os leitores de relatório com uma coleção completa de campos nesse grande modelo. 
+
+![Personalizar elementos visuais](media/power-bi-personalize-visuals/power-bi-personalize-perspective-01.png)
+
+Lembre-se das seguintes considerações ao trabalhar com perspectivas:
+
+* As perspectivas não devem ser usadas como um mecanismo de segurança, mas sim como uma ferramenta que fornece uma melhor experiência para o usuário final. Toda a segurança de uma perspectiva é herdada do modelo subjacente.
+
+* As perspectivas são compatíveis com modelos de tabela e multidimensionais. No entanto, para perspectivas em modelos multidimensionais, somente será possível definir a perspectiva como sendo igual ao cubo da base do relatório.
+
+* Antes de excluir a perspectiva de um modelo, certifique-se de verificar se ela não está sendo usada na experiência Personalizar elementos visuais. 
+
+Para usar a opção Perspectivas é necessário habilitar Personalizar elementos visuais do relatório. Também é necessário criar pelo menos uma Perspectiva que inclua as dimensões e medidas com as quais deseja que os usuários finais interajam para obter a experiência de Personalizar elementos visuais.
+
+Para criar a perspectiva, use o [Editor de Tabelas](https://tabulareditor.com/), que pode ser baixado do seguinte local: Baixar o Editor de Tabelas
+
+Depois de instalar o **Editor de Tabelas**, abra o relatório no **Power BI Desktop** e inicie o **Editor de Tabelas** na guia **Ferramentas Externas** da faixa de opções, conforme mostrado na imagem a seguir.
+
+![Editor de Tabelas na faixa de opções de Ferramentas Externas](media/power-bi-personalize-visuals/power-bi-personalize-perspective-02.png)
+
+No Editor de Tabelas, clique com o botão direito do mouse na pasta **Perspectivas** para criar uma perspectiva.
+
+![Criar uma pasta Perspectivas no Editor de Tabelas](media/power-bi-personalize-visuals/power-bi-personalize-perspective-03.png)
+
+É possível clicar duas vezes no texto para renomear a perspectiva.
+
+![Renomear a perspectiva](media/power-bi-personalize-visuals/power-bi-personalize-perspective-04.png)
+
+Adicione campos à perspectiva abrindo a pasta **Tabelas** no Editor de Tabelas. Em seguida, clique com o botão direito do mouse nos campos que deseja exibir na perspectiva.
+
+![Adicionar campos a uma perspectiva](media/power-bi-personalize-visuals/power-bi-personalize-perspective-05.png)
+
+Repita esse processo para cada campo que deseja adicionar à perspectiva. Não é possível adicionar campos duplicados em uma perspectiva, portanto, todos os campos que já foram adicionados terão a opção Adicionar desabilitada.
+
+Depois de adicionar todos os campos desejados, certifique-se de salvar as configurações no Editor de Tabelas e no Power BI Desktop.
+
+![Salvar configurações de perspectivas no Editor de Tabelas e no Power BI Desktop](media/power-bi-personalize-visuals/power-bi-personalize-perspective-06.png)
+
+Depois de salvar a nova perspectiva no modelo e salvar o relatório do Power BI Desktop, navegue até o painel **Formato** da página, onde será possível conferir uma nova seção para **Personalizar elementos visuais**.
+
+![Seção Personalizar elementos visuais no painel Formatar](media/power-bi-personalize-visuals/power-bi-personalize-perspective-07.png)
+
+A seleção da *Perspectiva do leitor de relatório* será definida inicialmente como *Campos padrão*. Depois de selecionar a seta suspensa, será possível conferir outras Perspectivas criadas.
+
+![Selecione a seta suspensa para conferir outras perspectivas](media/power-bi-personalize-visuals/power-bi-personalize-perspective-08.png)
+
+Depois de definir a Perspectiva da página do relatório, a experiência Personalizar elementos visuais dessa página será filtrada para a Perspectiva selecionada. Selecionar **Aplicar a todas as páginas** permite aplicar a configuração de Perspectiva a todas as páginas existentes em seu relatório.
+
+![Selecione Aplicar a todas as páginas para que a perspectiva seja aplicada a todo o relatório](media/power-bi-personalize-visuals/power-bi-personalize-perspective-09.png)
+
 
 ## <a name="turn-on-the-preview-feature"></a>Ativar a versão prévia do recurso
 
@@ -91,7 +144,7 @@ Atualmente, o recurso tem algumas limitações a serem consideradas.
 
 - Não há suporte para esse recurso em cenários de inserção, incluindo publicar na Web.
 - As explorações de usuário não persistem automaticamente. Você precisa salvar sua exibição como um indicador pessoal para capturar suas alterações.
-- Esse recurso tem suporte nos aplicativos móveis do Power BI para tablets Android e iOS e no aplicativo Power BI Windows; não tem suporte nos aplicativos móveis do Power BI para telefones. No entanto, todas as alterações em um visual salvas em um indicador pessoal no serviço do Power BI são respeitadas em todos os aplicativos móveis do Power BI.
+- Esse recurso tem suporte nos aplicativos móveis do Power BI para tablets Android e iOS, e no aplicativo Power BI Windows. Não tem suporte nos aplicativos móveis do Power BI para telefones. No entanto, todas as alterações em um visual salvas em um indicador pessoal no serviço do Power BI são respeitadas em todos os aplicativos móveis do Power BI.
 
 Há também alguns problemas conhecidos que estamos abordando:
 

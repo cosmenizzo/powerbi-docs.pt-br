@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/11/2020
+ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: 5ca205bf2e82269140926ac69ccdead43b0cddd8
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: f53fb518df3c82f4570c81b7caa14c20eea8022c
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091631"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204957"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorar relatórios nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -53,6 +53,9 @@ Para ver um relatório no dashboard, toque em **Mais opções** (...) no canto s
   
   Nem todos os blocos podem ser abertos como relatórios. Por exemplo, os blocos criados ao fazer uma pergunta na caixa de P e R não abrem relatórios quando você toca neles.
   
+## <a name="zoom-in-on-your-data"></a>Amplie seus dados   
+Use o gesto de pinçagem para aplicar zoom em seus relatórios a fim de examiná-los com mais detalhes. Desfaça a pinçagem para reverter a aplicação de zoom. A opção de pinçar para aplicar zoom é compatível com telefones e tablets dos sistemas Android e iOS.
+
 ## <a name="interact-with-reports"></a>Interagir com relatórios
 Depois de abrir um relatório no aplicativo, você pode começar a trabalhar com ele. Você pode fazer muitas coisas com seus relatórios e seus dados. No rodapé do relatório, você encontrará ações que podem ser executadas no relatório. Ao tocar e tocar de modo prolongado nos dados mostrados no relatório, você também pode dividir os dados.
 
@@ -165,4 +168,4 @@ Confira [Configurações de interação do aplicativo](./mobile-app-interaction-
 ## <a name="next-steps"></a>Próximas etapas
 * [Exibir e interagir com relatórios do Power BI otimizados para seu telefone](mobile-apps-view-phone-report.md)
 * [Criar uma versão de um relatório otimizado para telefones](../../create-reports/desktop-create-phone-report.md)
-* Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+* Dúvidas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

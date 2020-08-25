@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/22/2020
+ms.date: 08/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 01155e3ed4921a11f87acaeaf67f20772a4d01dd
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: d8b98afff55c830a1ce3fadd39c11b4cf98036a8
+ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252741"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88578187"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Atualizações mensais anteriores ao Power BI Desktop
 
@@ -37,6 +37,85 @@ Os links ao lado de cada atualização significam o seguinte:
 Você também pode assistir o vídeo das **Atualizações mais recentes** desde o início, diretamente deste artigo, clicando no ícone **reproduzir** na imagem de vídeo localizada abaixo da lista de atualizações.
 
 As seções a seguir descrevem atualizações de meses anteriores do **Power BI Desktop**.
+
+
+## <a name="july-2020-update-2835894661"></a>Atualização de julho de 2020 (2.83.5894.661)
+
+Nossas atualizações de julho do Power BI Desktop representaram uma comemoração em virtude das novas funcionalidades e dos novos recursos, dignos de entusiasmo, satisfação e celebração. 
+
+Obtenha a última versão do Power BI Desktop no [Centro de Download](https://www.microsoft.com/download/details.aspx?id=58494). Se estiver executando o Windows 10, poderá obter o Power BI Desktop também na [Microsoft Store](https://aka.ms/pbidesktopstore). Seja qual for o modo de instalação do Power BI Desktop, as versões mensais são as mesmas, embora a numeração de versão possa ser diferente. Para obter mais informações sobre como baixar e instalar o Power BI Desktop, confira [Obter o Power BI Desktop](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> O Power BI Desktop é atualizado e lançado mensalmente, incorporando comentários dos clientes e novos recursos. Há suporte somente para a versão mais recente do Power BI Desktop, e os clientes que entrarem em contato com o suporte do Power BI Desktop serão solicitados a atualizar para a versão mais recente. Obtenha a versão mais recente do Power BI Desktop da [Microsoft Store](https://aka.ms/pbidesktopstore) ou como um executável contendo todos os idiomas com suporte que você [baixa](https://www.microsoft.com/download/details.aspx?id=58494) e instala no computador.
+
+Os links ao lado de cada recurso na lista de atualizações do Power BI Desktop são interpretados da seguinte maneira:
+
+* \[blog\]: a maioria dos recursos é explicada em uma seção da postagem no blog de atualização mensal.
+* \[vídeo\]: alguns recursos têm um trecho de vídeo que aborda o recurso, que é reproduzido em uma nova guia do navegador.
+* \[artigo\]: alguns recursos têm um artigo que fornece mais detalhes.
+* Os recursos restantes são autoexplicativos e não precisam de um artigo ou um vídeo.
+
+Você também pode assistir a todo o [vídeo sobre a atualização mensal do Power BI Desktop](#power-bi-desktop-monthly-update-video).
+
+As atualizações a seguir são novas para o Power BI Desktop este mês:
+
+
+### <a name="reporting"></a>Relatórios
+* Layout gradiente [[vídeo]](https://youtu.be/BCNYMJKyjEo?t=15)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Gradient_legend) 
+* Capacidade de personalizar ainda mais o texto do cabeçalho da segmentação  [[vídeo]](https://youtu.be/BCNYMJKyjEo?t=159)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Ability_to_further) 
+* O filtro de tempo relativo já está disponível para todos  [[video]](https://youtu.be/BCNYMJKyjEo?t=195)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Relative_time_filter) 
+
+
+### <a name="analytics"></a>Análise
+* Aprimoramentos para P e R [[vídeo]](https://youtu.be/BCNYMJKyjEo?t=214)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Enhancements_to_QA) 
+
+
+### <a name="visuals"></a>Visuais
+* Visual do Azure Mapas (versão prévia) [[vídeo]](https://youtu.be/BCNYMJKyjEo?t=390)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Azure_Maps_visual)
+* Atualizações do gráfico de vários eixos da XViz  [[vídeo]](https://youtu.be/BCNYMJKyjEo?t=783)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Updates_to_Multi_Axis)
+
+
+### <a name="modeling"></a>Modelagem
+* Suporte para funções financeiras do Excel [[vídeo]](https://youtu.be/BCNYMJKyjEo?t=812)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Support_for_Excel)
+* A exibição de modelo habilitada para Live Connect já está disponível para todos [[vídeo]](https://youtu.be/BCNYMJKyjEo?t=956)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Model_view_enabled)
+
+
+### <a name="data-preparation"></a>Preparação de dados
+* Opção global para desabilitar a detecção automática de tipo [[vídeo]](https://youtu.be/BCNYMJKyjEo?t=989)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Global_option_to) 
+
+
+### <a name="template-apps"></a>Aplicativos de modelo
+* YouTube Analytics da MAQ Software [[vídeo]](https://youtu.be/BCNYMJKyjEo?t=1035)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_YouTube_Analytics_by)
+
+
+### <a name="other-features"></a>Outros recursos
+* Iniciar ferramentas externas pelo Power BI Desktop (versão prévia) [[vídeo]](https://youtu.be/BCNYMJKyjEo?t=1066)   [[artigo]](../create-reports/desktop-external-tools.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Launch_external_tools) 
+
+
+Para obter informações detalhadas sobre cada um desses novos recursos, confira a [postagem no blog Resumo dos recursos do Power BI Desktop](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/).
+
+Confira as [novidades do serviço do Power BI](service-whats-new.md) e as [novidades dos aplicativos móveis para Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+> [!NOTE]
+> Consulte as [fontes de dados disponíveis para o Power BI Desktop](../connect-data/desktop-data-sources.md). Nossa lista está sempre crescendo, sendo assim, verifique com frequência.
+
+
+### <a name="power-bi-desktop-monthly-update-video"></a>Vídeo de atualização mensal do Power BI Desktop
+O vídeo a seguir descreve cada uma dessas atualizações. Assista também a esse vídeo na postagem no blog:
+
+> [!VIDEO https://www.youtube.com/embed/BCNYMJKyjEo]
+
+Você também pode baixar as versões anteriores do Power BI Desktop, se for necessário para sua organização. É sempre recomendável usar a versão mais recente do Power BI Desktop, em vez de uma versão anterior. Todas as versões anteriores têm as seguintes limitações:
+
+* As versões anteriores do Power BI Desktop não estão recebendo atualizações – você sempre deve usar a versão mais recente para receber os novos recursos e atualizações.
+* Talvez não seja possível abrir os arquivos criados ou salvos em versões mais recentes do Power BI Desktop nas versões anteriores do Power BI Desktop. 
+* Se você receber um aviso ao carregar um relatório salvo em uma versão mais recente do Power BI Desktop e, em seguida, salvar o relatório na versão anterior, perderá todas as informações relacionadas aos novos recursos.
+* Arquivamos apenas as versões em inglês do Power BI Desktop.
+
+Selecione os links a seguir para baixar esta versão anterior: 
+
+* [Versão de julho de 2020 do Power BI Desktop – 32 bits](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-07.exe)
+* [Versão de julho de 2020 do Power BI Desktop – 64 bits](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-07_x64.exe)
 
 
 ## <a name="june-2020-update-2825858301"></a>Atualização de junho de 2020 (2.82.5858.301)
@@ -121,9 +200,6 @@ Selecione os links a seguir para baixar esta versão anterior:
 
 * [Versão de junho de 2020 do Power BI Desktop – 32 bits](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-06.exe)
 * [Versão de junho de 2020 do Power BI Desktop – 64 bits](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-06_x64.exe)
-
-
-
 
 
 
@@ -309,9 +385,6 @@ Selecione os links a seguir para baixar esta versão anterior:
 
 
 
-
-
-
 ## <a name="march-2020-update-2795768562"></a>Atualização de março de 2020 (2.79.5768.562)
 
 Assim como um trevo de quatro folhas, temos a sorte de compartilhar nosso Power BI Desktop de março com você. 
@@ -404,11 +477,6 @@ Selecione os links a seguir para baixar esta versão anterior:
 
 
 
-
-
-
-
-
 ## <a name="february-2020-update-2785740642"></a>Atualização de fevereiro de 2020 (2.78.5740.642)
 
 Adoramos nossas atualizações de fevereiro e achamos que nossos novos recursos ficaram melhores do que uma caixa de chocolates em forma de coração. 
@@ -480,8 +548,8 @@ Você também pode baixar as versões anteriores do Power BI Desktop, se for nec
 
 Selecione os links a seguir para baixar esta versão anterior: 
 
-* [Versão de fevereiro de 2020 do Power BI Desktop – 32 bits](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-02.exe)
-* [Versão de fevereiro de 2020 do Power BI Desktop – 64 bits](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-02_x64.exe)
+* [Versão de fevereiro de 2020 do Power BI Desktop – 32 bits](https://download.microsoft.com/download/3/C/0/3C0A5D40-85C6-4959-BB51-3A2087B18BCA/PBIDesktopRS.msi)
+* [Versão de fevereiro de 2020 do Power BI Desktop – 64 bits](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup_x64.exe)
 
 
 ## <a name="december-2019-update-2765678661"></a>Atualização de dezembro de 2019 (2.76.5678.661)
