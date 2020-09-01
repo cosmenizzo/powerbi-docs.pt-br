@@ -1,25 +1,26 @@
 ---
-title: Glossário para consumidores do Power BI
-description: O Power BI apresenta muitos novos termos e novos usos para termos familiares. Use nosso glossário para se familiarizar com a terminologia do Power BI.
+title: Glossário para usuários de negócio do Power BI
+description: O Power BI apresenta muitos novos termos e novos usos para termos familiares. Use nosso glossário para se familiarizar com a terminologia do serviço do Power BI.
 services: power-bi
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 07/08/2020
+ms.topic: reference
+ms.date: 08/24/2020
+ms.custom: contperfq1
 ms.author: mihart
-ms.openlocfilehash: f5ed2252836ecda364ca53904c2cccbae9f9b7e6
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: cd562d8fe689c2ae82ee1cacfc9e02393a5992f9
+ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215615"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88803033"
 ---
-# <a name="glossary-for-power-bi-service"></a>Glossário do serviço do Power BI    
+# <a name="glossary-for-business-users-of-the-power-bi-service"></a>Glossário para usuários de negócio do serviço do Power BI    
 O serviço do Power BI pode apresentar terminologia confusa ou desconhecida. O glossário é um ótimo lugar para pesquisar sobre a terminologia, por isso pode ser útil até mesmo salvá-lo como favorito. Outro excelente recurso para aprender sobre os blocos de construção que compõem o serviço do Power BI são os [Conceitos básicos](end-user-basic-concepts.md). O artigo com Conceitos básicos fornece uma visão geral de alto nível das *partes* do Power BI e como elas estão conectadas.
 
-Este glossário é um esforço conjunto da comunidade.  Não encontrou uma palavra aqui? Peça para adicioná-la (você pode usar o botão de comentários de documentação na parte inferior deste artigo.
+Este glossário é um esforço conjunto da comunidade.  Não encontrou uma palavra aqui? Peça para adicioná-la (você pode usar o botão de comentários de documentação na parte inferior deste artigo).
 
 ## <a name="a"></a>Um
 

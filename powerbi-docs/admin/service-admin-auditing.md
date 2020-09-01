@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 08/20/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: e8e81c297841e32d1f4d966de23b5d752b654c20
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: 7b5a96f4b592789c04ebaca5418e470d546ff788
+ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091608"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88802964"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Acompanhar atividades do usuário no Power BI
 
@@ -32,6 +32,10 @@ Saber quem está executando uma ação em determinado item, em seu locatário do
 
 
 ## <a name="use-the-activity-log"></a>Usar o log de atividades
+
+> [!NOTE]
+> O log de atividades não tem suporte para Microsoft Cloud Deutschland. Saiba mais sobre as limitações de serviço para a nuvem da Alemanha em [Perguntas frequentes sobre o Power BI para clientes da nuvem da Alemanha](service-govde-faq.md).
+
 
 Como administrador de serviço do Power BI, você pode analisar o uso de todos os recursos de Power BI no nível do locatário, usando relatórios personalizados com base no log de atividades do Power BI. Você pode baixar as atividades usando uma API REST ou um cmdlet do PowerShell. Você também pode filtrar os dados de atividade por intervalo de datas, usuário e tipo de atividade.
 
@@ -73,6 +77,8 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 > Pode levar até 24 horas para que todos os eventos sejam exibidos, embora os dados completos normalmente estejam disponíveis muito antes.
 >
 >
+Para saber mais sobre como usar a API REST do Power BI, incluindo exemplos de como obter eventos de atividade de auditoria, confira [Administrador – obter eventos de atividade](https://docs.microsoft.com/rest/api/power-bi/admin/getactivityevents) na documentação de referência da API REST do Power BI.
+
 ### <a name="get-powerbiactivityevent-cmdlet"></a>Cmdlet Get-PowerBIActivityEvent
 
 Baixe eventos de atividade usando os cmdlets de Gerenciamento do Power BI para PowerShell. O cmdlet **Get-PowerBIActivityEvent** lida automaticamente com o token de continuação para você. O cmdlet **Get-PowerBIActivityEvent** usa um StartDateTime e um parâmetro EndDateTime com as mesmas restrições que a API REST **ActivityEvents**. Em outras palavras, a data de início e a data de término devem referenciar o mesmo valor de data, pois você só pode recuperar os dados da atividade referentes a um dia por vez.
@@ -113,7 +119,7 @@ Você pode filtrar os dados de auditoria por intervalo de datas, usuário, paine
 
 Você precisa atender a estes requisitos para acessar os logs de auditoria:
 
-- Para acessar o log de auditoria, é necessário ser um administrador global ou ser atribuído à função de Logs de Auditoria ou Logs de Auditoria Somente Exibição no Exchange Online. Por padrão, essas funções são atribuídas a grupos de funções de Gerenciamento de Conformidade e Gerenciamento de Organização, na página **Permissões**, no centro de administração do Exchange.
+- Para acessar o log de auditoria, é necessário ser um administrador global ou ser atribuído à função de Logs de Auditoria ou Logs de Auditoria Somente Exibição no Exchange Online. Por padrão, essas funções são atribuídas a grupos de funções de Gerenciamento de Conformidade e Gerenciamento de Organização, na página **Permissões**, no centro de administração do Exchange. Para obter mais informações sobre as funções que podem exibir logs de auditoria, confira [Requisitos para pesquisar o log de auditoria](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#requirements-to-search-the-audit-log).
 
     Para fornecer contas que não sejam de administrador com acesso ao log de auditoria, adicione o usuário como membro de um desses grupos de função. Como alternativa, crie um grupo de função personalizado no Centro de administração do Exchange, atribua a função de Logs de Auditoria ou Logs de Auditoria Somente Exibição a esse grupo e adicione a conta não administrativa ao novo grupo de função. Para obter mais informações, veja [Gerenciar grupos de função no Exchange Online](/Exchange/permissions-exo/role-groups).
 
@@ -180,7 +186,7 @@ A área **Resultados** inclui as seguintes informações sobre cada evento retor
 | Usuário |O usuário (ou a conta de serviço) que executou a ação que acionou o evento. |
 | Atividade |A atividade executada pelo usuário. Esse valor corresponde às atividades que você selecionou na lista suspensa **Atividades**. Para um evento do log de auditoria de administrador do Exchange, o valor desta coluna é um cmdlet do Exchange. |
 | Item |O objeto criado ou modificado devido à atividade correspondente. Por exemplo, o arquivo exibido ou modificado, ou a conta de usuário atualizada. Nem todas as atividades têm um valor nesta coluna. |
-| Detalhes |Detalhes adicionais sobre uma atividade. Novamente, nem todas as atividades têm um valor. |
+| Detalhe |Detalhes adicionais sobre uma atividade. Novamente, nem todas as atividades têm um valor. |
 
 #### <a name="view-the-details-for-an-event"></a>Exibir os detalhes de um evento
 
@@ -367,4 +373,4 @@ As operações a seguir estão disponíveis nos logs de auditoria e de atividade
 
 [Portal de administração do Power BI](service-admin-portal.md)  
 
-Mais perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
+Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)

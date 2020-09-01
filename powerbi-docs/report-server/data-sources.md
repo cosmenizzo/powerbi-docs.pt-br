@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/04/2020
 ms.author: maggies
-ms.openlocfilehash: 00c00ca7bbd7ad3f901c98f44a2900f332e3616a
-ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
+ms.openlocfilehash: 9dface817b9ec5421ba9ea93abb8037e3e70029d
+ms.sourcegitcommit: 4130e5e6947b809df628370cc80c00194243468d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87837602"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88857789"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Fontes de dados de relatórios do Power BI no Servidor de Relatórios do Power BI
 Os relatórios do Power BI podem se conectar a diversas fontes de dados. Dependendo de como os dados são usados, fontes de dados diferentes estão disponíveis. Os dados podem ser importados ou consultados diretamente usando o DirectQuery ou uma conexão dinâmica ao SQL Server Analysis Services. Algumas fontes de dados têm suporte no Power BI Desktop otimizado para o Servidor de Relatórios do Power BI, mas não nos relatórios do Power BI publicados no Servidor de Relatórios do Power BI. Confira na lista a seguir as fontes de dados com suporte em ambos os locais.
@@ -209,6 +209,8 @@ O Servidor de Relatórios do Power BI não é compatível com a autenticação c
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Fontes de dados para relatórios do Power BI[(../connect-data/power-bi-data-sources.md) no serviço do Power BI. Agora que você se conectou à fonte de dados, [crie um relatório do Power BI](quickstart-create-powerbi-report.md) usando os dados dessa fonte.
+[Fontes de dados para relatórios do Power BI](../connect-data/power-bi-data-sources.md) no serviço do Power BI
 
-Mais perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
+Agora que você se conectou à sua fonte de dados, [crie um relatório do Power BI](quickstart-create-powerbi-report.md) usando os dados da fonte de dados.
+
+Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)

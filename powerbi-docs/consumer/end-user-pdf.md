@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 08/05/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4f02a98ca13bd5808bde987889c3f4404c9100f0
-ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
+ms.openlocfilehash: e1df6634492bbaa690e7efe601455fbae8b6094b
+ms.sourcegitcommit: 0f807d3c74e5202b6e6a95fad49f2787928b9613
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87837487"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88702664"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportar relatórios do Power BI para PDF
 
@@ -68,6 +68,7 @@ Há algumas considerações e limitações para ter em mente ao trabalhar com o 
 * Relatórios com tamanhos de página personalizados incomuns podem apresentar problemas em cenários de exportação. Para obter melhores resultados, considere alternar para um tamanho de página padrão para seu relatório.
 * Ao exportar para PDF, relatórios que usam temas com fontes personalizadas terão a fonte personalizada substituída por uma padrão.
 * Embora procuremos fornecer uma experiência consistente, não podemos garantir que o PDF exportado do serviço do Power BI sempre corresponderá ao PDF exportado de um arquivo local do Power BI Desktop.
+* Ao exportar para PDF, não podemos garantir a fidelidade perfeita de pixel para relatórios PBIX.
 
 ## <a name="next-steps"></a>Próximas etapas
 [Imprimir um relatório](end-user-print.md)

@@ -10,12 +10,12 @@ ms.date: 08/17/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Share your work
-ms.openlocfilehash: d7ad3722b609d76383a7a404ef94655ec9ef8711
-ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
+ms.openlocfilehash: e737d8747f7d6d9b69eda2035df06abdddd9569f
+ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88578026"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88803079"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Instalar e usar aplicativos com dashboards e relatórios no Power BI
 
@@ -27,7 +27,7 @@ Agora que você tem uma [noção básica sobre aplicativos](end-user-apps.md), v
 
 ## <a name="ways-to-get-a-new-app"></a>Maneiras de obter um novo aplicativo
 Há várias maneiras de obter um novo aplicativo:
-* Você pode obtê-lo no marketplace de aplicativos no Power BI.
+* Você pode obtê-lo no marketplace de aplicativos do Power BI no serviço do Power BI.
 * Use um link direto para um aplicativo que você recebeu do designer de aplicativo. 
 * Um designer de aplicativo na sua organização pode instalar o aplicativo automaticamente na sua conta do Power BI.
 
@@ -37,6 +37,8 @@ Com o Power BI Mobile, você pode instalar apenas um aplicativo de um link diret
 Nem todos os usuários do Power BI podem ver aplicativos e interagir com eles. 
 - Caso tenha uma licença gratuita, será possível abrir aplicativos armazenados na capacidade Premium e que foram compartilhados com você.  
 - Se você tiver uma licença Pro, poderá abrir aplicativos compartilhados com você.
+
+Portanto, se você não puder abrir aplicativos, contate o administrador ou o suporte técnico. Para obter informações sobre licenciamento, confira [Licenciamento do Power BI](end-user-license.md).
 
 ## <a name="get-the-app-from-the-power-bi-apps-marketplace"></a>Obter o aplicativo do marketplace de aplicativos do Power BI
 

@@ -5,14 +5,14 @@ services: ''
 author: mihart
 ms.service: ''
 ms.topic: include
-ms.date: 02/11/2020
+ms.date: 08/19/2020
 ms.author: mihart
 ms.custom: include file
-ms.openlocfilehash: 21655eba010f0c687928b71a6e499d74cca7289d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 69ce36cfb02bbd42f70c1b80849b2d26fee206a5
+ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496417"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88639059"
 ---
-<Token>**APLICA-SE A:** ![sim](media/yes.png)serviço do Power BI para ***consumidores*** ![sim](media/yes.png)serviço do Power BI para designers e desenvolvedores ![não](media/no.png)Power BI Desktop ![sim](media/yes.png)Requer licença Pro ou Premium </Token>
+<Token>**APLICA-SE A:** ![sim](media/yes.png)serviço do Power BI para ***usuários de negócio*** ![sim](media/yes.png)serviço do Power BI para designers e desenvolvedores ![não](media/no.png)Power BI Desktop ![sim](media/yes.png)Requer licença Pro ou Premium </Token>
