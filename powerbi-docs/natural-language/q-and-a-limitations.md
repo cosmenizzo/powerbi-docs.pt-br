@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/21/2020
 ms.author: maggies
-ms.openlocfilehash: b71fd2986fb79adf88493416ac8234f2656aefa9
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: eebb40d81e9b59b545b30ce55dbf4a362b826455
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866761"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937575"
 ---
 # <a name="limitations-of-power-bi-qa"></a>P e R de limitações do Power BI
 
@@ -75,7 +75,6 @@ No momento, não há suporte para a redefinição de um termo reconhecido nem pa
 
 ### <a name="statements-not-supported"></a>Instruções sem suporte
 
-- No momento, não há suporte para o uso de medidas em condições. Em vez disso, converta medidas em colunas calculadas para fazê-las funcionar.
 - Não há suporte para várias condições. Como uma solução alternativa, crie uma coluna calculada DAX que avalie um Booliano de instrução de várias condições e use esse campo em vez disso.
 - Se você não especificar uma condição de filtro quando P e R solicitar um subconjunto de dados, não será possível salvar a definição, mesmo que a instrução inteira não tenha sublinhados em vermelho.
 
