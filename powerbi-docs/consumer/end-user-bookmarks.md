@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/18/2020
+ms.date: 08/26/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: f8bd09bd55694bbd7c6a991d502dde45dad5f2e4
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: f865815c76df179c87c1487e1243c37108375167
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162056"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937644"
 ---
 # <a name="what-are-bookmarks"></a>O que são indicadores?
 
@@ -29,18 +29,24 @@ Há muitos usos para os indicadores. Digamos que você descubra um insight inter
 
 Você também pode criar uma coleção de indicadores, organizá-los na ordem desejada e, posteriormente, percorrer cada indicador em uma apresentação para realçar uma série de insights que contam uma história.  
 
-![Mostre o Painel Indicadores selecionando-o na faixa de opções.](media/end-user-bookmarks/power-bi-select-bookmark.png)
+![Mostre o Painel Indicadores selecionando-o na faixa de opções.](media/end-user-bookmarks/power-bi-bookmark-icon.png)
 
 ## <a name="open-bookmarks"></a>Abrir indicadores
-Para abrir o painel Indicadores, selecione **Indicadores** > **Mostrar mais indicadores** na barra de menus. Para retornar à exibição publicada original do relatório, selecione **Redefinir para padrão**.
+Para abrir o painel Indicadores, selecione **Indicadores** > **Mostrar mais indicadores** na barra de menus. 
+
+![captura da tela do relatório com o painel de indicadores aberto.](media/end-user-bookmarks/power-bi-show-bookmarks.png)
+
+Para retornar à exibição publicada original do relatório, selecione o ícone **Redefinir**.
+
+![captura de tela com o ícone reverter selecionado](media/end-user-bookmarks/power-bi-revert.png)
 
 ### <a name="report-bookmarks"></a>Indicadores de relatório
-Se o *designer* de relatórios incluir indicadores de relatório, você os encontrará com o título **Indicadores de relatório**. Esta página de relatório tem dois indicadores, B1 e B2. 
+Se o *designer* de relatórios incluir indicadores de relatório, você os encontrará com o título **Indicadores de relatório**. Essa página de relatório tem quatro indicadores: B1, B2, VanArsdel YTD e Todo YTD. O indicador **Todo YTD** está selecionado no momento.
 
 > [!NOTE]
 > Será necessário Power BI Pro ou Premium para exibir relatórios compartilhados. 
 
-![Mostre Indicadores de relatório.](media/end-user-bookmarks/power-bi-report.png)
+![Mostre Indicadores de relatório.](media/end-user-bookmarks/power-bi-bookmark-list.png)
 
 Selecione um indicador para alterar para essa exibição de relatório. 
 
@@ -48,7 +54,7 @@ Selecione um indicador para alterar para essa exibição de relatório.
 
 ### <a name="personal-bookmarks"></a>Indicadores pessoais
 
-Quando você cria um indicador, os seguintes elementos são salvos com o indicador:
+Se você puder exibir um relatório, também poderá adicionar indicadores pessoais.  Quando você cria um indicador, os seguintes elementos são salvos com o indicador:
 
 * A página atual
 * Filtros
@@ -59,15 +65,21 @@ Quando você cria um indicador, os seguintes elementos são salvos com o indicad
 * Visibilidade (de um objeto, usando o painel **Seleção**)
 * Os modos de foco ou de **Destaque** de qualquer objeto visível
 
-Configure uma página de relatório da maneira que você deseja que ela seja exibida no indicador. Depois que a página de relatório e os visuais forem organizados como você deseja, selecione **Adicionar** no painel **Indicadores** para adicionar um indicador. Neste exemplo, adicionamos alguns filtros para a região e a data. 
+Configure uma página de relatório da maneira que você deseja que ela seja exibida no indicador. Neste exemplo:
 
-![Adicione indicadores Pessoais.](media/end-user-bookmarks/power-bi-bookmark-personal.png)
+1. Alteramos o filtro de Data existente no painel **Filtros**,
+1. alteramos o filtro de Regiões existente no painel **Filtros** e
+1.  e selecionamos um ponto de dados no visual do gráfico de rosca para filtrar e realçar a tela do relatório de forma cruzada. 
+
+Depois que a página de relatório e os visuais forem organizados como você deseja, selecione **Adicionar** no painel **Indicadores** para adicionar um indicador. 
+
+![Adicione indicadores Pessoais.](media/end-user-bookmarks/power-bi-personal.png)
 
 O **Power BI** cria um indicador pessoal e dá a ele um nome genérico ou um nome que você inserir. Você pode *renomear*, *excluir* ou *atualizar* o indicador selecionando as reticências ao lado do nome dele e, em seguida, selecionando uma ação no menu que é exibido.
 
-Depois de obter um indicador, basta exibi-lo selecionando o indicador no painel **Indicadores**. 
+Depois de obter um indicador, selecione-o no painel **Indicadores** para exibi-lo. 
 
-![Adicione indicadores Pessoais.](media/end-user-bookmarks/power-bi-bookmark-west.png)
+![Selecione um indicador específico para exibi-lo.](media/end-user-bookmarks/power-bi-selected.png)
 
 
 <!--
@@ -91,7 +103,7 @@ Quando se está no modo **Exibição**, há alguns recursos a observar:
 - A barra de título de indicador tem setas que permitem que você mova para o indicador anterior ou para o próximo.
 - Você pode sair do modo de **Exibição** selecionando **Sair** no painel **Indicadores** ou então selecionando o **X** encontrado na barra de título de indicador.
 
-![Apresentação de slides dos indicadores](media/end-user-bookmarks/power-bi-slideshow.png)
+![Apresentação de slides dos indicadores](media/end-user-bookmarks/power-bi-view-bookmarks.png)
 
 Quando se está no modo **Exibição**, é possível fechar o painel **Indicadores** (clicando no X no painel) para fornecer mais espaço para a apresentação. E enquanto se está no modo de **Exibição**, todos os visuais são interativos e estão disponíveis para realce cruzado, exatamente como eles seriam ao interagir com eles fora desse modo. 
 

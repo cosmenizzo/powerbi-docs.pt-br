@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 07/01/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2cffd2b9913773e7f29d1afa960209ddeddd3583
-ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
+ms.openlocfilehash: 1153b20e77958bbecce9284add3ae7eab21cd47d
+ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88160408"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "89040267"
 ---
 # <a name="export-reports-to-powerpoint"></a>Exportar relatórios para o PowerPoint
 
@@ -49,6 +49,8 @@ Na janela pop-up exibida, você tem a opção de selecionar **Valores Atuais** o
 ![Selecione o que exportar](media/end-user-powerpoint/power-bi-current-values.png)
  
 Além disso, há uma caixa de seleção para marcar se você deseja ou não exportar as guias ocultas de um relatório. Marque essa caixa se quiser exportar somente as guias de relatório visíveis para você no navegador. Se preferir obter todas as guias ocultas como parte da exportação, deixe a caixa de seleção desmarcada. Se a caixa de seleção estiver esmaecida, não haverá guias ocultas no relatório. Um exemplo de guia oculta seria uma guia de dica de ferramenta. [Dicas de ferramenta personalizadas](../create-reports/desktop-tooltips.md) são criadas pelos *designers* de relatórios e não são exibidas como guias do relatório para o serviço do Power BI para *consumidores*. 
+
+Marque a opção "Exportar somente a página atual" para exportar apenas a página que está sendo exibida no momento em um relatório.  Isso fica desmarcado por padrão, e todas as páginas serão exportadas do seu relatório.
 
 Depois de fazer as seleções, selecione **Exportar** para continuar. Você verá uma faixa de notificação no canto superior direito da janela do navegador de serviço do Power BI de que o relatório está sendo exportado para o PowerPoint. 
 

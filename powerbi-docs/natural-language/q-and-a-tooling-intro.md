@@ -7,12 +7,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/17/2020
 ms.author: maggies
-ms.openlocfilehash: 47ab35113bbf6564cbc824b48891cd9f58370c8a
-ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
+ms.openlocfilehash: aaa31851f338832a8c4f4fffb38f12414c859610
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88578118"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937460"
 ---
 # <a name="intro-to-qa-tooling-to-train-power-bi-qa-preview"></a>Introdução à ferramenta de P e R para treinar a P e R do Power BI (versão prévia)
 
@@ -80,6 +80,11 @@ Tudo o que você salvou da seção Ensinar P e R aparece aqui, assim, você pode
 
 ### <a name="suggest-questions"></a>Sugerir perguntas
 
+> [!NOTE]
+> As perguntas sugeridas serão exibidas para todas as instâncias do elemento visual de P e R. Não é possível criar um conjunto separado de sugestões para cada visual de P e R.
+> 
+> 
+
 Sem fazer nenhuma configuração, o visual de P e R vai sugerir várias perguntas para começar. Essas perguntas são geradas automaticamente com base em seu modelo de dados. Em **Sugerir perguntas**, é possível substituir as perguntas geradas automaticamente com suas próprias perguntas.
 
 Para iniciar, digite a pergunta que você deseja adicionar na caixa de texto. Na seção de visualização, você verá como será o resultado no visual de P e R. 
@@ -91,11 +96,6 @@ Selecione o botão **Adicionar** para adicionar essa pergunta a **Suas perguntas
 :::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png" alt-text="Salvar perguntas sugeridas":::
  
 Selecione **Salvar** para mostrar a lista de perguntas sugeridas no visual de P e R. 
-
-> [!NOTE]
-> As perguntas sugeridas serão exibidas para todas as instâncias do elemento visual de P e R. Não é possível criar um conjunto separado de sugestões para cada elemento visual de P e R.
-> 
-> 
 
 ## <a name="other-qa-settings"></a>Outras configurações de P e R
 

@@ -6,24 +6,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/21/2020
+ms.date: 09/01/2020
 ms.author: maggies
-ms.openlocfilehash: bb769937e99cd3e936d7f5f3967e8f17b939242c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 69aa11216624416f005dcb2e47d1b818204ae7ec
+ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236057"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89286718"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server"></a>Altere as cadeias de conexão da fonte de dados no Power BI com o PowerShell – Servidor de Relatórios do Power BI
 
 
-É possível alterar as cadeias de conexão da fonte de dados nos relatórios do Power BI no Servidor de Relatórios do Power BI usando APIs no PowerShell. 
+Você pode alterar as cadeias de conexão da fonte de dados de relatórios do Power BI hospedados no Servidor de Relatórios do Power BI usando o PowerShell para interagir com as APIs necessárias. 
 
 > [!NOTE]
 > No momento, esse recurso funciona apenas para o DirectQuery. Em breve, haverá suporte para atualização de dados e importação.
 
 1. Instale os commandlets do PowerShell do Servidor de Relatórios do Power BI. Veja as instruções de instalação dos commandlets em [https://github.com/Microsoft/ReportingServicesTools](https://github.com/Microsoft/ReportingServicesTools). 
+
+    Instale o módulo `ReportingServicesTools` diretamente da [Galeria do PowerShell](https://www.powershellgallery.com/packages/ReportingServicesTools/) usando o comando a seguir.
+
+    ```powershell
+    Install-Module ReportingServicesTools
+    ```
 
 2. Busque as informações da fonte de dados existente para o arquivo do Power BI por meio dos commandlets do PowerShell:
 

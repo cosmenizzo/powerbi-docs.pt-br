@@ -7,15 +7,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/20/2020
+ms.date: 08/28/2020
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: eebe5bcf2a4e75d9ff6ed526fbd8f9d362ff26ee
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: a4b7b866d56852cb4e49cbe09150dcdb694b64c3
+ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537816"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89286862"
 ---
 # <a name="export-data-from-a-visual"></a>Exportar dados de um visual
 
@@ -23,7 +23,9 @@ ms.locfileid: "87537816"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Se desejar ver os dados usados para criar um visual, [você poderá exibi-los no Power BI](end-user-show-data.md) ou exportá-los para o Excel. A opção de exportação de dados requer um determinado tipo de licença e permissões de edição ao conteúdo. Se não for possível exportar, verifique com o administrador do Power BI. A exportação de dados exige uma licença do Power BI Pro, uma licença de usuário Pro, ou uma licença de usuário Pro, nas organizações que tenham licença com a capacidade Premium. Normalmente, esse tipo de licença é usado por *designers*, mas não por *consumidores* de relatórios. Para saber mais, veja o tópico [Qual licença eu tenho?](end-user-license.md)
+Se desejar ver os dados usados para criar um visual, [você poderá exibi-los no Power BI](end-user-show-data.md) ou exportá-los para o Excel. A opção de exportação de dados requer um determinado tipo de licença e permissões de edição ao conteúdo. Se não for possível exportar, verifique com o administrador do Power BI ou com o suporte técnico de TI. 
+
+A exportação de dados requer uma licença do Power BI Pro ou que o dashboard ou o relatório seja compartilhado com você usando a capacidade Premium. Para saber mais, veja o tópico [Qual licença eu tenho?](end-user-license.md)
 
 
 ## <a name="from-a-visual-on-a-power-bi-dashboard"></a>A partir de um visual em um painel do Power BI
@@ -35,13 +37,13 @@ Se desejar ver os dados usados para criar um visual, [você poderá exibi-los no
 
 2. Passe o mouse sobre um visual para revelar **Mais opções** (...) e clique para exibir o menu de ação.
 
-    ![Menu que aparece quando as reticências são selecionadas](media/end-user-export/power-bi-options-menu.png)
+    ![Menu que aparece quando as reticências são selecionadas](media/end-user-export/power-bi-option-menu.png)
 
 3. Selecione **Exportar para .csv**.
 
 4. O que acontece em seguida depende do navegador que você está usando. Você pode ser solicitado a salvar o arquivo ou pode ver um link para o arquivo exportado na parte inferior do navegador. 
 
-    ![Navegador Chrome mostrando o link de arquivo exportado](media/end-user-export/power-bi-dashboard-exports.png)
+    ![Navegador Chrome mostrando o link de arquivo exportado](media/end-user-export/power-bi-dashboards-export.png)
 
 5. Abra o arquivo no Excel. 
 
@@ -56,18 +58,18 @@ Você pode exportar dados de um visual em um relatório como formato .csv ou .xl
 
 1. Em um painel, selecione um bloco para abrir o relatório subjacente.  Neste exemplo, estamos selecionando o mesmo visual mostrado acima, *% da Variação Acumulada do Total de Unidades*. 
 
-    ![Bloco do painel realçado](media/end-user-export/power-bi-export-reports.png)
+    ![Bloco do painel realçado](media/end-user-export/power-bi-export-tile.png)
 
     Como esse bloco foi criado no relatório *Exemplo de Vendas e marketing*, esse é o relatório aberto. E ele é aberto na página que contém o visual do bloco selecionado. 
 
 2. Selecione o visual no relatório. Observe o painel **Filtros** à direita. Esse visual tem filtros aplicados. Para saber mais sobre filtros, confira [Usar filtros em um relatório](end-user-report-filter.md).
 
-    ![Painel de filtro selecionado](media/end-user-export/power-bi-export-filter.png)
+    ![Painel de filtro selecionado](media/end-user-export/power-bi-export-filter-pane.png)
 
 
 3. Selecione **Mais opções (...)** no canto superior direito da visualização. Escolha **Exportar dados**.
 
-    ![Opção Exportar dados selecionada no menu suspenso](media/end-user-export/power-bi-export-report.png)
+    ![Opção Exportar dados selecionada no menu suspenso](media/end-user-export/power-bi-export-reports.png)
 
 4. Você verá opções para exportar Dados resumidos ou Dados subjacentes. Se você estiver usando o aplicativo *Exemplo de vendas e marketing*, **Dados subjacentes** será desabilitada. Mas você pode encontrar relatórios onde ambas as opções estão habilitadas. Veja a seguir uma explicação da diferença.
 
@@ -80,7 +82,7 @@ Você pode exportar dados de um visual em um relatório como formato .csv ou .xl
 
 5. O que acontece em seguida depende do navegador que você está usando. Você pode ser solicitado a salvar o arquivo ou pode ver um link para o arquivo exportado na parte inferior do navegador. 
 
-    ![Arquivo exportado sendo exibido no navegador Microsoft Edge](media/end-user-export/power-bi-export-edge-browser.png)
+    ![Arquivo exportado sendo exibido no navegador Microsoft Edge](media/end-user-export/power-bi-export-edge-screen.png)
 
     > [!NOTE]
     > Caso você não tenha permissões nos dados, não poderá exportá-los nem os abrir no Excel.  

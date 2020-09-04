@@ -6,15 +6,15 @@ ms.reviewer: maggie.tsang
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 06/25/2020
+ms.date: 08/25/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: dc5cba8953a527e87768815759a14dd8f2cf7ee1
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 6e1850e281c58bd89597af2bbd9ade0a769071ae
+ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537839"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "89040237"
 ---
 # <a name="copy-a-visual-as-an-image-to-your-clipboard"></a>Copiar um visual como uma imagem para a área de transferência
 
@@ -35,15 +35,15 @@ Quando você copia uma imagem estática de um Visual, obtém uma cópia do visua
 
 2. No canto superior direito do visual, selecione **Mais ações(...)** e escolha **Copiar visual como imagem**. 
 
-    ![Ícone Copiar visual como imagem exibido](media/end-user-copy-paste/power-bi-copy-dashboard.png)
+    ![Opção Copiar visual como imagem exibida no menu suspenso](media/end-user-copy-paste/power-bi-copy-dashboard.png)
 
 3. Quando a caixa de diálogo **Seu visual está pronto para copiar** é exibida, selecione **Copiar para a área de transferência**.
 
     ![caixa de diálogo com a opção Copiar para área de transferência](media//end-user-copy-paste/power-bi-copied.png)
 
-4. Depois que o visual for copiado, cole-o em outro aplicativo usando **Ctrl+V** ou clique com o botão direito do mouse > Colar. Na captura de tela abaixo, colamos o visual no Microsoft Word. 
+4. Depois que o visual for copiado, cole-o em outro aplicativo usando **Ctrl+V** ou **clique com o botão direito do mouse** > **Colar**. Na captura de tela abaixo, colamos o visual no Microsoft Word. 
 
-    ![visual colado no Outlook](media//end-user-copy-paste/power-bi-paste-word.png)
+    ![visual colado no Microsoft Word](media//end-user-copy-paste/power-bi-paste-word.png)
 
 ### <a name="copy-from-a-report-visual"></a>Copiar de um visual de relatório 
 
@@ -58,7 +58,7 @@ Quando você copia uma imagem estática de um Visual, obtém uma cópia do visua
     ![caixa de diálogo com a opção Copiar para área de transferência](media//end-user-copy-paste/power-bi-copied.png)
 
 
-4. Depois que o visual for copiado, cole-o em outro aplicativo usando **Ctrl+V** ou clique com o botão direito do mouse > Colar. Na captura de tela abaixo, colamos o visual em um email.
+4. Depois que o visual for copiado, cole-o em outro aplicativo usando **Ctrl+V** ou **clique com o botão direito do mouse** > **Colar**. Na captura de tela abaixo, colamos o visual em um email.
 
     ![visual colado no Outlook](media//end-user-copy-paste/power-bi-copy-email.png)
 
@@ -82,7 +82,7 @@ R: Atualmente, damos suporte a visuais nativos do Power BI e visuais personaliza
 - ESRI e outros visuais de mapa 
 - Visuais de Python 
 - Visuais do R 
-- PowerApps    
+- Visual do PowerApps   
 
 R: A capacidade de copiar um visual pode ser desativada pelo seu departamento de TI ou pelo administrador do Power BI.
 
@@ -94,6 +94,8 @@ R: Há limitações para visuais personalizados e animados.
 
 ## <a name="next-steps"></a>Próximas etapas
 Mais sobre [Visualizações nos relatórios do Power BI](end-user-visual-type.md)
+
+Se você tiver permissões de edição para um relatório, poderá [copiar e colar visuais no mesmo relatório](../visuals/power-bi-visualization-copy-paste.md). 
 
 Mais perguntas? [Experimente a Comunidade do Power BI](https://community.powerbi.com/)
 

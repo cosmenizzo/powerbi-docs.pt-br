@@ -5,17 +5,17 @@ author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 04/17/2020
+ms.topic: reference
+ms.date: 09/01/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: b6beb2115f664de12382933c8200b07b510bd083
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 75ee1ad31bc2f99964a8f79ea29efb499c2cc81e
+ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215885"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89286764"
 ---
 # <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>Lista de recursos do Power BI para *consumidores* e outros com licenças gratuitas
 
@@ -49,7 +49,7 @@ Cada usuário do serviço do Power BI tem uma licença gratuita ou uma licença 
 
 - **Licença gratuita**: normalmente atribuídas aos *consumidores* de uma organização (veja a primeira imagem abaixo). Também atribuída a qualquer pessoa que se inscreva no serviço do Power BI como um indivíduo e deseje experimentar o [serviço do Power BI no modo autônomo](../fundamentals/service-self-service-signup-for-power-bi.md) (veja a segunda imagem abaixo). 
 
-    ![tela mostrando usuário gratuito](media/end-user-features/power-bi-free-organization.png)
+    ![tela mostrando usuário Premium](media/end-user-features/power-bi-free-organization.png)
 
     Para os usuários gratuitos, ser membro de uma organização que tenha uma capacidade Premium é o que dá a eles superpoderes. Desde que os seus colegas Pro usem workspaces na capacidade Premium para compartilhar o conteúdo, os usuários gratuitos poderão ver o conteúdo e colaborar com eles.  **Dessa forma, o usuário gratuito torna-se um *consumidor* do Power BI, com a capacidade de receber e compartilhar o conteúdo para tomar decisões de negócios.** 
  
@@ -129,7 +129,7 @@ A segunda coluna representa um *consumidor*.  Um consumidor:
 | Ver os indicadores criados por outras pessoas e adicionar os próprios indicadores  | ![orange x](media/end-user-features/orange-x.png)|![green dot](media/end-user-license/power-bi-green-dot.png)  |
 | Ver os comentários de outras pessoas e responder a eles: adicionar novos comentários  | ![orange x](media/end-user-features/orange-x.png)|![green dot](media/end-user-license/power-bi-green-dot.png)  |
 |Alterar as dimensões da exibição   | ![green myw](media/end-user-features/green-mwo.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
-| Salvar uma cópia |![orange x](media/end-user-features/orange-x.png) |![green dot](media/end-user-license/power-bi-green-dot.png)*  
+| Salvar uma cópia |![orange x](media/end-user-features/orange-x.png) |![orange x](media/end-user-features/orange-x.png)  
 |Copiar o visual como uma imagem* |
 | Aplicar realce cruzado e filtro cruzado nos visuais do relatório   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)  |
 |  Drill   |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)  |

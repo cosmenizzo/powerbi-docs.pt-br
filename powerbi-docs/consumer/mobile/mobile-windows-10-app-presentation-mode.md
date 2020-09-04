@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: c4453f1475ac2ab227294b0b3bd8ba5dba10de67
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: c01169a514b1231f93df21a23dc8992e92353070
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88204486"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937598"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Exibir relatórios e dashboards no modo de apresentação no Surface Hub e em dispositivos Windows 10
 É possível usar o modo de apresentação para exibir relatórios e dashboards em tela inteira em dispositivos Windows 10 e no Surface Hub. O modo de apresentação é útil para a exibição do Power BI em reuniões ou conferências ou em um projetor dedicado no escritório ou até mesmo para maximizar o espaço em uma tela pequena.
@@ -64,7 +64,7 @@ Quando você seleciona o botão **Reproduzir** na barra de ferramentas de ação
 
  O controlador mostra o nome da exibição mostrada no momento (página ou indicador e página). Na imagem acima, vemos que, no relatório chamado **Vendas**, estamos exibindo o indicador **Pacífico Asiático** na página **Desempenho de Vendas**.
 
-Por padrão, uma apresentação de slides reproduz somente páginas, a uma taxa de 1 página a cada 30 segundos. O comportamento padrão nas [Configurações de apresentação de slides](#slideshow-settings).
+Por padrão, uma apresentação de slides reproduz somente páginas, a uma taxa de 1 página a cada 30 segundos. Você pode alterar o comportamento padrão nas [Configurações de apresentação de slides](#slideshow-settings).
 
 
 ### <a name="auto-play-a-slideshow-on-startup"></a>Reprodução automática de uma apresentação de slides na inicialização
