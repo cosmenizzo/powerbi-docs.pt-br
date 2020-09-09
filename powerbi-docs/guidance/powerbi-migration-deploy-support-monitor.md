@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 58eb9af4975c0afeb12a71a880711ddd73e64d50
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: 59f340e6325cf846d1b0453a94a1015b50a987c4
+ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803115"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89401992"
 ---
 # <a name="deploy-to-power-bi"></a>Implantar no Power BI
 
@@ -87,7 +87,7 @@ As principais atividades realizadas durante uma implantação no workspace de pr
 
 - **Gerenciamento de alterações:** se necessário, obtenha a aprovação para implantar e comunicar a implantação à população de usuários com o auxílio de suas práticas de gerenciamento de alterações padrão. Pode haver uma janela de gerenciamento de alterações aprovada durante a qual as implantações de produção são permitidas. Normalmente ela é aplicável ao conteúdo gerenciado por TI e com muito menos frequência é aplicável ao conteúdo de autoatendimento.
 - **Plano de reversão:** com uma migração, a expectativa é que ela seja a migração de uma nova solução pela primeira vez. Se o conteúdo já existir, é prudente ter um plano para reversão à versão anterior, caso seja necessário. Ter versões anteriores dos arquivos do Power BI Desktop (usando o controle de versões do SharePoint ou do OneDrive) funciona bem para essa finalidade.
-- **Cadeias de conexão e parâmetros:** ajuste as cadeias de conexão do conjunto de dados quando a fonte de dados for diferente entre os ambientes de teste e de produção. A [parametrização](/connect-data/service-parameters.md) pode ser usada com eficiência para essa finalidade.
+- **Cadeias de conexão e parâmetros:** ajuste as cadeias de conexão do conjunto de dados quando a fonte de dados for diferente entre os ambientes de teste e de produção. A [parametrização](../connect-data/service-parameters.md) pode ser usada com eficiência para essa finalidade.
 - **Atualização de dados:** [agende a atualização do conjunto de dados](../connect-data/refresh-scheduled-refresh.md) para qualquer conjunto de dados importado.
 - **Conteúdo do workspace:** publique os conjuntos de dados e os relatórios no workspace de produção e crie os dashboards. Os [pipelines de implantação](../create-reports/deployment-pipelines-overview.md) podem simplificar o processo de implantação nos workspaces de desenvolvimento, de teste e de produção se o conteúdo tiver sido publicado em workspaces na capacidade Premium.
 - **Aplicativo:** se os aplicativos fizerem parte da sua estratégia de distribuição de conteúdo, publique um [aplicativo](../consumer/end-user-apps.md) usando o conteúdo do workspace de produção.

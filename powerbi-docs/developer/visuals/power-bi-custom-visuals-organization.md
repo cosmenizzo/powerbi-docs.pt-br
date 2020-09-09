@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6683efbf9fa9dea9215914c097f249362fbffff2
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b969fa3dd04f25c8921db563a89b11125216c752
+ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278803"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89401946"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Elementos visuais de organização no Power BI
 
@@ -32,7 +32,7 @@ Para saber mais sobre como usar visuais do Power BI da organização nos relató
 
 ## <a name="administer-organizational-power-bi-visuals"></a>Administração de visuais do Power BI da organização
 
-Para saber mais sobre como administrar, implantar e gerenciar visuais do Power BI na sua organização, confira o seguinte artigo: [Saiba mais sobre a implantação e o gerenciamento de visuais do Power BI na organização](https://go.microsoft.com/fwlink/?linkid=866790).
+Para saber mais sobre como administrar, implantar e gerenciar visuais do Power BI na sua organização, confira o seguinte artigo: [Saiba mais sobre a implantação e o gerenciamento de visuais do Power BI na organização](../../admin/organizational-visuals.md).
 
 > [!WARNING]
 > Um visual do Power BI instalado a partir de um arquivo pode conter código com riscos de segurança ou de privacidade. É importante confiar no autor e na origem do arquivo visual do Power BI antes de implantá-lo no repositório da organização.
