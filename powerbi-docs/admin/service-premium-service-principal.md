@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/20/2020
+ms.date: 09/04/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: c62ee84c919e5910d1c1c9e111f19c7b74889b04
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1b0f63d200a94cb7e6524602203864281efe51c0
+ms.sourcegitcommit: 1f56cdfc05801ffaf41e3b68dc1eb02142acdab3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227200"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490343"
 ---
 # <a name="automate-premium-workspace-and-dataset-tasks-with-service-principals"></a>Automatizar tarefas de conjunto de dados e workspace Premium com entidades de serviço
 
@@ -63,11 +63,11 @@ Para que a entidade de serviço tenha as permissões necessárias para executar 
 
 1. No serviço do Power BI, para um workspace, selecione **Mais** > **Acesso ao workspace**.
 
-    ![Configurações do workspace](media/service-premium-service-principal/workspace-access.png)
+    ![Configurações de acesso do workspace](media/service-premium-service-principal/workspace-access.png)
 
 2. Pesquise pelo nome do aplicativo, adicione a entidade de serviço como **Administrador** ou **Membro** do workspace.
 
-    ![Administrador do espaço de trabalho](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
+    ![Caixa de diálogo de acesso](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
 
 ## <a name="connection-strings-for-the-xmla-endpoint"></a>Cadeias de conexão do ponto de extremidade XMLA
 
@@ -96,7 +96,7 @@ Invoke-ProcessTable -Server "powerbi://api.powerbi.com/v1.0/myorg/myworkspace" -
 
 ### <a name="amo-and-adomd"></a>AMO e ADOMD
 
-Ao conectar com aplicativos cliente e aplicativos Web, os pacotes instaláveis das [bibliotecas cliente AMO e ADOMD](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers) versão 15.0.2 e superior do NuGet dão suporte para entidades de serviço nas cadeias de conexão usando a sintaxe a seguir: `app:AppID` e senha ou `cert:thumbprint`.
+Ao conectar com aplicativos cliente e aplicativos Web, os pacotes instaláveis das [bibliotecas cliente AMO e ADOMD](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers) versão 15.1.42.26 (junho de 2020) e superiores do NuGet são compatíveis com entidades de serviço nas cadeias de conexão usando a seguinte sintaxe: `app:AppID` e senha ou `cert:thumbprint`.
 
 No exemplo a seguir, `appID` e `password` são usados para executar uma operação de atualização de modelo de banco de dados:
 

@@ -5,15 +5,15 @@ services: powerbi
 author: maggiesMSFT
 ms.service: powerbi
 ms.topic: include
-ms.date: 07/24/2020
+ms.date: 09/04/2020
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: 6a2fa7aca043c553c9174db81ff575853e526e06
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: b4b73b71a944fbb34d53be05cacc39c18e4226de
+ms.sourcegitcommit: 2cf8159535c114045e236c076a711638cfd7d2c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87260199"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89512792"
 ---
 |Funcionalidade   | Administrador  | Membro  | Colaborador  | Visualizador |
 |---|---|---|---|---|
@@ -36,7 +36,7 @@ ms.locfileid: "87260199"
 | Exibir um item e interagir com ele.<sup>5</sup> |  ![Marca de seleção Sim](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Marca de seleção Sim](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Marca de seleção Sim](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Marca de seleção Sim](media/power-bi-workspace-roles-table/green-checkmark.png)  |
 | Ler dados armazenados em fluxo de trabalho do workspace | ![Marca de seleção Sim](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Marca de seleção Sim](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Marca de seleção Sim](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Marca de seleção Sim](media/power-bi-workspace-roles-table/green-checkmark.png) |
 
-<sup>1</sup> Os Colaboradores poderão atualizar os metadados do aplicativo, mas não publicar um novo aplicativo nem alterar quem tem permissão para o aplicativo, se o [administrador do workspace delegar essa permissão aos Colaboradores](../collaborate-share/service-create-the-new-workspaces.md#security-settings).
+<sup>1</sup> Os colaboradores poderão [atualizar o aplicativo associado ao workspace](../collaborate-share/service-create-the-new-workspaces.md#allow-contributors-to-update-the-app) se o Administrador do workspace delegar essa permissão a eles. No entanto, eles não poderão publicar um novo aplicativo nem alterar quem tem permissão a ele.
 
 <sup>2</sup> Colaboradores e Espectadores também poderão compartilhar itens em um workspace quando tiverem permissões para Compartilhar Novamente.
 

@@ -1,6 +1,6 @@
 ---
-title: Usar o SAP HANA no Power BI Desktop
-description: Usar o SAP HANA no Power BI Desktop
+title: Usar o SAP HANA no Power BI
+description: Usar o SAP HANA no Power BI
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
@@ -10,14 +10,14 @@ ms.topic: how-to
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3d78ded05d199676708c0000cab043226a47b166
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 69019abf60f2633bcb764b11c0ac3310911fab62
+ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222787"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89401923"
 ---
-# <a name="connect-to-sap-hana-databases-in-power-bi-desktop"></a>Conectar-se a bancos de dados SAP HANA no Power BI Desktop
+# <a name="connect-to-sap-hana-databases-in-power-bi"></a>Conectar-se a bancos de dados do SAP HANA no Power BI
 
 Com o Power BI Desktop, agora você pode acessar bancos de dados do *SAP HANA* . Para usar o SAP HANA, o driver ODBC do SAP HANA deve estar instalado no computador cliente local para que a conexão de dados do SAP HANA do Power BI Desktop funcione corretamente. Você pode baixar as ferramentas de cliente SAP HANA de [Ferramentas de Desenvolvimento SAP](https://tools.hana.ondemand.com/#hanatools), que contém o driver ODBC necessário. Outra opção é obtê-lo do [Centro de Download de Software SAP](https://support.sap.com/en/my-support/software-downloads.html). No portal de software, pesquise os computadores com Windows em *SAP HANA CLIENT*. Como o Centro de Download de Software SAP altera sua estrutura com frequência, não há diretrizes mais específicas disponíveis para navegar nesse site.
 
@@ -61,6 +61,7 @@ Também há algumas limitações no uso do SAP HANA, conforme mostrado abaixo:
 * Não há suporte para SMALLDECIMAL.
 * Não há suporte para VARBINARY.
 * As Datas Válidas estão entre 30/12/1899 e 31/12/9999.
+* Atualmente não há suporte para a atualização de SAP HANA com SSO para atualizações de pasta de trabalho do Excel. Para atualizar os dados no Power BI, você pode usar um relatório do Power BI com o SSO do SAP HANA.
 
 ## <a name="next-steps"></a>Próximas etapas
 

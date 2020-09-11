@@ -9,11 +9,12 @@ ms.topic: how-to
 ms.date: 06/22/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: a9045c5c088926b24bb9f71e2adf558da6ffa597
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 02716f895d84a7aa49ab7f1d48d60372b3546409
+ms.sourcegitcommit: b943ce58c2c079cb18fc5cf23cc609ead1dc9906
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227440"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89443319"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Atualização incremental no Power BI
 
@@ -25,12 +26,11 @@ A atualização incremental permite conjuntos de dados muito grandes no Power BI
 > * **O consumo de recursos é reduzido** – um número menor de dados para atualização reduz o consumo geral da memória e de outros recursos.
 
 > [!NOTE]
-> A atualização incremental agora está disponível para as assinaturas e os conjuntos do Power BI Pro, Premium e Shared. 
+> A atualização incremental agora está disponível para o Power BI Pro, Premium e para assinaturas compartilhadas e conjuntos de dados.
 
 ## <a name="configure-incremental-refresh"></a>Configurar a atualização incremental
 
 As políticas de atualização incremental são definidas no Power BI Desktop e aplicadas quando publicadas no serviço do Power BI.
-
 
 ### <a name="filter-large-datasets-in-power-bi-desktop"></a>Filtrar conjuntos de dados grandes no Power BI Desktop
 
@@ -98,18 +98,17 @@ O texto do cabeçalho explica o seguinte:
 
 #### <a name="refresh-ranges"></a>Intervalos de atualização
 
-O exemplo a seguir define uma política de atualização para armazenar dados por cinco anos civis completos, mais os dados para o ano atual até a data atual, e atualizar de forma incremental dez dias de dados. A primeira operação de atualização carrega os dados históricos. As atualizações seguintes são incrementais e (se agendadas para serem executadas diariamente) realizam as seguintes operações:
+O exemplo a seguir define uma política de atualização para armazenar dados por cinco anos civis completos mais os dados para o ano atual até a data atual e para atualizar dez dias completos de dados de maneira incremental. A primeira operação de atualização carrega os dados históricos. As atualizações seguintes são incrementais e (se agendadas para serem executadas diariamente) realizam as seguintes operações:
 
 - Adicione um novo dia de dados.
 
-- Atualizar dez dias até a data atual.
+- Atualizar dez dias completos até a data atual.
 
 - Remover os anos civis com mais de cinco anos antes da data atual. Por exemplo, se a data atual for 1º de janeiro de 2019, o ano de 2013 será removido.
 
 A primeira atualização no serviço do Power BI pode demorar mais para importar todos os cinco anos civis. As próximas atualizações podem ser concluídas em uma fração desse tempo.
 
 ![Intervalos de atualização](media/service-premium-incremental-refresh/refresh-ranges.png)
-
 
 #### <a name="current-date"></a>Data atual
 
@@ -139,7 +138,7 @@ A atualização incremental de dez dias é muito mais eficiente do que a atualiz
 
 #### <a name="only-refresh-complete-periods"></a>Atualizar somente períodos concluídos
 
-Digamos que sua atualização esteja agendada para ser executada às 4h, todas as manhãs. Se os dados aparecerem no sistema de origem durante essas 4 horas, não será necessário considerá-los. Algumas métricas de negócios, como barris por dia no setor de petróleo e gás, não fazem sentido com partes de dias.
+Digamos que sua atualização esteja agendada para ser executada às 4h, todas as manhãs. Se os dados aparecerem no sistema de origem durante essas 4 horas, não será necessário considerá-los. Algumas métricas de negócios, como barris por dia no setor de petróleo e gás, não fazem sentido com dias parciais.
 
 Outro exemplo é a atualização de dados de um sistema financeiro no qual os dados do mês anterior são aprovados no dia 12 do mês. Você pode definir o intervalo incremental para um mês e agendar a atualização para ser executada no dia 12 do mês. Com essa opção marcada, os dados de janeiro seriam atualizados em 12 de fevereiro.
 

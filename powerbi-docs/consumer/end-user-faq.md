@@ -6,16 +6,16 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/20/2020
+ms.date: 09/02/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 12d31c19e3f32068778eb6f3eb7b3b5b18e93847
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: c8db048f9ae74871840df96e63c60510ce800318
+ms.sourcegitcommit: b943ce58c2c079cb18fc5cf23cc609ead1dc9906
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215974"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89443296"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Perguntas frequentes sobre o Power BI
 
@@ -28,16 +28,16 @@ ms.locfileid: "86215974"
 
 O serviço do Power BI é um serviço de análise de negócios baseado em nuvem que permite que qualquer pessoa visualize e analise dados com maior velocidade, eficiência e compreensão. Ele conecta os usuários a uma ampla variedade de dados locais e na nuvem por meio de dashboards fáceis de usar, relatórios interativos e visualizações atraentes para dar vida aos dados. Leia mais sobre o [Power BI](../fundamentals/power-bi-overview.md).
 
-## <a name="what-is-a-power-bi-consumers"></a>O que é um *consumidor* do Power BI?
+## <a name="what-is-a-power-bi-business-user"></a>O que é a função *usuário de negócios* do Power BI?
 
-A maneira como você interage com o Power BI dependerá da sua função de trabalho. Como um usuário final ou *consumidor*, você é a pessoa que recebe o conteúdo (dashboards, relatórios e aplicativos) de seus colegas. Você trabalha na versão online ou móvel do Power BI, que é chamada de Serviço do Power BI, revisando e interagindo com o conteúdo a fim de tomar decisões de negócios.  Saiba mais sobre o [Power BI para consumidores](index.yml).
+A maneira como você interage com o Power BI dependerá da sua função de trabalho. Como usuário final ou *usuário de negócios*, você é a pessoa que recebe o conteúdo (dashboards, relatórios e aplicativos) de seus colegas. Você trabalha na versão online ou móvel do Power BI, que é chamada de Serviço do Power BI, revisando e interagindo com o conteúdo a fim de tomar decisões de negócios.  Leia mais sobre o [Power BI para usuários de negócios](index.yml).
 
 
 ## <a name="whats-the-difference-between-power-bi-pro-and-power-bi-premium"></a>Qual é a diferença entre o Power BI Pro e o Power BI Premium?
 
-O Power BI Pro é uma licença de usuário individual que permite o acesso a todo o conteúdo e recursos, no serviço do Power BI. Você pode até compartilhar conteúdo e colaborar com outros usuários do Pro. Somente usuários Pro podem publicar conteúdo em workspaces, compartilhar dashboards e assinar dashboards e relatórios. 
+O Power BI Pro é uma licença de usuário individual que permite o acesso a todo o conteúdo e recursos, no serviço do Power BI. Você pode até compartilhar conteúdo e colaborar com outros usuários do Pro. Somente usuários Pro podem publicar conteúdo em outros workspaces, compartilhar dashboards e assinar dashboards e relatórios. 
 
-O Power BI Premium oferece capacidade dedicada para entregar um desempenho mais consistente. Ele também dá suporte a volumes de dados maiores no Power BI. No caso dos usuários individuais, a versão Premium permite uma ampla distribuição de conteúdo por usuários da versão Pro e não exige licença de usuário Pro para que os destinatários exibam o conteúdo. Isso significa que os *consumidores* podem colaborar com colegas, além de exibir e interagir com dashboards, relatórios e aplicativos que foram compartilhados com eles. 
+O Power BI Premium oferece capacidade dedicada para entregar um desempenho mais consistente. Ele também dá suporte a volumes de dados maiores no Power BI. No caso dos usuários individuais, a versão Premium permite uma ampla distribuição de conteúdo por usuários da versão Pro e não exige licença de usuário Pro para que os destinatários exibam o conteúdo. Isso significa que os *usuários de negócios* podem colaborar com colegas, além de ver e interagir com dashboards, relatórios e aplicativos que foram compartilhados com eles. 
 
 Para saber mais, veja [Qual é meu tipo de licença?](end-user-license.md).
 
@@ -47,9 +47,9 @@ Para solucionar dúvidas relacionadas ao Power BI Premium, consulte [Perguntas F
 
 ## <a name="what-is-power-bi-desktop"></a>O que é o Power BI Desktop?
 
-O Power BI Desktop é um aplicativo gratuito que você pode instalar diretamente em um computador. O Power BI Desktop funciona de maneira coesa com o serviço do Power BI.  Cientistas de dados, designers, desenvolvedores e administradores de relatórios trabalham com o Power BI Desktop para produzir relatórios e disponibilizá-los aos *consumidores* do serviço do Power BI, como você. Leia mais sobre [o que é o Power BI Desktop](../fundamentals/desktop-what-is-desktop.md).
+O Power BI Desktop é um aplicativo gratuito que você pode instalar diretamente em um computador. O Power BI Desktop funciona de maneira coesa com o serviço do Power BI.  Cientistas de dados, designers de relatórios, desenvolvedores e administradores trabalham com o Power BI Desktop para produzir relatórios e disponibilizá-los aos *usuários de negócios* do serviço do Power BI, como você. Leia mais sobre [o que é o Power BI Desktop](../fundamentals/desktop-what-is-desktop.md).
 
-## <a name="what-do-i-need-to-use-the-power-bi-service-as-a-consumer"></a>O que é necessário para usar o serviço do Power BI como *consumidor*?
+## <a name="as-a-business-user-what-do-i-need-to-use-the-power-bi-service"></a>Com a função *usuário de negócios*, do que preciso para usar o serviço do Power BI?
 
 Se sua empresa comprou licenças do Power BI ou uma conta com capacidade Premium, você precisa apenas de credenciais e um navegador da Web. Para entrar, use um email corporativo e uma senha, que são configurados pelo administrador do Power BI.  
 
@@ -84,7 +84,7 @@ Os seguintes recursos estão disponíveis para ajudá-lo a começar:
 * [Blog do Power BI](https://powerbi.microsoft.com/blog/)
 * [Webinars](../fundamentals/webinars.md)
 * Vídeos de introdução em nosso [Canal do YouTube](https://www.youtube.com/user/mspowerbi)
-* Artigo [Introdução ao Power BI como *consumidor*](index.yml)
+* Artigo [Introdução ao Power BI como *usuário de negócios*](index.yml)
 * [Participe de nossa comunidade](https://community.powerbi.com/) e faça perguntas
 * Para mais sugestões, consulte [10 dicas para obter ajuda](../fundamentals/service-tips-for-finding-help.md)
 
@@ -112,7 +112,7 @@ Como muitos outros serviços da Microsoft e o software, o Power BI fornece uma m
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* [O que é um consumidor do Power BI?](end-user-consumer.md)
-* [Como um consumidor usa o Power BI?](end-user-reading-view.md)
+* [O que é a função usuário de negócios do Power BI?](end-user-consumer.md)
+* [Como a função usuário de negócios interage com Power BI?](end-user-reading-view.md)
 * Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
 * Ainda tem um problema? Acesse a [página de suporte do Power BI](https://powerbi.microsoft.com/support/)

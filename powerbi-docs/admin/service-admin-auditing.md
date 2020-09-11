@@ -10,12 +10,12 @@ ms.date: 08/20/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 7b5a96f4b592789c04ebaca5418e470d546ff788
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: 27d74a4333add1feebc3522ce34d0a2bacaa69f7
+ms.sourcegitcommit: 2cf8159535c114045e236c076a711638cfd7d2c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88802964"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89512046"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Acompanhar atividades do usuário no Power BI
 
@@ -108,6 +108,9 @@ $activities.Count
 $activities[0]
 
 ```
+
+> [!NOTE]
+> Um exemplo do PowerShell está disponível para ajudá-lo a aprender como filtrar e recuperar eventos do log de atividades do Power BI. Para obter mais informações, consulte [Acessar o log de atividades do Power BI](../guidance/admin-activity-log.md).
 
 ## <a name="use-the-audit-log"></a>Usar o log de auditoria
 
@@ -369,8 +372,8 @@ As operações a seguir estão disponíveis nos logs de auditoria e de atividade
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[O que é administração do Power BI?](service-admin-administering-power-bi-in-your-organization.md)  
-
-[Portal de administração do Power BI](service-admin-portal.md)  
-
-Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+- [O que é administração do Power BI?](service-admin-administering-power-bi-in-your-organization.md)
+- [Portal de administração do Power BI](service-admin-portal.md)
+- [Acessar o log de atividades do Power BI](../guidance/admin-activity-log.md)
+- Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
+- Sugestões? [Contribuir com ideias para aprimorar o Power BI](https://ideas.powerbi.com/)

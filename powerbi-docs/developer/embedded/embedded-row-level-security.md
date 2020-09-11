@@ -1,5 +1,5 @@
 ---
-title: Usar segurança em nível de linha com conteúdo inserido do Power BI
+title: Usando segurança em nível de linha com conteúdo inserido do Power BI
 description: Saiba mais sobre as etapas necessárias para inserir conteúdo do Power BI em seu aplicativo
 author: KesemSharabi
 ms.author: kesharab
@@ -8,11 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: b412af6899b9299fc4fde8ea217569747a445e45
-ms.sourcegitcommit: 52f365af6ea5359e39d4d4547f1d61e5e0d08c5f
+ms.openlocfilehash: e2e2f924f190b7c5904cfe29d1d3cae341974f38
+ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84795129"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402038"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Segurança em nível de linha com o Power BI Embedded
 
@@ -65,11 +66,11 @@ Aqui está como:
 3. Na tabela **Distrito**, insira a expressão DAX: **[Gerente Regional] = USERNAME()** .
 
     ![Instrução DAX para a regra de RLS](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
-4. Para verificar se as regras estão funcionando, na guia **Modelagem**, selecione **Exibir como funções**, depois selecione a função **Gerente** que você criou, juntamente com **Outros usuários**. Insira **AndrewMa** como o usuário.
+4. Para verificar se as regras estão funcionando, na guia **Modelagem**, selecione **Exibir como funções**, depois selecione a função **Gerente** que você criou, juntamente com **Outros usuários**. Insira **Alberto Ge** como o usuário.
 
     ![Exibir como uma caixa de diálogo de função](media/embedded-row-level-security/powerbi-embedded-new-role-view.png)
 
-    Os relatórios apresentam os dados como se você tivesse entrado como **AndrewMa**.
+    Os relatórios apresentam os dados como se você tivesse entrado como **Andrew Ma**.
 
 A aplicação do filtro, da maneira como fizemos aqui, filtra todos os registros nas tabelas **Distrito**, **Loja** e **Vendas**. No entanto, devido à direção do filtro nos relacionamentos entre **Vendas** e **Hora**, as tabelas **Vendas** e **Item** e **Item** e **Hora** as tabelas não são filtradas. Para saber mais sobre a filtragem cruzada bidirecional, baixe o white paper [Filtragem cruzada bidirecional no SQL Server Analysis Services 2016 e no Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
 
