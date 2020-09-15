@@ -62,6 +62,8 @@
               href: service-admin-syndication-partner.md
         - name: Usando o portal de administração
           href: service-admin-portal.md
+        - name: Usar links privados para o Power BI
+          href: service-security-private-links.md
         - name: Gerenciar configurações de administrador de visuais do Power BI
           href: organizational-visuals.md
         - name: Encontrar usuários que entraram
