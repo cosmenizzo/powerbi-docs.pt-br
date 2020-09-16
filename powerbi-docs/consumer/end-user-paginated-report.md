@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: f0f2d57b1a60307cef2d848854355715dd74a412
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: b1f9dd6540707993696bddb4494fc73aa782d363
+ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537977"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "90008895"
 ---
 # <a name="paginated-reports-in-the-power-bi-service"></a>Relatórios paginados no serviço do Power BI
 
@@ -97,5 +97,5 @@ Quando você assina um relatório paginado, o Power BI envia um email com o rela
 
 ## <a name="next-steps"></a>Próximas etapas
 - [Relatórios do Power BI](end-user-reports.md)
+- [Relatórios paginados no Power BI: Perguntas frequentes](../paginated-reports/paginated-reports-faq.md)
 - Mais perguntas? Experimente a [Comunidade do Power BI](https://community.powerbi.com/).
-
