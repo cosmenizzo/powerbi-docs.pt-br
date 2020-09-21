@@ -347,6 +347,8 @@
               href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
             - name: Criar um relatório com um conjunto de dados compartilhado do Power BI
               href: ../paginated-reports/report-builder-shared-datasets.md
+            - name: Baixe o .rdl para um relatório paginado
+              href: ../paginated-reports/paginated-reports-download-rdl.md
             - name: Criar parâmetros
               href: ../paginated-reports/paginated-reports-parameters.md
             - name: Definir exibições do relatório

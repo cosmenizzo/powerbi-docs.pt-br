@@ -80,7 +80,9 @@
           href: desktop-admin-sign-in-form.md
         - name: Proteção de dados
           items:
-            - name: Rótulos de confidencialidade no Power BI
+            - name: Proteção de dados no Power BI
+              href: service-security-data-protection-overview.md
+            - name: Visão geral do rótulo de confidencialidade
               href: service-security-sensitivity-label-overview.md
             - name: Habilitar a rotulagem de confidencialidade
               href: service-security-enable-data-sensitivity-labels.md

@@ -5,14 +5,14 @@ author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/21/2020
+ms.date: 09/09/2020
 ms.author: maggies
-ms.openlocfilehash: eebb40d81e9b59b545b30ce55dbf4a362b826455
-ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
+ms.openlocfilehash: 7b02e1b1fb49eb1c43b12d204250eabec8eafe91
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88937575"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642355"
 ---
 # <a name="limitations-of-power-bi-qa"></a>P e R de limitações do Power BI
 
@@ -31,12 +31,17 @@ A P e R do Power BI oferece suporte às seguintes configurações de fontes de d
 
 Em cada uma dessas configurações, também há suporte para segurança em nível de linha.
 
+**Suporte do DirectQuery para P e R** (versão prévia)
+
+A P e R agora dá suporte a fontes do DirectQuery do SQL, incluindo o SQL Server 2019, o Banco de Dados SQL do Azure e o Azure Synapse Analytics. Use a P e R para fazer perguntas em idioma natural nessas fontes de dados. Há uma pequena alteração no comportamento da P e R quando ela está no modo DirectQuery: Depois de digitar sua pergunta, selecione o botão **Enviar**. Essa alteração impede que a fonte do DirectQuery fique sobrecarregada com consultas desnecessárias conforme você digita o texto.
+
+Não há suporte para outras fontes do DirectQuery na P e R. Não bloqueamos as P e R por completo se você tem outras fontes do DirectQuery no seu conjunto de dados, mas é possível que algumas perguntas não sejam respondidas corretamente ou retornem erros.
+
 ### <a name="data-sources-not-supported"></a>Não há suporte para fontes de dados
 
 No momento, P e R do Power BI não oferece suporte às seguintes configurações:
 
 - Segurança em nível de objeto com qualquer tipo de fonte de dados
-- DirectQuery com relação a qualquer fonte. Uma solução alternativa é usar a conexão dinâmica com o Azure Analysis Services, que usa o DirectQuery.
 - Modelos compostos
 - Reporting Services 
 

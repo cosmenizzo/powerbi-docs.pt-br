@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2921ea9ff0e5e1fa6bc12c0ecd5dd047b703a937
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c97a303a5b3241f49e82aac41d9ed7984c3a5af1
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237626"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642292"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Gerenciar sua fonte de dados – Analysis Services
 
@@ -36,7 +36,7 @@ Para obter informações sobre como adicionar uma fonte de dados, consulte [Adic
 Preencha as informações sobre a fonte de dados, que incluem o **Servidor** e o **Banco de Dados**. As informações inseridas para **Nome de usuário** e **Senha** serão usadas pelo gateway para se conectar à instância do Analysis Services.
 
 > [!NOTE]
-> A conta do Windows inserida deve ter permissões de Administrador do Servidor para a instância à qual você está se conectando. Se a senha dessa conta estiver configurada para expirar, os usuários poderão receber um erro de conexão se a senha não estiver atualizada para a fonte de dados. Para saber mais sobre como as credenciais são armazenadas, confira [Armazenar credenciais criptografadas na nuvem](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
+> A conta do Windows inserida precisará ser membro da função Administrador do Servidor na instância do Analysis Services à qual você está se conectando. Se a senha dessa conta estiver configurada para expirar, os usuários poderão receber um erro de conexão se a senha não estiver atualizada para a fonte de dados. Para saber mais sobre como as credenciais são armazenadas, confira [Armazenar credenciais criptografadas na nuvem](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Preencher as configurações de fonte de dados](media/service-gateway-enterprise-manage-ssas/datasourcesettings3-ssas.png)
 

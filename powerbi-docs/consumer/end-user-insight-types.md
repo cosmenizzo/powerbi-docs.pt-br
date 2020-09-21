@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 03/11/2020
+ms.date: 09/09/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 44b66c2c8245b7f9629ad36879e6f13a5e720687
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 7b5a935418aacb8de15ea6e7e942f2de440ecec1
+ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537747"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "90008647"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Tipos de Insights com suporte para o Power BI
 
@@ -27,7 +27,7 @@ Para saber como usar os Insights, confira [Insights do Power BI](end-user-insigh
 ![um conjunto de Insights](media/end-user-insight-types/power-bi-insight.png)
 
 ## <a name="how-does-insights-work"></a>Como o Insights funciona?
-O Power BI pesquisa rapidamente diferentes subconjuntos do conjunto de dados. À medida que ele pesquisa, o Power BI aplica um conjunto de algoritmos sofisticados para descobrir insights potencialmente interessantes. Os *consumidores* do Power BI podem executar os Insights em blocos de dashboard.
+O Power BI pesquisa rapidamente diferentes subconjuntos do conjunto de dados. À medida que ele pesquisa, o Power BI aplica um conjunto de algoritmos sofisticados para descobrir insights potencialmente interessantes. Os *usuários de negócios* do Power BI podem executar os Insights em blocos de dashboard.
 
 ## <a name="some-terminology"></a>Um pouco de terminologia
 O Power BI usa algoritmos estatísticos para descobrir Insights. Os algoritmos são listados e descritos na próxima seção deste artigo. Antes de chegarmos aos algoritmos, vejamos as definições de alguns termos que talvez não sejam conhecidos. 
@@ -44,49 +44,49 @@ Esses são os algoritmos usados pelo Power BI.
 ### <a name="category-outliers-topbottom"></a>Exceções de categoria (superior/inferior)
 Realça os casos em que uma ou duas categorias têm valores muito maiores do que outras categorias.  
 
-![Exemplo de exceções de categoria](./media/end-user-insight-types/pbi-auto-insight-types-category-outliers.png)
+![Exemplo de exceções de categoria](./media/end-user-insight-types/pbi-auto-insight-type-category-outliers.png)
 
 ### <a name="change-points-in-a-time-series"></a>Alterar os pontos em uma série temporal
 Realça os casos em que há alterações significativas nas tendências em uma série temporal de dados.
 
-![Exemplo de alterar pontos em uma série temporal](./media/end-user-insight-types/pbi-auto-insight-types-changepoint.png)
+![Exemplo de alterar pontos em uma série temporal](./media/end-user-insight-types/pbi-auto-insight-type-changepoint.png)
 
 ### <a name="correlation"></a>Correlação
 Detecta casos em que várias medidas mostram um padrão ou uma tendência semelhante quando plotadas em uma categoria ou um valor no conjunto de dados.
 
-![Exemplo de correlação](./media/end-user-insight-types/pbi-auto-insight-types-correlation.png)
+![Exemplo de correlação](./media/end-user-insight-types/pbi-auto-insight-type-correlation.png)
 
 ### <a name="low-variance"></a>Baixa variância
 Detecta casos em que os pontos de dados de uma dimensão não estão longe da média, assim, a "variação" é baixa. Digamos que você tenha a medida "vendas" e uma dimensão "região". E ao analisar a região, você percebe que há uma diferença muito pequena entre os pontos de dados e a média (dos pontos de dados). Esse insight é disparado quando a variação das vendas em todas as regiões está abaixo de um limite. Em outras palavras, quando as vendas são muito semelhantes em todas as regiões.
 
-![Exemplo de baixa variância](./media/end-user-insight-types/power-bi-low-variance.png)
+![Exemplo de baixa variância](./media/end-user-insight-types/power-bi-insights-low-variance.png)
 
 ### <a name="majority-major-factors"></a>Maioria (Principais fatores)
 Encontra casos em que a maioria de um valor total pode ser atribuída a um único fator quando dividida por outra dimensão.  
 
-![Exemplo de fatores principais](./media/end-user-insight-types/pbi-auto-insight-types-majority.png)
+![Exemplo de fatores principais](./media/end-user-insight-types/pbi-auto-insight-type-majority.png)
 
 ### <a name="overall-trends-in-time-series"></a>Tendências gerais na série temporal
 Detecta as tendências ascendentes ou descendentes em dados de série temporal.
 
-![Exemplo de tendências gerais na série temporal](./media/end-user-insight-types/pbi-auto-insight-types-trend.png)
+![Exemplo de tendências gerais na série temporal](./media/end-user-insight-types/pbi-auto-insight-type-trend.png)
 
 ### <a name="seasonality-in-time-series"></a>Periodicidade na série temporal
 Encontra padrões periódicos nos dados de série temporal, como periodicidade semanal, mensal ou anual.
 
-![Exemplo de sazonalidade](./media/end-user-insight-types/pbi-auto-insight-types-seasonality-new.png)
+![Exemplo de sazonalidade](./media/end-user-insight-types/pbi-auto-insight-type-seasonality-new.png)
 
 ### <a name="steady-share"></a>Compartilhamento constante
 Realça os casos em que há uma correlação de pai-filho entre o compartilhamento de um valor do filho em relação ao valor geral do pai em uma variável contínua. Um insight de compartilhamento constante é aplicado ao contexto de uma medida, dimensão e de outra dimensão de data/hora. Esse insight é disparado quando determinado valor de dimensão, por exemplo, "a região nordeste", tem uma porcentagem constante de vendas gerais nessa dimensão de data/hora.
 
 O insight de compartilhamento constante é semelhante ao insight de variação baixa, pois ambos estão relacionados à falta de variação de um valor ao longo do tempo. No entanto, o insight de compartilhamento constante mede a falta de variação do **percentual geral** ao longo do tempo, enquanto o insight de variação baixa mede a falta de variação dos valores de medidas absolutas em uma dimensão.
 
-![Exemplo de compartilhamento constante](./media/end-user-insight-types/pbi-auto-insight-types-steadyshare.png)
+![Exemplo de compartilhamento constante](./media/end-user-insight-types/pbi-auto-insight-type-steadyshare.png)
 
 ### <a name="time-series-outliers"></a>Exceções da série temporal
 Para dados em uma série temporal, detecta quando há datas ou horas específicas com valores significativamente diferentes dos outros valores de data/hora.
 
-![Exemplo de exceções da série temporal](./media/end-user-insight-types/pbi-auto-insight-types-time-series-outliers.png)
+![Exemplo de exceções da série temporal](./media/end-user-insight-types/pbi-auto-insight-type-time-series-outliers-purple.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 [Insights do Power BI](end-user-insights.md)

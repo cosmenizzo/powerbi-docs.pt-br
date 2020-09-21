@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/27/2020
-ms.openlocfilehash: fda04d3241db68f1ca8da66d999bfca6cef9e8cf
-ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
+ms.openlocfilehash: cdce9ead296a25aad95ab504d6da38f06f681b72
+ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88937437"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "90008619"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Fontes de dados com suporte para relatórios paginados do Power BI
 
@@ -29,7 +29,7 @@ Os relatórios paginados oferecem suporte nativo à seguinte lista de fontes de 
 | Instância Gerenciada do SQL do Azure | Básico | por meio do ponto de extremidade público ou privado (o ponto de extremidade privado precisa ser roteado pelo gateway corporativo)  |
 | Azure Analysis Services | SSO, OAuth2 | O firewall do AAS deve estar desabilitado ou configurado para permitir todos os intervalos de IP na região BlackForest. Isso se aplicará somente à região BlackForest.  Não há suporte para SSO de locatário externo. |
 | Conjunto de dados do Power BI | SSO | Conjuntos de dados do Power BI Premium e não Premium. Exige permissão de leitura |
-| Conjunto de dados do Power BI Premium (XMLA) | SSO | Os conjuntos de dados do Power BI não têm suporte como uma fonte de dados para relatórios paginados inseridos.  |
+| Conjunto de dados do Power BI Premium (XMLA) | SSO | Não há suporte para os conjuntos de dados do Power BI como uma fonte de dados em relatórios paginados inseridos nos cenários "o aplicativo é proprietário dos dados".  Para garantir a conectividade adequada no Power BI Report Builder, verifique se a opção "Não usar credenciais" está selecionada ao definir sua fonte de dados.   |
 | Inserir Dados | N/D | Os dados são inseridos no relatório. |
 
 Exceto para o Banco de Dados SQL do Azure, todas as fontes estão prontas para uso depois que você carrega o relatório para o serviço do Power BI. As fontes de dados assumem como padrão o uso de SSO (logon único), quando aplicável. Para o Azure Analysis Services, você pode alterar o tipo de autenticação para OAuth2. No entanto, depois que o tipo de autenticação de uma determinada fonte de dados é alterado para OAuth2, ele não pode voltar a usar o SSO.  Além disso, essa alteração se aplica a todos os relatórios que usam essa fonte de dados em todos os espaços de trabalho para um determinado locatário.  A segurança no nível de linha em relatórios paginados não funcionará, a menos que os usuários escolham SSO para o tipo de autenticação.

@@ -6,19 +6,19 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
-ms.openlocfilehash: 5522d84cab235270a2eb368be02cfa0fb4e5eaa9
-ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.date: 09/09/2020
+ms.openlocfilehash: 3994a5cdad4d80c87d4153ffe57af685d7a21d36
+ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86557131"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "90008573"
 ---
 # <a name="introduction-to-deployment-pipelines-preview"></a>Introdução aos pipelines de implantação (versão prévia)
 
 No mundo atual, a análise é uma parte vital da tomada de decisões em quase todas as organizações. O uso crescente do Power BI como uma ferramenta de análise exige que ele use mais dados, seja atrativo e fácil de usar. E, acima de tudo, o Power BI precisa estar sempre disponível e ser confiável. Para atender a esses requisitos, os criadores do BI devem colaborar com eficiência.
 
-Os pipelines de implantação são uma ferramenta eficiente e reutilizável que permite que os criadores do BI em uma empresa com capacidade Premium gerenciem o ciclo de vida do conteúdo organizacional. Isso permite desenvolver e testar o conteúdo do Power BI, como relatórios, dashboards e conjuntos de dados, antes que eles sejam consumidos pelos usuários finais.
+A ferramenta pipelines de implantação permite que os criadores de BI gerenciem o ciclo de vida do conteúdo organizacional. A ferramenta é eficiente e reutilizável para criadores em uma empresa com capacidade Premium. A ferramenta permite que os criadores desenvolvam e testem o conteúdo do Power BI antes que o conteúdo seja consumido pelos usuários. Os tipos de conteúdo incluem relatórios, dashboards e conjuntos de dados.
 
 A ferramenta é projetada como um pipeline com três estágios:
 
@@ -28,7 +28,7 @@ A ferramenta é projetada como um pipeline com três estágios:
 
 * **<a name="test"></a>Teste**
 
-    Depois que o conteúdo é carregado e todas as alterações são feitas no estágio de desenvolvimento, o conteúdo pode ser movido para este estágio para teste. Aqui estão três exemplos do que pode ser feito no ambiente de teste:
+    Você está pronto para entrar no estágio de teste depois de fazer todas as alterações no conteúdo. Você carregará o conteúdo modificado, de modo que ele possa ser movido para esse estágio de teste. Veja três exemplos do que pode ser feito no ambiente de teste:
 
     * Compartilhar conteúdo com testadores e revisores
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/28/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: de5ab7b75967e752615bf7415c81ba7bb18c1a80
-ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
+ms.openlocfilehash: 492ff2c21d285cba37f1bbf631869c84eafe4dc3
+ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87364044"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "90008550"
 ---
 # <a name="what-is-power-bi-premium"></a>O que é o Power BI Premium?
 
@@ -205,7 +205,7 @@ Enquanto as restrições de tempo e memória por consulta são muito maiores na 
 
 ## <a name="incremental-refresh"></a>Atualização incremental
 
-A atualização incremental fornece uma parte integral de ter e manter grandes conjuntos de dados no Power BI Premium. A atualização incremental tem muitos benefícios, por exemplo, atualizações são mais rápidas porque somente os dados que foram alterados precisam ser atualizados. As atualizações são mais confiáveis porque não é necessário manter conexões longas com fontes de dados voláteis. O consumo de recursos é reduzido porque um número menor de dados para atualização reduz o consumo geral da memória e de outros recursos. As políticas de atualização incremental são definidas no **Power BI Desktop** e aplicadas quando publicadas em um workspace em uma capacidade Premium. 
+A atualização incremental fornece uma parte integral de ter e manter conjuntos de dados grandes no Power BI Premium e no Power BI Pro. A atualização incremental tem muitos benefícios, por exemplo, atualizações são mais rápidas porque somente os dados que foram alterados precisam ser atualizados. As atualizações são mais confiáveis porque não é necessário manter conexões longas com fontes de dados voláteis. O consumo de recursos é reduzido porque um número menor de dados para atualização reduz o consumo geral da memória e de outros recursos. As políticas de atualização incremental são definidas no **Power BI Desktop** e aplicadas quando publicadas em um workspace em uma capacidade Premium. 
 
 ![Detalhes da atualização](media/service-premium-incremental-refresh/refresh-details.png)
 

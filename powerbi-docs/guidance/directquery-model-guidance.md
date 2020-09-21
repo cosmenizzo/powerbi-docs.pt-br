@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 264d3f4a0c611ca01de627b7656584ceb60e7b18
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 89d911680d46e159e446dbcf6bd06e2caf4b6b65
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214531"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642618"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Diretrizes sobre modelos de DirectQuery no Power BI Desktop
 
@@ -127,7 +127,7 @@ Muitos aprimoramentos funcionais e de desempenho podem ser obtidos com a convers
 
 ## <a name="educate-users"></a>Instruir os usuários
 
-É importante instruir os usuários sobre como trabalhar de maneira eficiente com relatórios baseados em conjuntos de dados no DirectQuery. Os autores de relatórios devem ser instruídos sobre o conteúdo descrito em [Otimizar designs de relatório](#optimize-report-designs section).
+É importante instruir os usuários sobre como trabalhar de maneira eficiente com relatórios baseados em conjuntos de dados no DirectQuery. Os autores de relatórios devem ser instruídos sobre o conteúdo descrito na seção [Otimizar designs de relatório](#optimize-report-designs).
 
 Recomendamos que você instrua seus consumidores de relatórios sobre seus relatórios baseados em conjuntos de dados do DirectQuery. Pode ser útil para eles entenderem a arquitetura de dados geral, incluindo as limitações relevantes descritas neste artigo. Informe-os de que as respostas de atualizações e a filtragem interativa poderão, às vezes, ser lentas. Quando os usuários de relatório entendem por que ocorre a degradação do desempenho, é menos provável que eles percam a confiança nos relatórios e nos dados.
 

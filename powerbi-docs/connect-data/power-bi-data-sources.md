@@ -6,22 +6,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/21/2020
+ms.date: 09/11/2020
 ms.author: davidi
-ms.openlocfilehash: ae4d51d9a40044ae939f5cb2b0b15442697df5fd
-ms.sourcegitcommit: ae6559f40e1735d53654cbe9425add6e18171295
+ms.openlocfilehash: 926569e783dad7a97b91e2e5c1752401d21d6612
+ms.sourcegitcommit: 376ea86f69545444f975378cbf63e54c2f75faa3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88764941"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90084043"
 ---
 # <a name="power-bi-data-sources"></a>Fontes de dados do Power BI
 
 A tabela a seguir mostra as fontes de dados para as quais o Power BI dá suporte relacionado a conjuntos de dados, incluindo informações sobre o DirectQuery e o gateway de dados local. Confira informações sobre fluxos de dados em [Conectar-se a fontes de dados para fluxos de dados do Power BI](../transform-model/service-dataflows-data-sources.md).
-
-> [!NOTE]
-> Há muitos conectores de dados para o Power BI Desktop que exigem o Internet Explorer 10 (ou mais recente) para autenticação. 
-
 
 | Fonte de dados | Conectar da Área de Trabalho | Conectar e atualizar do serviço | DirectQuery/conexão dinâmica | Gateway (com suporte) | Gateway (necessário) |
 |---|---|---|---|---|---|---|---|
@@ -156,6 +152,11 @@ A tabela a seguir mostra as fontes de dados para as quais o Power BI dá suporte
 <sup>7</sup> O serviço do Power BI não dá suporte a feeds OData que exigem autenticação.
 
 <sup>8</sup> O Paxata tem suporte na versão do Power BI Desktop otimizada para o Servidor de Relatórios do Power BI. Ele não tem suporte nos relatórios do Power BI publicados no Servidor de Relatórios. Confira [Fontes de dados de relatórios do Power BI no Servidor de Relatórios do Power BI](../report-server/data-sources.md) para obter a lista de fontes de dados com suporte.
+
+## <a name="considerations-and-limitations"></a>Considerações e limitações
+
+- Muitos conectores de dados para o Power BI Desktop exigem o Internet Explorer 10 (ou mais recente) para autenticação. 
+- Algumas fontes de dados estão disponíveis no Power BI Desktop otimizado para o Servidor de Relatórios do Power BI, mas não têm suporte quando publicadas no Servidor de Relatórios do Power BI. Confira [Fontes de dados de relatórios do Power BI no Servidor de Relatórios do Power BI](../report-server/data-sources.md) para obter a lista de fontes de dados com suporte.
 
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>SSO (logon único) para fontes do DirectQuery
 
