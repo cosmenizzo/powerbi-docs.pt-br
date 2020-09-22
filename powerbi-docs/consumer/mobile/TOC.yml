@@ -11,7 +11,7 @@
           href: mobile-whats-new-in-the-mobile-apps.md
         - name: Conheça a página inicial
           href: mobile-apps-home-page.md
-    - name: Início rápido
+    - name: Inícios rápidos
       expanded: true
       items:
         - name: Explorar painéis e relatórios
@@ -117,4 +117,4 @@
         - name: Idiomas com suporte nos aplicativos móveis
           href: mobile-apps-supported-languages.md
         - name: Power BI para Windows 10 Mobile – Fim do suporte para telefones Windows
-          href: 'https://go.microsoft.com/fwlink/?linkid=2121400'
+          href: /legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones
