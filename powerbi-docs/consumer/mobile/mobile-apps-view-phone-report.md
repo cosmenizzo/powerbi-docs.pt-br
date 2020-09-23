@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: eb46c35c4040ead37b132cf2c34a22663ee72b6d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9030d7ebacad92780a7dcafe33ae5bdded842b01
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220277"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856121"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Exibir relatórios do Power BI otimizados para seu telefone
 
@@ -115,7 +115,7 @@ Há alguns tipos de drill down:
 
 ## <a name="drill-through-from-a-value"></a>Executar uma consulta drill-through de um valor
 O drill-through conecta os valores de uma página de relatório a outras páginas de relatório. Quando você executa uma consulta drill-through de um ponto de dados para outra página de relatório, os valores de ponto de dados são usados para filtrar a página detalhada ou eles estarão no contexto dos dados selecionados.
-Os autores de relatório podem [definir o drill-through](https://docs.microsoft.com/power-bi/desktop-drillthrough) ao criar o relatório.
+Os autores de relatório podem [definir o drill-through](../../create-reports/desktop-drillthrough.md) ao criar o relatório.
 
 1. Dê um toque longo (tocar e segurar) em um ponto de dados de um visual.
 2. A dica de ferramenta será exibida e, se o drill-through estiver definido, o rodapé da dica de ferramenta mostrará a seta de drill-through.

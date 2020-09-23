@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: fd0f9db041fb4862831630249e847c63572263b0
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 2ac06bb288077a15a7227e2eb439762bc182e1a8
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240256"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861649"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Criação e uso de fluxos de dados no Power BI
 
@@ -77,7 +77,7 @@ Se você quiser ver o código que a Consulta está criando a cada etapa ou criar
 
 Entidades de fluxos de dados incluem novas ferramentas para mapear dados comerciais com facilidade para o Common Data Service (esquema padronizado da Microsoft), enriquecê-lo com dados da Microsoft e de terceiros e obter acesso simplificado ao aprendizado de máquina. Esses novos recursos podem ser utilizados para fornecer insights práticos e inteligentes sobre seus dados comerciais. Depois de concluir todas as transformações na etapa Editar Consultas, você pode mapear colunas das tabelas de fonte de dados para campos de entidade padrão conforme definido pelo Common Data Service. As entidades padrão têm um esquema conhecido definido pelo modelo de dados comum.
 
-Obtenha mais informações sobre essa abordagem e sobre o Common Data Service no artigo [O que é o Common Data Service](https://docs.microsoft.com/powerapps/common-data-model/overview).
+Obtenha mais informações sobre essa abordagem e sobre o Common Data Service no artigo [O que é o Common Data Service](/powerapps/common-data-model/overview).
 
 Para utilizar o Common Data Service no seu fluxo de dados, clique na transformação **Mapear para Padrão** na caixa de diálogo **Editar Consultas**. Na tela **Mapear Entidades**, você pode selecionar a entidade padrão para a qual você deseja mapear.
 
@@ -175,7 +175,7 @@ Este artigo descreveu como criar seu próprio **fluxo de dados**, bem como um co
 * [Integração entre fluxos de dados e o Azure Data Lake (versão prévia)](service-dataflows-azure-data-lake-integration.md)
 
 Leia este artigo de visão geral para saber mais sobre o Common Data Service:
-* [Common Data Service - visão geral ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Service - visão geral ](/powerapps/common-data-model/overview)
 * [Saiba mais sobre o esquema Common Data Service e entidades no GitHub](https://github.com/Microsoft/CDM)
 
 Artigos relacionados do Power BI Desktop:

@@ -10,16 +10,16 @@ ms.topic: tutorial
 ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4c19965def178d4260527032820c4109c4fe235f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 6511afb499b12d379957ac37ebfe19890c111282
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83281566"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861028"
 ---
 # <a name="tutorial-use-cognitive-services-in-power-bi"></a>Tutorial: Usar Serviços Cognitivos no Power BI
 
-O Power BI fornece acesso a um conjunto de funções dos Serviços Cognitivos do Azure para enriquecer seus dados na preparação de dados de autoatendimento para fluxos de dados. Os serviços atualmente com suporte são [Análise de Sentimento](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Extração de Frases-chave](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Detecção de Idioma](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) e [Marcação de Imagem](https://docs.microsoft.com/azure/cognitive-services/computer-vision/concept-tagging-images). As transformações são executadas no serviço do Power BI e não exigem uma assinatura de Serviços Cognitivos do Azure. Este recurso requer o Power BI Premium.
+O Power BI fornece acesso a um conjunto de funções dos Serviços Cognitivos do Azure para enriquecer seus dados na preparação de dados de autoatendimento para fluxos de dados. Os serviços atualmente com suporte são [Análise de Sentimento](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Extração de Frases-chave](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Detecção de Idioma](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) e [Marcação de Imagem](/azure/cognitive-services/computer-vision/concept-tagging-images). As transformações são executadas no serviço do Power BI e não exigem uma assinatura de Serviços Cognitivos do Azure. Este recurso requer o Power BI Premium.
 
 As transformações de Serviços Cognitivos recebem suporte da [Preparação de dados de autoatendimento para fluxos de dados](https://powerbi.microsoft.com/blog/introducing-power-bi-data-prep-wtih-dataflows/). Use os exemplos do passo a passo para executar a análise de texto e a marcação da imagem abaixo para começar.
 
@@ -174,7 +174,7 @@ Quando não for mais necessária, exclua essa consulta clicando duas vezes no no
 
 Neste tutorial, você aplicou as funções de pontuação de sentimento e marcação de imagem a um fluxo de dados do Power BI. Saiba mais sobre os Serviços Cognitivos no Power BI nos artigos a seguir.
 
-* [Serviços Cognitivos no Azure](https://docs.microsoft.com/azure/cognitive-services/)
+* [Serviços Cognitivos no Azure](/azure/cognitive-services/)
 * Introdução à [preparação de dados de autoatendimento em fluxos de dados](../transform-model/service-dataflows-overview.md)
 * Saiba mais sobre o [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/)
 

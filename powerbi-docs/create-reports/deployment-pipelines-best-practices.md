@@ -6,15 +6,15 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
-ms.openlocfilehash: a1a30dc09e61e29053a5a1d95cde3d5a339c5a3d
-ms.sourcegitcommit: 6d7d5e6b19e11d557dfa1b79b745728b4ee02b4e
+ms.date: 09/15/2020
+ms.openlocfilehash: ea2fa0625ece88d8da2848dbe6a108d98a55a0d0
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89220850"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855549"
 ---
-# <a name="deployment-pipelines-best-practices-preview"></a>Melhores práticas para pipelines de implantação (versão prévia)
+# <a name="deployment-pipelines-best-practices"></a>Melhores práticas de pipelines de implantação
 
 Este artigo fornece orientações para criadores do BI que gerenciam conteúdo durante todo o ciclo de vida dele. O foco é a utilização dos pipelines de implantação como uma ferramenta de gerenciamento do ciclo de vida de conteúdo do BI.
 
@@ -79,7 +79,7 @@ Um banco de dados de produção deve estar sempre estável e disponível. É mel
 
 ### <a name="use-parameters-in-your-model"></a>Usar parâmetros em seu modelo
 
-Como não é possível editar fontes de conjuntos de dados no serviço do Power BI, recomendamos o uso de [parâmetros](https://docs.microsoft.com/power-query/power-query-query-parameters) para armazenar detalhes de conexão, como nomes de instância e de bancos de dados, em vez de usar uma cadeia de conexão estática. Isso permite que você gerencie as conexões por meio do portal da Web do serviço do Power BI ou [usando APIs](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup), em um estágio posterior.
+Como não é possível editar fontes de conjuntos de dados no serviço do Power BI, recomendamos o uso de [parâmetros](/power-query/power-query-query-parameters) para armazenar detalhes de conexão, como nomes de instância e de bancos de dados, em vez de usar uma cadeia de conexão estática. Isso permite que você gerencie as conexões por meio do portal da Web do serviço do Power BI ou [usando APIs](/rest/api/power-bi/datasets/updateparametersingroup), em um estágio posterior.
 
 Nos pipelines de implantação, você pode configurar regras de parâmetros a fim de definir valores específicos para os estágios de desenvolvimento, teste e produção.
 

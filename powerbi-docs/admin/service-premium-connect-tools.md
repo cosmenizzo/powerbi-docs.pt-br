@@ -10,11 +10,12 @@ ms.topic: how-to
 ms.date: 06/04/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: b327730db126ad3f83e0a680d8dc29f384e606fe
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8372a588c57ef3c0cbe910165c5293993e98897c
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227410"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854956"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint-preview"></a>Conectividade de conjunto de dados com o ponto de extremidade XMLA (Versão prévia)
 
@@ -25,7 +26,7 @@ Os espaços de trabalho e conjuntos de clientes do Power BI Premium no nível de
 
 ## <a name="whats-an-xmla-endpoint"></a>O que é um ponto de extremidade XMLA?
 
-O Power BI Premium usa o protocolo XMLA ([XML for Analysis](https://docs.microsoft.com/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current)) para a comunicação entre aplicativos cliente e o mecanismo que gerencia seus espaços de trabalho e conjuntos de dados do Power BI. Essa comunicação é feita por meio do que é normalmente conhecido como pontos de extremidade XMLA. O XMLA é o mesmo protocolo de comunicação usado pelo mecanismo do Microsoft Analysis Services, que, nos bastidores, executa a modelagem semântica, a governança, o ciclo de vida e o gerenciamento de dados do Power BI.
+O Power BI Premium usa o protocolo XMLA ([XML for Analysis](/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current)) para a comunicação entre aplicativos cliente e o mecanismo que gerencia seus espaços de trabalho e conjuntos de dados do Power BI. Essa comunicação é feita por meio do que é normalmente conhecido como pontos de extremidade XMLA. O XMLA é o mesmo protocolo de comunicação usado pelo mecanismo do Microsoft Analysis Services, que, nos bastidores, executa a modelagem semântica, a governança, o ciclo de vida e o gerenciamento de dados do Power BI.
 
 Por padrão, a conectividade *somente leitura* usando o ponto de extremidade está habilitada para a **Carga de trabalho dos conjuntos de dados** em uma capacidade. Com dados somente leitura, as ferramentas e os aplicativos de visualização de dados podem consultar dados de modelos, metadados, eventos e esquema do conjunto de dados. As operações de *leitura/gravação* usando o ponto de extremidade podem ser habilitadas, fornecendo gerenciamento, governança, modelagem semântica avançada, depuração e monitoramento adicionais para os conjunto de dados. Com a leitura/gravação habilitadas, os conjuntos de dados do Power BI Premium têm mais paridade com processos e ferramentas de modelagem de tabela de nível empresarial do Azure Analysis Services e do SQL Server Analysis Services.
 
@@ -36,17 +37,17 @@ Por padrão, a conectividade *somente leitura* usando o ponto de extremidade est
 
 Essas são algumas das ferramentas mais comuns usadas com o Azure Analysis Services e o SQL Server Analysis Services, e agora têm o suporte de conjuntos do Power BI Premium:
 
-**Projetos do Visual Studio com Analysis Services**  – também conhecido como SQL Server Data Tools ou simplesmente **SSDT**, é uma ferramenta de criação de modelo de nível empresarial para modelos tabulares do Analysis Services. As extensões de projetos do Analysis Services têm suporte em todas as edições do Visual Studio 2017 e posteriores, incluindo a edição gratuita da Comunidade. A versão da extensão 2.9.6 ou superior é necessária para implantar modelos tabulares em um espaço de trabalho Premium. Ao implantar em um espaço de trabalho Premium, o modelo deve ter um nível de compatibilidade 1500 ou superior. A carga de trabalho de conjuntos de dados exige XMLA somente leitura. Confira mais em [Ferramentas para o Analysis Services](https://docs.microsoft.com/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current).
+**Projetos do Visual Studio com Analysis Services**  – também conhecido como SQL Server Data Tools ou simplesmente **SSDT**, é uma ferramenta de criação de modelo de nível empresarial para modelos tabulares do Analysis Services. As extensões de projetos do Analysis Services têm suporte em todas as edições do Visual Studio 2017 e posteriores, incluindo a edição gratuita da Comunidade. A versão da extensão 2.9.6 ou superior é necessária para implantar modelos tabulares em um espaço de trabalho Premium. Ao implantar em um espaço de trabalho Premium, o modelo deve ter um nível de compatibilidade 1500 ou superior. A carga de trabalho de conjuntos de dados exige XMLA somente leitura. Confira mais em [Ferramentas para o Analysis Services](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current).
 
-**SSMS (SQL Server Management Studio)**   – dá suporte a consultas DAX, MDX e XMLA. Execute operações de atualização granular e scripts de metadados de conjunto de detalhes usando o [TMSL (Linguagem de Script de Modelo Tabular](https://docs.microsoft.com/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference)). As operações de consulta exigem somente leitura. A leitura/gravação é necessária para metadados de scripts. Exibe o SSMS versão 18.4 ou superior. Baixe  [aqui](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms).
+**SSMS (SQL Server Management Studio)**   – dá suporte a consultas DAX, MDX e XMLA. Execute operações de atualização granular e scripts de metadados de conjunto de detalhes usando o [TMSL (Linguagem de Script de Modelo Tabular](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference)). As operações de consulta exigem somente leitura. A leitura/gravação é necessária para metadados de scripts. Exibe o SSMS versão 18.4 ou superior. Baixe  [aqui](/sql/ssms/download-sql-server-management-studio-ssms).
 
-**SQL Server Profiler**  – instalado com o SSMS, essa ferramenta fornece rastreamento e depuração de eventos de conjuntos de dados. Embora oficialmente preterido no SQL Server, o Profiler continua sendo incluído no SSMS e permanece compatível com o Analysis Services e com o Power BI Premium. XMLA somente leitura é exigido. Para saber mais, confira  [SQL Server Profiler para Analysis Services](https://docs.microsoft.com/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services?view=power-bi-premium-current).
+**SQL Server Profiler**  – instalado com o SSMS, essa ferramenta fornece rastreamento e depuração de eventos de conjuntos de dados. Embora oficialmente preterido no SQL Server, o Profiler continua sendo incluído no SSMS e permanece compatível com o Analysis Services e com o Power BI Premium. XMLA somente leitura é exigido. Para saber mais, confira  [SQL Server Profiler para Analysis Services](/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services?view=power-bi-premium-current).
 
-**Assistente de Implantação do Analysis Services**  – instalado com o SSMS, essa ferramenta fornece a implantação de projetos de modelo de tabela criados pelo Visual Studio em espaços de trabalho do Analysis Services e do Power BI Premium. Pode ser executado interativamente ou na linha de comando para automação. O XMLA somente leitura é exigido. Para saber mais, veja o [Assistente de Implantação do Analysis Services](https://docs.microsoft.com/analysis-services/deployment/deploy-model-solutions-using-the-deployment-wizard?view=power-bi-premium-current).
+**Assistente de Implantação do Analysis Services**  – instalado com o SSMS, essa ferramenta fornece a implantação de projetos de modelo de tabela criados pelo Visual Studio em espaços de trabalho do Analysis Services e do Power BI Premium. Pode ser executado interativamente ou na linha de comando para automação. O XMLA somente leitura é exigido. Para saber mais, veja o [Assistente de Implantação do Analysis Services](/analysis-services/deployment/deploy-model-solutions-using-the-deployment-wizard?view=power-bi-premium-current).
 
-**Cmdlets do PowerShell**  – os cmdlets do Analysis Services podem ser usados para automatizar tarefas de gerenciamento de conjuntos de dados, como em operações de atualização. O XMLA somente leitura é exigido. É necessária a versão **21.1.18221** ou superior do [módulo do SqlServer PowerShell](https://www.powershellgallery.com/packages/SqlServer/). Os cmdlets do Azure Analysis Services no módulo Az.AnalysisServices não dão suporte ao Power BI Premium. Para saber mais, confira [Referência do PowerShell do Analysis Services](https://docs.microsoft.com/analysis-services/powershell/analysis-services-powershell-reference?view=power-bi-premium-current).
+**Cmdlets do PowerShell**  – os cmdlets do Analysis Services podem ser usados para automatizar tarefas de gerenciamento de conjuntos de dados, como em operações de atualização. O XMLA somente leitura é exigido. É necessária a versão **21.1.18221** ou superior do [módulo do SqlServer PowerShell](https://www.powershellgallery.com/packages/SqlServer/). Os cmdlets do Azure Analysis Services no módulo Az.AnalysisServices não dão suporte ao Power BI Premium. Para saber mais, confira [Referência do PowerShell do Analysis Services](/analysis-services/powershell/analysis-services-powershell-reference?view=power-bi-premium-current).
 
-**Power BI Report Builder**  – uma ferramenta para a criação de relatórios paginados. Crie uma definição de relatório que especifica os dados a serem recuperados, onde obtê-los e como exibi-los. Você pode visualizar o relatório no Construtor de Relatórios e publicá-lo no serviço do Power BI. O XMLA somente leitura é exigido. Para saber mais, confira  [Power BI Report Builder](https://docs.microsoft.com/power-bi/report-builder-power-bi).
+**Power BI Report Builder**  – uma ferramenta para a criação de relatórios paginados. Crie uma definição de relatório que especifica os dados a serem recuperados, onde obtê-los e como exibi-los. Você pode visualizar o relatório no Construtor de Relatórios e publicá-lo no serviço do Power BI. O XMLA somente leitura é exigido. Para saber mais, confira  [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
 
 **Editor Tabular** – uma ferramenta de software livre para criar, manter e gerenciar modelos de tabela usando um editor leve e intuitivo. A exibição hierárquica mostra todos os objetos do modelo de tabela. Os objetos são organizados por pastas de exibição com suporte para edição de propriedades de seleção múltipla e realce de sintaxe DAX. As operações de consulta exigem o XMLA somente leitura. Operações de metadados exigem leitura/gravação. Para saber mais, confira [tabulareditor.github.io](https://tabulareditor.github.io/).
 
@@ -60,17 +61,17 @@ Essas são algumas das ferramentas mais comuns usadas com o Azure Analysis Servi
 
 ### <a name="client-libraries"></a>Bibliotecas de clientes
 
-Os aplicativos cliente não se comunicam diretamente com o ponto de extremidade XMLA. Em vez disso, usam *bibliotecas de cliente* como uma camada de abstração. Esses são os mesmos aplicativos de bibliotecas de clientes usados para se conectar ao Azure Analysis Services e ao SQL Server Analysis Services. Os aplicativos da Microsoft, como Excel, SSMS (SQL Server Management Studio) e a extensão de projetos do Analysis Services para Visual Studio, instalam e atualizam as três bibliotecas de clientes com as atualizações de aplicativo regulares. Os desenvolvedores também podem usar as bibliotecas de clientes para criar aplicativos personalizados. Em alguns casos, especialmente com aplicativos de terceiros, caso não sejam instalados com o aplicativo, talvez seja necessário instalar versões mais recentes das bibliotecas de clientes. As bibliotecas de clientes são atualizadas mensalmente. Para saber mais, confira  [Bibliotecas de clientes para conexão com o Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers).
+Os aplicativos cliente não se comunicam diretamente com o ponto de extremidade XMLA. Em vez disso, usam *bibliotecas de cliente* como uma camada de abstração. Esses são os mesmos aplicativos de bibliotecas de clientes usados para se conectar ao Azure Analysis Services e ao SQL Server Analysis Services. Os aplicativos da Microsoft, como Excel, SSMS (SQL Server Management Studio) e a extensão de projetos do Analysis Services para Visual Studio, instalam e atualizam as três bibliotecas de clientes com as atualizações de aplicativo regulares. Os desenvolvedores também podem usar as bibliotecas de clientes para criar aplicativos personalizados. Em alguns casos, especialmente com aplicativos de terceiros, caso não sejam instalados com o aplicativo, talvez seja necessário instalar versões mais recentes das bibliotecas de clientes. As bibliotecas de clientes são atualizadas mensalmente. Para saber mais, confira  [Bibliotecas de clientes para conexão com o Analysis Services](/azure/analysis-services/analysis-services-data-providers).
 
 ## <a name="supported-write-operations"></a>Operações de gravação compatíveis
 
 Os metadados de conjuntos de dados são expostos por meio das bibliotecas de clientes com base no TOM (Modelo de Objeto Tabular) para desenvolvedores criarem aplicativos personalizados. Assim, o Visual Studio e as ferramentas da comunidade de software livre, como o editor de tabela, podem fornecer recursos adicionais de modelagem e implantação de dados com suporte no mecanismo do Analysis Services, mas que ainda não tenham suporte no Power BI Desktop. A funcionalidade de modelagem de dados adicional inclui:
 
-- [Grupos de cálculos](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups?view=power-bi-premium-current) para reutilização de cálculo e consumo simplificado de modelos complexos.
+- [Grupos de cálculos](/analysis-services/tabular-models/calculation-groups?view=power-bi-premium-current) para reutilização de cálculo e consumo simplificado de modelos complexos.
 
-- [Conversões de metadados](https://docs.microsoft.com/analysis-services/tabular-models/translations-in-tabular-models-analysis-services?view=power-bi-premium-current) para dar suporte a relatórios e conjuntos de dados em várias linguagens.
+- [Conversões de metadados](/analysis-services/tabular-models/translations-in-tabular-models-analysis-services?view=power-bi-premium-current) para dar suporte a relatórios e conjuntos de dados em várias linguagens.
 
-- [Perspectivas](https://docs.microsoft.com/analysis-services/tabular-models/perspectives-ssas-tabular?view=power-bi-premium-current) para definir exibições específicas de domínio comercial focadas nos metadados dos conjuntos de dados.
+- [Perspectivas](/analysis-services/tabular-models/perspectives-ssas-tabular?view=power-bi-premium-current) para definir exibições específicas de domínio comercial focadas nos metadados dos conjuntos de dados.
 
 A OLS (Segurança de nível de objeto) ainda não tem suporte em conjuntos do Power BI Premium.
 
@@ -148,7 +149,7 @@ O acesso por meio do ponto de extremidade XMLA honrará o conjunto de associaç�
 
 Os colaboradores do espaço de trabalho e acima têm acesso de gravação ao conjunto de dados e, portanto, são equivalentes a administradores de banco de dados do Analysis Services. Eles podem implantar novos conjuntos de dados do Visual Studio e executar scripts TMSL no SSMS.
 
-As operações no Analysis Services que exigem permissões de administrador do servidor (em vez do administrador do banco de dados), como rastreamentos de nível de servidor e representação de usuário usando a propriedade [EffectiveUserName](https://docs.microsoft.com/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current#bkmk_auth) de conexão-cadeia de caracteres não têm suporte no Power BI Premium no momento.
+As operações no Analysis Services que exigem permissões de administrador do servidor (em vez do administrador do banco de dados), como rastreamentos de nível de servidor e representação de usuário usando a propriedade [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current#bkmk_auth) de conexão-cadeia de caracteres não têm suporte no Power BI Premium no momento.
 
 Outros usuários que têm [Permissão de build](../connect-data/service-datasets-build-permissions.md) em um conjunto de dados são equivalentes a leitores de banco de dados do Analysis Services. Eles podem se conectar e navegar em conjuntos de dados para consumir e visualizar dados. As regras de RLS (Segurança em nível de linha) são respeitadas e eles não podem ver metadados internos dos conjuntos de linhas.
 
@@ -209,17 +210,17 @@ Quando conectado, o workspace é mostrado como um servidor do Analysis Services 
 
 ![SSMS](media/service-premium-connect-tools/xmla-endpoint-ssms.png)
 
-Para saber mais sobre como usar o SSMS para metadados de script, confira [Criar scripts do Analysis Services](https://docs.microsoft.com/analysis-services/instances/create-analysis-services-scripts-in-management-studio?view=power-bi-premium-current) e [TMSL (Linguagem de Script de Modelo Tabular)](https://docs.microsoft.com/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current).
+Para saber mais sobre como usar o SSMS para metadados de script, confira [Criar scripts do Analysis Services](/analysis-services/instances/create-analysis-services-scripts-in-management-studio?view=power-bi-premium-current) e [TMSL (Linguagem de Script de Modelo Tabular)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current).
 
 ## <a name="dataset-refresh"></a>Atualização do conjunto de dados
 
-O ponto de extremidade XMLA permite uma ampla gama de cenários para recursos de atualização refinados usando o SSMS, a automação com o PowerShell, [Automação do Azure](https://docs.microsoft.com/azure/automation/automation-intro) e [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) usando TOM. Você pode, por exemplo, atualizar determinadas partições históricas de [atualizações incrementais](service-premium-incremental-refresh.md) sem precisar recarregar todos os dados históricos.
+O ponto de extremidade XMLA permite uma ampla gama de cenários para recursos de atualização refinados usando o SSMS, a automação com o PowerShell, [Automação do Azure](/azure/automation/automation-intro) e [Azure Functions](/azure/azure-functions/functions-overview) usando TOM. Você pode, por exemplo, atualizar determinadas partições históricas de [atualizações incrementais](service-premium-incremental-refresh.md) sem precisar recarregar todos os dados históricos.
 
 Ao contrário da configuração de atualização no serviço do Power BI, as operações de atualização por meio do ponto de extremidade XMLA não são limitadas a 48 atualizações por dia e o [tempo limite de atualização agendada](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) não é imposto.
 
 ## <a name="dynamic-management-views-dmv"></a>DMV (Exibições de Gerenciamento Dinâmico)
 
-As [DMVs](https://docs.microsoft.com/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services) do Analysis Services proporcionam visibilidade de metadados, linhagem e uso de recursos do conjunto de dados. As DMVs disponíveis para consulta no Power BI por meio do ponto de extremidade XMLA são limitadas, no máximo, àquelas que exigem permissões de administrador de banco de dados. Alguns DMVs, por exemplo, não podem ser acessadas porque exigem permissões de administrador de servidor do Analysis Services.
+As [DMVs](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services) do Analysis Services proporcionam visibilidade de metadados, linhagem e uso de recursos do conjunto de dados. As DMVs disponíveis para consulta no Power BI por meio do ponto de extremidade XMLA são limitadas, no máximo, àquelas que exigem permissões de administrador de banco de dados. Alguns DMVs, por exemplo, não podem ser acessadas porque exigem permissões de administrador de servidor do Analysis Services.
 
 ## <a name="power-bi-desktop-authored-datasets"></a>Conjuntos de dados criados no Power BI Desktop
 
@@ -232,7 +233,7 @@ As operações de gravação XMLA em conjuntos de dados criados no Power BI Desk
 
 ### <a name="data-source-declaration"></a>Declaração de fonte de dados
 
-Ao se conectar a fontes de dados e consultar dados, o Power BI Desktop usa expressões M do Power Query como declarações de fonte de dados embutidas. Embora haja suporte em espaços de trabalho do Power BI Premium, não há suporte para a declaração de fonte de dados embutida de consulta M no Power Query no Azure Analysis Services ou no SQL Server Analysis Services. Em vez disso, ferramentas de modelagem de dados do Analysis Services, como o Visual Studio, criam metadados usando declarações de fonte de dados *estruturadas* e/ou de *provedor*. Com o ponto de extremidade XMLA, o Power BI Premium também dá suporte a fontes de dados estruturadas e de provedor, mas não como parte das declarações de fonte de dados embutidas de consulta M do Power Query em modelos do Power BI Desktop. Para saber mais, confira [Noções básicas sobre provedores](https://docs.microsoft.com/azure/analysis-services/analysis-services-datasource#understanding-providers).
+Ao se conectar a fontes de dados e consultar dados, o Power BI Desktop usa expressões M do Power Query como declarações de fonte de dados embutidas. Embora haja suporte em espaços de trabalho do Power BI Premium, não há suporte para a declaração de fonte de dados embutida de consulta M no Power Query no Azure Analysis Services ou no SQL Server Analysis Services. Em vez disso, ferramentas de modelagem de dados do Analysis Services, como o Visual Studio, criam metadados usando declarações de fonte de dados *estruturadas* e/ou de *provedor*. Com o ponto de extremidade XMLA, o Power BI Premium também dá suporte a fontes de dados estruturadas e de provedor, mas não como parte das declarações de fonte de dados embutidas de consulta M do Power Query em modelos do Power BI Desktop. Para saber mais, confira [Noções básicas sobre provedores](/azure/analysis-services/analysis-services-datasource#understanding-providers).
 
 ### <a name="power-bi-desktop-in-live-connect-mode"></a>Modo de conexão dinâmica do Power BI Desktop
 
@@ -268,7 +269,3 @@ Para saber mais, confira  [Como auditar o Power BI](service-admin-auditing.md)
 ## <a name="see-also"></a>Consulte também
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
-
-
-
-

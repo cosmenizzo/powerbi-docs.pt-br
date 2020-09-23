@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 2987d17510d8bbe5681c78df7d86d839c45b5ef9
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3fea12fcc9d87c796f3da7bb0df040211db90f70
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240054"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861534"
 ---
 # <a name="developer-resources-for-power-bi-dataflows"></a>Recursos de desenvolvedor para fluxos de dados do Power BI
 
@@ -28,7 +28,7 @@ Os seguintes recursos de desenvolvedor estão disponíveis para o trabalho com f
 
 | Recurso de fluxo de dados | Descrição |
 | --- | --- |
-| [Referência da API REST do fluxo de dados do Power BI](https://go.microsoft.com/fwlink/?linkid=2047629)    | Um guia de referência completo para a API REST do fluxo de dados.|
+| [Referência da API REST do fluxo de dados do Power BI](/rest/api/power-bi/dataflows)    | Um guia de referência completo para a API REST do fluxo de dados.|
 
 
 ## <a name="next-steps"></a>Próximas Etapas
@@ -41,9 +41,9 @@ Este artigo forneceu informações sobre os recursos de desenvolvedor para fluxo
 * [Como usar fluxos de dados com fontes de dados locais](service-dataflows-on-premises-gateways.md)
 
 Para saber mais sobre o desenvolvimento do CDM e recursos do tutorial, confira o seguinte:
-* [Common Data Service - visão geral ](https://docs.microsoft.com/powerapps/common-data-model/overview)
-* [Pastas do CDM](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [Definição de arquivo de modelo do CDM](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Common Data Service - visão geral ](/powerapps/common-data-model/overview)
+* [Pastas do CDM](/common-data-model/data-lake)
+* [Definição de arquivo de modelo do CDM](/common-data-model/model-json)
 
 
 Confira mais informações sobre o Power Query e a atualização agendada nestes artigos:

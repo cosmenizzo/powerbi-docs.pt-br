@@ -6,15 +6,16 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 09/09/2020
-ms.openlocfilehash: 3994a5cdad4d80c87d4153ffe57af685d7a21d36
-ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
+ms.custom: contperfq1
+ms.date: 09/15/2020
+ms.openlocfilehash: 58d1adef9a9b2a8a4f818f94da2cb34e6529db83
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "90008573"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855485"
 ---
-# <a name="introduction-to-deployment-pipelines-preview"></a>Introdução aos pipelines de implantação (versão prévia)
+# <a name="introduction-to-deployment-pipelines"></a>Introdução aos pipelines de implantação
 
 No mundo atual, a análise é uma parte vital da tomada de decisões em quase todas as organizações. O uso crescente do Power BI como uma ferramenta de análise exige que ele use mais dados, seja atrativo e fácil de usar. E, acima de tudo, o Power BI precisa estar sempre disponível e ser confiável. Para atender a esses requisitos, os criadores do BI devem colaborar com eficiência.
 

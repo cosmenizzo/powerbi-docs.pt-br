@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: f003a62fb8e2b3495dee8dac7b553a2ff72bd6b1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7623be9f4eea3bd4d1a8c6fa7b4d1add3d41c783
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240002"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861511"
 ---
 # <a name="the-enhanced-compute-engine"></a>O mecanismo de computação aprimorado
 
@@ -83,4 +83,4 @@ Confira mais informações sobre o Power Query e a atualização agendada nestes
 * [Configuração de atualização agendada](../connect-data/refresh-scheduled-refresh.md)
 
 Leia este artigo de visão geral para saber mais sobre o Common Data Service:
-* [Common Data Service - visão geral ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Service - visão geral ](/powerapps/common-data-model/overview)

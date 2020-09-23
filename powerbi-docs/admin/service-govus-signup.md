@@ -10,11 +10,12 @@ ms.date: 04/07/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 885490554acfec10503ba8ce7bc1db6937ec8fce
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 776120f9781f05376e767175a795943ab58243d3
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485451"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855017"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Registrar sua organização do Governo dos EUA no serviço do Power BI
 
@@ -76,4 +77,4 @@ Para iniciar o processo de lista de permissões, entre em contato com sua equipe
 ## <a name="next-steps"></a>Próximas etapas
 
 * [Visão geral do Power BI for US Government](service-govus-overview.md)
-- [Como faço para comprar o Microsoft 365 Government?](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy#how-do-i-buy-microsoft-365-government)
+- [Como faço para comprar o Microsoft 365 Government?](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy#how-do-i-buy-microsoft-365-government)

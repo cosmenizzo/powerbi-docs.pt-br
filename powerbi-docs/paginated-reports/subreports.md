@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 04/29/2020
-ms.openlocfilehash: 9ced88289b2170d503a8394d5b83175659178e85
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: fbe60bab0d1c8d95cec1a3fda1d4b23fe919ea31
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239582"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861373"
 ---
 # <a name="subreports-in-power-bi-paginated-reports"></a>Sub-relatórios em relatórios paginados no Power BI
 
@@ -74,7 +74,7 @@ Agora que você salvou os dois relatórios no mesmo workspace Premium, pode adic
   
  É possível colocar o sub-relatório no corpo principal do relatório ou em uma região de dados. Se você posicionar o sub-relatório em uma região de dados, ele será repetido em cada instância do grupo ou da linha na região de dados. Você pode passar um valor do grupo ou da linha para o sub-relatório. Na propriedade de valor do sub-relatório, use uma expressão de campo para o campo que contém o valor que você deseja passar para o parâmetro de sub-relatório.  
   
- Para obter mais informações sobre como trabalhar com parâmetros e sub-relatórios, confira [Adicionar um sub-relatório e parâmetros](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs) na documentação do SQL Server Reporting Services.  
+ Para obter mais informações sobre como trabalhar com parâmetros e sub-relatórios, confira [Adicionar um sub-relatório e parâmetros](/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs) na documentação do SQL Server Reporting Services.  
 
 ## <a name="preview-paginated-reports-in-report-builder"></a>Visualizar relatórios paginados no Report Builder
 
