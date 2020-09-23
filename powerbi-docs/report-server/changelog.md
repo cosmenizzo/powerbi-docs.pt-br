@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 07/08/2020
-ms.openlocfilehash: 1263de975319b7b0e2ef5123d985fa50a126d680
-ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
+ms.openlocfilehash: 3be821bfaad91ede2a7348e35c06850c81ddf1b4
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459590"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859234"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Log de alterações para o Servidor de Relatórios do Power BI
 
@@ -32,7 +32,7 @@ Confira [Novidades do Servidor de Relatórios do Power BI](whats-new.md) para ob
             - Corrigido um problema em que a atualização falhava quando a correspondência difusa era usada para mesclar consultas.
     - *Versão: 1.8.7450.37410 (Build 15.0.1103.227), Lançamento: 27 de maio de 2020*
          - Recursos
-            -  Suporte adicionado para o tamanho do pool de conexão de catálogo personalizável (consulte [Configuração de MaxCatalogConnectionPoolSizePerProcess](https://docs.microsoft.com/sql/reporting-services/report-server/rsreportserver-config-configuration-file?view=sql-server-ver15#bkmk_service) para obter mais detalhes).
+            -  Suporte adicionado para o tamanho do pool de conexão de catálogo personalizável (consulte [Configuração de MaxCatalogConnectionPoolSizePerProcess](/sql/reporting-services/report-server/rsreportserver-config-configuration-file#bkmk_service) para obter mais detalhes).
             -  Comportamento melhorado ao exibir um relatório durante uma operação de atualização.
         - Atualizações de segurança
         - Correções de bug
@@ -65,7 +65,7 @@ Confira [Novidades do Servidor de Relatórios do Power BI](whats-new.md) para ob
            -  Correção de relatórios do Power BI com falha ao carregar certas fontes de dados
            -  Correção do local de download de links da área de trabalho do Servidor de Relatórios do Power BI no portal
            -  Correção de DynamicImageDPI para renderização de Excel
-           -  Correção de conexões do Oracle que usavam a cultura de thread incorreta em determinados cenários de vários usuários (confira a [documentação de UseInstalledUICulture](https://docs.microsoft.com/power-bi/report-server/connect-data-sources) para obter mais detalhes)
+           -  Correção de conexões do Oracle que usavam a cultura de thread incorreta em determinados cenários de vários usuários (confira a [documentação de UseInstalledUICulture](./connect-data-sources.md) para obter mais detalhes)
            -  Correção do valor padrão de CustomHeaders que causava falhas na inserção de relatórios
            -  Correção dos nomes de parâmetro SQL que eram gerados incorretamente em alguns casos
     - *Versão: 1.6.7327.3007 (Build 15.0.1102.759), Lançamento: 23 de janeiro de 2020*
@@ -351,7 +351,7 @@ Confira [Novidades do Servidor de Relatórios do Power BI](whats-new.md) para ob
 
     - *Build 14.0.600.305, lançamento: 19 de setembro de 2017*  
         - Correções de bugs
-            - Atualizar para a versão mais recente do [Controle da Web do Bing Maps](https://msdn.microsoft.com/library/mt712542.aspx)
+            - Atualizar para a versão mais recente do [Controle da Web do Bing Maps](/bingmaps/v8-web-control/)
 
     - *Build 14.0.600.301, lançamento: 11 de julho de 2017*
         - Correções de bugs
@@ -373,6 +373,6 @@ Confira [Novidades do Servidor de Relatórios do Power BI](whats-new.md) para ob
 [Visão geral do administrador](admin-handbook-overview.md)  
 [Instalar o Servidor de Relatório do Power BI](install-report-server.md)  
 [Baixe o Construtor de Relatórios](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Baixar o SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Baixar o SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 Mais perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

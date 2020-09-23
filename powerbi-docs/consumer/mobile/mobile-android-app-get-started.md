@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 06/06/2020
 ms.author: painbar
-ms.openlocfilehash: 725890e3650ff05e0b90e7678bb83e0bc5d01050
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 941bd2adc63a06089ddf4fb79752557b8c688f71
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86263017"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856796"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Introdução ao aplicativo móvel do Power BI em dispositivos Android
 O aplicativo Android para Microsoft Power BI oferece a experiência móvel do BI para Power BI, Servidor de Relatório do Power BI e Reporting Services. Exiba e interaja com os dashboards de sua empresa localmente e na nuvem em qualquer lugar, com acesso móvel dinâmico e habilitado para toque. Explore os dados em dashboards e compartilhe com seus colegas em mensagens de email ou de texto. 
@@ -112,7 +112,7 @@ Aqui estão algumas outras coisas que podem ser feitas no aplicativo do Power BI
 
 ### <a name="reports-and-kpis-on-the-power-bi-report-server-and-reporting-services-web-portals"></a>Relatórios e KPIs nos portais da Web do Servidor de Relatório do Power BI e do Reporting Services
 * [Exibir KPIs e relatórios no portal da Web](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) no aplicativo móvel do Power BI para dispositivos Android.
-* Crie [KPIs no portal da Web](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services).
+* Crie [KPIs no portal da Web](/sql/reporting-services/working-with-kpis-in-reporting-services).
 * Criar [relatórios no Power BI Desktop e publicá-los no portal da Web do Servidor de Relatório do Power BI](../../report-server/quickstart-create-powerbi-report.md)
 
 ### <a name="see-also"></a>Confira também

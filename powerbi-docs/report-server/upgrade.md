@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: ''
 ms.date: 09/05/2017
-ms.openlocfilehash: 5696807957d6facc62a92923dcfc888bcab2154b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: cb2a5ede49acb218450174bbf77388be5c504617
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237987"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861718"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Atualizar o Servidor de Relatório do Power BI
 
@@ -30,7 +30,7 @@ Antes de atualizar um servidor de relatório, é recomendável que você execute
 
 ### <a name="backing-up-the-encryption-keys"></a>Fazendo backup das chaves de criptografia
 
-Você precisa fazer backup das chaves de criptografia ao configurar uma instalação do servidor de relatório pela primeira vez. Você também precisa fazer backup das chaves sempre que alterar a identidade das contas de serviço ou renomear o computador. Para obter mais informações, consulte [Backup e restauração das chaves de criptografia do Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+Você precisa fazer backup das chaves de criptografia ao configurar uma instalação do servidor de relatório pela primeira vez. Você também precisa fazer backup das chaves sempre que alterar a identidade das contas de serviço ou renomear o computador. Para obter mais informações, consulte [Backup e restauração das chaves de criptografia do Reporting Services](/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
 
 ### <a name="backing-up-the-report-server-databases"></a>Fazendo backup dos bancos de dados do servidor de relatório
 
@@ -40,7 +40,7 @@ Como um servidor de relatório é um servidor sem monitoração de estado, todos
 * Use o modelo de recuperação simples para fazer backup do banco de dados **reportservertempdb**.
 * Você pode usar diferentes cronogramas de backup para cada banco de dados. A única razão para fazer backup de **reportservertempdb** é evitar ter que recriá-lo caso ocorra uma falha de hardware. No caso de uma falha de hardware, não será necessário recuperar os dados em **reportservertempdb**, mas você precisará da estrutura de tabela. Se você perder **reportservertempdb**, a única maneira de recuperá-lo será recriar o banco de dados do servidor de relatório. Se você recriar o **reportservertempdb**, é importante que ele tenha o mesmo nome que o banco de dados do servidor de relatório primário.
 
-Para obter mais informações sobre backup e recuperação de bancos de dados relacionais do SQL Server, consulte [Backup e restauração de bancos de dados do SQL Server](https://docs.microsoft.com/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
+Para obter mais informações sobre backup e recuperação de bancos de dados relacionais do SQL Server, consulte [Backup e restauração de bancos de dados do SQL Server](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 
 ### <a name="backing-up-the-configuration-files"></a>Fazendo backup dos arquivos de configuração
 
@@ -80,13 +80,13 @@ Após o servidor de relatório ser atualizado, certifique-se de que todos os aut
 
 * [Visão geral do administrador](admin-handbook-overview.md)  
 * [Instalar o Power BI Desktop otimizado para o Servidor de Relatório do Power BI](install-powerbi-desktop.md)  
-* [Verificar a instalação do Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
-* [Configurar a conta de serviço do Servidor de Relatório](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
-* [Configurar URLs do Servidor de Relatório](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
-* [Configurar uma conexão de banco de dados do Servidor de Relatório](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)  
-* [Inicializar um Servidor de Relatório](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)  
-* [Configurar conexões SSL em um servidor de relatório](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
-* [Configurar permissões e contas de serviço Windows](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
+* [Verificar a instalação do Reporting Services](/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
+* [Configurar a conta de serviço do Servidor de Relatório](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
+* [Configurar URLs do Servidor de Relatório](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
+* [Configurar uma conexão de banco de dados do Servidor de Relatório](/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)  
+* [Inicializar um Servidor de Relatório](/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)  
+* [Configurar conexões SSL em um servidor de relatório](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
+* [Configurar permissões e contas de serviço Windows](/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
 * [Suporte do navegador para o Servidor de Relatório do Power BI](browser-support.md)
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)

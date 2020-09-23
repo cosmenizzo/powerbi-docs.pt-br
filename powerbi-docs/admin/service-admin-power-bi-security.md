@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: 6e006bc858ad9d82073ced7929c87920da6559ab
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: ee7954cff7863ff58370bbe1e58f26c64644c8e8
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034150"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857049"
 ---
 # <a name="power-bi-security"></a>Segurança do Power BI
 
@@ -61,10 +61,10 @@ Uma exceção ocorre no caso de conexões ao **SQL Server Analysis Services** us
 
 ## <a name="enforcing-tls-version-usage"></a>Impor o uso de versão do TLS
 
-Administradores de rede e de TI podem impor como requisito o uso do protocolo TLS atual para qualquer comunicação protegida na rede. O Windows é compatível com as versões do TLS no Microsoft Schannel Provider, como [descrito no artigo de SSP de Schannel TLS](https://docs.microsoft.com/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
+Administradores de rede e de TI podem impor como requisito o uso do protocolo TLS atual para qualquer comunicação protegida na rede. O Windows é compatível com as versões do TLS no Microsoft Schannel Provider, como [descrito no artigo de SSP de Schannel TLS](/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
 
-Essa imposição pode ser feita definindo administrativamente chaves do Registro. A imposição é descrita no [artigo Gerenciar protocolos SSL no AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
+Essa imposição pode ser feita definindo administrativamente chaves do Registro. A imposição é descrita no [artigo Gerenciar protocolos SSL no AD FS](/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
 
 O **Power BI Desktop** respeita as configurações de chave do Registro descritas nesses artigos e apenas as conexões criadas usando a versão do TLS permitida com base nessas configurações do Registro, quando existirem.
 
-Para obter mais informações sobre como definir essas chaves do Registro, confira o artigo [Configurações de Registro do TLS](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
+Para obter mais informações sobre como definir essas chaves do Registro, confira o artigo [Configurações de Registro do TLS](/windows-server/security/tls/tls-registry-settings).

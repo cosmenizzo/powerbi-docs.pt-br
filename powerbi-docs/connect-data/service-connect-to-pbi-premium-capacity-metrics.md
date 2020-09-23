@@ -8,19 +8,19 @@ ms.topic: how-to
 ms.date: 05/18/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: eb8d7d59e52414620aa888230af59ef98da9e5af
-ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
+ms.openlocfilehash: 2db7cce57408fa988c9a32057d6f1f880bc55126
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88937621"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861948"
 ---
 # <a name="connect-to-power-bi-premium-capacity-metrics"></a>Conectar-se às Métricas de Capacidade do Power BI Premium
 Monitorar suas capacidades é essencial para tomar decisões bem informadas sobre a melhor maneira de utilizar os recursos de capacidade Premium. O aplicativo Métricas de Capacidade do Power BI Premium oferece as informações mais detalhadas sobre o desempenho de suas capacidades.
 
 ![Relatório do aplicativo Métricas de Capacidade do Power BI Premium](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-report.png)
 
-Este artigo descreve como instalar o aplicativo e se conectar às fontes de dados. Para obter informações sobre o conteúdo do relatório e como usá-lo, confira [Monitorar capacidades Premium com o aplicativo](../service-admin-premium-monitor-capacity.md) e a [postagem no blog do aplicativo de Métricas de Capacidade Premium](https://powerbi.microsoft.com/blog/premium-capacity-metrics-app-new-health-center-with-kpis-to-explore-relevant-metrics-and-steps-to-mitigate-issues/).
+Este artigo descreve como instalar o aplicativo e se conectar às fontes de dados. Para obter informações sobre o conteúdo do relatório e como usá-lo, confira [Monitorar capacidades Premium com o aplicativo](../admin/service-admin-premium-monitor-capacity.md) e a [postagem no blog do aplicativo de Métricas de Capacidade Premium](https://powerbi.microsoft.com/blog/premium-capacity-metrics-app-new-health-center-with-kpis-to-explore-relevant-metrics-and-steps-to-mitigate-issues/).
 
 Depois de instalar o aplicativo e se conectar às fontes de dados, você poderá personalizar o relatório de acordo com as suas necessidades. Em seguida, poderá distribuí-lo para os colegas da sua organização.
 

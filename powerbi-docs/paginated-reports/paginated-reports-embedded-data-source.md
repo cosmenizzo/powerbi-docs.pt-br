@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 03/02/2020
-ms.openlocfilehash: 001a66fc20455c207bd6ad2928041ae0861732eb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 37ab82de16e45f86f2d2aba5113ba4efe6fc383c
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239618"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859671"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Criar uma fonte de dados incorporada para relatórios paginados no serviço do Power BI
 
@@ -59,7 +59,7 @@ Confira [Dados de relatório no Construtor de Relatórios do Power BI](report-bu
   
 4.  Selecione **Credenciais**.  
   
-     Especifique as credenciais a serem usadas para essa fonte de dados. O proprietário da fonte de dados escolhe o tipo de credenciais que têm suporte. Para obter mais informações, confira [Especificar informações de credenciais e conexões para fontes de dados de relatório](https://docs.microsoft.com/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).
+     Especifique as credenciais a serem usadas para essa fonte de dados. O proprietário da fonte de dados escolhe o tipo de credenciais que têm suporte. Para obter mais informações, confira [Especificar informações de credenciais e conexões para fontes de dados de relatório](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).
   
 5.  Selecione **OK**.  
   
@@ -93,4 +93,3 @@ Os relatórios paginados que se conectam aos conjuntos de dados do Power BI segu
 
 - [Criar um conjunto de dados inseridos para um relatório paginado no serviço do Power BI](paginated-reports-create-embedded-dataset.md)
 - [O que são os relatórios paginados no Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 4f6382b78a02750c76987de4fa911eb8c7d33b50
-ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
+ms.openlocfilehash: 9e639c4a22cc4e01c04374289026a7006f33143b
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87411993"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861856"
 ---
 # <a name="embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>inserir um relatório do Servidor de Relatórios do Power BI usando um iFrame no SharePoint Server
 
@@ -24,7 +24,7 @@ Neste artigo, você aprenderá a inserir um relatório do Servidor de Relatório
 ## <a name="prerequisites"></a>Pré-requisitos
 * [Servidor de Relatórios do Power BI](https://powerbi.microsoft.com/report-server/) instalado e configurado.
 * [Power BI Desktop otimizado para o Servidor de Relatórios do Power BI](install-powerbi-desktop.md) instalado.
-* Um [ambiente do SharePoint 2013, 2016 ou 2019](https://docs.microsoft.com/sharepoint/install/install) instalado e configurado.
+* Um [ambiente do SharePoint 2013, 2016 ou 2019](/sharepoint/install/install) instalado e configurado.
 * O Internet Explorer 11 só será compatível se o modo do documento for definido como o modo IE11 (Edge) ou ao usar o SharePoint Online. Você pode usar outros navegadores compatíveis com o SharePoint local e o SharePoint Online.
 
 ## <a name="create-the-power-bi-report-url"></a>Criar a URL do relatório do Power BI
@@ -101,4 +101,4 @@ Depois que você tiver sua URL, poderá criar um iFrame em uma página do ShareP
 - [Criar um relatório do Power BI para o Servidor de Relatórios do Power BI](quickstart-create-powerbi-report.md).  
 - [Criar um relatório paginado para o Servidor de Relatórios do Power BI](quickstart-create-paginated-report.md).  
 
-Mais perguntas? [Experimente a Comunidade do Power BI](https://community.powerbi.com/). 
+Mais perguntas? [Experimente a Comunidade do Power BI](https://community.powerbi.com/).

@@ -8,11 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 06/10/2020
 ms.author: davidi
-ms.openlocfilehash: 3814c0532d94af3265bd608fc7837df982f9b6c4
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7bc3b77a8badafe1c9660af347a74214176690ac
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236078"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859027"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Como configurar a atualização agendada de relatório do Power BI
 Para atualizar dados em um relatório do Power BI no Servidor de Relatórios do Power BI, você deve criar um plano de atualização agendada. Crie esse plano na área *Gerenciar* de um relatório do Power BI no servidor de relatório.
@@ -20,7 +21,7 @@ Para atualizar dados em um relatório do Power BI no Servidor de Relatórios do 
 ![Atualização agendada bem-sucedida de um relatório do Power BI](media/configure-scheduled-refresh/scheduled-refresh-success.png)
 
 ## <a name="configure-data-source-credentials"></a>Configurar credenciais da fonte de dados
-Você precisa das permissões necessárias para criar um plano de atualização agendada. As permissões são configuradas nas definições de função do servidor de relatório. Confira [Definições de função – funções predefinidas](https://docs.microsoft.com/sql/reporting-services/security/role-definitions-predefined-roles) na documentação do SQL Server Reporting Services para obter detalhes.
+Você precisa das permissões necessárias para criar um plano de atualização agendada. As permissões são configuradas nas definições de função do servidor de relatório. Confira [Definições de função – funções predefinidas](/sql/reporting-services/security/role-definitions-predefined-roles) na documentação do SQL Server Reporting Services para obter detalhes.
 
 Antes de criar um plano de atualização de dados de agendamento, você precisará definir as credenciais para **cada fonte de dados** usada no relatório do Power BI.
 
@@ -85,9 +86,8 @@ Exiba o status de um plano de agendamento de atualização no portal da Web.
 Para ver o status atual, a página da Web deverá ser atualizada. O status não será alterado automaticamente.
 
 ## <a name="next-steps"></a>Próximas etapas
-Para obter mais informações sobre como criar e modificar agendas, consulte [Criar, modificar e excluir agendas](https://docs.microsoft.com/sql/reporting-services/subscriptions/create-modify-and-delete-schedules).
+Para obter mais informações sobre como criar e modificar agendas, consulte [Criar, modificar e excluir agendas](/sql/reporting-services/subscriptions/create-modify-and-delete-schedules).
 
 Para obter informações sobre como solucionar problemas de atualização agendada, consulte [Solucionar problemas de atualização agendada no Servidor de Relatórios do Power BI](scheduled-refresh-troubleshoot.md).
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
-

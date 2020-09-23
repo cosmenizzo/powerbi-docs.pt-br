@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2b1570176138a38e9856691af7d81f201b055db1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 955e32e99c4f208bbf3582c32b9e5efee95a8f3a
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238523"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861925"
 ---
 # <a name="create-report-templates-for-power-bi-desktop"></a>Criar modelos de relatório para o Power BI Desktop
 
@@ -70,7 +70,7 @@ Depois que os parâmetros e os dados são especificados, um relatório é criado
 
 ## <a name="next-steps"></a>Próximas etapas
 Você também pode estar interessado em aprender sobre **Parâmetros de Consulta**:
-* [Você está usando Parâmetros de Consulta no Power BI Desktop?](https://docs.microsoft.com/power-query/power-query-query-parameters)
+* [Você está usando Parâmetros de Consulta no Power BI Desktop?](/power-query/power-query-query-parameters)
 
 Além disso, há inúmeras coisas que você pode fazer com o Power BI Desktop. Para obter mais informações sobre seus recursos, consulte as seguintes fontes:
 
@@ -78,4 +78,4 @@ Além disso, há inúmeras coisas que você pode fazer com o Power BI Desktop. P
 * [Visão geral de Consulta com o Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Tipos de dados no Power BI Desktop](../connect-data/desktop-data-types.md)
 * [Formatar e combinar dados com o Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Tarefas comuns de consulta no Power BI Desktop](../transform-model/desktop-common-query-tasks.md)    
+* [Tarefas comuns de consulta no Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

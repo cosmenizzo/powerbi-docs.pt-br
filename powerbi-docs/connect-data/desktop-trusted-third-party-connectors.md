@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/3/2019
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 05db20b2f83f10409339fad949874fc1076a6b98
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 06b117a271671092a94aa8e7994269344b444178
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83285959"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859602"
 ---
 # <a name="trusted-third-party-connectors"></a>Conectores de terceiros confiáveis
 
@@ -24,7 +24,7 @@ No Power BI, geralmente recomendamos manter seu nível "Segurança da extensão 
 
 O desenvolvedor de um determinado conector pode assiná-lo com um certificado e fornecer as informações de que você precisa para carregá-lo de maneira segura sem reduzir as configurações de segurança.
 
-Se desejar saber mais sobre as configurações de segurança, você poderá ler sobre elas [aqui](https://docs.microsoft.com/power-bi/desktop-connector-extensibility).
+Se desejar saber mais sobre as configurações de segurança, você poderá ler sobre elas [aqui](./desktop-connector-extensibility.md).
 
 ## <a name="using-the-registry-to-trust-third-party-connectors"></a>Usar o Registro para confiar em conectores de terceiros
 
@@ -46,4 +46,4 @@ Se você tiver seguido as instruções adequadamente e recebido a impressão dig
 
 ## <a name="how-to-sign-connectors"></a>Como assinar conectores
 
-Se você tiver um conector ou um desenvolvedor precisar assinar, poderá ler sobre isso nos documentos do Power Query [aqui](https://docs.microsoft.com/power-query/handlingconnectorsigning).
+Se você tiver um conector ou um desenvolvedor precisar assinar, poderá ler sobre isso nos documentos do Power Query [aqui](/power-query/handlingconnectorsigning).

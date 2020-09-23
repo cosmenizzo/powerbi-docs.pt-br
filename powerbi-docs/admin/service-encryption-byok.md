@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 08/13/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: a6513bdf7451db7068fe2540d32546df4d42ae8e
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: 737a8df2f8f7e5d4da50259112ad1afd6ec2ecff
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88204570"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856819"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi"></a>Traga suas próprias chaves de criptografia para o Power BI
 
@@ -39,7 +39,7 @@ BYOK aplica-se somente a conjuntos de dados. Conjuntos de arquivos de envio por 
 ```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
 
 > [!NOTE]
-> Este cmdlet requer o módulo de gerenciamento v1.0.840 do Power BI. Você pode ver qual versão você tem executando Get-InstalledModule -Name MicrosoftPowerBIMgmt. Instale a versão mais recente executando install-Module-Name MicrosoftPowerBIMgmt. Você pode obter mais informações sobre o cmdlet do Power BI e os parâmetros dele em [módulo cmdlet do PowerShell do Power BI](https://docs.microsoft.com/powershell/power-bi/overview).
+> Este cmdlet requer o módulo de gerenciamento v1.0.840 do Power BI. Você pode ver qual versão você tem executando Get-InstalledModule -Name MicrosoftPowerBIMgmt. Instale a versão mais recente executando install-Module-Name MicrosoftPowerBIMgmt. Você pode obter mais informações sobre o cmdlet do Power BI e os parâmetros dele em [módulo cmdlet do PowerShell do Power BI](/powershell/power-bi/overview).
 
 ## <a name="configure-azure-key-vault"></a>Configurar o Azure Key Vault
 
@@ -193,7 +193,7 @@ O Power BI fornece cmdlets adicionais para ajudar a gerenciar o BYOK em seu loca
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* [Módulo cmdlet do PowerShell do Power BI](https://docs.microsoft.com/powershell/power-bi/overview) 
+* [Módulo cmdlet do PowerShell do Power BI](/powershell/power-bi/overview) 
 
 * [Maneiras de compartilhar seu trabalho no Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
 
@@ -202,4 +202,3 @@ O Power BI fornece cmdlets adicionais para ajudar a gerenciar o BYOK em seu loca
 * [Inserir com Web Part de Relatório no SharePoint Online](../collaborate-share/service-embed-report-spo.md)
 
 * [Publicar na Web por meio do Power BI](../collaborate-share/service-publish-to-web.md)
-
