@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: f5c8f763b1f02d055d39c62ef2e2902b6efca439
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ff1fb59a59f72483bab5ec55c9b2cf9805f83b81
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235539"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860269"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Dicas para a criação de aplicativos de modelo no Power BI
 
@@ -124,15 +124,15 @@ Os aplicativos de modelo, como parte da fase de criação de aplicativo, encapsu
 Os aplicativos de modelo podem ser publicados no AppSource. Siga estas diretrizes antes de enviar seu aplicativo para o AppSource:
 
 * Verifique se criou um aplicativo de modelo com o envolvimento de dados de exemplo que pode ajudar o instalador a entender a função do aplicativo (relatório vazio e painel não são aprovados).
-Os aplicativos de modelo dão suporte a aplicativos somente de dados de exemplo. Marque a caixa de seleção de aplicativo estático. [Saiba mais](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+Os aplicativos de modelo dão suporte a aplicativos somente de dados de exemplo. Marque a caixa de seleção de aplicativo estático. [Saiba mais](./service-template-apps-create.md#define-the-properties-of-the-template-app)
 * Forneça à a equipe de validação instruções sobre credenciais e parâmetros necessários para se conectar aos dados.
-* O aplicativo deve incluir um ícone de Aplicativo no Power BI e em sua oferta CPP. [Saiba mais](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Página de aterrissagem configurada. [Saiba mais](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Siga a documentação em [Central de Parceiros -> Oferta de aplicativo do Power BI](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+* O aplicativo deve incluir um ícone de Aplicativo no Power BI e em sua oferta CPP. [Saiba mais](./service-template-apps-create.md#define-the-properties-of-the-template-app)
+* Página de aterrissagem configurada. [Saiba mais](./service-template-apps-create.md#define-the-properties-of-the-template-app)
+* Siga a documentação em [Central de Parceiros -> Oferta de aplicativo do Power BI](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 * Caso um painel faça parte do seu aplicativo, verifique se ele não está vazio.
 * Instale o aplicativo usando o link do aplicativo antes de enviá-lo, verifique se você pode conectar o conjunto de dados e a experiência de aplicativo conforme planejado.
 * Antes de carregar pbix no workspace de modelo, descarregue todas as conexões desnecessárias.
-* Siga as [Práticas recomendadas para criação de relatórios e visuais](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) do Power BI para alcançar o máximo impacto sobre os usuários e obter a aprovação para distribuição.
+* Siga as [Práticas recomendadas para criação de relatórios e visuais](../visuals/power-bi-report-visualizations.md) do Power BI para alcançar o máximo impacto sobre os usuários e obter a aprovação para distribuição.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
 ## <a name="create-a-download-link-for-the-app"></a>Criar um link de download para o aplicativo

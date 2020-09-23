@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
-ms.openlocfilehash: 03b361c56bd545036a8d706ae01e2bfa2ec30222
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: bce23ecdc99f6428ecefc28580e3ae0ec05fac6a
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78921230"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859694"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Paginação em relatórios paginados no Power BI
 
@@ -34,7 +34,7 @@ ms.locfileid: "78921230"
   
  Por padrão, o tamanho da página é de 8,5 x 11 polegadas, mas você pode alterá-lo no painel **Propriedades do Relatório** ou na caixa de diálogo **Configuração da Página** ou alterando as propriedades PageHeight e PageWidth no painel **Propriedades**. O tamanho da página não aumenta ou diminui para acomodar o conteúdo do corpo do relatório. Se desejar que o relatório seja exibido em uma única página, todo o conteúdo dentro do corpo do relatório deverá se ajustar na página física. Se ele não se ajustar e você usar o formato de quebra de página impressa, então o relatório exigirá mais páginas. Se o corpo do relatório ultrapassar a borda direita da página física, a quebra de página será inserida horizontalmente. Se o corpo do relatório ultrapassar a borda inferior da página física, a quebra de página será inserida verticalmente.  
   
- Se desejar substituir o tamanho da página física definido no relatório, poderá especificar o tamanho da página física usando as configurações de Informações do Dispositivo para o renderizador específico que você está usando para exportar o relatório. Para obter uma lista completa, confira [Configurações de Informações do Dispositivo para Extensões de Renderização](https://docs.microsoft.com/sql/reporting-services/device-information-settings-for-rendering-extensions-reporting-services?view=sql-server-2017) na documentação do SQL Server Reporting Services.  
+ Se desejar substituir o tamanho da página física definido no relatório, poderá especificar o tamanho da página física usando as configurações de Informações do Dispositivo para o renderizador específico que você está usando para exportar o relatório. Para obter uma lista completa, confira [Configurações de Informações do Dispositivo para Extensões de Renderização](/sql/reporting-services/device-information-settings-for-rendering-extensions-reporting-services) na documentação do SQL Server Reporting Services.  
   
 ### <a name="margins"></a>Margens
 
@@ -77,13 +77,13 @@ ms.locfileid: "78921230"
   
  Você pode usar constantes e expressões simples ou complexas para definir o valor das propriedades Disabled e ResetPageNumber. No entanto, você não pode usar a expressão com a propriedade BreakLocation. Para saber mais sobre como escrever e usar expressões, confira [Expressões no Construtor de Relatórios do Power BI](report-builder-expressions.md).  
   
- No relatório, você pode escrever expressões que referenciem os nomes de página ou os números de página atuais usando a coleção **Globais**. Para saber mais, confira [Referências Internas de Usuários e Globais](https://docs.microsoft.com/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder?view=sql-server-2017) na documentação do Construtor de Relatórios e do Reporting Services.
+ No relatório, você pode escrever expressões que referenciem os nomes de página ou os números de página atuais usando a coleção **Globais**. Para saber mais, confira [Referências Internas de Usuários e Globais](/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder) na documentação do Construtor de Relatórios e do Reporting Services.
   
 ### <a name="naming-excel-worksheet-tabs"></a>Nomear guias de pasta de trabalho do Excel
 
  Essas propriedades são úteis quando você exporta relatórios para pastas de trabalho do Excel. Use a propriedade InitialPage para especificar um nome padrão para o nome da guia da pasta de trabalho quando você exporta o relatório e quebras de página e a propriedade PageName para fornecer nomes diferentes para cada pasta de trabalho. Cada nova página do relatório, definida por uma quebra de página, é exportada para uma pasta de trabalho diferente nomeada pelo valor da propriedade PageName. Se PageName estiver em branco, mas o relatório tiver um nome de página inicial, todas as planilhas na pasta de trabalho do Excel usarão o mesmo nome, o nome da página inicial.  
   
- Para saber mais sobre como essas propriedades funcionam quando relatórios são exportados para o Excel, confira [Exportar para o Microsoft Excel](https://docs.microsoft.com/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs) na documentação do Construtor de Relatórios e do Reporting Services.  
+ Para saber mais sobre como essas propriedades funcionam quando relatórios são exportados para o Excel, confira [Exportar para o Microsoft Excel](/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs) na documentação do Construtor de Relatórios e do Reporting Services.  
   
 ## <a name="next-steps"></a>Próximas etapas
 

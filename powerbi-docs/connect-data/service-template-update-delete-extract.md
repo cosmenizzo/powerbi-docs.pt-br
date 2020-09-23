@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: 5705b0eaa861b01c7f04f4da9f85985af5f3934e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d32e1223a335fc6bf2fdf52598f1e1bdf3d7a685
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235624"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860522"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Atualizar, excluir e extrair um aplicativo de modelo
 
@@ -46,7 +46,7 @@ Se você fez as alterações no Power BI Desktop, comece na etapa (1). Se você 
 
    Seu link agora está ativo. **Observe que o botão Promover o aplicativo na fase pré-produção está esmaecido**. Isso ocorre para prevenir a substituição acidental do link de produção em tempo real para a versão do aplicativo atual antes que o Portal do Cloud Partner tenha validado e aprovado a nova versão do aplicativo.
 
-1. Envie seu link novamente para o CPP (Portal do Cloud Partner) seguindo as etapas em [atualização de oferta do Aplicativo do Power BI](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). No Portal do Cloud Partner, é preciso **publicar** sua oferta novamente, validá-la e aprová-la.
+1. Envie seu link novamente para o CPP (Portal do Cloud Partner) seguindo as etapas em [atualização de oferta do Aplicativo do Power BI](/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). No Portal do Cloud Partner, é preciso **publicar** sua oferta novamente, validá-la e aprová-la.
 
    Quando sua oferta for aprovada, o botão Promover o aplicativo ficará ativo novamente. 
 1. Promova seu aplicativo à fase de produção.
@@ -84,4 +84,4 @@ A exclusão de uma versão do aplicativo também exclui a url do aplicativo, que
 
 Veja como os clientes interagem com o aplicativo de modelo em [Instalar, personalizar e distribuir aplicativos de modelo em sua organização](service-template-apps-install-distribute.md).
 
-Confira a [oferta do Aplicativo do Power BI](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) para obter mais detalhes sobre como distribuir o aplicativo.
+Confira a [oferta do Aplicativo do Power BI](/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) para obter mais detalhes sobre como distribuir o aplicativo.

@@ -10,12 +10,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/03/2020
 LocalizationGroup: Data from databases
-ms.openlocfilehash: ae7d19858feaf30c8263c0fc24c180781783d851
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f5c8a47ece5d4bc072c5518a12a553b7967059de
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230653"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859924"
 ---
 # <a name="azure-sql-data-warehouse-with-directquery"></a>SQL Data Warehouse do Azure com DirectQuery
 
@@ -75,7 +75,7 @@ Seu nome do servidor totalmente qualificado e o nome do banco de dados podem ser
 ![Portal do Azure](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
 > [!NOTE]
-> Se o seu locatário do Power BI estiver na mesma região que o SQL Data Warehouse do Azure, não haverá nenhum encargo pela saída. Você pode descobrir onde seu locatário do Power BI está localizado usando [estas instruções](https://docs.microsoft.com/power-bi/service-admin-where-is-my-tenant-located).
+> Se o seu locatário do Power BI estiver na mesma região que o SQL Data Warehouse do Azure, não haverá nenhum encargo pela saída. Você pode descobrir onde seu locatário do Power BI está localizado usando [estas instruções](../admin/service-admin-where-is-my-tenant-located.md).
 
 [!INCLUDE [direct-query-sso](../includes/direct-query-sso.md)]
 

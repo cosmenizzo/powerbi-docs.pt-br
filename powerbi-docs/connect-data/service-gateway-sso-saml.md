@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 772a9c0d171c2391a137f2e8a97f262f59df5cfe
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 38aee727245cd7a33aefe1ee64a8a5be8b062cd7
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85231382"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859763"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>Use SAML (Security Assertion Markup Language) para SSO do Power BI em fontes de dados locais
 
@@ -26,7 +26,7 @@ Atualmente, há suporte para SAP HANA com SAML. Para saber mais sobre como confi
 
 Temos compatibilidade com outras fontes de dados para o [Kerberos](service-gateway-sso-kerberos.md), incluindo o SAP HANA.
 
-Para o SAP HANA, é recomendável habilitar a criptografia antes de estabelecer uma conexão de SSO do SAML. Para habilitar a criptografia, configure o servidor do HANA para aceitar conexões criptografadas. Também configure o gateway para usar a criptografia para se comunicar com o servidor do HANA. Como o driver ODBC do HANA não criptografa declarações SAML por padrão, a declaração SAML assinada será enviada do gateway para o servidor do HANA *às claras* e estará vulnerável à interceptação e reutilização por terceiros. Para ver instruções sobre como habilitar a criptografia para o HANA com a biblioteca OpenSSL, confira [Habilitar criptografia para o SAP HANA](/power-bi/desktop-sap-hana-encryption).
+Para o SAP HANA, é recomendável habilitar a criptografia antes de estabelecer uma conexão de SSO do SAML. Para habilitar a criptografia, configure o servidor do HANA para aceitar conexões criptografadas. Também configure o gateway para usar a criptografia para se comunicar com o servidor do HANA. Como o driver ODBC do HANA não criptografa declarações SAML por padrão, a declaração SAML assinada será enviada do gateway para o servidor do HANA *às claras* e estará vulnerável à interceptação e reutilização por terceiros. Para ver instruções sobre como habilitar a criptografia para o HANA com a biblioteca OpenSSL, confira [Habilitar criptografia para o SAP HANA](./desktop-sap-hana-encryption.md).
 
 ## <a name="configuring-the-gateway-and-data-source"></a>Como configurar a fonte de dados e o gateway
 

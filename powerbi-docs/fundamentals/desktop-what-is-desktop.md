@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 07/23/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: c8d4671d55e09ca6e60599bbc0ac9802258f63ba
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: 09e51c46a11c41008f77d3a7597807b35b57d297
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252718"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860775"
 ---
 # <a name="what-is-power-bi-desktop"></a>O que é o Power BI Desktop?
 
@@ -66,7 +66,7 @@ Para se conectar aos dados:
 
 ## <a name="transform-and-clean-data-create-a-model"></a>Transformar e limpar os dados, criar um modelo
 
-No Power BI Desktop, limpe e transforme os dados usando o [Editor do Power Query](https://docs.microsoft.com/power-bi/desktop-query-overview) interno. Com o Editor do Power Query, faça alterações nos dados, como alterar um tipo de dados, remover colunas ou combinar dados de várias fontes. É como o trabalho de um escultor: você começa com um grande bloco de argila (ou dados) e, em seguida, remove partes ou adiciona outras, conforme necessário, até que a forma dos dados fique como desejado. 
+No Power BI Desktop, limpe e transforme os dados usando o [Editor do Power Query](../transform-model/desktop-query-overview.md) interno. Com o Editor do Power Query, faça alterações nos dados, como alterar um tipo de dados, remover colunas ou combinar dados de várias fontes. É como o trabalho de um escultor: você começa com um grande bloco de argila (ou dados) e, em seguida, remove partes ou adiciona outras, conforme necessário, até que a forma dos dados fique como desejado. 
 
 Para iniciar o Editor do Power Query:
 
@@ -134,4 +134,3 @@ Para começar a usar o Power BI Desktop, primeiro, baixe e instale o aplicativo.
 
 * [Obter o Power BI Desktop por meio da Windows Store](https://aka.ms/pbidesktopstore)
 * [Baixar o Power BI Desktop pela Web](https://www.microsoft.com/download/details.aspx?id=58494)
-

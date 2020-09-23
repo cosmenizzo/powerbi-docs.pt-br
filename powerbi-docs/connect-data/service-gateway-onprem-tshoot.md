@@ -6,15 +6,15 @@ ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
-ms.topic: how-to
+ms.topic: troubleshooting
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 0fd6e2d9a05c07ae5ed74a4f3f35af5267a68a87
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4d106a2bd2c11d049307a2b6f752d9486cd5aa20
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236212"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860683"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Solucionar problemas de gateways – Power BI
 
@@ -60,7 +60,7 @@ Você não conseguiu se conectar à fonte de dados especificada. Certifique-se d
 
 Em **Mostrar detalhes**, é possível ver um código de erro de **DM_GWPipeline_Gateway_DataSourceAccessError**.
 
-Se a mensagem de erro subjacente for semelhante à seguinte, isso significa que a conta que você está usando para a fonte de dados não é um administrador do servidor para essa instância do Analysis Services. Para obter mais informações, confira [Conceder direitos de administrador de servidor a uma instância de Analysis Services](https://docs.microsoft.com/sql/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance).
+Se a mensagem de erro subjacente for semelhante à seguinte, isso significa que a conta que você está usando para a fonte de dados não é um administrador do servidor para essa instância do Analysis Services. Para obter mais informações, confira [Conceder direitos de administrador de servidor a uma instância de Analysis Services](/sql/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance).
 
     The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
 

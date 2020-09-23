@@ -10,12 +10,12 @@ ms.topic: reference
 ms.date: 08/24/2020
 ms.custom: contperfq1
 ms.author: mihart
-ms.openlocfilehash: cd562d8fe689c2ae82ee1cacfc9e02393a5992f9
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: 012fad9cd566018a6fd0d96fb172fadd816e3420
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803033"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860844"
 ---
 # <a name="glossary-for-business-users-of-the-power-bi-service"></a>Glossário para usuários de negócio do serviço do Power BI    
 O serviço do Power BI pode apresentar terminologia confusa ou desconhecida. O glossário é um ótimo lugar para pesquisar sobre a terminologia, por isso pode ser útil até mesmo salvá-lo como favorito. Outro excelente recurso para aprender sobre os blocos de construção que compõem o serviço do Power BI são os [Conceitos básicos](end-user-basic-concepts.md). O artigo com Conceitos básicos fornece uma visão geral de alto nível das *partes* do Power BI e como elas estão conectadas.
@@ -97,7 +97,7 @@ O conteúdo para o serviço do Power BI geralmente está em dashboards, relatór
 O índice de conteúdo de um aplicativo.
 
 **pacote de conteúdo**    
- Uma coleção de conjuntos de dados, relatórios e dashboards pré-empacotados. Eles serão substituídos por **aplicativos**. Saiba [mais sobre a nova experiência de workspace](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
+ Uma coleção de conjuntos de dados, relatórios e dashboards pré-empacotados. Eles serão substituídos por **aplicativos**. Saiba [mais sobre a nova experiência de workspace](../collaborate-share/service-create-the-new-workspaces.md). 
 
 **content view (exibição de conteúdo)**
 

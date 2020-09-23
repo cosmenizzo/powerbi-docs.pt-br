@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 09/04/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 1b0f63d200a94cb7e6524602203864281efe51c0
-ms.sourcegitcommit: 1f56cdfc05801ffaf41e3b68dc1eb02142acdab3
+ms.openlocfilehash: e4f2db2c5b0220215c9c71cc62349c2255cf046d
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490343"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854611"
 ---
 # <a name="automate-premium-workspace-and-dataset-tasks-with-service-principals"></a>Automatizar tarefas de conjunto de dados e workspace Premium com entidades de serviço
 
@@ -40,14 +40,14 @@ Para executar operações de gravação, a **Carga de trabalho de conjuntos de d
 
 As entidades de serviço são criadas como um registro de aplicativo no portal do Azure ou usando o PowerShell. Ao criar sua entidade de serviço, você deve copiar e salvar separadamente o nome do aplicativo, a ID do aplicativo (cliente), a ID do diretório (locatário) e o segredo do cliente. Para obter as etapas de criação de uma entidade de serviço, confira:
 
-[Criar entidade de serviço - Portal do Azure](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)   
-[Criar entidade de serviço - PowerShell](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
+[Criar entidade de serviço - Portal do Azure](/azure/active-directory/develop/howto-create-service-principal-portal)   
+[Criar entidade de serviço - PowerShell](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
 
 ## <a name="create-an-azure-ad-security-group"></a>Criar um grupo de segurança do Azure AD
 
 Por padrão, as entidades de serviço têm acesso a configurações de locatário para as quais estejam habilitadas. Dependendo das configurações de administrador, o acesso pode incluir grupos de segurança específicos ou de toda a organização.
 
-Para restringir o acesso da entidade de serviço a configurações de locatário específicas, você pode permitir o acesso a grupos de segurança específicos. Como alternativa, você pode criar um grupo de segurança dedicado para entidades de serviço e excluí-lo das configurações de locatário desejadas. Para ver as etapas para criação de um grupo de segurança e adição de uma entidade de serviço, confira [Criar um grupo básico e adicionar membros usando o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
+Para restringir o acesso da entidade de serviço a configurações de locatário específicas, você pode permitir o acesso a grupos de segurança específicos. Como alternativa, você pode criar um grupo de segurança dedicado para entidades de serviço e excluí-lo das configurações de locatário desejadas. Para ver as etapas para criação de um grupo de segurança e adição de uma entidade de serviço, confira [Criar um grupo básico e adicionar membros usando o Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 
 ## <a name="enable-service-principals"></a>Habilitar as entidades de serviço
 
@@ -59,7 +59,7 @@ No **Portal de administração** > **Configurações de locatário** do Power BI
 
 ## <a name="workspace-access"></a>Acesso ao workspace
 
-Para que a entidade de serviço tenha as permissões necessárias para executar operações em um conjunto de dados e um workspace Premium, você precisa adicionar a entidade de serviço como um membro ou administrador do workspace. O uso do acesso ao workspace no serviço do Power BI é descrito aqui, mas você também pode usar a [API REST Adicionar Usuário ao Grupo](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser).
+Para que a entidade de serviço tenha as permissões necessárias para executar operações em um conjunto de dados e um workspace Premium, você precisa adicionar a entidade de serviço como um membro ou administrador do workspace. O uso do acesso ao workspace no serviço do Power BI é descrito aqui, mas você também pode usar a [API REST Adicionar Usuário ao Grupo](/rest/api/power-bi/groups/addgroupuser).
 
 1. No serviço do Power BI, para um workspace, selecione **Mais** > **Acesso ao workspace**.
 
@@ -96,7 +96,7 @@ Invoke-ProcessTable -Server "powerbi://api.powerbi.com/v1.0/myorg/myworkspace" -
 
 ### <a name="amo-and-adomd"></a>AMO e ADOMD
 
-Ao conectar com aplicativos cliente e aplicativos Web, os pacotes instaláveis das [bibliotecas cliente AMO e ADOMD](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers) versão 15.1.42.26 (junho de 2020) e superiores do NuGet são compatíveis com entidades de serviço nas cadeias de conexão usando a seguinte sintaxe: `app:AppID` e senha ou `cert:thumbprint`.
+Ao conectar com aplicativos cliente e aplicativos Web, os pacotes instaláveis das [bibliotecas cliente AMO e ADOMD](/azure/analysis-services/analysis-services-data-providers) versão 15.1.42.26 (junho de 2020) e superiores do NuGet são compatíveis com entidades de serviço nas cadeias de conexão usando a seguinte sintaxe: `app:AppID` e senha ou `cert:thumbprint`.
 
 No exemplo a seguir, `appID` e `password` são usados para executar uma operação de atualização de modelo de banco de dados:
 
@@ -115,6 +115,6 @@ db.Model.SaveChanges();
 ## <a name="next-steps"></a>Próximas etapas
 
 [Conectividade do conjunto de dados com o ponto de extremidade XMLA](service-premium-connect-tools.md)  
-[Automação do Azure](https://docs.microsoft.com/azure/automation)  
-[Aplicativos Lógicos do Azure](https://docs.microsoft.com/azure/logic-apps/)  
-[APIs REST do Power BI](https://docs.microsoft.com/rest/api/power-bi/)
+[Automação do Azure](/azure/automation)  
+[Aplicativos Lógicos do Azure](/azure/logic-apps/)  
+[APIs REST do Power BI](/rest/api/power-bi/)

@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 04/06/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: cd3a0a8974636d6962fe23a7ffe272e47e487754
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 97501fe6e5a3e12e1b6773ce1b3fd67b503bf0f1
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230402"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860292"
 ---
 # <a name="connect-to-the-crisis-communication-presence-report"></a>Conectar-se ao Relatório de Presença de Comunicação de Crise
 
@@ -23,15 +23,15 @@ Este aplicativo do Power BI é o artefato de relatório/dashboard na solução d
 
 O dashboard mostra aos gestores de emergência os dados agregados no sistema de saúde para ajudá-los a tomar decisões corretas e em tempo hábil.
 
-Este artigo mostra como instalar o aplicativo e como se conectar às fontes de dados. Para obter mais informações sobre o aplicativo Comunicação de Crise, confira [Configurar o modelo de exemplo de Comunicação de Crise e aprender sobre ele no Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
+Este artigo mostra como instalar o aplicativo e como se conectar às fontes de dados. Para obter mais informações sobre o aplicativo Comunicação de Crise, confira [Configurar o modelo de exemplo de Comunicação de Crise e aprender sobre ele no Power Apps](/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 
 Depois de instalar o aplicativo de modelo e se conectar às fontes de dados, você poderá personalizar o relatório de acordo com as suas necessidades. Em seguida, poderá distribuí-lo como um aplicativo para os colegas da sua organização.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Antes de instalar este aplicativo de modelo, primeiro, você precisará instalar e configurar a [amostra de Comunicação de Crise](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app). A instalação dessa solução cria as referências de fonte de dados necessárias para preencher o aplicativo com os dados.
+Antes de instalar este aplicativo de modelo, primeiro, você precisará instalar e configurar a [amostra de Comunicação de Crise](/powerapps/maker/canvas-apps/sample-crisis-communication-app). A instalação dessa solução cria as referências de fonte de dados necessárias para preencher o aplicativo com os dados.
 
-Ao instalar a amostra de Comunicação de Crise, anote o [caminho da pasta da lista do SharePoint de "CI_Employee Status" e a ID de lista](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app#monitor-office-absences-with-power-bi).
+Ao instalar a amostra de Comunicação de Crise, anote o [caminho da pasta da lista do SharePoint de "CI_Employee Status" e a ID de lista](/powerapps/maker/canvas-apps/sample-crisis-communication-app#monitor-office-absences-with-power-bi).
 
 ## <a name="install-the-app"></a>Instalar o aplicativo
 
@@ -68,7 +68,7 @@ Ao instalar a amostra de Comunicação de Crise, anote o [caminho da pasta da li
    ![Link Conectar seus dados no aplicativo Relatório de Presença de Comunicação de Crise](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-connect-data.png)
 
 1. Na caixa de diálogo:
-   1. No campo SharePoint_Folder, insira seu [caminho de lista do SharePoint de "CI_Employee Status"](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app#monitor-office-absences-with-power-bi).
+   1. No campo SharePoint_Folder, insira seu [caminho de lista do SharePoint de "CI_Employee Status"](/powerapps/maker/canvas-apps/sample-crisis-communication-app#monitor-office-absences-with-power-bi).
    1. No campo List_ID, insira a ID de lista obtida nas configurações da lista. Quando terminar, clique em **Avançar**.
 
    ![Caixa de diálogo URL no aplicativo Relatório de Presença de Comunicação de Crise](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-url-dialog.png)
@@ -102,7 +102,7 @@ Quando a atualização de dados for concluída, [configure um agendamento de atu
 Confira [Personalizar e compartilhar o aplicativo](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) para obter detalhes. Examine os [avisos de isenção de responsabilidade do relatório](../create-reports/sample-covid-19-us.md#disclaimers) antes de publicar ou distribuir o aplicativo.
 
 ## <a name="next-steps"></a>Próximas etapas
-* [Configurar o modelo de exemplo de Comunicação de Crise e aprender sobre ele no Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
+* [Configurar o modelo de exemplo de Comunicação de Crise e aprender sobre ele no Power Apps](/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Dúvidas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
 * [O que são os aplicativos de modelo do Power BI?](../connect-data/service-template-apps-overview.md)
 * [Instalar e distribuir aplicativos de modelo na sua organização](../connect-data/service-template-apps-install-distribute.md)

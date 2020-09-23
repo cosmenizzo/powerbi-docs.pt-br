@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2ae57fb5a3d2ff38a29e0c1e3c24af23582af43a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1273030bc1fd8664e854eb2b59939cf271b017fa
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222251"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860016"
 ---
 # <a name="use-conditional-formatting-in-tables"></a>Usar a formatação condicional em tabelas 
 
@@ -181,9 +181,9 @@ Há algumas considerações para ter em mente ao trabalhar com formatação cond
 
 - A formatação condicional aplica-se só aos valores de visuais de Tabela ou Matriz e não se aplica aos subtotais, aos totais gerais ou à linha **Total**. 
 - Qualquer tabela que não tenha um agrupamento é exibida como uma só linha que não dá suporte à formatação condicional.
-- Não será possível aplicar a formatação de gradiente com valores máximo/mínimo automáticos ou a formatação baseada em regra com as regras de percentual se os dados contiverem valores *NaN*. NaN significa "Não é um número", geralmente causado por um erro de divisão por zero. Você pode usar a [função DIVIDE() DAX](https://docs.microsoft.com/dax/divide-function-dax) para evitar esses erros.
+- Não será possível aplicar a formatação de gradiente com valores máximo/mínimo automáticos ou a formatação baseada em regra com as regras de percentual se os dados contiverem valores *NaN*. NaN significa "Não é um número", geralmente causado por um erro de divisão por zero. Você pode usar a [função DIVIDE() DAX](/dax/divide-function-dax) para evitar esses erros.
 - A formatação condicional precisa que uma agregação ou uma medida seja aplicada ao valor. É por isso que você vê 'Primeiro' ou 'Último' no exemplo de **Cor por valor**. Se você estiver criando seu relatório em um cubo multidimensional do Analysis Services, não poderá usar um atributo para formatação condicional, a menos que o proprietário do cubo tenha criado uma medida que forneça o valor.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Para obter mais informações sobre a formatação de cores, confira [Dicas e truques para a formatação de cores no Power BI](../visuals/service-tips-and-tricks-for-color-formatting.md)  
+Para obter mais informações sobre a formatação de cores, confira [Dicas e truques para a formatação de cores no Power BI](../visuals/service-tips-and-tricks-for-color-formatting.md)

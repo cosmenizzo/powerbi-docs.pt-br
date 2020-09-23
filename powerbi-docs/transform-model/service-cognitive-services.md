@@ -9,18 +9,18 @@ ms.topic: how-to
 ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 7d4b2e40e543bdd30c9bfa954f2623598b915545
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: 1c598b29a28ad775f6a707596c4a4188c86e7375
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878792"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860062"
 ---
 # <a name="cognitive-services-in-power-bi"></a>Serviços Cognitivos no Power BI 
 
 Com os Serviços Cognitivos no Power BI, você pode aplicar algoritmos diferentes dos [Serviços Cognitivos do Azure](https://azure.microsoft.com/services/cognitive-services/) para enriquecer seus dados na preparação de dados de autoatendimento para Fluxos de dados.
 
-Os serviços atualmente com suporte são [Análise de Sentimento](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Extração de Frases-chave](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Detecção de Idioma](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) e [Marcação de Imagem](https://docs.microsoft.com/azure/cognitive-services/computer-vision/concept-tagging-images). As transformações são executadas no serviço do Power BI e não exigem uma assinatura de Serviços Cognitivos do Azure. Este recurso requer o Power BI Premium.
+Os serviços atualmente com suporte são [Análise de Sentimento](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Extração de Frases-chave](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Detecção de Idioma](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) e [Marcação de Imagem](/azure/cognitive-services/computer-vision/concept-tagging-images). As transformações são executadas no serviço do Power BI e não exigem uma assinatura de Serviços Cognitivos do Azure. Este recurso requer o Power BI Premium.
 
 ## <a name="enabling-ai-features"></a>**Como habilitar recursos de IA**
 
@@ -64,7 +64,7 @@ Esta seção descreve as funções disponíveis nos Serviços Cognitivos no Powe
 
 A função de detecção de idioma avalia a entrada de texto e para cada campo retorna o nome do idioma e o identificador ISO. Essa função é útil para colunas de dados que coletam texto arbitrário, onde o idioma é desconhecido. A função espera dados no formato de texto como entrada.
 
-A Análise de Texto reconhece até 120 idiomas. Saiba mais em [idiomas com suporte](https://docs.microsoft.com/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
+A Análise de Texto reconhece até 120 idiomas. Saiba mais em [idiomas com suporte](/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
 
 ### <a name="extract-key-phrases"></a>**Extrair frases-chave**
 
@@ -80,7 +80,7 @@ A Análise de Texto usa um algoritmo de classificação de aprendizado de máqui
 
 A análise de sentimento é executada em todo o campo de entrada, em vez de extrair o sentimento de uma entidade específica no texto. Na prática, há uma tendência de melhoria da precisão de pontuação quando os documentos contêm uma ou duas sentenças, em vez de um grande bloco de texto. Durante a fase de avaliação de objetividade, o modelo determina se um campo de entrada como um todo é objetivo ou contém o sentimento. Um campo de entrada que é principalmente objetivo não progride para a frase de detecção de sentimento, resultando em uma pontuação 0,50, sem nenhum processamento adicional. Para os campos de entrada continuarem no pipeline, a próxima fase gera uma pontuação acima ou abaixo de 0,50, dependendo do grau de sentimento detectado no campo de entrada.
 
-No momento, a Análise de Sentimento é compatível com os idiomas alemão, espanhol, francês e inglês. Outros idiomas estão em versão prévia. Saiba mais em [Idiomas com suporte](https://docs.microsoft.com/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
+No momento, a Análise de Sentimento é compatível com os idiomas alemão, espanhol, francês e inglês. Outros idiomas estão em versão prévia. Saiba mais em [Idiomas com suporte](/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
 
 ### <a name="tag-images"></a>**Marcar imagens**
 
@@ -88,7 +88,7 @@ A função **Marcar imagens** retorna marcas com base em mais de 2.000 objetos r
 
 Depois de carregar uma imagem ou especificar uma URL de imagem, os algoritmos de Pesquisa Visual Computacional marcam saídas com base em objetos, seres vivos e ações identificadas na imagem. A marcação não está limitada à entidade principal, como uma pessoa em primeiro plano, mas também inclui o ambiente (interno ou externo), móveis, ferramentas, plantas, animais, acessórios, eletrônicos e assim por diante.
 
-Essa função requer uma URL de imagem ou um campo abase-64 como entrada. Neste momento, a marcação de imagem é compatível com os idiomas inglês, espanhol, japonês, português e chinês simplificado. Saiba mais em [Idiomas com suporte](https://docs.microsoft.com/rest/api/cognitiveservices/computervision/tagimage/tagimage#uri-parameters).
+Essa função requer uma URL de imagem ou um campo abase-64 como entrada. Neste momento, a marcação de imagem é compatível com os idiomas inglês, espanhol, japonês, português e chinês simplificado. Saiba mais em [Idiomas com suporte](/rest/api/cognitiveservices/computervision/tagimage/tagimage#uri-parameters).
 
 ## <a name="next-steps"></a>Próximas etapas
 

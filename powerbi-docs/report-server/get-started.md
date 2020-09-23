@@ -9,12 +9,12 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: a1d62ad9cd8475e217a0ae051919792970dbb34d
-ms.sourcegitcommit: b66c913a50a5100082e1c8ff7cd1c4f76f514fe7
+ms.openlocfilehash: 4b2b29effb1d9b4b2d8e743990dd3dd0d27470f8
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "84219590"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859832"
 ---
 # <a name="what-is-power-bi-report-server"></a>O que é o Servidor de Relatórios do Power BI?
 
@@ -38,9 +38,9 @@ O ponto de entrada do Servidor de Relatórios do Power BI é um portal da Web se
 
 ![Portal da Web do Servidor de Relatório do Power BI](media/get-started/web-portal.png)
 
-Dependendo de suas permissões, você poderá gerenciar o conteúdo no portal da Web. É possível agendar o processamento de relatórios, acessar relatórios sob demanda e assinar relatórios publicados. Também é possível aplicar sua própria [identidade visual](https://docs.microsoft.com/sql/reporting-services/branding-the-web-portal) personalizada ao seu portal da Web. 
+Dependendo de suas permissões, você poderá gerenciar o conteúdo no portal da Web. É possível agendar o processamento de relatórios, acessar relatórios sob demanda e assinar relatórios publicados. Também é possível aplicar sua própria [identidade visual](/sql/reporting-services/branding-the-web-portal) personalizada ao seu portal da Web. 
 
-Mais informações sobre o [portal da Web do Servidor de Relatórios do Power BI](https://docs.microsoft.com/sql/reporting-services/web-portal-ssrs-native-mode).
+Mais informações sobre o [portal da Web do Servidor de Relatórios do Power BI](/sql/reporting-services/web-portal-ssrs-native-mode).
 
 ## <a name="power-bi-reports"></a>Relatórios do Power BI
 Você cria relatórios do Power BI (.pbix) com a versão do Power BI Desktop otimizada para o servidor de relatórios. Em seguida, você os publica e exibe no portal da Web em seu próprio ambiente.
@@ -56,17 +56,17 @@ Relatórios paginados (.rdl) são relatórios com estilo de documento com visual
 
 ![Relatórios paginados no Servidor de Relatórios do Power BI](media/get-started/paginated-reports.png)
 
-É possível criar relatórios paginados usando o [Construtor de Relatórios](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) ou o Designer de Relatórios no [SSDT (SQL Server Data Tools)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
+É possível criar relatórios paginados usando o [Construtor de Relatórios](/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) ou o Designer de Relatórios no [SSDT (SQL Server Data Tools)](/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
 
 ## <a name="reporting-services-mobile-reports"></a>Relatórios móveis do Reporting Services
 Relatórios móveis se conectam a dados locais e têm um layout dinâmico que se adapta a diferentes dispositivos e às diferentes maneiras como você os armazena. Você os cria com o Publicador de Relatórios Móveis do SQL Server.
 
-Mais informações sobre os [Relatórios móveis do Reporting Services](https://docs.microsoft.com/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher). 
+Mais informações sobre os [Relatórios móveis do Reporting Services](/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher). 
 
 ## <a name="report-server-programming-features"></a>Recursos de programação do Servidor de Relatório
 Aproveite os recursos de programação do Servidor de Relatórios do Power BI para poder estender e personalizar seus relatórios com APIs para integrar ou estender dados e processamento de relatórios em aplicativos personalizados.
 
-Mais [documentação do desenvolvedor do Servidor de Relatório](https://docs.microsoft.com/sql/reporting-services/reporting-services-developer-documentation).
+Mais [documentação do desenvolvedor do Servidor de Relatório](/sql/reporting-services/reporting-services-developer-documentation).
 
 ## <a name="next-steps"></a>Próximas etapas
 [Instalar o Servidor de Relatório do Power BI](install-report-server.md)  

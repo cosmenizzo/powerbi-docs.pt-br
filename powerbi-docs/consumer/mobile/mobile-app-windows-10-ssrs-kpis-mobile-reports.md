@@ -7,12 +7,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 05/19/2020
 ms.author: painbar
-ms.openlocfilehash: a56fecdadc8eddba3fa755497a4ebc978496b7a1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 98f528e13bd92692bd76afc42aaac43828f7f586
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85231352"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860890"
 ---
 # <a name="view-on-premises-reports-and-kpis-in-the-power-bi-windows-app"></a>Exibir KPIs e relatórios locais no aplicativo Power BI para Windows
 O aplicativo do Power BI para Windows 10 oferece acesso móvel dinâmico e habilitado para toque às suas informações corporativas locais importantes, no SQL Server 2016 Reporting Services. 
@@ -28,7 +28,7 @@ Em seguida, no aplicativo do Power BI para Windows 10, exiba relatórios do Powe
 > Seu dispositivo precisa estar executando o Windows 10. O aplicativo funciona melhor em dispositivos com pelo menos 1 GB de RAM e 8 GB de armazenamento interno.
 
 >[!NOTE]
->O suporte de aplicativo móvel Power BI para **telefones que usam o Windows 10 Mobile** será descontinuado em 16 de março de 2021. [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2121400)
+>O suporte de aplicativo móvel Power BI para **telefones que usam o Windows 10 Mobile** será descontinuado em 16 de março de 2021. [Saiba mais](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## <a name="explore-samples-without-a-sql-server-2016-reporting-services-server"></a>Explorar amostras sem um servidor do SQL Server 2016 Reporting Services
 Mesmo que você não tenha acesso a um portal da Web do Reporting Services, ainda é possível explorar os recursos de relatórios móveis do Reporting Services.

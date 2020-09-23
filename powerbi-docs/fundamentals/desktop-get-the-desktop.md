@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: c5c4c7b08f69bd91fc8a4e6ab13a05878936225d
-ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
+ms.openlocfilehash: e95b51d5d50900b8e09de8f5bf62bf31d5578ad1
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88160201"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860200"
 ---
 # <a name="get-power-bi-desktop"></a>Obter o Power BI Desktop
 O Power BI Desktop permite a criação de consultas, modelos e relatórios avançados que visualizam dados. Com o Power BI Desktop, você pode criar modelos de dados, criar relatórios e compartilhar seu trabalho publicando-o no serviço do Power BI. O Power BI Desktop é um download gratuito.
@@ -38,7 +38,7 @@ Há algumas maneiras de acessar a versão mais recente do Power BI Desktop na Mi
 
    - Abra um navegador e vá diretamente para a página do [Power BI Desktop](https://aka.ms/pbidesktopstore) na Microsoft Store.
 
-    - No [serviço do Power BI](https://docs.microsoft.com/power-bi/service-get-started), selecione o ícone **Download** no canto superior direito e, em seguida, selecione **Power BI Desktop**.
+    - No [serviço do Power BI](./service-get-started.md), selecione o ícone **Download** no canto superior direito e, em seguida, selecione **Power BI Desktop**.
 
       ![Captura de tela da Microsoft Store mostrando a opção de download do Power BI Desktop.](media/desktop-get-the-desktop/getpbid_downloads.png)
 
@@ -203,4 +203,4 @@ Depois que você instalar o Power BI Desktop, confira o conteúdo a seguir para 
 * [Fontes de dados no Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Conectar-se a dados no Power BI Desktop](../connect-data/desktop-connect-to-data.md)
 * [Formatar e combinar dados no Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Tarefas comuns de consulta no Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   
+* [Tarefas comuns de consulta no Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

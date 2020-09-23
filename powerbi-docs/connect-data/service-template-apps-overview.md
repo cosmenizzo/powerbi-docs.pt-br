@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: 6033ba7442e7993edbbc68aa36922a2efddd1f83
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: bf51270a39f2f07518aaa6d83902519e08f7ab45
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235643"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860568"
 ---
 # <a name="what-are-power-bi-template-apps"></a>O que são os aplicativos de modelo do Power BI?
 
@@ -49,7 +49,7 @@ O processo geral para desenvolver e enviar um aplicativo de modelo envolve vári
 
 Para criar o aplicativo de modelo, você precisará ter permissões para criar um. Confira o portal de administração do Power BI, configurações de Aplicativo de modelo para obter mais detalhes. 
 
-Para publicar um aplicativo de modelo no serviço do Power BI e no AppSource, é necessário atender aos requisitos para [se tornar um editor da Central de Parceiros](https://docs.microsoft.com/azure/marketplace/become-publisher).
+Para publicar um aplicativo de modelo no serviço do Power BI e no AppSource, é necessário atender aos requisitos para [se tornar um editor da Central de Parceiros](/azure/marketplace/become-publisher).
  
 ## <a name="high-level-steps"></a>Etapas de alto nível
 
@@ -67,7 +67,7 @@ Veja a seguir as etapas de alto nível.
 
 6. Promover o aplicativo de teste à pré-produção para enviá-lo para validação no AppSource e testá-lo fora de seu próprio locatário. 
 
-7. Enviar o conteúdo à [Central de Parceiros](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) para publicação. 
+7. Enviar o conteúdo à [Central de Parceiros](/azure/marketplace/partner-center-portal/create-power-bi-app-offer) para publicação. 
 
 8. Ative sua oferta no AppSource e mova o aplicativo para produção no Power BI.
 
@@ -77,9 +77,9 @@ Veja a seguir as etapas de alto nível.
 
 Para criar o aplicativo de modelo, você precisará ter permissões para criar um. Confira o [portal de administração do Power BI, configurações de Aplicativo de modelo](../admin/service-admin-portal.md#template-apps-settings) para obter mais detalhes.
 
-Para publicar um aplicativo de modelo no serviço do Power BI e no AppSource, é necessário atender aos requisitos para [se tornar um editor da Central de Parceiros](https://docs.microsoft.com/azure/marketplace/become-publisher).
+Para publicar um aplicativo de modelo no serviço do Power BI e no AppSource, é necessário atender aos requisitos para [se tornar um editor da Central de Parceiros](/azure/marketplace/become-publisher).
  > [!NOTE] 
- > Envios de aplicativos de modelo são gerenciados na [Central de Parceiros](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Use a mesma conta de registro da Central de Desenvolvedores para entrar. Você deve ter apenas uma conta da Microsoft para suas ofertas do AppSource. As contas não devem ser específicas para serviços individuais ou ofertas.
+ > Envios de aplicativos de modelo são gerenciados na [Central de Parceiros](/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Use a mesma conta de registro da Central de Desenvolvedores para entrar. Você deve ter apenas uma conta da Microsoft para suas ofertas do AppSource. As contas não devem ser específicas para serviços individuais ou ofertas.
 
 ## <a name="tips"></a>Dicas 
 

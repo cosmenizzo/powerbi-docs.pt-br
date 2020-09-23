@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 87509a4a2415a8f7a2a7a27d34dc2a6f3a39b92f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0c28d95c5275f5778b1ae646b8e5fb65489eb072
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232415"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860108"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Dicas e truques para visualizações de mapa do Power BI
 
@@ -50,7 +50,7 @@ Se você tiver acesso ao conjunto de dados que está sendo usado para criar a vi
 
 **1. Categorizar campos geográficos no Power BI Desktop**
 
-No Power BI Desktop, é possível assegurar que os campos sejam codificados geograficamente de maneira correta definindo a *Categoria de Dados* nos campos de dados. Na exibição de dados, selecione a coluna desejada. Na faixa de opções, selecione a guia **Modelagem** e então defina a **Categoria de Dados** como **Endereço**, **Cidade**, **Continente**, **País/Região**, **Condado**, **Código Postal**, **Estado** ou **Província**. Essas categorias de dados ajudam o Bing a codificar corretamente a data. Para saber mais, veja [Categorização de dados no Power BI Desktop](../transform-model/desktop-data-categorization.md). Se você estiver se conectando dinamicamente ao SQL Server Analysis Services, precisará definir a categorização de dados fora do Power BI usando o [SSDT (SQL Server Data Tools)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
+No Power BI Desktop, é possível assegurar que os campos sejam codificados geograficamente de maneira correta definindo a *Categoria de Dados* nos campos de dados. Na exibição de dados, selecione a coluna desejada. Na faixa de opções, selecione a guia **Modelagem** e então defina a **Categoria de Dados** como **Endereço**, **Cidade**, **Continente**, **País/Região**, **Condado**, **Código Postal**, **Estado** ou **Província**. Essas categorias de dados ajudam o Bing a codificar corretamente a data. Para saber mais, veja [Categorização de dados no Power BI Desktop](../transform-model/desktop-data-categorization.md). Se você estiver se conectando dinamicamente ao SQL Server Analysis Services, precisará definir a categorização de dados fora do Power BI usando o [SSDT (SQL Server Data Tools)](/sql/ssdt/download-sql-server-data-tools-ssdt).
 
 **2. Use mais de uma coluna de localização.**     
  Às vezes, até mesmo definir as categorias de dados de mapeamento não é suficiente para o Bing adivinhar corretamente a intenção. Algumas designações são ambíguas porque a localização existe em vários países ou regiões. Por exemplo, há um ***Southampton*** na Inglaterra, Pensilvânia e em Nova York.

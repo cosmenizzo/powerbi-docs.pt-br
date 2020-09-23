@@ -8,16 +8,16 @@ ms.topic: how-to
 ms.date: 08/10/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: ebc4601f3575e84c248aef9204537a7d93c428ac
-ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
+ms.openlocfilehash: afe81469bc3ce67979602eedbf49b00cf7a3f1e6
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88049174"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854300"
 ---
 # <a name="enable-sensitivity-labels-in-power-bi"></a>Habilitar rótulos de confidencialidade no Power BI
 
-Para os [rótulos de confiabilidade da Proteção de Informações da Microsoft](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) serem usados no Power BI, eles precisam estar habilitados no locatário. Este artigo mostra aos administradores de locatário do Power BI como fazer isso. Para uma visão geral de rótulos de confidencialidade no Power BI, confira [Rótulos de confidencialidade no Power BI](service-security-sensitivity-label-overview.md). Para obter informações sobre como aplicar rótulos de confidencialidade no Power BI, consulte [Como aplicar rótulos de confidencialidade](./service-security-apply-data-sensitivity-labels.md) 
+Para os [rótulos de confiabilidade da Proteção de Informações da Microsoft](/microsoft-365/compliance/sensitivity-labels) serem usados no Power BI, eles precisam estar habilitados no locatário. Este artigo mostra aos administradores de locatário do Power BI como fazer isso. Para uma visão geral de rótulos de confidencialidade no Power BI, confira [Rótulos de confidencialidade no Power BI](service-security-sensitivity-label-overview.md). Para obter informações sobre como aplicar rótulos de confidencialidade no Power BI, consulte [Como aplicar rótulos de confidencialidade](./service-security-apply-data-sensitivity-labels.md) 
 
 Quando os rótulos de confidencialidade estão habilitados:
 
@@ -34,10 +34,10 @@ Habilitar rótulos de confidencialidade requer uma licença da Proteção de Inf
 
 * Os aplicativos do Office têm [requisitos exclusivos de licenciamento para visualização e aplicação de rótulos de confidencialidade]( https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels ).
 
-* Antes de habilitar rótulos de confidencialidade em seu locatário, verifique se os rótulos foram definidos e publicados para os usuários e grupos relevantes. Confira [Criar e configurar rótulos de confidencialidade e suas políticas](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide) para obter mais detalhes.
+* Antes de habilitar rótulos de confidencialidade em seu locatário, verifique se os rótulos foram definidos e publicados para os usuários e grupos relevantes. Confira [Criar e configurar rótulos de confidencialidade e suas políticas](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide) para obter mais detalhes.
 
 >[!NOTE]
-> Se a sua organização usar rótulos de confidencialidade da Proteção de Informações do Azure, eles precisarão ser migrados para a plataforma de Rotulagem Unificada de Proteção de Informações da Microsoft para que sejam usados no Power BI. [Saiba mais sobre como migrar rótulos de confidencialidade](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
+> Se a sua organização usar rótulos de confidencialidade da Proteção de Informações do Azure, eles precisarão ser migrados para a plataforma de Rotulagem Unificada de Proteção de Informações da Microsoft para que sejam usados no Power BI. [Saiba mais sobre como migrar rótulos de confidencialidade](/azure/information-protection/configure-policy-migrate-labels).
 
 ## <a name="enable-sensitivity-labels"></a>Habilitar rótulos de confidencialidade
 
@@ -78,6 +78,6 @@ Confira [Rótulos de confidencialidade no Power BI](service-security-sensitivity
 Este artigo descreveu como habilitar rótulos de confidencialidade no Power BI. Os artigos a seguir fornecem mais detalhes sobre a proteção de dados no Power BI. 
 
 * [Visão geral de rótulos de confidencialidade no Power BI](service-security-sensitivity-label-overview.md)
-* [Como aplicar rótulos de confidencialidade no Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
+* [Como aplicar rótulos de confidencialidade no Power BI](./service-security-apply-data-sensitivity-labels.md)
 * [Usando controles do Microsoft Cloud App Security no Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Relatório de métricas de proteção](service-security-data-protection-metrics-report.md)

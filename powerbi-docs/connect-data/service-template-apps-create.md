@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 09/15/2020
 ms.author: painbar
-ms.openlocfilehash: df9c1af29482a40b7e1dd7edbca0020b43e4f00f
-ms.sourcegitcommit: a0d56eeed12253e782e0a3eff8610f72a3ad5cb9
+ms.openlocfilehash: e3b6ada10138e6964240c5eb5c53399507170b79
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90571016"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860660"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Criar um aplicativo de modelo no Power BI
 
@@ -191,7 +191,7 @@ Vamos percorrer os estágios:
 
     Se essa opção não for exibida, contate o administrador do Power BI para que ele conceda [permissões de desenvolvimento de aplicativos de modelo](../admin/service-admin-portal.md#template-apps-settings) no portal de administração.
 11. Selecione **Promover** para confirmar sua escolha.
-12. Copie essa nova URL para compartilhamento fora do locatário para teste. Esse link também é aquele que você enviará para iniciar o processo de distribuição do aplicativo no AppSource ao criar uma [oferta da Central de Parceiros](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Envie somente links de pré-produção para a Central de Parceiros. Somente depois que o aplicativo for aprovado e você receber uma notificação de que ele foi publicado no AppSource é que esse pacote poderá ser promovido para produção no Power BI.
+12. Copie essa nova URL para compartilhamento fora do locatário para teste. Esse link também é aquele que você enviará para iniciar o processo de distribuição do aplicativo no AppSource ao criar uma [oferta da Central de Parceiros](/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Envie somente links de pré-produção para a Central de Parceiros. Somente depois que o aplicativo for aprovado e você receber uma notificação de que ele foi publicado no AppSource é que esse pacote poderá ser promovido para produção no Power BI.
 13. Quando o aplicativo estiver pronto para produção ou compartilhamento por meio do AppSource, volte ao painel **Gerenciamento de Versão** e selecione **Promover aplicativo** ao lado de **Pré-produção**.
 14. Selecione **Promover** para confirmar sua escolha.
 
@@ -199,10 +199,10 @@ Vamos percorrer os estágios:
 
     ![Aplicativo em produção](media/service-template-apps-create/power-bi-template-app-production.png)
 
-Para disponibilizar o aplicativo amplamente para milhares de usuários do Power BI no mundo, recomendamos que você o envie ao AppSource. Confira a [oferta do Aplicativo do Power BI](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) para obter mais detalhes.
+Para disponibilizar o aplicativo amplamente para milhares de usuários do Power BI no mundo, recomendamos que você o envie ao AppSource. Confira a [oferta do Aplicativo do Power BI](/azure/marketplace/partner-center-portal/create-power-bi-app-offer) para obter mais detalhes.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Veja como os clientes interagem com o aplicativo de modelo em [Instalar, personalizar e distribuir aplicativos de modelo em sua organização](service-template-apps-install-distribute.md).
 
-Confira a [oferta do Aplicativo do Power BI](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) para obter mais detalhes sobre como distribuir o aplicativo.
+Confira a [oferta do Aplicativo do Power BI](/azure/marketplace/partner-center-portal/create-power-bi-app-offer) para obter mais detalhes sobre como distribuir o aplicativo.

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/27/2020
-ms.openlocfilehash: cdce9ead296a25aad95ab504d6da38f06f681b72
-ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
+ms.openlocfilehash: f433a90580034495b4f7b1f6201c4481ffc627c5
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "90008619"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859855"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Fontes de dados com suporte para relatórios paginados do Power BI
 
@@ -67,11 +67,10 @@ Para fontes de dados do Banco de Dados SQL do Azure, aqui estão os tipos de aut
 - SSO (logon único)
 - OAuth2 (token AAD armazenado)
 
-Para que o SSO e o OAuth2 funcionem corretamente, o servidor do Banco de Dados SQL do Azure ao qual a fonte de dados está se conectando precisa ter o [suporte à autenticação do AAD habilitado](https://docs.microsoft.com/azure/sql-database/sql-database-aad-authentication-configure). Para o método de autenticação OAuth2, o AAD gera um token e o armazena para acesso futuro à fonte de dados. Para usar o [método de autenticação de SSO](https://docs.microsoft.com/power-bi/service-azure-sql-database-with-direct-connect#single-sign-on) em vez disso, selecione a opção de SSO logo abaixo, **Usuários finais usam suas próprias credenciais de OAuth2 ao acessarem essa fonte de dados por meio de DirectQuery**.
+Para que o SSO e o OAuth2 funcionem corretamente, o servidor do Banco de Dados SQL do Azure ao qual a fonte de dados está se conectando precisa ter o [suporte à autenticação do AAD habilitado](/azure/sql-database/sql-database-aad-authentication-configure). Para o método de autenticação OAuth2, o AAD gera um token e o armazena para acesso futuro à fonte de dados. Para usar o [método de autenticação de SSO](../connect-data/service-azure-sql-database-with-direct-connect.md#single-sign-on) em vez disso, selecione a opção de SSO logo abaixo, **Usuários finais usam suas próprias credenciais de OAuth2 ao acessarem essa fonte de dados por meio de DirectQuery**.
   
 ## <a name="next-steps"></a>Próximas etapas
 
 [Exibir um relatório paginado no serviço do Power BI](../consumer/paginated-reports-view-power-bi-service.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](https://community.powerbi.com/)
-
