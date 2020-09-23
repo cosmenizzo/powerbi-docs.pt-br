@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/01/2020
-ms.openlocfilehash: 4b112c3522a35f86f74481a79f3fff919a0e9e33
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: ef981c63aaa1cdececbe03f187d25ee09073f61f
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87544682"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857739"
 ---
 # <a name="manage-power-bi-visuals-admin-settings"></a>Gerenciar configurações de administrador de visuais do Power BI
 
@@ -64,7 +64,7 @@ Siga as instruções abaixo para permitir que os usuários em sua organização 
 
 ![visuais do arquivo ou do AppSource](media/organizational-visuals/tenant-settings.png)
 
-As alterações à interface do usuário para as configurações do locatário aplicam-se somente ao serviço do Power BI. Para permitir que os usuários em sua organização carreguem arquivos .pbiviz e adicionem visuais do AppSource aos próprios painéis de visualização no Power BI Desktop, use a [Política de Grupo do Azure AD](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).
+As alterações à interface do usuário para as configurações do locatário aplicam-se somente ao serviço do Power BI. Para permitir que os usuários em sua organização carreguem arquivos .pbiviz e adicionem visuais do AppSource aos próprios painéis de visualização no Power BI Desktop, use a [Política de Grupo do Azure AD](/azure/active-directory-domain-services/manage-group-policy).
 
 |Key  |Nome do valor  |Valor  |
 |---------|---------|---------|
@@ -83,7 +83,7 @@ Quando essa configuração é habilitada, somente [visuais do Power BI certifica
 
 ![visuais certificados](media/organizational-visuals/certified-visuals.png)
 
-As alterações à interface do usuário para as configurações do locatário aplicam-se somente ao serviço do Power BI. Para gerenciar a configuração de locatário de visuais certificados no Power BI Desktop, use a [Política de Grupo do Azure AD](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).
+As alterações à interface do usuário para as configurações do locatário aplicam-se somente ao serviço do Power BI. Para gerenciar a configuração de locatário de visuais certificados no Power BI Desktop, use a [Política de Grupo do Azure AD](/azure/active-directory-domain-services/manage-group-policy).
 
 |Key  |Nome do valor  |Valor  |
 |---------|---------|---------|

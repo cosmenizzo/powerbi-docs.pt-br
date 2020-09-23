@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e43edb3241140024241ab78af1236d9551a35f1a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ad3684bbf285ff85fa3dec6b0cdc807dc05eca05
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239762"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857900"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Definir configurações de fluxo de dados de workspace (versão prévia)
 
@@ -128,13 +128,13 @@ Para saber mais sobre fluxos de dados em geral, confira estes artigos:
 
 Para saber mais sobre o armazenamento do Azure, você pode ler estes artigos:
 
-* [Guia de segurança do Armazenamento do Microsoft Azure](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
+* [Guia de segurança do Armazenamento do Microsoft Azure](/azure/storage/common/storage-security-guide)
 * [Introdução às amostras do github do Serviços de Dados do Azure](https://aka.ms/cdmadstutorial)
 
 Leia este artigo de visão geral para saber mais sobre o Common Data Service:
 
-* [Common Data Service - visão geral ](https://docs.microsoft.com/powerapps/common-data-model/overview)
-* [Pastas do CDM](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [Definição de arquivo de modelo do CDM](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Common Data Service - visão geral ](/powerapps/common-data-model/overview)
+* [Pastas do CDM](/common-data-model/data-lake)
+* [Definição de arquivo de modelo do CDM](/common-data-model/model-json)
 
 E você pode sempre tentar [fazer perguntas à Comunidade do Power BI](https://community.powerbi.com/).

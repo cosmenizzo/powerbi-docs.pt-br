@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/02/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: ca0a33f42c1b2fd466df9af59bb649ae73d7d594
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 4a38ca35e6955bc92f52492e657a9e00bad05ea3
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161366"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857601"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuir o conteúdo do Power BI para usuários convidados externo com o Azure AD B2B
 
@@ -151,7 +151,7 @@ Para ajudar os convidados autorizados a entrar no Power BI, forneça a eles a UR
 
 * Há configurações do Azure Active Directory que podem limitar o que os usuários convidados externos podem fazer dentro de sua organização em geral. Essas configurações também se aplicam ao seu ambiente do Power BI. A documentação a seguir descreve as configurações:
   * [Gerenciar configurações de colaboração externa](/azure/active-directory/b2b/delegate-invitations#configure-b2b-external-collaboration-settings)
-  * [Permitir ou bloquear convites para usuários B2B de organizações específicas](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
+  * [Permitir ou bloquear convites para usuários B2B de organizações específicas](/azure/active-directory/b2b/allow-deny-list)
   * [Usar o acesso condicional para permitir ou bloquear o acesso](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
 
 * Você pode compartilhar conteúdo de uma nuvem governamental, como GCC, para um usuário externo de nuvem comercial. No entanto, o usuário convidado não pode usar sua própria licença. O conteúdo deve ter a capacidade atribuída a Premium para habilitar o acesso. Ou você pode atribuir uma licença do Power BI Pro à conta de convidado.
@@ -162,6 +162,6 @@ Para ajudar os convidados autorizados a entrar no Power BI, forneça a eles a UR
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Para obter mais informações, inclusive sobre o funcionamento da segurança de linha, confira o white paper: [Distribuir o conteúdo do Power BI para usuários convidados externo com o Azure AD B2B](https://aka.ms/powerbi-b2b-whitepaper).
+Para obter mais informações, inclusive sobre o funcionamento da segurança de linha, confira o white paper: [Distribuir o conteúdo do Power BI para usuários convidados externo com o Azure AD B2B](../guidance/whitepaper-azure-b2b-power-bi.md).
 
 Para saber mais sobre o Azure AD B2B, confira [O que é o acesso de usuários convidados na colaboração B2B do Azure Active Directory?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/).

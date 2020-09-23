@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 05/29/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: c3e56df49caac8b5250a4e382cab253a0a9c5210
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 791b5efce0489e837cb75ed1ae6632dcc240fc1c
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161320"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857578"
 ---
 # <a name="what-is-power-bi-administration"></a>O que é a administração do Power BI
 
@@ -25,7 +25,7 @@ A administração do Power BI é o gerenciamento das configurações de toda a o
 
 ## <a name="administrator-roles-related-to-power-bi"></a>Funções de administrador relacionadas ao Power BI
 
-Há várias funções que trabalham em conjunto para administrar o Power BI para a sua organização. A maioria das funções de administrador é atribuída no centro de administração do Microsoft 365 ou usando o PowerShell. As funções de administrador de Capacidade do Power BI Premium e Capacidade do Power BI Embedded são atribuídas quando a capacidade é criada. Para saber mais sobre cada uma das funções de administrador, consulte [Sobre as funções de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide). Para saber como atribuir funções de administrador, consulte [Atribuir funções de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).
+Há várias funções que trabalham em conjunto para administrar o Power BI para a sua organização. A maioria das funções de administrador é atribuída no centro de administração do Microsoft 365 ou usando o PowerShell. As funções de administrador de Capacidade do Power BI Premium e Capacidade do Power BI Embedded são atribuídas quando a capacidade é criada. Para saber mais sobre cada uma das funções de administrador, consulte [Sobre as funções de administrador](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide). Para saber como atribuir funções de administrador, consulte [Atribuir funções de administrador](/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
 | **Tipo de administrador** | **Escopo administrativo** | **Tarefas do Power BI** |
 | --- | --- | --- |
@@ -70,7 +70,7 @@ Os administradores do Power BI trabalham principalmente no portal de administra�
 | | Governança de informações |
 | [AAD (Azure Active Directory) no portal do Azure](https://aad.portal.azure.com) | Configurar o acesso condicional a recursos do Power BI |
 | | Provisionar a capacidade do Power BI Embedded |
-| [Cmdlets do PowerShell](https://docs.microsoft.com/powershell/power-bi/overview) | Gerenciar workspaces e outros aspectos do Power BI por meio de scripts |
+| [Cmdlets do PowerShell](/powershell/power-bi/overview) | Gerenciar workspaces e outros aspectos do Power BI por meio de scripts |
 | [SKD e APIs administrativas](service-admin-reference.md) | Crie ferramentas de administração personalizadas. Por exemplo, o Power BI Desktop pode usar essas APIs para criar relatórios com base nos dados relacionados à administração. |
 
 ## <a name="next-steps"></a>Próximas etapas
@@ -79,7 +79,7 @@ Agora que você conhece as noções básicas do que está envolvido na administr
 
 - [Usar o portal de administração do Power BI](service-admin-portal.md)
 - [Diretrizes de configuração do administrador de locatários](../guidance/admin-tenant-settings.md)
-- [Usar cmdlets do PowerShell](https://docs.microsoft.com/powershell/power-bi/overview)
+- [Usar cmdlets do PowerShell](/powershell/power-bi/overview)
 - [Perguntas frequentes de administração do Power BI](service-admin-faq.md)
 - [Como licenciar o serviço do Power BI para usuários na sua organização](service-admin-licensing-organization.md)
 - Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)

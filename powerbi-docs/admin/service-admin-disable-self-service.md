@@ -10,12 +10,12 @@ ms.date: 04/08/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 216be5b7a72d32e78933c7b6ceb879ccfbb4dd92
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 966699f20e83a7ea34140486f97f4491c4ba35e2
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228470"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857440"
 ---
 # <a name="enable-or-disable-self-service-sign-up-and-purchasing"></a>Habilitar ou desabilitar a inscrição e a compra por autoatendimento
 
@@ -44,9 +44,9 @@ Se a inscrição por autoatendimento estiver habilitada, o valor de **AllowAdHoc
 
 ### <a name="before-you-begin"></a>Antes de começar
 
-Essas etapas usam comandos do PowerShell do Azure Active Directory para alterar o valor da configuração **AllowAdHocSubscriptions**. Você precisa ter o módulo do PowerShell do Azure AD instalado para que esses comandos estejam disponíveis. Para obter mais informações sobre o uso do PowerShell, confira [Introdução ao Windows PowerShell](https://docs.microsoft.com/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7).
+Essas etapas usam comandos do PowerShell do Azure Active Directory para alterar o valor da configuração **AllowAdHocSubscriptions**. Você precisa ter o módulo do PowerShell do Azure AD instalado para que esses comandos estejam disponíveis. Para obter mais informações sobre o uso do PowerShell, confira [Introdução ao Windows PowerShell](/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7).
 
-Para instalar o módulo do Azure AD, inicie o Windows PowerShell como administrador. Verifique se sua política de execução local permite que você execute scripts. Se você tiver problemas, confira as [políticas de execução do PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7#powershell-execution-policies) para saber como alterar sua política local.
+Para instalar o módulo do Azure AD, inicie o Windows PowerShell como administrador. Verifique se sua política de execução local permite que você execute scripts. Se você tiver problemas, confira as [políticas de execução do PowerShell](/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7#powershell-execution-policies) para saber como alterar sua política local.
 
 Execute o seguinte comando para instalar o módulo do Azure AD:
 
@@ -90,9 +90,9 @@ Se a compra por autoatendimento estiver habilitada, o valor de **AllowSelfServic
 
 ### <a name="before-you-begin"></a>Antes de começar
 
-Essas etapas usam comandos do MSCommerce PowerShell para alterar o valor da configuração **AllowSelfServicePurchase**. Você precisa ter o módulo do MSCommerce PowerShell instalado para que esses comandos estejam disponíveis. Para obter mais informações sobre o uso do PowerShell, confira [Introdução ao Windows PowerShell](https://docs.microsoft.com/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7).
+Essas etapas usam comandos do MSCommerce PowerShell para alterar o valor da configuração **AllowSelfServicePurchase**. Você precisa ter o módulo do MSCommerce PowerShell instalado para que esses comandos estejam disponíveis. Para obter mais informações sobre o uso do PowerShell, confira [Introdução ao Windows PowerShell](/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7).
 
-Para instalar o módulo do MSCommerce, inicie o Windows PowerShell como administrador. Verifique se sua política de execução local permite que você execute scripts. Se você tiver problemas, confira as [políticas de execução do PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7#powershell-execution-policies) para saber como alterar sua política local.
+Para instalar o módulo do MSCommerce, inicie o Windows PowerShell como administrador. Verifique se sua política de execução local permite que você execute scripts. Se você tiver problemas, confira as [políticas de execução do PowerShell](/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7#powershell-execution-policies) para saber como alterar sua política local.
 
 Execute o seguinte comando para instalar o módulo do MSCommerce:
 
@@ -128,5 +128,5 @@ Depois de executar esse comando, a compra por autoatendimento do Power BI fica d
 
 Para obter mais informações sobre a compra por autoatendimento do Power BI e o restante do Power Platform, veja estes artigos:
 
-- [Perguntas frequentes sobre compra por autoatendimento](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide#admin-capabilities)
-- [Usar o AllowSelfServicePurchase para o módulo MSCommerce PowerShell](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell?view=o365-worldwide)
+- [Perguntas frequentes sobre compra por autoatendimento](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide#admin-capabilities)
+- [Usar o AllowSelfServicePurchase para o módulo MSCommerce PowerShell](/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell?view=o365-worldwide)

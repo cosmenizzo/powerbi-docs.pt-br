@@ -10,12 +10,12 @@ ms.date: 08/20/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 27d74a4333add1feebc3522ce34d0a2bacaa69f7
-ms.sourcegitcommit: 2cf8159535c114045e236c076a711638cfd7d2c8
+ms.openlocfilehash: 0c1c113f100c3ae1db0902c90833c44788fa7ec6
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89512046"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857693"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Acompanhar atividades do usuário no Power BI
 
@@ -77,7 +77,7 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 > Pode levar até 24 horas para que todos os eventos sejam exibidos, embora os dados completos normalmente estejam disponíveis muito antes.
 >
 >
-Para saber mais sobre como usar a API REST do Power BI, incluindo exemplos de como obter eventos de atividade de auditoria, confira [Administrador – obter eventos de atividade](https://docs.microsoft.com/rest/api/power-bi/admin/getactivityevents) na documentação de referência da API REST do Power BI.
+Para saber mais sobre como usar a API REST do Power BI, incluindo exemplos de como obter eventos de atividade de auditoria, confira [Administrador – obter eventos de atividade](/rest/api/power-bi/admin/getactivityevents) na documentação de referência da API REST do Power BI.
 
 ### <a name="get-powerbiactivityevent-cmdlet"></a>Cmdlet Get-PowerBIActivityEvent
 
@@ -122,7 +122,7 @@ Você pode filtrar os dados de auditoria por intervalo de datas, usuário, paine
 
 Você precisa atender a estes requisitos para acessar os logs de auditoria:
 
-- Para acessar o log de auditoria, é necessário ser um administrador global ou ser atribuído à função de Logs de Auditoria ou Logs de Auditoria Somente Exibição no Exchange Online. Por padrão, essas funções são atribuídas a grupos de funções de Gerenciamento de Conformidade e Gerenciamento de Organização, na página **Permissões**, no centro de administração do Exchange. Para obter mais informações sobre as funções que podem exibir logs de auditoria, confira [Requisitos para pesquisar o log de auditoria](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#requirements-to-search-the-audit-log).
+- Para acessar o log de auditoria, é necessário ser um administrador global ou ser atribuído à função de Logs de Auditoria ou Logs de Auditoria Somente Exibição no Exchange Online. Por padrão, essas funções são atribuídas a grupos de funções de Gerenciamento de Conformidade e Gerenciamento de Organização, na página **Permissões**, no centro de administração do Exchange. Para obter mais informações sobre as funções que podem exibir logs de auditoria, confira [Requisitos para pesquisar o log de auditoria](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#requirements-to-search-the-audit-log).
 
     Para fornecer contas que não sejam de administrador com acesso ao log de auditoria, adicione o usuário como membro de um desses grupos de função. Como alternativa, crie um grupo de função personalizado no Centro de administração do Exchange, atribua a função de Logs de Auditoria ou Logs de Auditoria Somente Exibição a esse grupo e adicione a conta não administrativa ao novo grupo de função. Para obter mais informações, veja [Gerenciar grupos de função no Exchange Online](/Exchange/permissions-exo/role-groups).
 

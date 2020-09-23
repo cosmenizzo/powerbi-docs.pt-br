@@ -9,11 +9,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 56ace35adf6a005c4370bf692d8851dc015688c0
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: a9fca9f27baf51c4e4bafbf93244f0d745ba714b
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782348"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857417"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Perguntas frequentes de recuperação de desastre, failover e alta disponibilidade do Power BI
 
@@ -54,7 +55,7 @@ Uma notificação é postada na página de suporte do Power BI ([https://powerbi
 
 O Power BI leva aproximadamente 15 minutos para se tornar operacional novamente quando se identifica que um failover é necessário. O tempo para identificar que um failover é necessário varia com base no cenário corrompido. 
 
-Depois que um failover é executado, o Power BI usa a replicação geográfica do Armazenamento do Azure para executar o failover. Essas replicações geralmente têm um ponto de retorno de 15 minutos. No entanto, o [Armazenamento do Azure não garante esse período](https://docs.microsoft.com/azure/storage/common/storage-redundancy) com um SLA e, portanto, o Power BI também não é capaz de garantir um período. 
+Depois que um failover é executado, o Power BI usa a replicação geográfica do Armazenamento do Azure para executar o failover. Essas replicações geralmente têm um ponto de retorno de 15 minutos. No entanto, o [Armazenamento do Azure não garante esse período](/azure/storage/common/storage-redundancy) com um SLA e, portanto, o Power BI também não é capaz de garantir um período. 
 
 ## <a name="what-happens-to-workspaces-and-reports-if-my-premium-capacity-becomes-unavailable"></a>O que acontecerá com workspaces e relatórios se minha capacidade Premium ficar indisponível? 
 

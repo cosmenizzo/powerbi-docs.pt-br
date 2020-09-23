@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 59f340e6325cf846d1b0453a94a1015b50a987c4
-ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
+ms.openlocfilehash: 23d207bb4f070c3c3a35f1e74dd281f012528c82
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89401992"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90964996"
 ---
 # <a name="deploy-to-power-bi"></a>Implantar no Power BI
 
@@ -100,7 +100,7 @@ As principais atividades realizadas durante uma implantação no workspace de pr
 - **Configurações de relatórios e dashboards:** atualize e verifique as configurações para cada relatório e dashboard. As configurações mais importantes incluem:
   - Descrição
   - Grupo ou pessoa de contato
-  - [Rótulo de confidencialidade](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
+  - [Rótulo de confidencialidade](../admin/service-security-apply-data-sensitivity-labels.md)
   - [Conteúdo em destaque](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/)
 - **Assinaturas:** configure assinaturas do relatório, se necessário.
 
@@ -136,7 +136,7 @@ Em algum momento, os relatórios migrados para o Power BI devem ser desabilitado
 
 ## <a name="monitor-the-solution"></a>Monitorar a solução
 
-Os eventos do [log de atividades do Power BI](../admin/service-admin-auditing.md) podem ser usados para entender os padrões de uso da nova solução (ou o [log de execução](/sql/reporting-services/report-server/report-server-executionlog-and-the-executionlog3-view?view=sql-server-ver15) para conteúdo implantado no Servidor de Relatórios do Power BI). A análise do log de atividades pode ajudar a determinar se o uso real difere das expectativas. Também pode validar se a solução tem o suporte adequado.
+Os eventos do [log de atividades do Power BI](../admin/service-admin-auditing.md) podem ser usados para entender os padrões de uso da nova solução (ou o [log de execução](/sql/reporting-services/report-server/report-server-executionlog-and-the-executionlog3-view) para conteúdo implantado no Servidor de Relatórios do Power BI). A análise do log de atividades pode ajudar a determinar se o uso real difere das expectativas. Também pode validar se a solução tem o suporte adequado.
 
 Aqui estão algumas perguntas que podem ser respondidas examinando o log de atividades:
 
