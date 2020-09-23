@@ -269,6 +269,8 @@
               href: ../visuals/power-bi-visualization-combo-chart.md
             - name: Visuais da árvore hierárquica
               href: ../visuals/power-bi-visualization-decomposition-tree.md
+            - name: Narrativas inteligentes
+              href: ../visuals/power-bi-visualization-smart-narrative.md
             - name: Gráficos de rosca
               href: ../visuals/power-bi-visualization-doughnut-charts.md
             - name: Mapas preenchidos (coropléticos)

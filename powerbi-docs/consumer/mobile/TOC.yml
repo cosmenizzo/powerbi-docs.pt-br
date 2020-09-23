@@ -11,7 +11,7 @@
           href: mobile-whats-new-in-the-mobile-apps.md
         - name: Conheça a página inicial
           href: mobile-apps-home-page.md
-    - name: Inícios rápidos
+    - name: Início rápido
       expanded: true
       items:
         - name: Explorar painéis e relatórios
@@ -28,7 +28,9 @@
           href: mobile-apps-data-in-real-world-context.md
         - name: Exibir os dados offline nos aplicativos móveis
           href: mobile-apps-offline-data.md
-        - name: Aplicativo Power BI para Realidade Misturada (versão prévia)
+        - name: Power BI para o HoloLens 2
+          href: mobile-hololens2-app.md
+        - name: Power BI para o HoloLens (primeira geração)
           href: mobile-mixed-reality-app.md
     - name: Como
       items:
