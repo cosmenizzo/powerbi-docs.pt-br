@@ -8,11 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 308e34e5bf70a9999939c99667075b2e468b4df4
-ms.sourcegitcommit: eff98b49e794c7c07670dcfb871f43cb06ed9d3a
+ms.openlocfilehash: 60bb1ef7421d4ebcedd49d2e973cf245edec0381
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85095605"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965037"
 ---
 # <a name="row-level-security-rls-guidance-in-power-bi-desktop"></a>Diretrizes de RLS (Segurança em Nível de Linha) no Power BI Desktop
 
@@ -53,9 +54,9 @@ Cuidado: se um usuário de relatório for mapeado para ambas as funções, ele v
 A RLS funciona aplicando filtros automaticamente a todas as consultas DAX, e esses filtros podem ter um impacto negativo no desempenho da consulta. Portanto, uma RLS eficiente se resume a um bom design de modelo. É importante seguir as diretrizes de design de modelo, conforme discutido nos seguintes artigos:
 
 - [Entender o esquema em estrela e a importância para o Power BI](star-schema.md)
-- Todos os artigos sobre diretrizes de relações encontrados na [Documentação de diretrizes do Power BI](https://docs.microsoft.com/power-bi/guidance/)
+- Todos os artigos sobre diretrizes de relações encontrados na [Documentação de diretrizes do Power BI](./index.yml)
 
-Em geral, costuma ser mais eficiente impor filtros de RLS em tabelas de tipo de dimensão, e não em tabelas de tipo de fato. E é preciso haver relações bem projetadas a fim de garantir que os filtros de RLS se propaguem para outras tabelas de modelo. Portanto, evite usar a função DAX [LOOKUPVALUE](https://docs.microsoft.com/dax/lookupvalue-function-dax) quando as relações de modelo puderem obter o mesmo resultado.
+Em geral, costuma ser mais eficiente impor filtros de RLS em tabelas de tipo de dimensão, e não em tabelas de tipo de fato. E é preciso haver relações bem projetadas a fim de garantir que os filtros de RLS se propaguem para outras tabelas de modelo. Portanto, evite usar a função DAX [LOOKUPVALUE](/dax/lookupvalue-function-dax) quando as relações de modelo puderem obter o mesmo resultado.
 
 Sempre que os filtros de RLS forem aplicados em tabelas do DirectQuery e houver relações com outras tabelas do DirectQuery, não se esqueça de otimizar o banco de dados de origem. Isso pode envolver a criação de índices apropriados ou o uso de colunas computadas persistentes. Para obter mais informações, confira as [Diretrizes de modelo do DirectQuery no Power BI Desktop](directquery-model-guidance.md).
 
@@ -73,7 +74,7 @@ Os membros podem ser contas de usuário ou grupos de segurança. Sempre que poss
 
 Teste cada função para garantir que ela filtre o modelo corretamente. É possível fazer isso facilmente usando o comando **Exibir Como** na guia da faixa de opções **Modelagem**.
 
-Quando o modelo tiver regras dinâmicas usando a função DAX [USERNAME](https://docs.microsoft.com/dax/username-function-dax), teste os valores esperados _e inesperados_. Durante a inserção de conteúdo do Power BI – especificamente usando o cenário [O aplicativo possui dados](../developer/embedded/embedding.md#embedding-for-your-customers) – a lógica do aplicativo pode passar qualquer valor como um nome de usuário de identidade eficaz. Sempre que possível, garanta que valores acidentais ou mal-intencionados resultem em filtros que não retornam linhas.
+Quando o modelo tiver regras dinâmicas usando a função DAX [USERNAME](/dax/username-function-dax), teste os valores esperados _e inesperados_. Durante a inserção de conteúdo do Power BI – especificamente usando o cenário [O aplicativo possui dados](../developer/embedded/embedding.md#embedding-for-your-customers) – a lógica do aplicativo pode passar qualquer valor como um nome de usuário de identidade eficaz. Sempre que possível, garanta que valores acidentais ou mal-intencionados resultem em filtros que não retornam linhas.
 
 Considere um exemplo usando o Power BI Embedded, em que o aplicativo passa a função de trabalho do usuário como o nome de usuário efetivo: "Manager" ou "Worker". Os gerentes podem ver todas as linhas, mas os trabalhadores só podem ver linhas em que o valor da coluna **Type** é "Internal".
 
@@ -141,7 +142,7 @@ Cada uma das três relações de modelo é descrita na seguinte tabela:
 
 |Relação|Descrição|
 |---------|---------|
-|![Terminador de fluxograma 1.](media/common/icon-01-red-30x30.png)|Há uma relação muitos para muitos entre as tabelas **Salesperson** e **Sales**. A regra de RLS filtra a coluna **EmailAddress** da tabela oculta **Salesperson** usando a função DAX [USERNAME](https://docs.microsoft.com/dax/username-function-dax). O valor da coluna **Region** (para o usuário do relatório) se propaga para a tabela **Sales**.|
+|![Terminador de fluxograma 1.](media/common/icon-01-red-30x30.png)|Há uma relação muitos para muitos entre as tabelas **Salesperson** e **Sales**. A regra de RLS filtra a coluna **EmailAddress** da tabela oculta **Salesperson** usando a função DAX [USERNAME](/dax/username-function-dax). O valor da coluna **Region** (para o usuário do relatório) se propaga para a tabela **Sales**.|
 |![Terminador de fluxograma 2.](media/common/icon-02-red-30x30.png)|Há uma relação um-para-muitos entre as tabelas **Date** e **Sales**.|
 |![Terminador de fluxograma 3.](media/common/icon-03-red-30x30.png)|Há uma relação um-para-muitos entre as tabelas **Date** e **SalesRevenueSummary**.|
 
@@ -162,7 +163,7 @@ DIVIDE(
 
 Evite usar a RLS sempre que isso fizer sentido. Se você tiver apenas um pequeno número de regras de RLS simplistas que aplicam filtros estáticos, considere publicar vários conjuntos de dados em vez disso. Nenhum dos conjuntos de dados define funções porque cada conjunto contém dados para um público específico de usuários de relatório, que tem as mesmas permissões de dados. Em seguida, crie um workspace por público e atribua permissões de acesso ao workspace ou aplicativo.
 
-Por exemplo, uma empresa que tem apenas duas regiões de vendas decide publicar um conjunto de dados _para cada região_ a workspaces diferentes. Os conjuntos de dados não impõem RLS. No entanto, eles usam [parâmetros de consulta](https://docs.microsoft.com/power-query/power-query-query-parameters) para filtrar os dados de origem. Dessa forma, o mesmo modelo é publicado em cada workspace – eles têm apenas valores de parâmetro de conjunto de dados diferentes. Os vendedores recebem acesso a apenas um dos workspaces (ou aplicativos publicados).
+Por exemplo, uma empresa que tem apenas duas regiões de vendas decide publicar um conjunto de dados _para cada região_ a workspaces diferentes. Os conjuntos de dados não impõem RLS. No entanto, eles usam [parâmetros de consulta](/power-query/power-query-query-parameters) para filtrar os dados de origem. Dessa forma, o mesmo modelo é publicado em cada workspace – eles têm apenas valores de parâmetro de conjunto de dados diferentes. Os vendedores recebem acesso a apenas um dos workspaces (ou aplicativos publicados).
 
 Há várias vantagens quando a RLS é evitada:
 
@@ -190,7 +191,7 @@ Se a RLS produzir resultados inesperados, verifique se há os seguintes problema
 Quando um usuário específico não consegue ver dados, pode ser porque seu UPN não está armazenado ou foi inserido da forma incorreta. Isso pode ocorrer abruptamente porque sua conta de usuário foi alterada como resultado de uma alteração de nome.
 
 > [!TIP]
-> Para fins de teste, adicione uma medida que retorne a função DAX [USERNAME](https://docs.microsoft.com/dax/username-function-dax). Você pode nomeá-la como "Quem sou eu". Em seguida, adicione a medida a um visual de cartão em um relatório e publique-a no Power BI.
+> Para fins de teste, adicione uma medida que retorne a função DAX [USERNAME](/dax/username-function-dax). Você pode nomeá-la como "Quem sou eu". Em seguida, adicione a medida a um visual de cartão em um relatório e publique-a no Power BI.
 
 Quando um usuário específico consegue ver todos os dados, é possível que ele esteja acessando os relatórios diretamente no workspace e que seja o proprietário do conjunto de dados. A RLS só é imposta quando:
 

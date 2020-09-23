@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ac5eb41aa248eeebf2cbfb6d53e327e2a3e83fdd
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 0717ad71d3065043a3bff8305c051cdce40e7329
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537609"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965079"
 ---
 # <a name="dax-avoid-converting-blanks-to-values"></a>DAX: Evite converter BLANKs em valores
 
@@ -79,6 +79,6 @@ Essa abordagem de design é eficiente, permitindo que o Power BI renderize relat
 Para obter mais informações sobre este artigo, confira os seguintes recursos:
 
 - [Referência de DAX (Data Analysis Expressions)](/dax/)
-- Roteiro de aprendizagem: [Usar o DAX no Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/)
+- Roteiro de aprendizagem: [Usar o DAX no Power BI Desktop](/learn/paths/dax-power-bi/)
 - Perguntas? [Experimente perguntar para a Comunidade do Power BI](https://community.powerbi.com/)
 - Sugestões? [Contribuir com ideias para aprimorar o Power BI](https://ideas.powerbi.com)

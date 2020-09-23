@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: 35cbfd905db3d6d8464add0fe0e67060c41c9d0a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a42ffc2610021ec1f9b77fb5e950253ff8196e61
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239404"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858774"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Gerenciar conteúdo no portal da Web 
 O portal da Web do Servidor de Relatório do Power BI é um local para exibir, armazenar e gerenciar seus relatórios paginados, móveis e do Power BI e KPIs.
@@ -63,10 +63,9 @@ O Servidor de Relatório do Power BI oferece controle detalhado dos itens que vo
     ![Selecionar uma propriedade](media/getting-around/report-server-web-portal-manage-properties.png)
 3. Selecione **Aplicar**.
 
-Leia mais sobre como [trabalhar com assinaturas no portal da Web](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal).
+Leia mais sobre como [trabalhar com assinaturas no portal da Web](/sql/reporting-services/working-with-subscriptions-web-portal).
 
 ## <a name="next-steps"></a>Próximas etapas
 [O que é o Servidor de Relatórios do Power BI?](get-started.md)
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)
-

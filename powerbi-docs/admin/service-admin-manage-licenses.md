@@ -10,12 +10,12 @@ ms.date: 04/08/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: af58a79c5c81e8f04e5d0ba714703c202f9c8000
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 6eb123ec9a9549c54e311682fdccce451d8552a9
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161343"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857256"
 ---
 # <a name="view-and-manage-power-bi-user-licenses"></a>Exibir e gerenciar licenças do usuário do Power BI
 
@@ -37,11 +37,11 @@ Suas assinaturas ativas do Power BI são listadas junto com as outras assinatura
 
   ![Captura de tela da assinatura do Power BI mostrando uma assinatura gratuita.](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
 
-Esse tipo de assinatura é criado para você quando os usuários aproveitam a inscrição por autoatendimento. Para ler mais a respeito, confira [Power BI em sua organização](https://docs.microsoft.com/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide).
+Esse tipo de assinatura é criado para você quando os usuários aproveitam a inscrição por autoatendimento. Para ler mais a respeito, confira [Power BI em sua organização](/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide).
 
 ## <a name="manage-user-licenses-in-microsoft-365"></a>Gerenciar licenças do usuário no Microsoft 365
 
-Para usar o centro de administração do Microsoft 365 para gerenciar licenças de usuário, consulte a [Documentação de assinaturas e de cobrança para empresas](https://docs.microsoft.com/microsoft-365/commerce/?view=o365-worldwide).
+Para usar o centro de administração do Microsoft 365 para gerenciar licenças de usuário, consulte a [Documentação de assinaturas e de cobrança para empresas](/microsoft-365/commerce/?view=o365-worldwide).
 
 ## <a name="manage-user-licenses-in-azure-portal"></a>Gerenciar licenças do usuário no portal do Azure
 

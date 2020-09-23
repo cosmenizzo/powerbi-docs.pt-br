@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 11/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 129b4a22e17b5eab03018efae113ff47133e9dda
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 8ba43290e0e076963a61a7211ad99e99636ebb2e
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214164"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90853369"
 ---
 # <a name="use-quick-measures-for-common-calculations"></a>Usar medidas rápidas para cálculos comuns
 Você pode usar *medidas rápidas* para executar cálculos comuns e avançados com rapidez e praticidade. Uma medida rápida executa um conjunto de comandos DAX (Data Analysis Expressions) nos bastidores e apresenta os resultados para você usar no relatório. Você não precisa escrever o DAX. Isso é feito para você com base na entrada que você fornece em uma caixa de diálogo. Há muitas categorias de cálculos disponíveis, bem como maneiras de modificar cada cálculo para atender às suas necessidades. Talvez o melhor de tudo seja poder ver o DAX executado pela medida rápida e estimular ou expandir seu próprio conhecimento do DAX.
@@ -131,8 +131,7 @@ Há algumas limitações e considerações para se ter em mente.
 > As instruções DAX para medidas rápidas usam apenas vírgulas para separadores de argumento. Se sua versão do Power BI Desktop estiver em um idioma que usa vírgulas como separadores decimais, as medidas rápidas não funcionarão corretamente.
 
 ### <a name="time-intelligence-and-quick-measures"></a>Inteligência de dados temporais e medidas rápidas
-Você pode usar suas próprias tabelas de data personalizadas com medidas rápidas de inteligência de dados temporais. Se estiver usando um modelo tabular externo, verifique se, quando o modelo foi criado, a coluna de dados primária na tabela foi marcada como uma tabela de data, conforme descrito em [Especificar Marcar como Tabela de Data para uso com inteligência de dados temporais](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular). Se você estiver importando sua própria tabela de data, marque-a como uma tabela de data, conforme descrito em [Definir e usar tabelas de data no Power BI Desktop](desktop-date-tables.md).
+Você pode usar suas próprias tabelas de data personalizadas com medidas rápidas de inteligência de dados temporais. Se estiver usando um modelo tabular externo, verifique se, quando o modelo foi criado, a coluna de dados primária na tabela foi marcada como uma tabela de data, conforme descrito em [Especificar Marcar como Tabela de Data para uso com inteligência de dados temporais](/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular). Se você estiver importando sua própria tabela de data, marque-a como uma tabela de data, conforme descrito em [Definir e usar tabelas de data no Power BI Desktop](desktop-date-tables.md).
 
 ### <a name="additional-information-and-examples"></a>Exemplos e informações adicionais
 Você tem uma ideia para uma medida rápida que ainda não foi fornecida? Ótimo! Confira a página [Ideias do Power BI](https://go.microsoft.com/fwlink/?linkid=842906) e envie suas ideias e fórmulas DAX para medidas rápidas que você gostaria de ver no Power BI Desktop. Consideraremos adicioná-las à lista de medidas rápidas em uma versão futura.
-

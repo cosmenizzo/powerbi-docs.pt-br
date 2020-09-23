@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: aa05ffa7ba07ea1daf162f8ebb2baa3d18f64b29
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7dadfd405eb13acd9b1db757e6123278fbfcfeef
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75256346"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857199"
 ---
 # <a name="migrate-your-subscription-to-the-new-go-local-german-regions"></a>Migrar sua assinatura para as novas regiões alemãs "Go Local"
 
-Se você for um cliente existente do Microsoft Cloud Alemanha (Microsoft Cloud Deutschland), em breve, poderá mover seus usuários do Power BI para novas regiões alemãs “Go Local”. Para iniciar o processo de migração, a primeira etapa é [aceitar uma migração assistida pela Microsoft](https://aka.ms/office365germanymoveoptin) para nossas novas regiões de datacenter alemãs.
+Se você for um cliente existente do Microsoft Cloud Alemanha (Microsoft Cloud Deutschland), em breve, poderá mover seus usuários do Power BI para novas regiões alemãs “Go Local”. Para iniciar o processo de migração, a primeira etapa é [aceitar uma migração assistida pela Microsoft](/microsoft-365/enterprise/ms-cloud-germany-migration-opt-in) para nossas novas regiões de datacenter alemãs.
 
 Caso sua organização aceite a migração, você poderá esperar que ela seja iniciada em algum momento em 2020. Suas principais assinaturas e seus dados do cliente serão migrados para as novas regiões alemãs “Go Local”.
 

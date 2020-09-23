@@ -10,11 +10,12 @@ ms.topic: how-to
 ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: Create reports
-ms.openlocfilehash: b9161813c291a3feb8c01e4201972337f8e96fcb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 23873d53aa0d472247f2e8d850dc3b1e9b3bf065
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221770"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90853783"
 ---
 # <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Otimizar relatórios do Power BI para o aplicativo móvel
 Os usuários móveis podem exibir qualquer página de relatório do Power BI na orientação paisagem. No entanto, os autores de relatório podem criar uma exibição adicional otimizada para dispositivos móveis que é exibida na orientação retrato. Essa opção de design, disponível no Power BI Desktop e no serviço do Power BI, permite aos autores selecionar e reorganizar apenas os visuais que façam sentido para os usuários móveis em trânsito.
@@ -119,5 +120,5 @@ Se você otimizar apenas algumas páginas, quando os leitores chegarem a uma pá
 ## <a name="next-steps"></a>Próximas etapas
 * [Criar uma exibição de telefone de um dashboard no Power BI](service-create-dashboard-mobile-phone-view.md).
 * [Exibir relatórios do Power BI otimizados para seu telefone](../consumer/mobile/mobile-apps-view-phone-report.md).
-* [Documentação do Power BI sobre a criação de relatórios e dashboards](https://docs.microsoft.com/power-bi/create-reports/).
+* [Documentação do Power BI sobre a criação de relatórios e dashboards](./index.yml).
 * Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/).
