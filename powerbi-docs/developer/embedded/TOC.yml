@@ -28,6 +28,8 @@
           href: embedded-capacity.md
         - name: Planejamento da capacidade
           href: embedded-capacity-planning.md
+        - name: Consideração para gerar um token de inserção
+          href: generate-embed-token.md
         - name: Práticas recomendadas de desempenho
           href: embedded-performance-best-practices.md
         - name: Segurança em nível de linha
