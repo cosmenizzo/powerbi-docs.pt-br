@@ -37,7 +37,7 @@ Aqui está um diagrama de modelo simplista das três tabelas.
 
 ![Diagrama mostrando um modelo que contém três tabelas. O design é descrito no parágrafo a seguir.](media/relationships-many-to-many/bank-account-customer-model-example.png)
 
-A primeira tabela é denominada **Conta** e contém duas colunas: **AccountID** e **Conta**. A primeira tabela é denominada **AccountCustomer** e contém duas colunas: **AccountID** e **CustomerID**. A terceira tabela é denominada **Cliente** e contém duas colunas: **CustomerID** e **Cliente**. Não há relações entre nenhuma das tabelas.
+A primeira tabela é denominada **Conta** e contém duas colunas: **AccountID** e **Conta**. A segunda tabela é denominada **AccountCustomer** e contém duas colunas: **AccountID** e **CustomerID**. A terceira tabela é denominada **Cliente** e contém duas colunas: **CustomerID** e **Cliente**. Não há relações entre nenhuma das tabelas.
 
 Duas relações de um-para-muitos são adicionadas para relacionar as tabelas. Aqui está um diagrama de modelo atualizado das tabelas relacionadas. Uma tabela de tipo de fato chamada **Transação** foi adicionada. Ela registra transações de conta. A tabela de ponte e todas as colunas de ID foram ocultas.
 
